@@ -2,6 +2,8 @@
 import json
 import os
 
+web_root="/codesp/"
+
 os.system("rm -rf backup")
 os.system("mkdir backup")
 os.system("mv docs/* backup/")
@@ -22,7 +24,7 @@ def getN(dta):
 	for i in dta["qlink"]:
 		re+="`"+i["OJ"]+" "+i["PID"]+"` "
 	re+=dta["qname"]
-	re="["+re+"](/docs/"+dta["fname"]+")"
+	re="["+re+"]("+web_root+"docs/"+dta["fname"]+")"
 	return re
 
 fix()
@@ -37,7 +39,7 @@ docs_file.write("# 所有題解列表\n")
 docs_file.write("資料未排序，請善用Ctrl+F搜尋  \n")
 for i in OJlist:
 	book[i]=[]
-	root_file.write("["+i+"](/"+i+")  \n")
+	root_file.write("["+i+"]("+web_root+i+")  \n")
 
 for id in range(len(dta["data"])):#  建立題目資料夾、每個題目的README.md
 	i=dta["data"][id]
@@ -53,7 +55,7 @@ for id in range(len(dta["data"])):#  建立題目資料夾、每個題目的READ
 	file.write("## 標籤\n")
 	for j in i["tag"]:
 		file.write("`"+j+"` ")
-	file.write("## 程式碼\n")
+	file.write("\n## 程式碼\n")
 	file.write("```cpp\n")
 	file.write(open(i["ans_code"],"r").read())
 	file.write("\n```\n")
@@ -65,6 +67,7 @@ for i in range(len(OJlist)):
 	os.system("mkdir docs/"+OJlist[i])
 	file=open("docs/"+OJlist[i]+"/README.md","w+")
 	file.write("# "+OJlist[i]+"\n")
+	file.write("[back](..)  \n\n")
 	for j in book[OJlist[i]]:
 		file.write(j[1]+"  \n")
 	file.close()

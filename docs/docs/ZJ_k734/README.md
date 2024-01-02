@@ -1,6 +1,7 @@
 # [`ZJ k734`](https://zerojudge.tw/ShowProblem?problemid=k734) [`APCS 2023 06 PD`]() 開啟寶盒
 ## 標籤
-`APCS` `grapth` `dp` ## 程式碼
+`APCS` `grapth` `dp` 
+## 程式碼
 ```cpp
 // [Q] https://zerojudge.tw/ShowProblem?problemid=k734
 // [Q] APCS 2023-06-pD
