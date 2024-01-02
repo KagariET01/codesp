@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "qname": "開啟寶盒",
+      "fname":"ZJ_k734",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "k734",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=k734"
+        },
+        {
+          "OJ": "APCS",
+          "PID": "2023 06 PD",
+          "link": ""
+        }
+      ],
+      "tag": [
+        "APCS",
+        "grapth",
+        "dp"
+      ],
+      "ans_code": "./pack/k734.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Mathematical Problem",
+      "fname":"CF_1916_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1916 pD",
+          "link": "https://codeforces.com/contest/1916/problem/D"
+        }
+      ],
+      "tag": [
+        "math"
+      ],
+      "ans_code": "./pack/cf_1916_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    }
+  ],
+  "tag": [
+    "binaryS",
+    "grapth",
+    "bfs",
+    "dfs",
+    "shortestPath",
+    "bellmanFord",
+    "floydWarshall",
+    "johnson",
+    "dijkstra",
+    "topologicalSort",
+    "dp",
+    "bowle",
+    "math"
+  ]
+}
