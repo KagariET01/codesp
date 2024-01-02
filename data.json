@@ -56,8 +56,29 @@
           "link": ""
         }
       ],
-      "tag": [],
+      "tag": [
+        "grapth",
+        "dfs",
+        "binaryS"
+      ],
       "ans_code": "pack/zj_g598.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "美食博覽會",
+      "fname": "ZJ_g278",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "g278",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=g278"
+        }
+      ],
+      "tag": [
+        "dp"
+      ],
+      "ans_code": "pack/zj_g278.cpp",
       "ans_TXT": "",
       "AC": true
     }

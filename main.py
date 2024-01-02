@@ -28,7 +28,8 @@ def print_q(data):
 	for j in range(len(data["qlink"])):
 		print("\t"+str(j)+":"+data["qlink"][j]["OJ"]+" "+data["qlink"][j]["PID"],data["qlink"][j]["link"])
 	print("標籤：",data["tag"])
-	print("題解路徑：",data["ans_code"])
+	print("題解路徑(cpp)：",data["ans_code"])
+	print("題解路徑(md)：",data["ans_TXT"])
 	print("已解：",data["AC"])
 	print()
 
@@ -169,17 +170,19 @@ def edit_ans():
 							if(op4==1):#  新增
 								print("標籤列表：")
 								for j in range(len(dta["tag"])):
-									print("\t"+str(j)+":"+dta["tag"])
-								print("輸入標籤")
-								tag=IN(">")
+									print("\t"+str(j)+". "+dta["tag"][j])
+								print("輸入標籤編號（-1取消）")
+								tag=int(IN(">"))
+								if(tag==-1):
+									continue
 								print("你即將新增：")
-								print(tag)
+								print(dta["tag"][tag])
 								print("確定？")
 								print("1. 是")
 								print("2. 否")
 								op5=int(IN(">"))
 								if(op5==1):
-									dta["data"][nwid]["tag"].append(tag)
+									dta["data"][nwid]["tag"].append(dta["tag"][tag])
 							elif(op4==3):#  刪除
 								print("輸入編號")
 								id=int(IN(">"))
