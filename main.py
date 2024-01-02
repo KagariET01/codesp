@@ -5,6 +5,8 @@ import os
 
 
 dta=json.load(open("data.json","r"))
+basic_data={"qname":"","fname":"","qlink":[],"tag":[],"ans_code":"","ans_TXT":"","AC":False}
+
 
 def IN(txt):
 	while(1):
@@ -61,7 +63,7 @@ def edit_ans():
 			i-=10
 			i=max(0,i)
 		elif(nwid==-4):
-			dta["data"].append({"qname":"","qlink":[],"tag":[],"ans_code":""})
+			dta["data"].append(basic_data)
 		else:
 			while(1):
 				print_q(dta["data"][nwid])
@@ -97,7 +99,7 @@ def edit_ans():
 						print("6. 已解標籤")
 						print("-1 結束")
 						op3=int(IN(">"))
-						if(op3==1):#  題目名稱
+						if(op3==0):#  題目名稱
 							print("輸入建檔名稱，空格請改用底線")
 							dta["data"][nwid]["fname"]=IN(">")
 						if(op3==1):#  題目名稱
@@ -298,7 +300,7 @@ while True:
 			print("[sys]儲存中...")
 			open("data.json", "w").write(json.dumps(dta, indent=2, ensure_ascii=False))
 			print("[sys]儲存完成")
-			break
+		break
 	except:
 		print("程式意外中止")
 

@@ -2,7 +2,7 @@
   "data": [
     {
       "qname": "開啟寶盒",
-      "fname":"ZJ_k734",
+      "fname": "ZJ_k734",
       "qlink": [
         {
           "OJ": "ZJ",
@@ -26,7 +26,7 @@
     },
     {
       "qname": "Mathematical Problem",
-      "fname":"CF_1916_pD",
+      "fname": "CF_1916_pD",
       "qlink": [
         {
           "OJ": "CF",
@@ -40,6 +40,26 @@
       "ans_code": "./pack/cf_1916_pD.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "真假子圖",
+      "fname": "zj_g598",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "g598",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=g598"
+        },
+        {
+          "OJ": "APCS",
+          "PID": "2021 11 pD",
+          "link": ""
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/zj_g598.cpp",
+      "ans_TXT": "",
+      "AC": false
     }
   ],
   "tag": [
