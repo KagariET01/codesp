@@ -43,10 +43,11 @@ def edit_ans():
 		cnt=0
 		while(cnt<10 and i+cnt<n):
 			id=i+cnt
-			print(str(id)+": ",end="")
+			fn=dta["data"][id]["fname"]
+			print(f"{id}: { {dta['data'][id]['fname']} }",end="\t")
 			for j in dta["data"][id]["qlink"]:
-				print(dta["data"][id]["fname"],"["+j["OJ"]+" "+j["PID"]+"]",end=" ")
-			print(dta["data"][id]["qname"])
+				print("["+j["OJ"]+" "+j["PID"]+"]",end=" ")
+			print("\t"+dta["data"][id]["qname"])
 			cnt+=1
 		print()
 		print("輸入編號")
