@@ -108,6 +108,64 @@
       "ans_code": "pack/ZJ_f608.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "勇者修煉",
+      "fname": "ZJ_f314",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "ZJ f314",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=f314"
+        },
+        {
+          "OJ": "APCS",
+          "PID": "2020 10 pC",
+          "link": ""
+        }
+      ],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "低地距離",
+      "fname": "ZJ_f315",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "f315",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=f315"
+        },
+        {
+          "OJ": "APCS",
+          "PID": "2020 10 pD",
+          "link": ""
+        }
+      ],
+      "tag": [],
+      "ans_code": "./pack/ZJ_f315.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "String Matching",
+      "fname": "CSES_1753",
+      "qlink": [
+        {
+          "OJ": "CSES",
+          "PID": "1753",
+          "link": "https://cses.fi/problemset/task/1753"
+        }
+      ],
+      "tag": [
+        "string",
+        "hash"
+      ],
+      "ans_code": "pack/CSES_1753.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [
@@ -124,6 +182,8 @@
     "dp",
     "bowle",
     "math",
-    "sort"
+    "sort",
+    "string",
+    "hash"
   ]
 }
