@@ -144,10 +144,12 @@
           "link": ""
         }
       ],
-      "tag": [],
+      "tag": [
+        "divide"
+      ],
       "ans_code": "./pack/ZJ_f315.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "String Matching",
@@ -184,6 +186,7 @@
     "math",
     "sort",
     "string",
-    "hash"
+    "hash",
+    "divide"
   ]
 }
