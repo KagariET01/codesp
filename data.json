@@ -168,6 +168,24 @@
       "ans_code": "pack/CSES_1753.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "網路遮罩",
+      "fname": "TIOJ_1998",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "1998",
+          "link": "https://tioj.ck.tp.edu.tw/problems/1998"
+        }
+      ],
+      "tag": [
+        "string",
+        "trie"
+      ],
+      "ans_code": "pack/TIOJ_1998.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [
@@ -187,6 +205,7 @@
     "sort",
     "string",
     "hash",
-    "divide"
+    "divide",
+    "trie"
   ]
 }
