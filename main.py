@@ -17,6 +17,8 @@ def IN(txt):
 			print("[sys]儲存完成")
 		elif(len(re)>0 and re[0]=="!"):
 			os.system(re[1:])
+		elif(re==""):
+			continue
 		else:
 			return re
 

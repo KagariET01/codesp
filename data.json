@@ -186,6 +186,26 @@
       "ans_code": "pack/TIOJ_1998.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "病毒演化",
+      "fname": "ZJ_f582",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "f582",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=f582"
+        },
+        {
+          "OJ": "APCS",
+          "PID": "2020 07 pD",
+          "link": ""
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_f582.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [

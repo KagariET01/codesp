@@ -8,3 +8,4 @@
 [`ZJ f315` `APCS 2020 10 pD` 低地距離](/codesp/docs/ZJ_f315)  
 [`CSES 1753` String Matching](/codesp/docs/CSES_1753)  
 [`TIOJ 1998` 網路遮罩](/codesp/docs/TIOJ_1998)  
+[`ZJ f582` `APCS 2020 07 pD` 病毒演化](/codesp/docs/ZJ_f582)  
