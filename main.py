@@ -7,6 +7,7 @@ import os
 dta=json.load(open("data.json","r"))
 basic_data={"qname":"","fname":"","qlink":[],"tag":[],"ans_code":"","ans_TXT":"","AC":False}
 
+show_per_page=30
 
 def IN(txt):
 	while(1):
@@ -43,7 +44,7 @@ def edit_ans():
 		n=len(dta["data"])
 		print("總大小：",n)
 		cnt=0
-		while(cnt<10 and i+cnt<n):
+		while(cnt<show_per_page and i+cnt<n):
 			id=i+cnt
 			fn=dta["data"][id]["fname"]
 			print(f"{id}: { {dta['data'][id]['fname']} }",end="\t")
@@ -61,11 +62,13 @@ def edit_ans():
 		if(nwid==-1):
 			break
 		elif(nwid==-2):
-			i+=10
-			i=min(n,i)
+			i+=show_per_page
+			if(i>=n):
+				i-=show_per_page
 		elif(nwid==-3):
-			i-=10
-			i=max(0,i)
+			i-=show_per_page
+			if(i<0):
+				i+=show_per_page
 		elif(nwid==-4):
 			dta["data"].append(basic_data)
 		else:
@@ -237,7 +240,7 @@ def edit_tag():
 		n=len(dta["tag"])
 		print("總大小：",n)
 		cnt=0
-		while(cnt<10 and i+cnt<n):
+		while(cnt<show_per_page and i+cnt<n):
 			id=i+cnt
 			print(str(id)+", "+dta["tag"][id])
 			cnt+=1
@@ -251,11 +254,13 @@ def edit_tag():
 		if(nwid==-1):
 			return
 		elif(nwid==-2):
-			i+=10
-			i=min(n,i)
+			i+=show_per_page
+			if(i>=n):
+				i-=show_per_page
 		elif(nwid==-3):
-			i-=10
-			i=max(0,i)
+			i-=show_per_page
+			if(i<0):
+				i+=show_per_page
 		elif(nwid==-4):
 			dta["tag"].append(IN("輸入標籤名稱："))
 		else:
