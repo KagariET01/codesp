@@ -1,0 +1,51 @@
+#include<bits/stdc++.h>
+bool(debug)=0;
+std::stack<int>(st);
+bool(nxtt)=0;
+std::string(str);
+int(nw)=0;
+int(line)=0;
+int(main)(){
+	std::cin.tie(0);std::cout.tie(0);std::ios::sync_with_stdio(0);
+	st.push(0);
+	while(getline(std::cin,str)){
+		line++;
+		nw=0;
+		for(int(c):str){
+			if(c==32){nw++;}
+			else{break;};
+		}
+		if(nxtt){
+			if(nw<=st.top()){
+				std::cout<<"line"<<char(32)<<line<<'\n'<<str<<'\n';
+				std::cout<<"expected"<<char(32)<<"an"<<char(32)<<"indented"<<char(32)<<"block"<<'\n';
+				return(0);
+			}//less_sp
+			else{
+				st.push(nw);
+				nxtt=0;
+			}
+		}//new_tab
+		else{
+			if(nw>st.top()){
+				std::cout<<"line"<<char(32)<<line<<'\n'<<str<<'\n';
+				std::cout<<"unexpected"<<char(32)<<"indent"<<'\n';
+				return(0);
+			}//more_sp
+			else{
+				while(st.top()>nw)st.pop();
+				if(nw>st.top()){
+					std::cout<<"line"<<char(32)<<line<<'\n'<<str<<'\n';
+					std::cout<<"unindent"<<char(32)<<"does"<<char(32)<<"not"<<char(32)<<"match"<<char(32)<<"any"<<char(32)<<"outer"<<char(32)<<"indentation"<<char(32)<<"level"<<'\n';
+					return(0);
+				}//etror_sp
+			}
+		}
+		if(str[str.size()-1]==':'){
+			nxtt=1;
+		}
+	}
+	//OK
+	std::cout<<"Indention"<<char(32)<<"OK"<<'\n';
+	return(0);
+}

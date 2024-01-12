@@ -2,7 +2,7 @@
 
 import json
 import os
-
+import copy
 
 dta=json.load(open("data.json","r"))
 basic_data={"qname":"","fname":"","qlink":[],"tag":[],"ans_code":"","ans_TXT":"","AC":False}
@@ -70,7 +70,7 @@ def edit_ans():
 			if(i<0):
 				i+=show_per_page
 		elif(nwid==-4):
-			dta["data"].append(basic_data)
+			dta["data"].append(copy.deepcopy(basic_data))
 		else:
 			while(1):
 				print_q(dta["data"][nwid])
