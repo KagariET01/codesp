@@ -1,3 +1,8 @@
+# [`ZJ h561`](https://zerojudge.tw/ShowProblem?problemid=h561) [`TIOJ 2250`](https://tioj.ck.tp.edu.tw/problems/2250) [`TOI 2022 pE`]( ) 間諜(spy)
+## 標籤
+
+## 程式碼
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -243,3 +248,5 @@ int main(){
 	cerr<<"finish"<<endl;
 	return 0;
 }
+
+```

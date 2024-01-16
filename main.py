@@ -47,6 +47,10 @@ def edit_ans():
 		while(cnt<show_per_page and i+cnt<n):
 			id=i+cnt
 			fn=dta["data"][id]["fname"]
+			if(dta["data"][id]["AC"]):
+				print("[AC]",end="")
+			else:
+				print("[  ]",end="")
 			print(f"{id}: { {dta['data'][id]['fname']} }",end="\t")
 			for j in dta["data"][id]["qlink"]:
 				print("["+j["OJ"]+" "+j["PID"]+"]",end=" ")
