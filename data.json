@@ -252,7 +252,13 @@
     {
       "qname": "樹",
       "fname": "seg_tree",
-      "qlink": [],
+      "qlink": [
+        {
+          "OJ": "TEMP",
+          "PID": "seg_tree",
+          "link": " "
+        }
+      ],
       "tag": [
         "TEMP"
       ],
