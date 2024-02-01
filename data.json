@@ -248,6 +248,44 @@
       "ans_code": "pack/ZJ_k413.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "樹",
+      "fname": "seg_tree",
+      "qlink": [],
+      "tag": [
+        "TEMP"
+      ],
+      "ans_code": "temp/seg_tree.cpp",
+      "ans_TXT": "temp/seg_tree.md",
+      "AC": true
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
     }
   ],
   "tag": [
@@ -268,6 +306,9 @@
     "string",
     "hash",
     "divide",
-    "trie"
+    "trie",
+    "ioic2024",
+    "fun",
+    "TEMP"
   ]
 }

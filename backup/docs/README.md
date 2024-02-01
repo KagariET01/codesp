@@ -9,4 +9,5 @@
 [`CSES 1753` String Matching](/codesp/docs/CSES_1753)  
 [`TIOJ 1998` 網路遮罩](/codesp/docs/TIOJ_1998)  
 [`ZJ f582` `APCS 2020 07 pD` 病毒演化](/codesp/docs/ZJ_f582)  
+[`ZJ h561` `TIOJ 2250` `TOI 2022 pE` 間諜(spy)](/codesp/docs/ZJ_h561)  
 [`ZJ k413` Python 縮排檢查](/codesp/docs/ZJ_k413)  
