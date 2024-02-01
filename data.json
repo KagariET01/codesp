@@ -251,7 +251,7 @@
     },
     {
       "qname": "樹",
-      "fname": "seg_tree",
+      "fname": "線段樹",
       "qlink": [
         {
           "OJ": "TEMP",
