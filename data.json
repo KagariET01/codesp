@@ -292,6 +292,107 @@
       "AC": true
     },
     {
+      "qname": "打鍵盤(keyboard)",
+      "fname": "TIOJ_2247",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2247",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2247"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2022 pB",
+          "link": " "
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2247.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "",
       "fname": "",
       "qlink": [],
