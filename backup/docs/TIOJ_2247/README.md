@@ -1,6 +1,6 @@
 # [`TIOJ 2247`](https://tioj.ck.tp.edu.tw/problems/2247) [`TOI 2022 pB`]( ) 打鍵盤(keyboard)
 ## 標籤
-`dp` 
+
 ## 程式碼
 ```cpp
 

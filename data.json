@@ -306,28 +306,42 @@
           "link": " "
         }
       ],
-      "tag": [],
+      "tag": [
+        "dp"
+      ],
       "ans_code": "pack/TIOJ_2247.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "原始人排序",
+      "fname": "TIOJ_2193",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2193",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2193"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/TIOJ_2193.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "Training Before the Olympiad",
+      "fname": "CF_1916_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1916",
+          "link": "https://codeforces.com/contest/1916/problem/C"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/CF_1916_pC.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "",
