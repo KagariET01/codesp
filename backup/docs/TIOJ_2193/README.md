@@ -1,4 +1,4 @@
-# [`CF 1916 pC`](https://codeforces.com/contest/1916/problem/C) Training Before the Olympiad
+# [`TIOJ 2193`](https://tioj.ck.tp.edu.tw/problems/2193) 原始人排序
 ## 標籤
 
 ## 程式碼
@@ -43,38 +43,22 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	function<void()> solve=[](){
-		INT n;
-		cin>>n;
-		vector<INT>vec;
-		for(INT(i)=0;i<n;i++){
-			vec.push_back(read(INT));
+	INT n;
+	cin>>n;
+	vector<PII>vec;
+	vec.reserve(n);
+	for(INT(i)=0;i<n;i++)vec.push_back({read(INT),i});
+	sort(vec.begin(),vec.end(),[](PII(a),PII(b)){
+		INT(x)=0,y=0;
+		for(INT(i)=0;i<32;i++){
+			x+=(a.first>>i)&1;
+			y+=(b.first>>i)&1;
 		}
-		INT oddc=0;
-		INT tt=0;
-		for(INT i=0;i<n;i++){
-			if(i)cout<<" ";
-			tt+=vec[i]-vec[i]%2;
-			oddc+=vec[i]&1;
-			INT nw=tt;
-			if(oddc%3==0){
-				nw+=oddc/3*2;
-			}else if(oddc%3==1){
-				nw+=(oddc-1)/3*2;
-			}else{
-				nw+=(oddc-2)/3*2+2;
-			}
-			if(i==0)nw=vec[0];
-			cout<<nw;
-		}
-		cout<<endl;
-	};
-
-	INT t;
-	cin>>t;
-	while(t--){
-		solve();
-	}
+		if(x==y)return(a.second<b.second);
+		return(x<y);
+	});
+	for(PII(i):vec)cout<<i.first<<" ";
+	cout<<endl;
 	return 0;
 }
 

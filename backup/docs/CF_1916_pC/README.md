@@ -1,4 +1,4 @@
-# [`CF 1916 pC`](https://codeforces.com/contest/1916/problem/C) Training Before the Olympiad
+# [`CF 1916`](https://codeforces.com/contest/1916/problem/C) Training Before the Olympiad
 ## 標籤
 
 ## 程式碼

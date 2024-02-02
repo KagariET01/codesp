@@ -1,8 +1,3 @@
-# [`CF 1916 pC`](https://codeforces.com/contest/1916/problem/C) Training Before the Olympiad
-## 標籤
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -43,35 +38,30 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	function<void()> solve=[](){
-		INT n;
-		cin>>n;
-		vector<INT>vec;
-		for(INT(i)=0;i<n;i++){
-			vec.push_back(read(INT));
-		}
-		INT oddc=0;
-		INT tt=0;
+	function<void()>solve=[](){
+		INT n,k,x;
+		cin>>n>>k>>x;
+		vector<INT> vec;
+		INT all=0;
 		for(INT i=0;i<n;i++){
-			if(i)cout<<" ";
-			tt+=vec[i]-vec[i]%2;
-			oddc+=vec[i]&1;
-			INT nw=tt;
-			if(oddc%3==0){
-				nw+=oddc/3*2;
-			}else if(oddc%3==1){
-				nw+=(oddc-1)/3*2;
-			}else{
-				nw+=(oddc-2)/3*2+2;
-			}
-			if(i==0)nw=vec[0];
-			cout<<nw;
+			INT inin=read(INT);
+			vec.push_back(inin);
 		}
-		cout<<endl;
-	};
+		sort(vec.begin(),vec.end());
+		vector<INT> vectot;
+		vectot.push_back(0);
+		for(INT i:vec){
+			all+=i;
+			vectot.push_back(all);
+		}
+		INT ans=-1e9-7;
+		for(INT i=n;i>=n-k;i--){
+			ans=max(ans,all-(vectot[i]-vectot[max(i-x,(INT)0)])*2-(vectot[n]-vectot[i]));
+		}
+		cout<<ans<<endl;
 
-	INT t;
-	cin>>t;
+	};
+	INT t=read(INT);
 	while(t--){
 		solve();
 	}
@@ -80,5 +70,3 @@ int main(){
 
 
 
-
-```

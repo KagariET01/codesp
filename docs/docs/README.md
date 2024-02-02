@@ -15,4 +15,5 @@
 [`TIOJ 2246` `ZJ h557` `TOI 2022 pA` 迷宮入口](/codesp/docs/TIOJ_2246)  
 [`TIOJ 2247` `TOI 2022 pB` 打鍵盤(keyboard)](/codesp/docs/TIOJ_2247)  
 [`TIOJ 2193` 原始人排序](/codesp/docs/TIOJ_2193)  
-[`CF 1916` Training Before the Olympiad](/codesp/docs/CF_1916_pC)  
+[`CF 1916 pC` Training Before the Olympiad](/codesp/docs/CF_1916_pC)  
+[`CF 1920 pB` Summation Game](/codesp/docs/CF_1920_pB)  

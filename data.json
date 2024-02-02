@@ -334,7 +334,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1916",
+          "PID": "1916 pC",
           "link": "https://codeforces.com/contest/1916/problem/C"
         }
       ],
@@ -344,13 +344,19 @@
       "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "Summation Game",
+      "fname": "CF_1920_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1920 pB",
+          "link": "https://codeforces.com/contest/1920/problem/B"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/CF_1920_pB.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "",
