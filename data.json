@@ -359,13 +359,21 @@
       "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
+      "qname": "Minimize Inversions",
+      "fname": "CF_1918_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1918_pB",
+          "link": "https://codeforces.com/contest/1918/problem/B"
+        }
+      ],
+      "tag": [
+        "string"
+      ],
+      "ans_code": "pack/CF_1918_pB.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "",

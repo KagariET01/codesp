@@ -17,3 +17,4 @@
 [`TIOJ 2193` 原始人排序](/codesp/docs/TIOJ_2193)  
 [`CF 1916 pC` Training Before the Olympiad](/codesp/docs/CF_1916_pC)  
 [`CF 1920 pB` Summation Game](/codesp/docs/CF_1920_pB)  
+[`CF 1918_pB` Minimize Inversions](/codesp/docs/CF_1918_pB)  
