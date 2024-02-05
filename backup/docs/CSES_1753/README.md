@@ -1,6 +1,9 @@
 # [`CSES 1753`](https://cses.fi/problemset/task/1753) String Matching
 ## 標籤
 `string` `hash` 
+## 題解
+NOT FOUND  
+
 ## 程式碼
 ```cpp
 #include<bits/stdc++.h>

@@ -1,6 +1,9 @@
 # [`ZJ k413`](https://zerojudge.tw/ShowProblem?problemid=k413) Python 縮排檢查
 ## 標籤
 `string` 
+## 題解
+NOT FOUND  
+
 ## 程式碼
 ```cpp
 #include<bits/stdc++.h>

@@ -376,13 +376,19 @@
       "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "掃地機器人",
+      "fname": "TIOJ_2194",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2194",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2194"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
-      "ans_TXT": "",
-      "AC": false
+      "ans_code": "pack/TIOJ_2194.cpp",
+      "ans_TXT": "pack_TIOJ_2194.md",
+      "AC": true
     },
     {
       "qname": "",

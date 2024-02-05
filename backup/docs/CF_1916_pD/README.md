@@ -1,6 +1,9 @@
 # [`CF 1916 pD`](https://codeforces.com/contest/1916/problem/D) Mathematical Problem
 ## 標籤
 `math` 
+## 題解
+NOT FOUND  
+
 ## 程式碼
 ```cpp
 #include<bits/stdc++.h>

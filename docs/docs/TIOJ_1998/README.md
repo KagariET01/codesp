@@ -1,6 +1,9 @@
 # [`TIOJ 1998`](https://tioj.ck.tp.edu.tw/problems/1998) 網路遮罩
 ## 標籤
 `string` `trie` 
+## 題解
+NOT FOUND  
+
 ## 程式碼
 ```cpp
 #include<bits/stdc++.h>

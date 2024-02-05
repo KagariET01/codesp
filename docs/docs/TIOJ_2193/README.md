@@ -1,6 +1,9 @@
 # [`TIOJ 2193`](https://tioj.ck.tp.edu.tw/problems/2193) 原始人排序
 ## 標籤
 
+## 題解
+NOT FOUND  
+
 ## 程式碼
 ```cpp
 

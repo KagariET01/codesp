@@ -55,6 +55,11 @@ for id in range(len(dta["data"])):#  建立題目資料夾、每個題目的READ
 	file.write("## 標籤\n")
 	for j in i["tag"]:
 		file.write("`"+j+"` ")
+	file.write("\n## 題解\n")
+	try:
+		file.write(open(i["ans_TXT"],"r").read())
+	except:
+		file.write("NOT FOUND  \n")
 	file.write("\n## 程式碼\n")
 	file.write("```cpp\n")
 	file.write(open(i["ans_code"],"r").read())
@@ -73,7 +78,7 @@ for i in range(len(OJlist)):
 	file.close()
 
 
-
+print("DONE!")
 
 
 

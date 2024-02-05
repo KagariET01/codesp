@@ -1,6 +1,9 @@
 # [`CF 1916 pC`](https://codeforces.com/contest/1916/problem/C) Training Before the Olympiad
 ## 標籤
 
+## 題解
+NOT FOUND  
+
 ## 程式碼
 ```cpp
 

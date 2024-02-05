@@ -1,6 +1,9 @@
 # [`TEMP seg_tree`]( ) 樹
 ## 標籤
 `TEMP` 
+## 題解
+NOT FOUND  
+
 ## 程式碼
 ```cpp
 #include<functional>

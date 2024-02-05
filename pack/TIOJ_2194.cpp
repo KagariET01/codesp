@@ -1,11 +1,3 @@
-# [`CF 1916 pC`](https://codeforces.com/contest/1916/problem/C) Training Before the Olympiad
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -46,42 +38,52 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	function<void()> solve=[](){
-		INT n;
-		cin>>n;
-		vector<INT>vec;
-		for(INT(i)=0;i<n;i++){
-			vec.push_back(read(INT));
-		}
-		INT oddc=0;
-		INT tt=0;
-		for(INT i=0;i<n;i++){
-			if(i)cout<<" ";
-			tt+=vec[i]-vec[i]%2;
-			oddc+=vec[i]&1;
-			INT nw=tt;
-			if(oddc%3==0){
-				nw+=oddc/3*2;
-			}else if(oddc%3==1){
-				nw+=(oddc-1)/3*2;
-			}else{
-				nw+=(oddc-2)/3*2+2;
-			}
-			if(i==0)nw=vec[0];
-			cout<<nw;
-		}
-		cout<<endl;
-	};
-
-	INT t;
-	cin>>t;
-	while(t--){
-		solve();
+	INT n,m;
+	cin>>n>>m;
+	INT t[n+1]={};
+	for(INT i=2;i<=n;i++){
+		cin>>t[i];
 	}
+	INT s[n+1]={};
+	for(INT i=1;i<=n;i++){cin>>s[i];}
+	INT d[n+1]={};
+	for(INT i=1;i<=n;i++){cin>>d[i];};
+
+
+	if(m>1000 || n>1000 || n*m>=1e8)return 1;
+	
+	function<INT(INT,INT)> solve=[&](INT lim,INT mm){
+		priority_queue<PII> pq;
+		for(INT i=1;i<=mm;i++){
+			pq.push(PII(s[i],-d[i]));
+		}
+		INT re=0;
+		while(!pq.empty()){
+			if(lim<=0 || pq.empty())return re;
+			lim--;
+			PII nw=pq.top();
+			pq.pop();
+			re+=nw.first;
+			nw.first+=nw.second;
+			if(nw.first>0){
+				pq.push(nw);
+			}
+		}
+		return re;
+	};
+	INT lim=m;
+	INT ans=0;
+	for(INT i=1;i<=n;i++){
+		lim-=t[i];
+		INT nw=solve(lim,i);
+		ans=max(ans,solve(lim,i));
+	}
+	cout<<ans<<endl;
+
+
+
 	return 0;
 }
 
 
 
-
-```

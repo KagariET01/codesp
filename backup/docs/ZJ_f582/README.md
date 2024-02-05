@@ -1,6 +1,9 @@
 # [`ZJ f582`](https://zerojudge.tw/ShowProblem?problemid=f582) [`APCS 2020 07 pD`]() 病毒演化
 ## 標籤
 
+## 題解
+NOT FOUND  
+
 ## 程式碼
 ```cpp
 #include<bits/stdc++.h>

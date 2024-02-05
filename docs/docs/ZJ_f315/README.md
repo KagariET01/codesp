@@ -1,6 +1,9 @@
 # [`ZJ f315`](https://zerojudge.tw/ShowProblem?problemid=f315) [`APCS 2020 10 pD`]() 低地距離
 ## 標籤
 `divide` 
+## 題解
+NOT FOUND  
+
 ## 程式碼
 ```cpp
 #include<bits/stdc++.h>
