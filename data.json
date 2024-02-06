@@ -250,8 +250,8 @@
       "AC": true
     },
     {
-      "qname": "樹",
-      "fname": "線段樹",
+      "qname": "線段樹",
+      "fname": "seg_tree",
       "qlink": [
         {
           "OJ": "TEMP",
@@ -321,6 +321,11 @@
           "OJ": "TIOJ",
           "PID": "2193",
           "link": "https://tioj.ck.tp.edu.tw/problems/2193"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2021_pA",
+          "link": " "
         }
       ],
       "tag": [],
@@ -383,6 +388,11 @@
           "OJ": "TIOJ",
           "PID": "2194",
           "link": "https://tioj.ck.tp.edu.tw/problems/2194"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2021_pB",
+          "link": " "
         }
       ],
       "tag": [],
@@ -398,12 +408,75 @@
           "OJ": "TIOJ",
           "PID": "2330",
           "link": "https://tioj.ck.tp.edu.tw/problems/2330"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2023_pA",
+          "link": " "
         }
       ],
       "tag": [],
       "ans_code": "pack/TIOJ_2330.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "裁員風暴",
+      "fname": "TIOJ_2331",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2331",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2331"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2023_pB",
+          "link": " "
+        }
+      ],
+      "tag": [
+        "binaryS"
+      ],
+      "ans_code": "pack/TIOJ_2331.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
     },
     {
       "qname": "",

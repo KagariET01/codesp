@@ -1,11 +1,3 @@
-# [`TIOJ 2193`](https://tioj.ck.tp.edu.tw/problems/2193) [`TOI 2021_pA`]( ) 原始人排序
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -17,6 +9,8 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
+#define F first
+#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -46,26 +40,49 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n;
-	cin>>n;
-	vector<PII>vec;
-	vec.reserve(n);
-	for(INT(i)=0;i<n;i++)vec.push_back({read(INT),i});
-	sort(vec.begin(),vec.end(),[](PII(a),PII(b)){
-		INT(x)=0,y=0;
-		for(INT(i)=0;i<32;i++){
-			x+=(a.first>>i)&1;
-			y+=(b.first>>i)&1;
+	INT n,k;
+	cin>>n>>k;
+	INT a[n];
+	for(INT i=0;i<n;i++){
+		cin>>a[i];
+	}
+	sort(a,a+n);
+	function<INT(INT)> getRK=[&](INT nw){
+		INT w=0;//多少人的分<他
+		INT r=n-1;
+		for(INT i=0;i<n;i++){
+			while(r>=0){
+				if(a[i]+a[r]>=nw)r--;
+				else break;
+			}
+			w+=n-(r+1);
 		}
-		if(x==y)return(a.second<b.second);
-		return(x<y);
-	});
-	for(PII(i):vec)cout<<i.first<<" ";
-	cout<<endl;
+		for(INT i=n-1;i>=0;i--){
+			if(a[i]*2<nw)break;
+			else w++;
+		}
+		return w/2;
+	};
+	INT l=a[0]*2,r=a[n-1]*2+1;
+	while(l<r){
+		INT mid=(r-l)/2+l+1;
+		INT nw=getRK(mid);
+		//cout<<"l:"<<l<<" r:"<<r<<" mid:"<<mid<<" nw:"<<nw<<endl;
+		if(nw>=k){
+			l=mid;
+		}else{
+			r=mid-1;
+		}
+	}
+	if(l&1){
+		cout<<l<<endl<<"2"<<endl;
+	}else{
+		cout<<l/2<<endl<<"1"<<endl;
+	}
+
+	//cout<<l<<endl;
 	return 0;
 }
 
 
 
-
-```

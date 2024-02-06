@@ -1,4 +1,4 @@
 # TEMP
 [back](..)  
 
-[`TEMP seg_tree` 樹](/codesp/docs/線段樹)  
+[`TEMP seg_tree` 線段樹](/codesp/docs/seg_tree)  
