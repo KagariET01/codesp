@@ -391,13 +391,19 @@
       "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "房屋推薦",
+      "fname": "TIOJ_2330",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2330",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2330"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/TIOJ_2330.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "",
