@@ -1,4 +1,4 @@
-# [`TIOJ 2193`](https://tioj.ck.tp.edu.tw/problems/2193) [`TOI 2021_pA`]( ) 原始人排序
+# [`CF 1927_pC`](https://codeforces.com/contest/1927/problem/C) Choose the Different Ones!
 ## 標籤
 
 ## 題解
@@ -46,22 +46,43 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n;
-	cin>>n;
-	vector<PII>vec;
-	vec.reserve(n);
-	for(INT(i)=0;i<n;i++)vec.push_back({read(INT),i});
-	sort(vec.begin(),vec.end(),[](PII(a),PII(b)){
-		INT(x)=0,y=0;
-		for(INT(i)=0;i<32;i++){
-			x+=(a.first>>i)&1;
-			y+=(b.first>>i)&1;
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,m,k;
+		cin>>n>>m>>k;
+		bool a[k+1]={},b[k+1]={},tt[k+1]={};
+		INT as=0,bs=0;
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			if(inin>k || a[inin])continue;
+			a[inin]=1;
+			as++;
 		}
-		if(x==y)return(a.second<b.second);
-		return(x<y);
-	});
-	for(PII(i):vec)cout<<i.first<<" ";
-	cout<<endl;
+		for(INT i=0;i<m;i++){
+			INT inin=read(INT);
+			if(inin>k||b[inin])continue;
+			b[inin]=1;
+			bs++;
+		}
+		
+		bool ha=0;
+		if(as<k/2 || bs<k/2){
+			cout<<"no"<<endl;
+			continue;
+		}
+		for(INT i=1;i<=k;i++){
+			if(a[i] || b[i])continue;
+			else{
+				ha=1;
+				cout<<"no"<<endl;
+				break;
+			}
+		}
+		if(ha)continue;
+		cout<<"yes"<<endl;
+	}
+
 	return 0;
 }
 

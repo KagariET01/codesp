@@ -1,4 +1,4 @@
-# [`TIOJ 2193`](https://tioj.ck.tp.edu.tw/problems/2193) [`TOI 2021_pA`]( ) 原始人排序
+# [`CF 1927_pD`](https://codeforces.com/contest/1927/problem/D) Find the Different Ones!
 ## 標籤
 
 ## 題解
@@ -45,23 +45,42 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 
 int main(){
-	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n;
-	cin>>n;
-	vector<PII>vec;
-	vec.reserve(n);
-	for(INT(i)=0;i<n;i++)vec.push_back({read(INT),i});
-	sort(vec.begin(),vec.end(),[](PII(a),PII(b)){
-		INT(x)=0,y=0;
-		for(INT(i)=0;i<32;i++){
-			x+=(a.first>>i)&1;
-			y+=(b.first>>i)&1;
+//	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		INT a[n+1]={};
+		for(INT i=1;i<=n;i++){
+			cin>>a[i];
 		}
-		if(x==y)return(a.second<b.second);
-		return(x<y);
-	});
-	for(PII(i):vec)cout<<i.first<<" ";
-	cout<<endl;
+		INT r[n+1];
+		for(INT i=0;i<=n;i++){
+			r[i]=n+5;
+		}
+		for(INT i=n-1;i>=1;i--){
+			if(a[i]==a[i+1]){
+				r[i]=r[i+1];
+			}else{
+				r[i]=i+1;
+			}
+		}
+		cout<<endl;
+		INT q;
+		cin>>q;
+		while(q--){
+			INT l,rr;
+			cin>>l>>rr;
+			if(r[l]>rr){
+				cout<<"-1 -1"<<endl;
+			}else{
+				cout<<l<<" "<<r[l]<<endl;
+			}
+		}
+		cout<<endl;
+
+	}
 	return 0;
 }
 

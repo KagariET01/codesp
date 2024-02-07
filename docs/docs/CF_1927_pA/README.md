@@ -1,4 +1,4 @@
-# [`TIOJ 2193`](https://tioj.ck.tp.edu.tw/problems/2193) [`TOI 2021_pA`]( ) 原始人排序
+# [`CF 1927_pA`](https://codeforces.com/contest/1927/problem/A) Make it White
 ## 標籤
 
 ## 題解
@@ -46,22 +46,22 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n;
-	cin>>n;
-	vector<PII>vec;
-	vec.reserve(n);
-	for(INT(i)=0;i<n;i++)vec.push_back({read(INT),i});
-	sort(vec.begin(),vec.end(),[](PII(a),PII(b)){
-		INT(x)=0,y=0;
-		for(INT(i)=0;i<32;i++){
-			x+=(a.first>>i)&1;
-			y+=(b.first>>i)&1;
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		string str;
+		cin>>str;
+		INT l=n,r=0;
+		for(INT i=0;i<n;i++){
+			if(str[i]=='B'){
+				r=max(r,i);
+				l=min(l,i);
+			}
 		}
-		if(x==y)return(a.second<b.second);
-		return(x<y);
-	});
-	for(PII(i):vec)cout<<i.first<<" ";
-	cout<<endl;
+		cout<<max(r-l+1,(INT)0)<<endl;
+	}
 	return 0;
 }
 

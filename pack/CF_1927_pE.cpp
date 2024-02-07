@@ -1,11 +1,3 @@
-# [`TIOJ 2193`](https://tioj.ck.tp.edu.tw/problems/2193) [`TOI 2021_pA`]( ) 原始人排序
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -46,26 +38,51 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n;
-	cin>>n;
-	vector<PII>vec;
-	vec.reserve(n);
-	for(INT(i)=0;i<n;i++)vec.push_back({read(INT),i});
-	sort(vec.begin(),vec.end(),[](PII(a),PII(b)){
-		INT(x)=0,y=0;
-		for(INT(i)=0;i<32;i++){
-			x+=(a.first>>i)&1;
-			y+=(b.first>>i)&1;
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		if(n==k){
+			for(INT i=0;i<n;i++){
+				if(i)cout<<" ";
+				cout<<i+1;
+			}
+			cout<<endl;
+			continue;
 		}
-		if(x==y)return(a.second<b.second);
-		return(x<y);
-	});
-	for(PII(i):vec)cout<<i.first<<" ";
-	cout<<endl;
+		INT ans[n];
+		INT r=n;
+		INT st=0;
+		for(st=0;st<k;st+=2){
+			ans[st]=r;
+			r--;
+			for(INT j=st+k;j<n;j+=k){
+				ans[j]=r;
+				r--;
+			}
+		}
+
+		INT l=1;
+		st=1;
+		for(st=1;st<k;st+=2){
+			ans[st]=l;
+			l++;
+			for(INT j=st+k;j<n;j+=k){
+				ans[j]=l;
+				l++;
+			}
+		}
+
+
+		for(INT i=0;i<n;i++){
+			if(i)cout<<" ";
+			cout<<ans[i];
+		}
+		cout<<endl;
+	}
 	return 0;
 }
 
 
 
-
-```
