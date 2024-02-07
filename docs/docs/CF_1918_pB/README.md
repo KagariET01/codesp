@@ -1,6 +1,6 @@
 # [`CF 1918_pB`](https://codeforces.com/contest/1918/problem/B) Minimize Inversions
 ## 標籤
-`string` 
+
 ## 題解
 NOT FOUND  
 

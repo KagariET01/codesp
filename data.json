@@ -442,37 +442,125 @@
       "ans_TXT": "",
       "AC": true
     },
-    {"qname": "Make it White","fname": "CF_1927_pA","qlink": [{"OJ": "CF","PID": "1927_pA","link": "https://codeforces.com/contest/1927/problem/A"}],"tag": [],"ans_code": "pack/CF_1927_pA.cpp","ans_TXT": "","AC": true},
-    {"qname": "Following the String","fname": "CF_1927_pB","qlink": [{"OJ": "CF","PID": "1927_pB","link": "https://codeforces.com/contest/1927/problem/B"}],"tag": [],"ans_code": "pack/CF_1927_pB.cpp","ans_TXT": "","AC": true},
-    {"qname": "Choose the Different Ones!","fname": "CF_1927_pC","qlink": [{"OJ": "CF","PID": "1927_pC","link": "https://codeforces.com/contest/1927/problem/C"}],"tag": [],"ans_code": "pack/CF_1927_pC.cpp","ans_TXT": "","AC": true},
-    {"qname": "Find the Different Ones!","fname": "CF_1927_pD","qlink": [{"OJ": "CF","PID": "1927_pD","link": "https://codeforces.com/contest/1927/problem/D"}],"tag": [],"ans_code": "pack/CF_1927_pD.cpp","ans_TXT": "","AC": true},
-    {"qname": "Klever Permutation","fname": "CF_1927_pE","qlink": [{"OJ": "CF","PID": "1927_pE","link": "https://codeforces.com/contest/1927/problem/E"}],"tag": [],"ans_code": "pack/CF_1927_pE.cpp","ans_TXT": "","AC": true},
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "Make it White",
+      "fname": "CF_1927_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1927_pA",
+          "link": "https://codeforces.com/contest/1927/problem/A"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/CF_1927_pA.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "Following the String",
+      "fname": "CF_1927_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1927_pB",
+          "link": "https://codeforces.com/contest/1927/problem/B"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/CF_1927_pB.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "Choose the Different Ones!",
+      "fname": "CF_1927_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1927_pC",
+          "link": "https://codeforces.com/contest/1927/problem/C"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/CF_1927_pC.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
+    },
+    {
+      "qname": "Find the Different Ones!",
+      "fname": "CF_1927_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1927_pD",
+          "link": "https://codeforces.com/contest/1927/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1927_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Klever Permutation",
+      "fname": "CF_1927_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1927_pE",
+          "link": "https://codeforces.com/contest/1927/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1927_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Brick Wall",
+      "fname": "CF_1918_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1918_pA",
+          "link": "https://codeforces.com/contest/1918/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1918_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Minimize Inversions",
+      "fname": "CF_1918_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1918_pB",
+          "link": "https://codeforces.com/contest/1918/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1918_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "XOR-distance",
+      "fname": "CF_1918_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1918_pC",
+          "link": "https://codeforces.com/contest/1918/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1918_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
     },
     {
       "qname": "",

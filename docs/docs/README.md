@@ -26,3 +26,6 @@
 [`CF 1927_pC` Choose the Different Ones!](/codesp/docs/CF_1927_pC)  
 [`CF 1927_pD` Find the Different Ones!](/codesp/docs/CF_1927_pD)  
 [`CF 1927_pE` Klever Permutation](/codesp/docs/CF_1927_pE)  
+[`CF 1918_pA` Brick Wall](/codesp/docs/CF_1918_pA)  
+[`CF 1918_pB` Minimize Inversions](/codesp/docs/CF_1918_pB)  
+[`CF 1918_pC` XOR-distance](/codesp/docs/CF_1918_pC)  

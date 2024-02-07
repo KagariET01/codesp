@@ -1,4 +1,4 @@
-# [`TIOJ 2330`](https://tioj.ck.tp.edu.tw/problems/2330) [`TOI 2023_pA`]( ) 房屋推薦
+# [`CF 1918_pA`](https://codeforces.com/contest/1918/problem/A) Brick Wall
 ## 標籤
 
 ## 題解
@@ -17,8 +17,6 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
-#define F first
-#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -39,9 +37,6 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 
 
-INT ct(PII a,PII b){
-	return (a.F-b.F)*(a.F-b.F)+(a.S-b.S)*(a.S-b.S);
-}
 
 
 
@@ -51,28 +46,13 @@ INT ct(PII a,PII b){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n,m;
-	cin>>n>>m;
-	pair<PII,INT> ho[n];
-	for(INT i=0;i<n;i++){
-		cin>>ho[i];
-	}
-	PII mrt[m];
-	for(INT i=0;i<m;i++){
-		cin>>mrt[i];
-	}
-	pair<PII,INT> lst[n];
-	for(INT i=0;i<n;i++){
-		pair<PII,INT> nw;
-		nw={ {ct(ho[i].first,mrt[0]),ho[i].second} ,i};
-		for(INT j=1;j<m;j++){
-			nw.first.first=min(nw.first.first,ct(ho[i].first,mrt[j]));
-		}
-		lst[i]=nw;
-	}
-	sort(lst,lst+n);
-	for(pair<PII,INT> i:lst){
-		cout<<i.second+1<<endl;
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,m;
+		cin>>n>>m;
+		m/=2;
+		cout<<n*m<<endl;
 	}
 	return 0;
 }
