@@ -64,7 +64,7 @@ int main(){
 	pair<PII,INT> lst[n];
 	for(INT i=0;i<n;i++){
 		pair<PII,INT> nw;
-		nw={{ct(ho[i].first,mrt[0]),ho[i].second},i};
+		nw={ {ct(ho[i].first,mrt[0]),ho[i].second} ,i};
 		for(INT j=1;j<m;j++){
 			nw.first.first=min(nw.first.first,ct(ho[i].first,mrt[j]));
 		}

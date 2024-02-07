@@ -1,3 +1,11 @@
+# [`CF 1927_pE`](https://codeforces.com/contest/1927/problem/E) Klever Permutation
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -9,8 +17,6 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
-#define F first
-#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -31,9 +37,6 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 
 
-INT ct(PII a,PII b){
-	return (a.F-b.F)*(a.F-b.F)+(a.S-b.S)*(a.S-b.S);
-}
 
 
 
@@ -43,31 +46,53 @@ INT ct(PII a,PII b){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n,m;
-	cin>>n>>m;
-	pair<PII,INT> ho[n];
-	for(INT i=0;i<n;i++){
-		cin>>ho[i];
-	}
-	PII mrt[m];
-	for(INT i=0;i<m;i++){
-		cin>>mrt[i];
-	}
-	pair<PII,INT> lst[n];
-	for(INT i=0;i<n;i++){
-		pair<PII,INT> nw;
-		nw={ {ct(ho[i].first,mrt[0]),ho[i].second} ,i};
-		for(INT j=1;j<m;j++){
-			nw.first.first=min(nw.first.first,ct(ho[i].first,mrt[j]));
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		if(n==k){
+			for(INT i=0;i<n;i++){
+				if(i)cout<<" ";
+				cout<<i+1;
+			}
+			cout<<endl;
+			continue;
 		}
-		lst[i]=nw;
-	}
-	sort(lst,lst+n);
-	for(pair<PII,INT> i:lst){
-		cout<<i.second+1<<endl;
+		INT ans[n];
+		INT r=n;
+		INT st=0;
+		for(st=0;st<k;st+=2){
+			ans[st]=r;
+			r--;
+			for(INT j=st+k;j<n;j+=k){
+				ans[j]=r;
+				r--;
+			}
+		}
+
+		INT l=1;
+		st=1;
+		for(st=1;st<k;st+=2){
+			ans[st]=l;
+			l++;
+			for(INT j=st+k;j<n;j+=k){
+				ans[j]=l;
+				l++;
+			}
+		}
+
+
+		for(INT i=0;i<n;i++){
+			if(i)cout<<" ";
+			cout<<ans[i];
+		}
+		cout<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```

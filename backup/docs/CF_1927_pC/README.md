@@ -1,3 +1,11 @@
+# [`CF 1927_pC`](https://codeforces.com/contest/1927/problem/C) Choose the Different Ones!
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -9,8 +17,6 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
-#define F first
-#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -31,9 +37,6 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 
 
-INT ct(PII a,PII b){
-	return (a.F-b.F)*(a.F-b.F)+(a.S-b.S)*(a.S-b.S);
-}
 
 
 
@@ -43,31 +46,47 @@ INT ct(PII a,PII b){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n,m;
-	cin>>n>>m;
-	pair<PII,INT> ho[n];
-	for(INT i=0;i<n;i++){
-		cin>>ho[i];
-	}
-	PII mrt[m];
-	for(INT i=0;i<m;i++){
-		cin>>mrt[i];
-	}
-	pair<PII,INT> lst[n];
-	for(INT i=0;i<n;i++){
-		pair<PII,INT> nw;
-		nw={ {ct(ho[i].first,mrt[0]),ho[i].second} ,i};
-		for(INT j=1;j<m;j++){
-			nw.first.first=min(nw.first.first,ct(ho[i].first,mrt[j]));
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,m,k;
+		cin>>n>>m>>k;
+		bool a[k+1]={},b[k+1]={},tt[k+1]={};
+		INT as=0,bs=0;
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			if(inin>k || a[inin])continue;
+			a[inin]=1;
+			as++;
 		}
-		lst[i]=nw;
+		for(INT i=0;i<m;i++){
+			INT inin=read(INT);
+			if(inin>k||b[inin])continue;
+			b[inin]=1;
+			bs++;
+		}
+		
+		bool ha=0;
+		if(as<k/2 || bs<k/2){
+			cout<<"no"<<endl;
+			continue;
+		}
+		for(INT i=1;i<=k;i++){
+			if(a[i] || b[i])continue;
+			else{
+				ha=1;
+				cout<<"no"<<endl;
+				break;
+			}
+		}
+		if(ha)continue;
+		cout<<"yes"<<endl;
 	}
-	sort(lst,lst+n);
-	for(pair<PII,INT> i:lst){
-		cout<<i.second+1<<endl;
-	}
+
 	return 0;
 }
 
 
 
+
+```
