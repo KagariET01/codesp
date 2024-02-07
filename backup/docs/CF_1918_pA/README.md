@@ -1,4 +1,4 @@
-# [`CF 1918_pB`](https://codeforces.com/contest/1918/problem/B) Minimize Inversions
+# [`CF 1918_pA`](https://codeforces.com/contest/1918/problem/A) Brick Wall
 ## 標籤
 
 ## 題解
@@ -46,31 +46,13 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	function<void()>solve=[](){
-		INT n;
-		cin>>n;
-		vector<PII> vec;
-		vec.resize(n);
-		for(PII &i:vec){
-			cin>>i.first;
-		}for(PII &i:vec){
-			cin>>i.second;
-		}
-		sort(vec.begin(),vec.end());
-		for(PII &i:vec){
-			cout<<i.first<<" ";
-		}
-		cout<<endl;
-		for(PII &i:vec){
-			cout<<i.second<<" ";
-		}
-		cout<<endl;
-	};
-
-
-	INT t=read(INT);
+	INT t;
+	cin>>t;
 	while(t--){
-		solve();
+		INT n,m;
+		cin>>n>>m;
+		m/=2;
+		cout<<n*m<<endl;
 	}
 	return 0;
 }

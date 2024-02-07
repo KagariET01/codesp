@@ -17,7 +17,6 @@
 [`TIOJ 2193` `TOI 2021_pA` 原始人排序](/codesp/docs/TIOJ_2193)  
 [`CF 1916 pC` Training Before the Olympiad](/codesp/docs/CF_1916_pC)  
 [`CF 1920 pB` Summation Game](/codesp/docs/CF_1920_pB)  
-[`CF 1918_pB` Minimize Inversions](/codesp/docs/CF_1918_pB)  
 [`TIOJ 2194` `TOI 2021_pB` 掃地機器人](/codesp/docs/TIOJ_2194)  
 [`TIOJ 2330` `TOI 2023_pA` 房屋推薦](/codesp/docs/TIOJ_2330)  
 [`TIOJ 2331` `TOI 2023_pB` 裁員風暴](/codesp/docs/TIOJ_2331)  
