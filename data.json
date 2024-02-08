@@ -125,9 +125,9 @@
         }
       ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/ZJ_f314.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "低地距離",
@@ -546,13 +546,22 @@
       "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
+      "qname": "Microcycle",
+      "fname": "CF_1927_pF",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1927_pF",
+          "link": "https://codeforces.com/contest/1927/problem/F"
+        }
+      ],
+      "tag": [
+        "grapth",
+        "bfs"
+      ],
+      "ans_code": "pack/CF_1927_pF.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "",

@@ -12,3 +12,4 @@
 [`CF 1927_pC` Choose the Different Ones!](/codesp/docs/CF_1927_pC)  
 [`CF 1927_pD` Find the Different Ones!](/codesp/docs/CF_1927_pD)  
 [`CF 1927_pE` Klever Permutation](/codesp/docs/CF_1927_pE)  
+[`CF 1927_pF` Microcycle](/codesp/docs/CF_1927_pF)  

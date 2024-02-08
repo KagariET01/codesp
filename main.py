@@ -7,7 +7,7 @@ import copy
 dta=json.load(open("data.json","r"))
 basic_data={"qname":"","fname":"","qlink":[],"tag":[],"ans_code":"","ans_TXT":"","AC":False}
 
-show_per_page=30
+show_per_page=50
 
 def IN(txt):
 	while(1):

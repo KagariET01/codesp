@@ -5,6 +5,7 @@
 [`ZJ g598` `APCS 2021 11 pD` 真假子圖](/codesp/docs/ZJ_g598)  
 [`ZJ g278` `APCS 2021 09 pD` 美食博覽會](/codesp/docs/ZJ_g278)  
 [`ZJ f608` `APCS 2021 01 pD` 飛黃騰達](/codesp/docs/ZJ_f608)  
+[`ZJ ZJ f314` `APCS 2020 10 pC` 勇者修煉](/codesp/docs/ZJ_f314)  
 [`ZJ f315` `APCS 2020 10 pD` 低地距離](/codesp/docs/ZJ_f315)  
 [`CSES 1753` String Matching](/codesp/docs/CSES_1753)  
 [`TIOJ 1998` 網路遮罩](/codesp/docs/TIOJ_1998)  
@@ -28,3 +29,4 @@
 [`CF 1918_pA` Brick Wall](/codesp/docs/CF_1918_pA)  
 [`CF 1918_pB` Minimize Inversions](/codesp/docs/CF_1918_pB)  
 [`CF 1918_pC` XOR-distance](/codesp/docs/CF_1918_pC)  
+[`CF 1927_pF` Microcycle](/codesp/docs/CF_1927_pF)  

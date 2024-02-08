@@ -1,3 +1,11 @@
+# [`CF 1927_pF`](https://codeforces.com/contest/1927/problem/F) Microcycle
+## 標籤
+`grapth` `bfs` 
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -120,3 +128,5 @@ int main(){
 
 
 
+
+```
