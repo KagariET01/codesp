@@ -255,7 +255,7 @@
       "qlink": [
         {
           "OJ": "TEMP",
-          "PID": "seg_tree",
+          "PID": "seg tree",
           "link": " "
         }
       ],
@@ -324,7 +324,7 @@
         },
         {
           "OJ": "TOI",
-          "PID": "2021_pA",
+          "PID": "2021 pA",
           "link": " "
         }
       ],
@@ -374,7 +374,7 @@
         },
         {
           "OJ": "TOI",
-          "PID": "2021_pB",
+          "PID": "2021 pB",
           "link": " "
         }
       ],
@@ -394,7 +394,7 @@
         },
         {
           "OJ": "TOI",
-          "PID": "2023_pA",
+          "PID": "2023 pA",
           "link": " "
         }
       ],
@@ -414,7 +414,7 @@
         },
         {
           "OJ": "TOI",
-          "PID": "2023_pB",
+          "PID": "2023 pB",
           "link": " "
         }
       ],
@@ -431,7 +431,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1927_pA",
+          "PID": "1927 pA",
           "link": "https://codeforces.com/contest/1927/problem/A"
         }
       ],
@@ -446,7 +446,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1927_pB",
+          "PID": "1927 pB",
           "link": "https://codeforces.com/contest/1927/problem/B"
         }
       ],
@@ -461,7 +461,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1927_pC",
+          "PID": "1927 pC",
           "link": "https://codeforces.com/contest/1927/problem/C"
         }
       ],
@@ -476,7 +476,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1927_pD",
+          "PID": "1927 pD",
           "link": "https://codeforces.com/contest/1927/problem/D"
         }
       ],
@@ -491,7 +491,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1927_pE",
+          "PID": "1927 pE",
           "link": "https://codeforces.com/contest/1927/problem/E"
         }
       ],
@@ -506,7 +506,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1918_pA",
+          "PID": "1918 pA",
           "link": "https://codeforces.com/contest/1918/problem/A"
         }
       ],
@@ -521,7 +521,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1918_pB",
+          "PID": "1918 pB",
           "link": "https://codeforces.com/contest/1918/problem/B"
         }
       ],
@@ -536,7 +536,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1918_pC",
+          "PID": "1918 pC",
           "link": "https://codeforces.com/contest/1918/problem/C"
         }
       ],
@@ -551,7 +551,7 @@
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1927_pF",
+          "PID": "1927 pF",
           "link": "https://codeforces.com/contest/1927/problem/F"
         }
       ],
@@ -574,7 +574,7 @@
         },
         {
           "OJ": "TOI",
-          "PID": "2020_pB",
+          "PID": "2020 pB",
           "link": " "
         }
       ],

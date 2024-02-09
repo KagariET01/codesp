@@ -1,4 +1,4 @@
-# [`CF 1918_pA`](https://codeforces.com/contest/1918/problem/A) Brick Wall
+# [`CF 1918 pA`](https://codeforces.com/contest/1918/problem/A) Brick Wall
 ## 標籤
 
 ## 題解

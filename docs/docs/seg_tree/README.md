@@ -1,4 +1,4 @@
-# [`TEMP seg_tree`]( ) 線段樹
+# [`TEMP seg tree`]( ) 線段樹
 ## 標籤
 `TEMP` 
 ## 題解

@@ -30,3 +30,4 @@
 [`CF 1918_pB` Minimize Inversions](/codesp/docs/CF_1918_pB)  
 [`CF 1918_pC` XOR-distance](/codesp/docs/CF_1918_pC)  
 [`CF 1927_pF` Microcycle](/codesp/docs/CF_1927_pF)  
+[`TIOJ 2189` `TOI 2020_pB` 建設人工島](/codesp/docs/TIOJ_2189)  

@@ -1,4 +1,4 @@
-# [`CF 1927_pC`](https://codeforces.com/contest/1927/problem/C) Choose the Different Ones!
+# [`CF 1927 pC`](https://codeforces.com/contest/1927/problem/C) Choose the Different Ones!
 ## 標籤
 
 ## 題解

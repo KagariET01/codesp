@@ -1,4 +1,4 @@
-# [`CF 1927_pE`](https://codeforces.com/contest/1927/problem/E) Klever Permutation
+# [`CF 1927 pE`](https://codeforces.com/contest/1927/problem/E) Klever Permutation
 ## 標籤
 
 ## 題解

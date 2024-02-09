@@ -19,10 +19,15 @@ def fix():#  將沒解出來的題目刪除
 	poplist.reverse()
 	for i in poplist:
 		dta["data"].pop(i)
-def getN(dta):
+def getN(dta,OJ=[]):#  製造題目列表（單一題目）
 	re=""
-	for i in dta["qlink"]:
-		re+="`"+i["OJ"]+" "+i["PID"]+"` "
+	if(len(OJ)==0):
+		for i in dta["qlink"]:
+			re+="`"+i["OJ"]+" "+i["PID"]+"` "
+	else:
+		for i in dta["qlink"]:
+			if(i["OJ"] in OJ):
+				re+="`"+i["OJ"]+" "+i["PID"]+"` "
 	re+=dta["qname"]
 	re="["+re+"]("+web_root+"docs/"+dta["fname"]+")"
 	return re
@@ -50,7 +55,7 @@ for id in range(len(dta["data"])):#  建立題目資料夾、每個題目的READ
 	file.write("# ")
 	for j in i["qlink"]:
 		file.write("[`"+j["OJ"]+" "+j["PID"]+"`]("+j["link"]+") ")
-		book[j["OJ"]].append([j["PID"],FN])
+		book[j["OJ"]].append([j["PID"],getN(i,[j["OJ"]])])
 	file.write(i["qname"]+"\n")
 	file.write("## 標籤\n")
 	for j in i["tag"]:
