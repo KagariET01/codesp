@@ -11,6 +11,7 @@ using namespace std;
 #define endl '\n'
 #define F first
 #define S second
+
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -30,9 +31,34 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 }
 
 
+INT n;
+const INT mxn=1e5+5;
+array<vector<PII>,mxn> tree;
+INT supermin=-1e9-7;
 
+void upd(INT&a,INT&b,INT c){
+	if(c>a){
+		b=a,a=c;
+	}else if(a>c&&c>b){
+		b=c;
+	}
+}
 
-
+array<INT,4> dfs(INT nw,INT lst){
+	array<INT,4>ans={0,supermin,0,supermin};//{第一長路徑,第二長路徑,子樹的第一長路徑,子樹的第二長路徑}
+	for(PII i:tree[nw]){
+		if(i.F==lst)continue;
+		array<INT,4> d=dfs(i.F,nw);
+		upd(ans[0],ans[1],d[0]);
+		upd(ans[0],ans[1],d[1]);
+		upd(ans[0],ans[1],ans[2]+d[2]+i.S);
+		upd(ans[0],ans[1],ans[2]+d[3]+i.S);
+		upd(ans[0],ans[1],ans[3]+d[2]+i.S);
+		upd(ans[2],ans[3],d[2]+i.S);
+		upd(ans[2],ans[3],d[3]+i.S);
+	}
+	return ans;
+}
 
 
 
@@ -40,6 +66,14 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	cin>>n;
+	for(INT i=1;i<n;i++){
+		INT a,b,c;
+		cin>>a>>b>>c;
+		tree[a].push_back({b,c});
+		tree[b].push_back({a,c});
+	}
+	cout<<dfs(0,-1)[1]<<endl;
 	return 0;
 }
 
