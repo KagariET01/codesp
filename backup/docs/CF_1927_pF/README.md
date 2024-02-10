@@ -1,4 +1,4 @@
-# [`CF 1927_pF`](https://codeforces.com/contest/1927/problem/F) Microcycle
+# [`CF 1927 pF`](https://codeforces.com/contest/1927/problem/F) Microcycle
 ## 標籤
 `grapth` `bfs` 
 ## 題解

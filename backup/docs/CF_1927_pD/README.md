@@ -1,4 +1,4 @@
-# [`CF 1927_pD`](https://codeforces.com/contest/1927/problem/D) Find the Different Ones!
+# [`CF 1927 pD`](https://codeforces.com/contest/1927/problem/D) Find the Different Ones!
 ## 標籤
 
 ## 題解

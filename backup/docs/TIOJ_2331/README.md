@@ -1,4 +1,4 @@
-# [`TIOJ 2331`](https://tioj.ck.tp.edu.tw/problems/2331) [`TOI 2023_pB`]( ) 裁員風暴
+# [`TIOJ 2331`](https://tioj.ck.tp.edu.tw/problems/2331) [`TOI 2023 pB`]( ) 裁員風暴
 ## 標籤
 `binaryS` 
 ## 題解

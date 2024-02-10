@@ -1,4 +1,4 @@
-# [`TIOJ 2189`](https://tioj.ck.tp.edu.tw/problems/2189) [`TOI 2020_pB`]( ) 建設人工島
+# [`TIOJ 2189`](https://tioj.ck.tp.edu.tw/problems/2189) [`TOI 2020 pB`]( ) 建設人工島
 ## 標籤
 
 ## 題解

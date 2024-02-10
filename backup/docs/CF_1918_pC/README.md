@@ -1,4 +1,4 @@
-# [`CF 1918_pC`](https://codeforces.com/contest/1918/problem/C) XOR-distance
+# [`CF 1918 pC`](https://codeforces.com/contest/1918/problem/C) XOR-distance
 ## 標籤
 
 ## 題解

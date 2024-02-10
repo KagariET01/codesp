@@ -1,4 +1,4 @@
-# [`CF 1927_pA`](https://codeforces.com/contest/1927/problem/A) Make it White
+# [`CF 1927 pA`](https://codeforces.com/contest/1927/problem/A) Make it White
 ## 標籤
 
 ## 題解

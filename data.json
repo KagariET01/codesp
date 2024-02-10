@@ -584,6 +584,59 @@
       "AC": true
     },
     {
+      "qname": "字串解壓縮",
+      "fname": "TIOJ_2188",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2188",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2188"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2020 pA",
+          "link": " "
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2188.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "To Become Max",
+      "fname": "CF_1856_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1856 pC",
+          "link": "https://codeforces.com/contest/1856/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1856_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "",
       "fname": "",
       "qlink": [],

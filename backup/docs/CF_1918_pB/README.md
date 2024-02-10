@@ -1,4 +1,4 @@
-# [`CF 1918_pB`](https://codeforces.com/contest/1918/problem/B) Minimize Inversions
+# [`CF 1918 pB`](https://codeforces.com/contest/1918/problem/B) Minimize Inversions
 ## 標籤
 
 ## 題解

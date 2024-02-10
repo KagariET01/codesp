@@ -1,11 +1,3 @@
-# [`CF 1918 pA`](https://codeforces.com/contest/1918/problem/A) Brick Wall
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -17,6 +9,8 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
+#define F first
+#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -49,15 +43,32 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,m;
-		cin>>n>>m;
-		m/=2;
-		cout<<n*m<<endl;
+		INT a,b,xk,yk,xq,yq;
+		cin>>a>>b>>xk>>yk>>xq>>yq;
+		set<PII> se;
+		se.insert({a,b});
+		se.insert({a,-b});
+		se.insert({-a,b});
+		se.insert({-a,-b});
+		se.insert({b,a});
+		se.insert({b,-a});
+		se.insert({-b,a});
+		se.insert({-b,-a});
+		vector<PII> vec;
+		for(PII i:se){
+			for(PII j:se){
+				vec.push_back({i.F-j.F,i.S-j.S});
+			}
+		}
+		PII f={xk-xq,yk-yq};
+		INT ans=0;
+		for(PII i:vec){
+			if(i==f)ans++;
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }
 
 
 
-
-```

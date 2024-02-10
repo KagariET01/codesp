@@ -1,4 +1,4 @@
-# [`TIOJ 2193`](https://tioj.ck.tp.edu.tw/problems/2193) [`TOI 2021_pA`]( ) 原始人排序
+# [`TIOJ 2193`](https://tioj.ck.tp.edu.tw/problems/2193) [`TOI 2021 pA`]( ) 原始人排序
 ## 標籤
 
 ## 題解

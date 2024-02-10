@@ -1,4 +1,4 @@
-# [`TIOJ 2330`](https://tioj.ck.tp.edu.tw/problems/2330) [`TOI 2023_pA`]( ) 房屋推薦
+# [`TIOJ 2330`](https://tioj.ck.tp.edu.tw/problems/2330) [`TOI 2023 pA`]( ) 房屋推薦
 ## 標籤
 
 ## 題解

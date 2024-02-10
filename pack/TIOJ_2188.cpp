@@ -1,11 +1,3 @@
-# [`CF 1918 pA`](https://codeforces.com/contest/1918/problem/A) Brick Wall
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -17,6 +9,8 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
+#define F first
+#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -46,18 +40,32 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n,m;
-		cin>>n>>m;
-		m/=2;
-		cout<<n*m<<endl;
+	string str;
+	cin>>str;
+	stringstream ss;
+	bool num=0;
+	for(char c:str){
+		if('0'<=c && c<='9'){
+			ss<<c;
+			num=1;
+			continue;
+		}else{
+			if(num){
+				INT n;
+				ss>>n;
+				for(INT j=0;j<n;j++){
+					cout<<c;
+				}
+				num=0;
+				ss.clear();
+			}else{
+				cout<<c;
+			}
+		}
 	}
+	cout<<endl;
 	return 0;
 }
 
 
 
-
-```

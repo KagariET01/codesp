@@ -1,11 +1,3 @@
-# [`CF 1918 pA`](https://codeforces.com/contest/1918/problem/A) Brick Wall
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -17,6 +9,8 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
+#define F first
+#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -28,11 +22,14 @@ template<typename T1,typename T2>istream&operator>>(istream&in,pair<T1,T2>&p){
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
-	ou<<"{";
+	ou<<"";
+	bool f=0;
 	for(T(i):vec){
-		ou<<i<<",";
+		if(f)cout<<" ";
+		ou<<i<<"";
+		f=1;
 	}
-	return(ou<<"\b}");
+	return(ou<<"");
 }
 
 
@@ -49,15 +46,29 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,m;
-		cin>>n>>m;
-		m/=2;
-		cout<<n*m<<endl;
+		INT n;
+		cin>>n;
+		PII lst[n];
+		for(INT i=0;i<n;i++){
+			cin>>lst[i].first;
+			lst[i].second=i;
+		}
+		sort(lst,lst+n);
+		INT allp=0;
+		vector<INT>ans(n);
+		INT r=0;
+		for(INT i=0;i<n;i++){
+			if(i>=r){allp+=lst[i].first;r=i+1;}
+			while(r<n&&allp>=lst[r].first){
+				allp+=lst[r].first;
+				r++;
+			}
+			ans[lst[i].second]=r-1;
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }
 
 
 
-
-```

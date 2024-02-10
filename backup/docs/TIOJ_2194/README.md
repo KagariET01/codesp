@@ -1,4 +1,4 @@
-# [`TIOJ 2194`](https://tioj.ck.tp.edu.tw/problems/2194) [`TOI 2021_pB`]( ) 掃地機器人
+# [`TIOJ 2194`](https://tioj.ck.tp.edu.tw/problems/2194) [`TOI 2021 pB`]( ) 掃地機器人
 ## 標籤
 
 ## 題解

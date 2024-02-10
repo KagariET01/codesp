@@ -1,4 +1,4 @@
-# [`CF 1918 pA`](https://codeforces.com/contest/1918/problem/A) Brick Wall
+# [`CF 1856 pC`](https://codeforces.com/contest/1856/problem/C) To Become Max
 ## 標籤
 
 ## 題解
@@ -17,6 +17,8 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
+#define F first
+#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -49,10 +51,40 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,m;
-		cin>>n>>m;
-		m/=2;
-		cout<<n*m<<endl;
+		INT n,k;
+		cin>>n>>k;
+		INT ans=0;
+		vector<INT> lst(n);
+		for(INT &i:lst){
+			cin>>i;
+			ans=max(ans,i);
+		}
+		INT l=0,r=1e12;
+		auto checker=[&](INT need){
+			for(INT i=0;i<n;i++){
+				INT nwk=k;
+				INT nwneed=need;
+				for(INT j=i;j<n;j++){
+					if(lst[j]>=nwneed)return true;
+					else{
+						nwk-=nwneed-lst[j];
+						nwneed--;
+					}
+					if(nwk<0)break;
+				}
+			}
+			return false;
+		};
+		while(l<r){
+			INT mid=(r-l)/2+l+1;
+			if(checker(mid)){
+				l=mid;
+			}else{
+				r=mid-1;
+			}
+		}
+		cout<<l<<endl;
+
 	}
 	return 0;
 }

@@ -1,4 +1,4 @@
-# [`CF 1927_pB`](https://codeforces.com/contest/1927/problem/B) Following the String
+# [`CF 1927 pB`](https://codeforces.com/contest/1927/problem/B) Following the String
 ## 標籤
 
 ## 題解
