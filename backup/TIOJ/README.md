@@ -2,6 +2,7 @@
 [back](..)  
 
 [`TIOJ 1998` 網路遮罩](/codesp/docs/TIOJ_1998)  
+[`TIOJ 2188` 字串解壓縮](/codesp/docs/TIOJ_2188)  
 [`TIOJ 2189` 建設人工島](/codesp/docs/TIOJ_2189)  
 [`TIOJ 2193` 原始人排序](/codesp/docs/TIOJ_2193)  
 [`TIOJ 2194` 掃地機器人](/codesp/docs/TIOJ_2194)  

@@ -619,13 +619,19 @@
       "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "Good Arrays",
+      "fname": "CF_1856_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1856 pB",
+          "link": "https://codeforces.com/contest/1856/problem/B"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/CF_1856_pB.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "",

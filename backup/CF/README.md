@@ -1,6 +1,7 @@
 # CF
 [back](..)  
 
+[`CF 1856 pC` To Become Max](/codesp/docs/CF_1856_pC)  
 [`CF 1916 pC` Training Before the Olympiad](/codesp/docs/CF_1916_pC)  
 [`CF 1916 pD` Mathematical Problem](/codesp/docs/CF_1916_pD)  
 [`CF 1918 pA` Brick Wall](/codesp/docs/CF_1918_pA)  

@@ -31,3 +31,5 @@
 [`CF 1918 pC` XOR-distance](/codesp/docs/CF_1918_pC)  
 [`CF 1927 pF` Microcycle](/codesp/docs/CF_1927_pF)  
 [`TIOJ 2189` `TOI 2020 pB` 建設人工島](/codesp/docs/TIOJ_2189)  
+[`TIOJ 2188` `TOI 2020 pA` 字串解壓縮](/codesp/docs/TIOJ_2188)  
+[`CF 1856 pC` To Become Max](/codesp/docs/CF_1856_pC)  
