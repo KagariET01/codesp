@@ -2,6 +2,11 @@
 [back](..)  
 
 [`TIOJ 1998` 網路遮罩](/codesp/docs/TIOJ_1998)  
+[`TIOJ 2051` 化學元素分析](/codesp/docs/TIOJ_2051)  
+[`TIOJ 2052` 排列第幾個](/codesp/docs/TIOJ_2052)  
+[`TIOJ 2053` 費氏數列](/codesp/docs/TIOJ_2053)  
+[`TIOJ 2054` 最大矩形涵蓋](/codesp/docs/TIOJ_2054)  
+[`TIOJ 2055` 直升機](/codesp/docs/TIOJ_2055)  
 [`TIOJ 2188` 字串解壓縮](/codesp/docs/TIOJ_2188)  
 [`TIOJ 2189` 建設人工島](/codesp/docs/TIOJ_2189)  
 [`TIOJ 2193` 原始人排序](/codesp/docs/TIOJ_2193)  

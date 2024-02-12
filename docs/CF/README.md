@@ -15,3 +15,5 @@
 [`CF 1927 pD` Find the Different Ones!](/codesp/docs/CF_1927_pD)  
 [`CF 1927 pE` Klever Permutation](/codesp/docs/CF_1927_pE)  
 [`CF 1927 pF` Microcycle](/codesp/docs/CF_1927_pF)  
+[`CF 1928 pA` Rectangle Cutting](/codesp/docs/CF_1928_pA)  
+[`CF 1928 pB` Equalize](/codesp/docs/CF_1928_pB)  

@@ -634,6 +634,151 @@
       "AC": true
     },
     {
+      "qname": "Rectangle Cutting",
+      "fname": "CF_1928_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1928 pA",
+          "link": "https://codeforces.com/contest/1928/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1928_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Equalize",
+      "fname": "CF_1928_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1928 pB",
+          "link": "https://codeforces.com/contest/1928/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1928_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Physical Education Lesson",
+      "fname": "CF_1928_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1928 pC",
+          "link": "https://codeforces.com/contest/1928/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1928_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "化學元素分析",
+      "fname": "TIOJ_2051",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2051",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2051"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2018 pA",
+          "link": ""
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2051.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "排列第幾個",
+      "fname": "TIOJ_2052",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2052",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2052"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2018 pB",
+          "link": ""
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2052.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "費氏數列",
+      "fname": "TIOJ_2053",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2053",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2053"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2018 pC",
+          "link": ""
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2053.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "最大矩形涵蓋",
+      "fname": "TIOJ_2054",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2054",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2054"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2018 pD",
+          "link": ""
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2054.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "直升機",
+      "fname": "TIOJ_2055",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2055",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2055"
+        },
+        {
+          "OJ": "TOI",
+          "PID": "2018 pE",
+          "link": ""
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2055.cpp",
+      "ans_TXT": "pack/TIOJ_2055.md",
+      "AC": true
+    },
+    {
       "qname": "",
       "fname": "",
       "qlink": [],
