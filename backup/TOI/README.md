@@ -1,6 +1,11 @@
 # TOI
 [back](..)  
 
+[`TOI 2018 pA` 化學元素分析](/codesp/docs/TIOJ_2051)  
+[`TOI 2018 pB` 排列第幾個](/codesp/docs/TIOJ_2052)  
+[`TOI 2018 pC` 費氏數列](/codesp/docs/TIOJ_2053)  
+[`TOI 2018 pD` 最大矩形涵蓋](/codesp/docs/TIOJ_2054)  
+[`TOI 2018 pE` 直升機](/codesp/docs/TIOJ_2055)  
 [`TOI 2020 pA` 字串解壓縮](/codesp/docs/TIOJ_2188)  
 [`TOI 2020 pB` 建設人工島](/codesp/docs/TIOJ_2189)  
 [`TOI 2021 pA` 原始人排序](/codesp/docs/TIOJ_2193)  

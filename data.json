@@ -779,13 +779,97 @@
       "AC": true
     },
     {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
+      "qname": "Recovering a Small String",
+      "fname": "CF_1931_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1931 pA",
+          "link": "https://codeforces.com/contest/1931/problem/A"
+        }
+      ],
       "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/CF_1931_pA.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
+    },
+    {
+      "qname": "Make Equal",
+      "fname": "CF_1931_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1931 pB",
+          "link": "https://codeforces.com/contest/1931/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1931_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Make Equal Again",
+      "fname": "CF_1931_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1931 pC",
+          "link": "https://codeforces.com/contest/1931/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1931_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Divisible Pairs",
+      "fname": "CF_1931_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1931 pD",
+          "link": "https://codeforces.com/contest/1931/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1931_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Anna and the Valentine's Day Gift",
+      "fname": "CF_1931_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1931 pE",
+          "link": "https://codeforces.com/contest/1931/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1931_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Chat Screenshots",
+      "fname": "CF_1931_pF",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1931 pF",
+          "link": "https://codeforces.com/contest/1931/problem/F"
+        }
+      ],
+      "tag": [
+        "grapth",
+        "topologicalSort"
+      ],
+      "ans_code": "pack/CF_1931_pF.cpp",
+      "ans_TXT": " ",
+      "AC": true
     },
     {
       "qname": "",
