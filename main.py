@@ -3,11 +3,13 @@
 import json
 import os
 import copy
+from auto_temp import *
 
 dta=json.load(open("data.json","r"))
+dta["data"].sort(key=lambda a: a["fname"])
 basic_data={"qname":"","fname":"","qlink":[],"tag":[],"ans_code":"","ans_TXT":"","AC":False}
 
-show_per_page=50
+show_per_page=100000000
 
 def IN(txt):
 	while(1):
@@ -62,6 +64,8 @@ def edit_ans():
 		print("輸入-2向右移動")
 		print("輸入-3向左移動")
 		print("輸入-4新增")
+		print("輸入-5智能新增")
+		print("輸入-6找檔案")
 		nwid=int(IN(">"))
 		if(nwid==-1):
 			break
@@ -75,7 +79,25 @@ def edit_ans():
 				i+=show_per_page
 		elif(nwid==-4):
 			dta["data"].append(copy.deepcopy(basic_data))
+		elif(nwid==-5):
+			OJ=input("輸入OJ ex CF>")
+			CID=input("輸入CID ex 1234>")
+			PID=input("輸入PID ex A>")
+			Q=input("輸入題目名稱>")
+			if(OJ not in supported):
+				print("不支援的OJ")
+				continue
+			else:
+				dta["data"].append(eval(OJ)(CID,PID,Q))
 		else:
+			if(nwid==-6):
+				fqname=IN("輸入建檔名稱>")
+				for j in range(len(dta["data"])):
+					if(dta["data"][j]["fname"]==fqname):
+						nwid=j
+						break
+			if(not(0<=nwid<n)):
+				continue
 			while(1):
 				print_q(dta["data"][nwid])
 				print("輸入動作")
