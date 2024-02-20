@@ -1,3 +1,11 @@
+# [`CF 1926 pG`](https://codeforces.com/contest/1926/problem/G) Vlad and Trouble at MIT
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -45,55 +53,48 @@ int main(){
 	while(t--){
 		INT n;
 		cin>>n;
-		INT prev[n+2]={};
-		INT nxt[n+2]={};
-		INT a[n+2]={};
-		bool ins[n+2]={};
-		a[0]=a[n+1]=-100;
-		INT mn=1e9+7;
-		for(INT i=1;i<=n;i++){
-			cin>>a[i];
-			mn=min(mn,a[i]);
-			prev[i]=i-1;
-			nxt[i]=i+1;
+		vector<INT> tree[n];
+		string str;
+		for(INT i=1;i<n;i++){
+			INT b;
+			cin>>b;
+			b--;
+			tree[i].push_back(b);
+			tree[b].push_back(i);
 		}
-		auto isok=[&](INT i)->bool{
-			if(i<=0 || n<i)return 0;
-			return a[i]==a[prev[i]]+1 || a[i]==a[nxt[i]]+1;
+		INT ans=0;
+		cin>>str;
+		function<void(INT,INT)> dfs;
+		dfs=[&](INT nw,INT pre){
+			for(INT nxt:tree[nw]){
+				if(nxt==pre)continue;
+				dfs(nxt,nw);
+			}
+			INT P=0,S=0;
+			for(INT nxt:tree[nw]){
+				if(nxt==pre)continue;
+				if(str[nxt]=='P')P++;
+				else if(str[nxt]=='S')S++;
+			}
+			if(str[nw]=='P'){
+				ans+=S;
+			}else if(str[nw]=='S'){
+				ans+=P;
+			}else{
+				ans+=min(P,S);
+				if(P!=S){
+					if(P<S)str[nw]='S';
+					else str[nw]='P';
+				}
+			}
 		};
-		priority_queue<PII> pq;
-		for(INT i=1;i<=n;i++){
-			if(isok(i)){
-				ins[i]=1;
-				pq.push(PII(a[i],i));
-			}
-		}
-		while(!pq.empty()){
-			INT nw=pq.top().second;
-			pq.pop();
-			prev[nxt[nw]]=prev[nw];
-			nxt[prev[nw]]=nxt[nw];
-			if(!ins[prev[nw]] && isok(prev[nw])){
-				ins[prev[nw]]=1;
-				pq.push(PII(a[prev[nw]],prev[nw]));
-			}
-			if(!ins[nxt[nw]] && isok(nxt[nw])){
-				ins[nxt[nw]]=1;
-				pq.push(PII(a[nxt[nw]],nxt[nw]));
-			}
-		}
-		INT cnt=0;
-		for(INT i=1;i<=n;i++){
-			cnt+=!ins[i];
-		}
-		if(cnt==1 && mn==0){
-			cout<<"Yes"<<endl;
-		}else{
-			cout<<"No"<<endl;
-		}
+		dfs(0,-1);
+		cout<<ans<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```
