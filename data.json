@@ -330,6 +330,83 @@
       "AC": true
     },
     {
+      "qname": "Vlad and the Best of Five",
+      "fname": "CF_1926_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1926 pA",
+          "link": "https://codeforces.com/contest/1926/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1926_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Vlad and Shapes",
+      "fname": "CF_1926_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1926 pB",
+          "link": "https://codeforces.com/contest/1926/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1926_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Vlad and a Sum of Sum of Digits",
+      "fname": "CF_1926_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1926 pC",
+          "link": "https://codeforces.com/contest/1926/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1926_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Vlad and Division",
+      "fname": "CF_1926_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1926 pD",
+          "link": "https://codeforces.com/contest/1926/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1926_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Vlad and Division",
+      "fname": "CF_1926_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1926 pE",
+          "link": "https://codeforces.com/contest/1926/problem/E"
+        }
+      ],
+      "tag": [
+        "math"
+      ],
+      "ans_code": "pack/CF_1926_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Vlad and Avoiding X",
       "fname": "CF_1926_pF",
       "qlink": [
@@ -354,7 +431,10 @@
           "link": "https://codeforces.com/contest/1926/problem/G"
         }
       ],
-      "tag": [],
+      "tag": [
+        "dfs",
+        "grapth"
+      ],
       "ans_code": "pack/CF_1926_pG.cpp",
       "ans_TXT": "",
       "AC": true
@@ -1121,81 +1201,6 @@
       ],
       "ans_code": "temp/seg_tree.cpp",
       "ans_TXT": "temp/seg_tree.md",
-      "AC": true
-    },
-    {
-      "qname": "Vlad and the Best of Five",
-      "fname": "CF_1926_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1926 pA",
-          "link": "https://codeforces.com/contest/1926/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1926_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Vlad and Shapes",
-      "fname": "CF_1926_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1926 pB",
-          "link": "https://codeforces.com/contest/1926/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1926_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Vlad and a Sum of Sum of Digits",
-      "fname": "CF_1926_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1926 pC",
-          "link": "https://codeforces.com/contest/1926/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1926_pC.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Vlad and Division",
-      "fname": "CF_1926_pD",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1926 pD",
-          "link": "https://codeforces.com/contest/1926/problem/D"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1926_pD.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Vlad and Division",
-      "fname": "CF_1926_pE",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1926 pE",
-          "link": "https://codeforces.com/contest/1926/problem/E"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1926_pE.cpp",
-      "ans_TXT": "",
       "AC": true
     }
   ],
