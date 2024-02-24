@@ -1,3 +1,11 @@
+# [`CF 1932 pC`](https://codeforces.com/contest/1932/problem/C) LR-remainders
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -22,23 +30,13 @@ template<typename T1,typename T2>istream&operator>>(istream&in,pair<T1,T2>&p){
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
-	ou<<"{";
+	ou<<"";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
+		if(o)ou<<" ";
 		o=1;
-	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
 		ou<<i;
-		o=1;
 	}
-	return(ou<<"}");
+	return(ou<<"");
 }
 
 
@@ -52,8 +50,45 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,m;
+		cin>>n>>m;
+		INT nw=1;
+		INT num[n]={};
+		for(INT i=0;i<n;i++){
+			cin>>num[i];
+		}
+		string str;
+		cin>>str;
+		INT l=0,r=n-1;
+		INT st=0;
+		for(int i=0;i<n-1;i++){
+			char c=str[i];
+			if(c=='L')st++,l++;
+			else r--;
+		}
+
+		vector<INT> ans(n);
+		ans[n-1]=num[st]%m;
+		for(INT i=n-2;i>=0;i--){
+			ans[i]=ans[i+1];
+			if(str[i]=='L'){
+				l--;
+				ans[i]*=num[l];
+			}else{
+				r++;
+				ans[i]*=num[r];
+			}
+			ans[i]%=m;
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

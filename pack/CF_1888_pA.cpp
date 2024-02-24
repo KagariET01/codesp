@@ -1,4 +1,5 @@
 
+
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -52,6 +53,26 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		string str;
+		cin>>str;
+		map<char,INT> mp;
+		for(char c:str)mp[c]++;
+		INT oddc=0;
+		for(auto i:mp){
+			oddc+=i.S&1;
+		}
+		oddc--;
+		if(k>=oddc){
+			cout<<"YES"<<endl;
+		}else{
+			cout<<"NO"<<endl;
+		}
+	}
 	return 0;
 }
 

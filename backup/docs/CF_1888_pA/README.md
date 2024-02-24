@@ -1,3 +1,12 @@
+# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -52,8 +61,30 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		string str;
+		cin>>str;
+		map<char,INT> mp;
+		for(char c:str)mp[c]++;
+		INT oddc=0;
+		for(auto i:mp){
+			oddc+=i.S&1;
+		}
+		oddc--;
+		if(k>=oddc){
+			cout<<"YES"<<endl;
+		}else{
+			cout<<"NO"<<endl;
+		}
+	}
 	return 0;
 }
 
 
 
+
+```

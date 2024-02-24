@@ -1,4 +1,5 @@
 
+
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -52,6 +53,25 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		INT a[n];
+		INT nwans=k;
+		INT oddc=0;
+		for(INT&i:a){
+			cin>>i;
+			nwans=min(nwans,(k-i%k)%k);
+			oddc+=1-(i&1);
+		}
+		if(k==4){
+			oddc=min(oddc,2ll);
+			nwans=min(nwans,2-oddc);
+		}
+		cout<<nwans<<endl;
+	}
 	return 0;
 }
 

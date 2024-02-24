@@ -1,4 +1,5 @@
 
+
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -52,6 +53,27 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		INT nwt=0;
+		vector<PII>vec(n);
+		for(PII&i:vec)cin>>i.S;
+		for(PII&i:vec){cin>>i.F;i.F=abs(i.F);}
+		sort(vec.begin(),vec.end());
+		INT tot=0;
+		bool ans=1;
+		for(PII&i:vec){
+			tot+=i.S;
+			INT nwak=k*i.F;
+			if(nwak>=tot)continue;
+			else{ans=0;break;}
+		}
+		if(ans)cout<<"YES"<<endl;
+		else cout<<"NO"<<endl;
+	}
 	return 0;
 }
 

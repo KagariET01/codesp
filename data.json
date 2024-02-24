@@ -58,6 +58,81 @@
       "AC": true
     },
     {
+      "qname": " ",
+      "fname": "CF_1888_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1888 pA",
+          "link": "https://codeforces.com/contest/1888/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1888_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Chemistry",
+      "fname": "CF_1888_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1888 pA",
+          "link": "https://codeforces.com/contest/1888/problem/A"
+        },
+        {
+          "OJ": "CF",
+          "PID": "1883 pB",
+          "link": "https://codeforces.com/contest/1883/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1888_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Raspberries",
+      "fname": "CF_1888_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1888 pB",
+          "link": "https://codeforces.com/contest/1888/problem/B"
+        },
+        {
+          "OJ": "CF",
+          "PID": "1883 pC",
+          "link": "https://codeforces.com/contest/1883/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1888_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "You Are So Beautiful",
+      "fname": "CF_1888_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1888 pC",
+          "link": "https://codeforces.com/contest/1888/problem/C"
+        },
+        {
+          "OJ": "CF",
+          "PID": "1883 pF",
+          "link": "https://codeforces.com/contest/1883/problem/F"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1888_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "",
       "fname": "CF_1895_pC",
       "qlink": [
@@ -312,7 +387,7 @@
       "tag": [],
       "ans_code": "pack/CF_1919_pD.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "Summation Game",
@@ -326,6 +401,21 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_1920_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Moving Chips",
+      "fname": "CF_1923_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1923 pA",
+          "link": "https://codeforces.com/contest/1923/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1923_pA.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -578,6 +668,36 @@
       "AC": false
     },
     {
+      "qname": "Maximise The Score",
+      "fname": "CF_1930_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1930 pA",
+          "link": "https://codeforces.com/contest/1930/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1930_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Permutation Printing",
+      "fname": "CF_1930_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1930 pB",
+          "link": "https://codeforces.com/contest/1930/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1930_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Recovering a Small String",
       "fname": "CF_1931_pA",
       "qlink": [
@@ -669,6 +789,66 @@
       "ans_code": "pack/CF_1931_pF.cpp",
       "ans_TXT": " ",
       "AC": true
+    },
+    {
+      "qname": "Thorns and Coins",
+      "fname": "CF_1932_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1932 pA",
+          "link": "https://codeforces.com/contest/1932/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1932_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Chaya Calendar",
+      "fname": "CF_1932_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1932 pB",
+          "link": "https://codeforces.com/contest/1932/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1932_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "LR-remainders",
+      "fname": "CF_1932_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1932 pC",
+          "link": "https://codeforces.com/contest/1932/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1932_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Card Game",
+      "fname": "CF_1932_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1932 pD",
+          "link": "https://codeforces.com/contest/1932/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1932_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
     },
     {
       "qname": "String Matching",

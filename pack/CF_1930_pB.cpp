@@ -24,21 +24,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -52,6 +40,18 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		INT a=n,b=1;
+		for(INT i=0;i<n;i++)
+			if(i&1)
+				cout<<b<<((i<n-1)?' ':endl),b++;
+			else
+				cout<<a<<((i<n-1)?' ':endl),a--;
+	}
 	return 0;
 }
 

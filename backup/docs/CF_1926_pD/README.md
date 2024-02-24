@@ -1,3 +1,11 @@
+# [`CF 1926 pD`](https://codeforces.com/contest/1926/problem/D) Vlad and Division
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -24,21 +32,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -52,8 +48,29 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		INT ans=0;
+		map<INT,INT> se;
+		for(INT i=0;i<n;i++){
+			se[read(INT)]++;
+		}
+		for(PII ii:se){
+			INT another=(1ll<<31ll)-1;
+			INT i=ii.F;
+			another^=i;
+			ans+=max(se[i],se[another]);
+			se[i]=se[another]=0;
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

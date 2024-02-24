@@ -1,3 +1,11 @@
+# [`CF 1926 pA`](https://codeforces.com/contest/1926/problem/A) Vlad and the Best of Five
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -24,21 +32,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -52,8 +48,26 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		string str;
+		cin>>str;
+		map<char,INT> mp;
+		for(char c:str){
+			mp[c]++;
+		}
+		char ans=0;
+		INT nw=0;
+		for(auto i:mp){
+			if(i.S>=nw){ans=i.F;nw=i.S;}
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

@@ -51,7 +51,28 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 
 int main(){
-	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		INT a[n];
+		for(INT&i:a)cin>>i;
+		INT add=0;
+		INT ans=0;
+		INT lst=0;
+		for(INT &i:a){
+			if(i){
+				ans+=lst;
+				add=1;
+				lst=0;
+			}else{
+				lst+=add;
+			}
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 
