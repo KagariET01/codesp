@@ -1,4 +1,4 @@
-# [`ZJ f315`](https://zerojudge.tw/ShowProblem?problemid=f315) [`APCS 2020 10 pD`]() 低地距離
+# [`APCS 2020 10 pD`]() [`ZJ f315`](https://zerojudge.tw/ShowProblem?problemid=f315) 低地距離
 ## 標籤
 `divide` 
 ## 題解

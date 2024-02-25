@@ -1,4 +1,4 @@
-# [`ZJ ZJ f314`](https://zerojudge.tw/ShowProblem?problemid=f314) [`APCS 2020 10 pC`]() 勇者修煉
+# [`APCS 2020 10 pC`]() [`ZJ ZJ f314`](https://zerojudge.tw/ShowProblem?problemid=f314) 勇者修煉
 ## 標籤
 
 ## 題解

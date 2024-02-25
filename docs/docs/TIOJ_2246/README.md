@@ -1,4 +1,4 @@
-# [`TIOJ 2246`](https://tioj.ck.tp.edu.tw/problems/2246) [`ZJ h557`](https://zerojudge.tw/ShowProblem?problemid=h557) [`TOI 2022 pA`]( ) 迷宮入口
+# [`TIOJ 2246`](https://tioj.ck.tp.edu.tw/problems/2246) [`TOI 2022 pA`]( ) [`ZJ h557`](https://zerojudge.tw/ShowProblem?problemid=h557) 迷宮入口
 ## 標籤
 
 ## 題解

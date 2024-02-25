@@ -1,4 +1,4 @@
-# [`ZJ f608`](https://zerojudge.tw/ShowProblem?problemid=f608) [`APCS 2021 01 pD`]() 飛黃騰達
+# [`APCS 2021 01 pD`]() [`ZJ f608`](https://zerojudge.tw/ShowProblem?problemid=f608) 飛黃騰達
 ## 標籤
 `binaryS` 
 ## 題解

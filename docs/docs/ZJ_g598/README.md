@@ -1,4 +1,4 @@
-# [`ZJ g598`](https://zerojudge.tw/ShowProblem?problemid=g598) [`APCS 2021 11 pD`]() 真假子圖
+# [`APCS 2021 11 pD`]() [`ZJ g598`](https://zerojudge.tw/ShowProblem?problemid=g598) 真假子圖
 ## 標籤
 `grapth` `dfs` `binaryS` 
 ## 題解

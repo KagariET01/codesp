@@ -53,9 +53,12 @@ for id in range(len(dta["data"])):#  建立題目資料夾、每個題目的READ
 	print("writing",("\"docs/docs/"+i["fname"]+"/README.md"+"\""))
 	file=open(("docs/docs/"+i["fname"]+"/README.md"),"w+")
 	file.write("# ")
-	for j in i["qlink"]:
-		file.write("[`"+j["OJ"]+" "+j["PID"]+"`]("+j["link"]+") ")
-		book[j["OJ"]].append([j["PID"],getN(i,[j["OJ"]])])
+	i["qlink"].sort(key=lambda x:x["OJ"])
+	for j in range(len(i["qlink"])):
+		file.write("[`"+i["qlink"][j]["OJ"]+" "+i["qlink"][j]["PID"]+"`]("+i["qlink"][j]["link"]+") ")
+		if(j and i["qlink"][j]["OJ"]==i["qlink"][j-1]["OJ"]):
+			continue
+		book[i["qlink"][j]["OJ"]].append([i["qlink"][j]["PID"],getN(i,i["qlink"][j]["OJ"])])
 	file.write(i["qname"]+"\n")
 	file.write("## 標籤\n")
 	for j in i["tag"]:
