@@ -28,6 +28,15 @@
       "AC": false
     },
     {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Good Arrays",
       "fname": "CF_1856_pB",
       "qlink": [
@@ -54,21 +63,6 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_1856_pC.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": " ",
-      "fname": "CF_1888_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1888 pA",
-          "link": "https://codeforces.com/contest/1888/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1888_pA.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -416,6 +410,51 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_1923_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Monsters Attack!",
+      "fname": "CF_1923_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1923 pB",
+          "link": "https://codeforces.com/contest/1923/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1923_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Find B",
+      "fname": "CF_1923_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1923 pC",
+          "link": "https://codeforces.com/contest/1923/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1923_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Slimes",
+      "fname": "CF_1923_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1923 pD",
+          "link": "https://codeforces.com/contest/1923/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1923_pD.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -1384,58 +1423,19 @@
       "AC": true
     },
     {
-      "qname": "Slimes",
-      "fname": "CF_1923_pD",
+      "qname": "Tales of a Sort",
+      "fname": "CF_1856_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1923 pD",
-          "link": "https://codeforces.com/contest/1923/problem/D"
+          "PID": "1856 pA",
+          "link": "https://codeforces.com/contest/1856/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1923_pD.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
+      "ans_code": "pack/CF_1856_pA.cpp",
       "ans_TXT": "",
       "AC": false
-    },
-    {
-      "qname": "Monsters Attack!",
-      "fname": "CF_1923_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1923 pB",
-          "link": "https://codeforces.com/contest/1923/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1923_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Find B",
-      "fname": "CF_1923_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1923 pC",
-          "link": "https://codeforces.com/contest/1923/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1923_pC.cpp",
-      "ans_TXT": "",
-      "AC": true
     }
   ],
   "tag": [

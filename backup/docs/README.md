@@ -63,3 +63,6 @@
 [`ZJ k413` Python 縮排檢查](/codesp/docs/ZJ_k413)  
 [`ZJ k734` `APCS 2023 06 PD` 開啟寶盒](/codesp/docs/ZJ_k734)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
+[`CF 1923 pD` Slimes](/codesp/docs/CF_1923_pD)  
+[`CF 1923 pB` Monsters Attack!](/codesp/docs/CF_1923_pB)  
+[`CF 1923 pC` Find B](/codesp/docs/CF_1923_pC)  
