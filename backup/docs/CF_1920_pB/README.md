@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1920 pB`](https://codeforces.com/contest/1920/problem/B) Summation Game
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -18,8 +17,6 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
-#define F first
-#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -33,21 +30,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -61,25 +46,32 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT t;
-	cin>>t;
+	function<void()>solve=[](){
+		INT n,k,x;
+		cin>>n>>k>>x;
+		vector<INT> vec;
+		INT all=0;
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			vec.push_back(inin);
+		}
+		sort(vec.begin(),vec.end());
+		vector<INT> vectot;
+		vectot.push_back(0);
+		for(INT i:vec){
+			all+=i;
+			vectot.push_back(all);
+		}
+		INT ans=-1e9-7;
+		for(INT i=n;i>=n-k;i--){
+			ans=max(ans,all-(vectot[i]-vectot[max(i-x,(INT)0)])*2-(vectot[n]-vectot[i]));
+		}
+		cout<<ans<<endl;
+
+	};
+	INT t=read(INT);
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
-		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
-		}
+		solve();
 	}
 	return 0;
 }

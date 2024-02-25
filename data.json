@@ -37,6 +37,21 @@
       "AC": false
     },
     {
+      "qname": "Tales of a Sort",
+      "fname": "CF_1856_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1856 pA",
+          "link": "https://codeforces.com/contest/1856/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1856_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Good Arrays",
       "fname": "CF_1856_pB",
       "qlink": [
@@ -1423,19 +1438,49 @@
       "AC": true
     },
     {
-      "qname": "Tales of a Sort",
-      "fname": "CF_1856_pA",
+      "qname": "Sasha and the Beautiful Array",
+      "fname": "CF_1929_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1856 pA",
-          "link": "https://codeforces.com/contest/1856/problem/A"
+          "PID": "1929 pA",
+          "link": "https://codeforces.com/contest/1929/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1856_pA.cpp",
+      "ans_code": "pack/CF_1929_pA.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
+    },
+    {
+      "qname": "Sasha and the Drawing",
+      "fname": "CF_1929_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1929 pB",
+          "link": "https://codeforces.com/contest/1929/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1929_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sasha and the Casino",
+      "fname": "CF_1929_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1929 pC",
+          "link": "https://codeforces.com/contest/1929/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1929_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [

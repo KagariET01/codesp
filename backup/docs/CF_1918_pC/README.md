@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1918 pC`](https://codeforces.com/contest/1918/problem/C) XOR-distance
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -18,8 +17,6 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
-#define F first
-#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -33,53 +30,45 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
 
 
-
+const INT mxb=63;
 
 
 
 
 
 int main(){
-	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+//	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT a,b,rr;
+		cin>>a>>b>>rr;
+		if(a>b)swap(a,b);//keep a<b
+		INT x=0;
+		bool fb=1;
+		for(INT i=mxb;i>=0;i--){
+			if(a&(((INT)1)<<i) ^ b&(((INT)1)<<i)){
+//				cout<<"find bit:"<<i<<endl;
+				if(fb){
+					fb=0;
+					continue;
+				}else{
+					if(b&(((INT)1)<<i) && (x|(((INT)1)<<i))<=rr){
+						x|=((INT)1)<<i;
+					}
+				}
+			}
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
-		}
+		cout<<abs((a^x)-(b^x))<<endl;
+//		cout<<"x:"<<x<<endl;
 	}
 	return 0;
 }

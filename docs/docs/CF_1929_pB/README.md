@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1929 pB`](https://codeforces.com/contest/1929/problem/B) Sasha and the Drawing
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -66,19 +65,14 @@ int main(){
 	while(t--){
 		INT n,k;
 		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
-		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
+		INT tt=n*2-1;
+		tt*=2;
+		if(k<=tt-2){
+			cout<<(k+(k&1))/2<<endl;
+		}else if(k==tt-1){
+			cout<<n*2-1<<endl;
 		}else{
-			cout<<"NO"<<endl;
+			cout<<n*2<<endl;
 		}
 	}
 	return 0;

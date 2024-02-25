@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1931 pC`](https://codeforces.com/contest/1931/problem/C) Make Equal Again
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,21 +32,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -64,21 +51,30 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT n;
+		cin>>n;
+		INT a[n];
+		for(INT&i:a)cin>>i;
+		INT ls=1;
+		for(INT i=1;i<n;i++){
+			if(a[i]==a[i-1])ls++;
+			else break;
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
+		INT rs=1;
+		for(INT i=n-2;i>=0;i--){
+			if(a[i]==a[i+1])rs++;
+			else break;
+		}
+		if(rs==n){
+			cout<<0<<endl;
+			continue;
+		}
+		else if(a[0]==a[n-1]){
+			cout<<n-ls-rs<<endl;
+			continue;
 		}else{
-			cout<<"NO"<<endl;
+			cout<<n-max(ls,rs)<<endl;
+			continue;
 		}
 	}
 	return 0;

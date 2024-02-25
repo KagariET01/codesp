@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1916 pC`](https://codeforces.com/contest/1916/problem/C) Training Before the Olympiad
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -18,8 +17,6 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
-#define F first
-#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -33,21 +30,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -61,25 +46,37 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	function<void()> solve=[](){
+		INT n;
+		cin>>n;
+		vector<INT>vec;
+		for(INT(i)=0;i<n;i++){
+			vec.push_back(read(INT));
+		}
+		INT oddc=0;
+		INT tt=0;
+		for(INT i=0;i<n;i++){
+			if(i)cout<<" ";
+			tt+=vec[i]-vec[i]%2;
+			oddc+=vec[i]&1;
+			INT nw=tt;
+			if(oddc%3==0){
+				nw+=oddc/3*2;
+			}else if(oddc%3==1){
+				nw+=(oddc-1)/3*2;
+			}else{
+				nw+=(oddc-2)/3*2+2;
+			}
+			if(i==0)nw=vec[0];
+			cout<<nw;
+		}
+		cout<<endl;
+	};
+
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
-		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
-		}
+		solve();
 	}
 	return 0;
 }

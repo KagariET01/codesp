@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1923 pA`](https://codeforces.com/contest/1923/problem/A) Moving Chips
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -60,26 +59,27 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 
 int main(){
-	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT n;
+		cin>>n;
+		INT a[n];
+		for(INT&i:a)cin>>i;
+		INT add=0;
+		INT ans=0;
+		INT lst=0;
+		for(INT &i:a){
+			if(i){
+				ans+=lst;
+				add=1;
+				lst=0;
+			}else{
+				lst+=add;
+			}
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
-		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

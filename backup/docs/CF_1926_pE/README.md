@@ -1,12 +1,11 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1926 pE`](https://codeforces.com/contest/1926/problem/E) Vlad and Division
 ## 標籤
-
+`math` 
 ## 題解
 NOT FOUND  
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,21 +32,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -66,19 +53,19 @@ int main(){
 	while(t--){
 		INT n,k;
 		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
-		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
+		INT nw=1;
+		while(k){
+			INT nwmm=n/nw;
+			nwmm=(nwmm+1)/2;
+			if(nwmm<k){
+				k-=nwmm;
+				nw*=2;
+			}else{
+				INT bs=-nw;
+				INT gt=k*(nw*2)+bs;
+				cout<<gt<<endl;
+				break;
+			}
 		}
 	}
 	return 0;

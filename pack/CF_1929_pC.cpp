@@ -1,11 +1,3 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 
 #include<bits/stdc++.h>
@@ -64,18 +56,16 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT k,x,a;
+		cin>>k>>x>>a;
+		INT nwmn=0;
+		for(INT i=0;i<=x;i++){
+			INT m=nwmn/(k-1)+1;
+			nwmn+=m;
+			a-=m;
+			if(a<0)break;
 		}
-		oddc--;
-		if(k>=oddc){
+		if(a>=0){
 			cout<<"YES"<<endl;
 		}else{
 			cout<<"NO"<<endl;
@@ -86,5 +76,3 @@ int main(){
 
 
 
-
-```

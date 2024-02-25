@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1927 pC`](https://codeforces.com/contest/1927/problem/C) Choose the Different Ones!
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -18,8 +17,6 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
-#define F first
-#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -33,21 +30,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -64,23 +49,40 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT n,m,k;
+		cin>>n>>m>>k;
+		bool a[k+1]={},b[k+1]={},tt[k+1]={};
+		INT as=0,bs=0;
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			if(inin>k || a[inin])continue;
+			a[inin]=1;
+			as++;
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
+		for(INT i=0;i<m;i++){
+			INT inin=read(INT);
+			if(inin>k||b[inin])continue;
+			b[inin]=1;
+			bs++;
 		}
+		
+		bool ha=0;
+		if(as<k/2 || bs<k/2){
+			cout<<"no"<<endl;
+			continue;
+		}
+		for(INT i=1;i<=k;i++){
+			if(a[i] || b[i])continue;
+			else{
+				ha=1;
+				cout<<"no"<<endl;
+				break;
+			}
+		}
+		if(ha)continue;
+		cout<<"yes"<<endl;
 	}
+
 	return 0;
 }
 

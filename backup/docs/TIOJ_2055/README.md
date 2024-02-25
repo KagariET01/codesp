@@ -1,12 +1,11 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`TIOJ 2055`](https://tioj.ck.tp.edu.tw/problems/2055) [`TOI 2018 pE`]() 直升機
 ## 標籤
 
 ## 題解
-NOT FOUND  
+***注意，他求的是h[i]+1(i=l,l+1...r)的最小值，非最大值***
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,21 +32,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -61,25 +48,27 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+	INT n;
+	cin>>n;
+	INT h[__lg(n)+1][n];
+	for(INT i=0;i<n;i++)cin>>h[0][i];
+	for(INT i=1;i<__lg(n)+1;i++){
+		for(INT j=0;j<n;j++){
+			if(j+(1<<(i-1))>=n)break;
+			h[i][j]=min(h[i-1][j],h[i-1][j+(1<<(i-1))]);
+			//cout<<"i:"<<i<<" j:"<<j<<" j+...:"<<(j+(1<<(i-1)))<<endl;;
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
-		}
+	}
+	INT q=n;
+	while(q--){
+		INT l,r;
+		cin>>l>>r;
+		l--,r--;
+		INT ln=__lg(r-l+1);
+		INT ans=h[ln][l];
+		ans=min(ans,h[ln][r-(1<<ln)+1]);
+		//cout<<"ln:"<<ln<<" r-...:"<<(r-(1<<ln))<<" ";
+		cout<<ans+1<<endl;
 	}
 	return 0;
 }

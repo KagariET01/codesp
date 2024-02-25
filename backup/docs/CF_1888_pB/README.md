@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1888 pB`](https://codeforces.com/contest/1888/problem/B) [`CF 1883 pC`](https://codeforces.com/contest/1883/problem/C) Raspberries
 ## 標籤
 
 ## 題解
@@ -66,20 +66,19 @@ int main(){
 	while(t--){
 		INT n,k;
 		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
+		INT a[n];
+		INT nwans=k;
 		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		for(INT&i:a){
+			cin>>i;
+			nwans=min(nwans,(k-i%k)%k);
+			oddc+=1-(i&1);
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
+		if(k==4){
+			oddc=min(oddc,2ll);
+			nwans=min(nwans,2-oddc);
 		}
+		cout<<nwans<<endl;
 	}
 	return 0;
 }

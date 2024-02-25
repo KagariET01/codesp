@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`APCS 2020 10 pC`]() [`ZJ ZJ f314`](https://zerojudge.tw/ShowProblem?problemid=f314) 勇者修煉
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -18,8 +17,6 @@ using namespace std;
 #define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
-#define F first
-#define S second
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -33,21 +30,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -61,26 +46,36 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
-		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
+	INT n,m;
+	cin>>n>>m;
+	INT dp[m]={};
+	INT mp[n+1][m];
+	
+	for(INT i=1;i<=n;i++){
+		for(INT j=0;j<m;j++){
+			cin>>mp[i][j];
 		}
 	}
+	for(INT i=1;i<=n;i++){
+		INT l[m],r[m];
+		for(INT j=0;j<m;j++){
+			l[j]=r[j]=dp[j]+mp[i][j];
+		}
+		for(INT j=1;j<m;j++){
+			l[j]=max(l[j],l[j-1]+mp[i][j]);
+		}
+		for(INT j=m-2;j>=0;j--){
+			r[j]=max(r[j],r[j+1]+mp[i][j]);
+		}
+		for(INT j=0;j<m;j++){
+			dp[j]=max(l[j],r[j]);
+		}
+	}
+	INT ans=dp[0];
+	for(INT i=0;i<m;i++){
+		ans=max(ans,dp[i]);
+	}
+	cout<<ans<<endl;
 	return 0;
 }
 

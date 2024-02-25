@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1926 pB`](https://codeforces.com/contest/1926/problem/B) Vlad and Shapes
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,21 +32,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -64,21 +51,26 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT n;
+		cin>>n;
+		string mp[n];
+		for(INT i=0;i<n;i++){
+			cin>>mp[i];
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
+		bool nans=1;
+		for(INT i=0;i<n && nans;i++){
+			for(INT j=0;j<n&&nans;j++){
+				if(mp[i][j]=='1'){
+					if(mp[i][j+1]=='1' && mp[i+1][j]=='1'){
+						cout<<"SQUARE"<<endl;
+						nans=0;
+					}else{
+						cout<<"TRIANGLE"<<endl;
+						nans=0;
+					}
+					break;
+				}
+			}
 		}
 	}
 	return 0;

@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`TIOJ 2051`](https://tioj.ck.tp.edu.tw/problems/2051) [`TOI 2018 pA`]() 化學元素分析
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,26 +32,64 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
+	ou<<"";
+	pair<T1,T2> ed=*mp.rbegin();
 	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		
+		ou<<""<<i.first<<":"<<i.second<<"\n";
+		//if(ed!=i)ou<<",";
 	}
-	return(ou<<"}");
+	return (ou<<"");
 }
 
+map<string,INT> mp;
 
+string str="";
+string nwstr="";
+INT cnt=0;
+INT xx=1;
+INT i=0;
 
-
+void solve(INT x=1){
+	while(1){
+		if(i<0)break;
+		if(str[i]==')'){
+			if(cnt==0)cnt=1;
+			i--;
+			xx=1;
+			INT rcnt=cnt;
+			cnt=0;
+			solve(x*rcnt);
+		}
+		if(str[i]=='('){
+			i--;
+			return;
+		}
+		if('0'<=str[i]&&str[i]<='9'){
+			cnt+=xx*(str[i]-'0');
+			xx*=10;
+			i--;
+		}
+		if('a'<=str[i]&&str[i]<='z'){
+			nwstr=str[i]+nwstr;
+			i--;
+		}
+		if('A'<=str[i]&&str[i]<='Z'){
+			nwstr=str[i]+nwstr;
+			if(cnt==0)cnt=1;
+			mp[nwstr]+=x*cnt;
+			cnt=0;
+			xx=1;
+			nwstr="";
+			i--;
+		}
+	}
+}
 
 
 
@@ -61,26 +98,11 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
-		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
-		}
-	}
+	cin>>str;
+	i=str.size()-1;
+	solve();
+	cout<<str<<endl;
+	cout<<mp<<endl;
 	return 0;
 }
 

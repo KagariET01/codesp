@@ -1,12 +1,11 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`TIOJ 2331`](https://tioj.ck.tp.edu.tw/problems/2331) [`TOI 2023 pB`]( ) 裁員風暴
 ## 標籤
-
+`binaryS` 
 ## 題解
 NOT FOUND  
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,21 +32,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -61,26 +48,47 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+	INT n,k;
+	cin>>n>>k;
+	INT a[n];
+	for(INT i=0;i<n;i++){
+		cin>>a[i];
+	}
+	sort(a,a+n);
+	function<INT(INT)> getRK=[&](INT nw){
+		INT w=0;//多少人的分<他
+		INT r=n-1;
+		for(INT i=0;i<n;i++){
+			while(r>=0){
+				if(a[i]+a[r]>=nw)r--;
+				else break;
+			}
+			w+=n-(r+1);
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
+		for(INT i=n-1;i>=0;i--){
+			if(a[i]*2<nw)break;
+			else w++;
+		}
+		return w/2;
+	};
+	INT l=a[0]*2,r=a[n-1]*2+1;
+	while(l<r){
+		INT mid=(r-l)/2+l+1;
+		INT nw=getRK(mid);
+		//cout<<"l:"<<l<<" r:"<<r<<" mid:"<<mid<<" nw:"<<nw<<endl;
+		if(nw>=k){
+			l=mid;
 		}else{
-			cout<<"NO"<<endl;
+			r=mid-1;
 		}
 	}
+	if(l&1){
+		cout<<l<<endl<<"2"<<endl;
+	}else{
+		cout<<l/2<<endl<<"1"<<endl;
+	}
+
+	//cout<<l<<endl;
 	return 0;
 }
 

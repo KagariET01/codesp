@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1923 pC`](https://codeforces.com/contest/1923/problem/C) Find B
 ## 標籤
 
 ## 題解
@@ -64,21 +64,31 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT n,q;
+		cin>>n>>q;
+		INT a[n+1]={};
+		INT att[n+1]={};
+		INT onett[n+1]={};
+		for(INT i=1;i<=n;i++){
+			cin>>a[i];
+			onett[i]=onett[i-1];
+			if(a[i]==1)onett[i]++;
+			att[i]=att[i-1]+a[i];
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
+		while(q--){
+			INT l,r;
+			cin>>l>>r;
+			INT sz=r-l+1;
+			if(l==r){
+				cout<<"NO"<<endl;
+				continue;
+			}
+			INT nedtt=att[r]-att[l-1];
+			INT twott=onett[r]-onett[l-1];
+			nedtt-=twott*2;
+			nedtt-=sz-twott;
+			if(nedtt>=0)cout<<"YES"<<endl;
+			else{cout<<"NO"<<endl;}
 		}
 	}
 	return 0;

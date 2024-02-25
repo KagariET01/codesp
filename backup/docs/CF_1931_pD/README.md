@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1931 pD`](https://codeforces.com/contest/1931/problem/D) Divisible Pairs
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,21 +32,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -64,22 +51,24 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT n,a,b;
+		cin>>n>>a>>b;
+		INT lst[n];
+		map<INT,map<INT,INT>> mp;
+		for(INT i=0;i<n;i++){
+			cin>>lst[i];
+			mp[lst[i]%a][lst[i]%b]++;
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
+		INT ans=0;
+		for(INT i=0;i<n;i++){
+			mp[lst[i]%a][lst[i]%b]--;
+			INT l=a-(lst[i]%a);
+			l%=a;
+			INT r=lst[i]%b;
+			ans+=mp[l][r];
+			mp[lst[i]%a][lst[i]%b]++;
 		}
+		cout<<ans/2<<endl;
 	}
 	return 0;
 }

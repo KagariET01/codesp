@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1931 pE`](https://codeforces.com/contest/1931/problem/E) Anna and the Valentine's Day Gift
 ## 標籤
 
 ## 題解
@@ -6,7 +6,6 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,21 +32,9 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
+		ou<<i<<",";
 	}
-	return(ou<<"}");
-}
-template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
-	bool o=0;
-	ou<<"{";
-	for(pair<T1,T2>i:mp){
-		if(o)ou<<",";
-		ou<<i;
-		o=1;
-	}
-	return(ou<<"}");
+	return(ou<<"\b}");
 }
 
 
@@ -64,23 +51,35 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,k;
-		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT n,m;
+		cin>>n>>m;
+		vector<INT> p;
+		p.resize(n);
+		INT sz=0;
+		for(INT i=0;i<n;i++){
+			string str;
+			cin>>str;
+			INT c=0;
+			for(INT j=str.size()-1;j>=0;j--){
+				if(str[j]=='0')c++;
+				else break;
+			}
+			p[i]=c;
+			sz+=str.size()-c;
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
+		sort(p.begin(),p.end());
+		INT xx=0;
+		for(INT i=n-1;i>=0;i--){
+			sz+=p[i]*xx;
+			xx=1-xx;
+		}
+		if(sz>m){
+			cout<<"Sasha"<<endl;
 		}else{
-			cout<<"NO"<<endl;
+			cout<<"Anna"<<endl;
 		}
 	}
+
 	return 0;
 }
 

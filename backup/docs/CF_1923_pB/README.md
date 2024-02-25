@@ -1,4 +1,4 @@
-# [`CF 1888 pA`](https://codeforces.com/contest/1888/problem/A) [`CF 1883 pB`](https://codeforces.com/contest/1883/problem/B) Chemistry
+# [`CF 1923 pB`](https://codeforces.com/contest/1923/problem/B) Monsters Attack!
 ## 標籤
 
 ## 題解
@@ -66,20 +66,21 @@ int main(){
 	while(t--){
 		INT n,k;
 		cin>>n>>k;
-		string str;
-		cin>>str;
-		map<char,INT> mp;
-		for(char c:str)mp[c]++;
-		INT oddc=0;
-		for(auto i:mp){
-			oddc+=i.S&1;
+		INT nwt=0;
+		vector<PII>vec(n);
+		for(PII&i:vec)cin>>i.S;
+		for(PII&i:vec){cin>>i.F;i.F=abs(i.F);}
+		sort(vec.begin(),vec.end());
+		INT tot=0;
+		bool ans=1;
+		for(PII&i:vec){
+			tot+=i.S;
+			INT nwak=k*i.F;
+			if(nwak>=tot)continue;
+			else{ans=0;break;}
 		}
-		oddc--;
-		if(k>=oddc){
-			cout<<"YES"<<endl;
-		}else{
-			cout<<"NO"<<endl;
-		}
+		if(ans)cout<<"YES"<<endl;
+		else cout<<"NO"<<endl;
 	}
 	return 0;
 }
