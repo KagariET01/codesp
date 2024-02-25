@@ -1,3 +1,11 @@
+# [`CF 1923 pD`](https://codeforces.com/contest/1923/problem/D) Slimes
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 
 
@@ -127,3 +135,5 @@ int main(){
 
 
 
+
+```

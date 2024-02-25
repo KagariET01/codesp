@@ -1,4 +1,4 @@
-# [`CF 1932 pA`](https://codeforces.com/contest/1932/problem/A) Thorns and Coins
+# [`CF 1923 pC`](https://codeforces.com/contest/1923/problem/C) Find B
 ## 標籤
 
 ## 題解
@@ -6,6 +6,7 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -32,9 +33,21 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		ou<<i<<",";
+		if(o)ou<<",";
+		ou<<i;
+		o=1;
 	}
-	return(ou<<"\b}");
+	return(ou<<"}");
+}
+template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
+	bool o=0;
+	ou<<"{";
+	for(pair<T1,T2>i:mp){
+		if(o)ou<<",";
+		ou<<i;
+		o=1;
+	}
+	return(ou<<"}");
 }
 
 
@@ -51,19 +64,32 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
-		string str;
-		cin>>str;
-		INT ans=0;
-		for(INT i=1;i<n;i++){
-			if(str[i]=='*'){
-				if(str[i-1]=='*')break;
-				else continue;
-			}
-			ans+=str[i]=='@';
+		INT n,q;
+		cin>>n>>q;
+		INT a[n+1]={};
+		INT att[n+1]={};
+		INT onett[n+1]={};
+		for(INT i=1;i<=n;i++){
+			cin>>a[i];
+			onett[i]=onett[i-1];
+			if(a[i]==1)onett[i]++;
+			att[i]=att[i-1]+a[i];
 		}
-		cout<<ans<<endl;
+		while(q--){
+			INT l,r;
+			cin>>l>>r;
+			INT sz=r-l+1;
+			if(l==r){
+				cout<<"NO"<<endl;
+				continue;
+			}
+			INT nedtt=att[r]-att[l-1];
+			INT twott=onett[r]-onett[l-1];
+			nedtt-=twott*2;
+			nedtt-=sz-twott;
+			if(nedtt>=0)cout<<"YES"<<endl;
+			else{cout<<"NO"<<endl;}
+		}
 	}
 	return 0;
 }

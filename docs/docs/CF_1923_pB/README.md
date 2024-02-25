@@ -1,4 +1,4 @@
-# [`CF 1932 pA`](https://codeforces.com/contest/1932/problem/A) Thorns and Coins
+# [`CF 1923 pB`](https://codeforces.com/contest/1923/problem/B) Monsters Attack!
 ## 標籤
 
 ## 題解
@@ -6,6 +6,7 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -32,9 +33,21 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		ou<<i<<",";
+		if(o)ou<<",";
+		ou<<i;
+		o=1;
 	}
-	return(ou<<"\b}");
+	return(ou<<"}");
+}
+template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
+	bool o=0;
+	ou<<"{";
+	for(pair<T1,T2>i:mp){
+		if(o)ou<<",";
+		ou<<i;
+		o=1;
+	}
+	return(ou<<"}");
 }
 
 
@@ -51,19 +64,23 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
-		string str;
-		cin>>str;
-		INT ans=0;
-		for(INT i=1;i<n;i++){
-			if(str[i]=='*'){
-				if(str[i-1]=='*')break;
-				else continue;
-			}
-			ans+=str[i]=='@';
+		INT n,k;
+		cin>>n>>k;
+		INT nwt=0;
+		vector<PII>vec(n);
+		for(PII&i:vec)cin>>i.S;
+		for(PII&i:vec){cin>>i.F;i.F=abs(i.F);}
+		sort(vec.begin(),vec.end());
+		INT tot=0;
+		bool ans=1;
+		for(PII&i:vec){
+			tot+=i.S;
+			INT nwak=k*i.F;
+			if(nwak>=tot)continue;
+			else{ans=0;break;}
 		}
-		cout<<ans<<endl;
+		if(ans)cout<<"YES"<<endl;
+		else cout<<"NO"<<endl;
 	}
 	return 0;
 }

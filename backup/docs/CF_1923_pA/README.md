@@ -1,4 +1,4 @@
-# [`CF 1932 pA`](https://codeforces.com/contest/1932/problem/A) Thorns and Coins
+# [`CF 1923 pA`](https://codeforces.com/contest/1923/problem/A) Moving Chips
 ## 標籤
 
 ## 題解
@@ -32,9 +32,21 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
 	ou<<"{";
 	for(T(i):vec){
-		ou<<i<<",";
+		if(o)ou<<",";
+		ou<<i;
+		o=1;
 	}
-	return(ou<<"\b}");
+	return(ou<<"}");
+}
+template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
+	bool o=0;
+	ou<<"{";
+	for(pair<T1,T2>i:mp){
+		if(o)ou<<",";
+		ou<<i;
+		o=1;
+	}
+	return(ou<<"}");
 }
 
 
@@ -47,21 +59,25 @@ template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 
 
 int main(){
-	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	INT t;
 	cin>>t;
 	while(t--){
 		INT n;
 		cin>>n;
-		string str;
-		cin>>str;
+		INT a[n];
+		for(INT&i:a)cin>>i;
+		INT add=0;
 		INT ans=0;
-		for(INT i=1;i<n;i++){
-			if(str[i]=='*'){
-				if(str[i-1]=='*')break;
-				else continue;
+		INT lst=0;
+		for(INT &i:a){
+			if(i){
+				ans+=lst;
+				add=1;
+				lst=0;
+			}else{
+				lst+=add;
 			}
-			ans+=str[i]=='@';
 		}
 		cout<<ans<<endl;
 	}
