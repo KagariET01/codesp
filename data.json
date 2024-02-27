@@ -722,6 +722,51 @@
       "AC": false
     },
     {
+      "qname": "Sasha and the Beautiful Array",
+      "fname": "CF_1929_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1929 pA",
+          "link": "https://codeforces.com/contest/1929/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1929_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sasha and the Drawing",
+      "fname": "CF_1929_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1929 pB",
+          "link": "https://codeforces.com/contest/1929/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1929_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sasha and the Casino",
+      "fname": "CF_1929_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1929 pC",
+          "link": "https://codeforces.com/contest/1929/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1929_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Maximise The Score",
       "fname": "CF_1930_pA",
       "qlink": [
@@ -1438,47 +1483,77 @@
       "AC": true
     },
     {
-      "qname": "Sasha and the Beautiful Array",
-      "fname": "CF_1929_pA",
+      "qname": "Did We Get Everything Covered?",
+      "fname": "CF_1925_pC",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1929 pA",
-          "link": "https://codeforces.com/contest/1929/problem/A"
+          "PID": "1925 pC",
+          "link": "https://codeforces.com/contest/1925/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1929_pA.cpp",
+      "ans_code": "pack/CF_1925_pC.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Sasha and the Drawing",
-      "fname": "CF_1929_pB",
+      "qname": "Square",
+      "fname": "CF_1921_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1929 pB",
-          "link": "https://codeforces.com/contest/1929/problem/B"
+          "PID": "1921 pA",
+          "link": "https://codeforces.com/contest/1921/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1929_pB.cpp",
+      "ans_code": "pack/CF_1921_pA.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Sasha and the Casino",
-      "fname": "CF_1929_pC",
+      "qname": "Arranging Cats",
+      "fname": "CF_1921_pB",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1929 pC",
-          "link": "https://codeforces.com/contest/1929/problem/C"
+          "PID": "1921 pB",
+          "link": "https://codeforces.com/contest/1921/problem/B"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1929_pC.cpp",
+      "ans_code": "pack/CF_1921_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sending Messages",
+      "fname": "CF_1921_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1921 pC",
+          "link": "https://codeforces.com/contest/1921/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1921_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Very Different Array",
+      "fname": "CF_1921_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1921 pD",
+          "link": "https://codeforces.com/contest/1921/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1921_pD.cpp",
       "ans_TXT": "",
       "AC": true
     }
