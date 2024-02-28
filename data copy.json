@@ -1055,51 +1055,6 @@
       "AC": true
     },
     {
-      "qname": "Turtle Fingers: Count the Values of k",
-      "fname": "CF_1933_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1933 pC",
-          "link": "https://codeforces.com/contest/1933/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1933_pC.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Turtle Tenacity: Continual Mods",
-      "fname": "CF_1933_pD",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1933 pD",
-          "link": "https://codeforces.com/contest/1933/problem/D"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1933_pD.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Turtle vs. Rabbit Race: Optimal Trainings",
-      "fname": "CF_1933_pE",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1933 pE",
-          "link": "https://codeforces.com/contest/1933/problem/E"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1933_pE.cpp",
-      "ans_TXT": "pack/CF_1933_pE.md",
-      "AC": false
-    },
-    {
       "qname": "String Matching",
       "fname": "CSES_1753",
       "qlink": [
@@ -1630,6 +1585,51 @@
       ],
       "ans_code": "temp/seg_tree.cpp",
       "ans_TXT": "temp/seg_tree.md",
+      "AC": true
+    },
+    {
+      "qname": "Turtle vs. Rabbit Race: Optimal Trainings",
+      "fname": "CF_1933_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1933 pE",
+          "link": "https://codeforces.com/contest/1933/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1933_pE.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Turtle Fingers: Count the Values of k",
+      "fname": "CF_1933_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1933 pC",
+          "link": "https://codeforces.com/contest/1933/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1933_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Turtle Tenacity: Continual Mods",
+      "fname": "CF_1933_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1933 pD",
+          "link": "https://codeforces.com/contest/1933/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1933_pD.cpp",
+      "ans_TXT": "",
       "AC": true
     }
   ],

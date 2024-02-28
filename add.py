@@ -2,7 +2,7 @@ import json
 import json
 
 lst=[]
-fname="{0}_{2}"
+fname="{0}_{1}_p{2}"
 build={
 	"CF":lambda cid,pid:'{"qname": "","fname": "CF_'+cid+'_p'+pid+'","qlink": [{"OJ": "CF","PID": "'+cid+' p'+pid+'","link": "https://codeforces.com/contest/'+cid+'/problem/'+pid+'"}],"tag": [],"ans_code": "pack/CF_'+cid+'_p'+pid+'.cpp","ans_TXT": "","AC": false}',
 	"TIOJ":lambda cid,pid:'{"qname": "","fname": "TIOJ_'+pid+'","qlink": [{"OJ": "TIOJ","PID": "'+pid+'","link": "https://tioj.ck.tp.edu.tw/problems/'+pid+'"}],"tag": [],"ans_code": "pack/TIOJ_'+pid+'.cpp","ans_TXT": "","AC": false}',
@@ -11,7 +11,10 @@ build={
 
 try:
 	while True:
-		lst.append(input().split())
+		nw=input()
+		if(nw==""):
+			break
+		lst.append(nw.split())
 except:
 	pass
 
