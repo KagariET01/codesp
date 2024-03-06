@@ -1,4 +1,5 @@
 
+
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -22,10 +23,6 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,pair<T1,T2>p){
 }
 template<typename T1,typename T2>istream&operator>>(istream&in,pair<T1,T2>&p){
 	return in>>p.first>>p.second;
-}
-template<typename T>istream&operator>>(istream&in,vector<T>&vec){
-	for(T&i:vec)in>>i;
-	return in;
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
@@ -59,6 +56,35 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT n,m;
+	cin>>n>>m;
+	INT cbig[7]={1,5,10,50,100,500,1000};
+	INT hve[7]={};// wen have
+	for(INT i=6;i>=0;i--){
+		hve[i]=n/cbig[i];
+		n%=cbig[i];
+	}
+	INT lned[7]={};
+	for(INT i=6;i>=0;i--){
+		lned[i]=m/cbig[i];
+		m%=cbig[i];
+	}
+	INT ans=0;
+	for(INT i=0;i<7;i++){
+		if(i<6){
+		//進位
+			INT mpc=cbig[i+1]/cbig[i];//幾枚i幣可以換成i+1幣
+			lned[i+1]+=lned[i]/mpc;
+			lned[i]%=mpc;
+		}
+		//給$
+		if(hve[i]>=lned[i]){
+			ans+=cbig[i]*lned[i];
+		}else if(i<6){
+			lned[i+1]++;
+		}
+	}
+	cout<<ans<<endl;
 	return 0;
 }
 

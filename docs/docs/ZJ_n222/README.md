@@ -1,3 +1,12 @@
+# [`ZJ n222`](https://zerojudge.tw/ShowProblem?problemid=n222) 小明的作業 (t 筆測資版)
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -11,9 +20,6 @@ using namespace std;
 #define endl '\n'
 #define F first
 #define S second
-#define mins(a,b) a=min(a,b)
-#define maxs(a,b) a=max(a,b)
-
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -22,10 +28,6 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,pair<T1,T2>p){
 }
 template<typename T1,typename T2>istream&operator>>(istream&in,pair<T1,T2>&p){
 	return in>>p.first>>p.second;
-}
-template<typename T>istream&operator>>(istream&in,vector<T>&vec){
-	for(T&i:vec)in>>i;
-	return in;
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
@@ -59,8 +61,19 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT(t);
+	cin>>t;
+	while(t--){
+		INT(c)=5,ans=0;
+		while(c--){
+			vector<INT>vec;
+			for(INT(i)=0;i<3;i++){vec.push_back(read(INT));}sort(vec.begin(),vec.end());if(vec[0]+vec[1]>vec[2])ans++;
+		}cout<<ans<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

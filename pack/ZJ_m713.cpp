@@ -1,4 +1,5 @@
 
+
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -13,7 +14,6 @@ using namespace std;
 #define S second
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
-
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -22,10 +22,6 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,pair<T1,T2>p){
 }
 template<typename T1,typename T2>istream&operator>>(istream&in,pair<T1,T2>&p){
 	return in>>p.first>>p.second;
-}
-template<typename T>istream&operator>>(istream&in,vector<T>&vec){
-	for(T&i:vec)in>>i;
-	return in;
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
@@ -59,6 +55,18 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT(ans)=0;
+	while(1){
+		INT c;
+		cin>>c;
+		if(!c)break;
+		INT mn=1e9+7;
+		while(c--){
+			mins(mn,read(INT));
+		}
+		maxs(ans,mn);
+	}
+	cout<<ans<<endl;
 	return 0;
 }
 

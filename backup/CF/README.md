@@ -49,3 +49,7 @@
 [`CF 1932 pA` Thorns and Coins](/codesp/docs/CF_1932_pA)  
 [`CF 1932 pB` Chaya Calendar](/codesp/docs/CF_1932_pB)  
 [`CF 1932 pC` LR-remainders](/codesp/docs/CF_1932_pC)  
+[`CF 1933 pA` Turtle Puzzle: Rearrange and Negate](/codesp/docs/CF_1933_pA)  
+[`CF 1933 pB` Turtle Math: Fast Three Task](/codesp/docs/CF_1933_pB)  
+[`CF 1933 pC` Turtle Fingers: Count the Values of k](/codesp/docs/CF_1933_pC)  
+[`CF 1933 pD` Turtle Tenacity: Continual Mods](/codesp/docs/CF_1933_pD)  

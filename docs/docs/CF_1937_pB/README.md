@@ -1,7 +1,16 @@
+# [`CF 1937 pB`](https://codeforces.com/contest/1937/problem/B) Binary Path
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 
 #include<bits/stdc++.h>
 using namespace std;
-#define INT long long int
+#define INT int
 #define superINT INT
 #define read(n) reader<n>()
 #define PII pair<INT,INT>
@@ -59,8 +68,54 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		string mp[2];
+		cin>>mp[0]>>mp[1];
+		string ansstr;
+		INT x=0,y=0;
+//		INT dp[2][n]={};
+//		dp[0][0]=1;
+//		for(INT i=0;i<n-1;i++){
+//			if(mp[0][i+1]==mp[1][i]){
+//				dp[0][i+1]+=dp[0][i];
+//				dp[1][i]+=dp[0][i];
+//				dp[1][i+1]+=dp[1][i];
+//			}else if(mp[0][i+1]=='0'){
+//				dp[0][i+1]+=dp[0][i];
+//			}else{
+//				dp[
+//			}
+//		}
+		INT cnt=1;
+		while(x!=1 || y!=n-1){
+			ansstr+=mp[x][y];
+			if(x==1){
+				y++;
+			}else if(y==n-1){
+				x++;
+			}else if(mp[x+1][y]==mp[x][y+1]){
+				y++;
+				cnt++;
+			}else if(mp[x+1][y]=='0'){
+				x++;
+			}else{
+				y++;
+				cnt=1;
+			}
+		}
+		ansstr+=mp[1][n-1];
+		cout<<ansstr<<endl;
+//		cout<<dp[1][n-1]<<endl;
+		cout<<cnt<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

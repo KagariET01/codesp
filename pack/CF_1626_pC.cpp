@@ -1,4 +1,5 @@
 
+
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -49,7 +50,9 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 }
 
 
-
+INT cer(INT c){
+	return (c+1)*c/2;
+}
 
 
 
@@ -59,6 +62,32 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		PII lst[n];
+		for(auto&[i,j]:lst)cin>>i;
+		for(auto&[i,j]:lst)cin>>j;
+		INT dp[n]={};
+		for(INT i=0;i<n;i++){
+			dp[i]=lst[i].F-lst[i].S+1;
+			for(INT j=i-1;j>=0;j--){
+				if(lst[j].F>=dp[i])mins(dp[i],dp[j]);
+			}
+		}
+		INT ans=0;
+		INT nw=1e18;
+		for(INT i=n-1;i>=0;i--){
+			if(lst[i].F<nw){
+				nw=dp[i];
+				ans+=cer(lst[i].F-dp[i]+1);
+
+			}
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 

@@ -1,3 +1,12 @@
+# [`CF 1609 pC`](https://codeforces.com/contest/1609/problem/C) Complex Market Analysis
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -48,7 +57,24 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 	return(ou<<"}");
 }
 
+vector<INT> prime(INT n){
+	vector<INT> re;
+	vector<INT> l(n+1);
+	if(n<2)return re;
+	for(INT i=2;i<=n;i++){
+		if(l[i]<=1){
+			re.push_back(i);
+		}
+		for(INT&j:re){
+			if(i*j>n)break;
+			l[i*j]=j;
+			if(j==l[i])break;
+		}
 
+
+	}
+	return re;
+}
 
 
 
@@ -59,8 +85,58 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	vector<INT> v=prime(1e6+5);
+	vector<bool> v2(1e6+5);
+	for(INT&i:v){
+		v2[i]=true;
+	}
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,e;
+		cin>>n>>e;
+		INT a[n];
+		for(INT&i:a)cin>>i;
+		vector<INT> lst[e];
+		for(INT i=0;i<n;i++){
+			lst[i%e].push_back(a[i]);
+		}
+//		for(INT i=0;i<e;i++){
+//			cout<<lst[i]<<endl;
+//		}
+		INT ans=0;
+		for(INT i=0;i<e;i++){
+			INT loc=1;
+			INT roc=1;
+			bool f=0;
+			for(INT j=0;j<lst[i].size();j++){
+				if(lst[i][j]==1){
+					if(!f)loc++;
+					else roc++;
+				}else if(v2[lst[i][j]]){
+					if(f){
+						ans+=loc*roc-1;
+						loc=roc;
+						roc=1;
+					}
+					f=1;
+				}else{
+					ans+=(loc*roc-1)*f;
+					f=0;
+					loc=roc=1;
+				}
+			}
+			if(f){
+				ans+=loc*roc-1;
+			}
+//			cout<<ans<<endl;
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

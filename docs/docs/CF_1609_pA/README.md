@@ -1,3 +1,12 @@
+# [`CF 1609 pA`](https://codeforces.com/contest/1609/problem/A)  
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -59,8 +68,31 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		INT tc=0;
+		INT a[n];
+		INT mx=0;
+		INT tot=0;
+		for(INT&i:a){
+			cin>>i;
+			while(!(i&1)){
+				i/=2;
+				tc++;
+			}
+			maxs(mx,i);
+			tot+=i;
+		}
+		tot-=mx;
+		cout<<(mx<<tc)+tot<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

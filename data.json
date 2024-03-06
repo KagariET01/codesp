@@ -37,6 +37,66 @@
       "AC": false
     },
     {
+      "qname": " ",
+      "fname": "CF_1609_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1609 pA",
+          "link": "https://codeforces.com/contest/1609/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1609_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "William the Vigilant",
+      "fname": "CF_1609_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1609 pB",
+          "link": "https://codeforces.com/contest/1609/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1609_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Complex Market Analysis",
+      "fname": "CF_1609_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1609 pC",
+          "link": "https://codeforces.com/contest/1609/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1609_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Monsters And Spells",
+      "fname": "CF_1626_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1626 pC",
+          "link": "https://codeforces.com/contest/1626/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1626_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Tales of a Sort",
       "fname": "CF_1856_pA",
       "qlink": [
@@ -1025,6 +1085,21 @@
       "AC": false
     },
     {
+      "qname": "Final Countdown",
+      "fname": "CF_1932_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1932 pE",
+          "link": "https://codeforces.com/contest/1932/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1932_pE.py",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Turtle Puzzle: Rearrange and Negate",
       "fname": "CF_1933_pA",
       "qlink": [
@@ -1098,6 +1173,36 @@
       "ans_code": "pack/CF_1933_pE.cpp",
       "ans_TXT": "pack/CF_1933_pE.md",
       "AC": false
+    },
+    {
+      "qname": " ",
+      "fname": "CF_1937_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1937 pA",
+          "link": "https://codeforces.com/contest/1937/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1937_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Binary Path",
+      "fname": "CF_1937_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1937 pB",
+          "link": "https://codeforces.com/contest/1937/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1937_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
     },
     {
       "qname": "String Matching",
@@ -1616,6 +1721,51 @@
       "AC": true
     },
     {
+      "qname": "The Strongest Chain (0 尾版)",
+      "fname": "ZJ_m713",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m713",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m713"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m713.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "小明的作業 (t 筆測資版)",
+      "fname": "ZJ_n222",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "n222",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=n222"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_n222.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "我討厭零錢",
+      "fname": "ZJ_n262",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "n262",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=n262"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_n262.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "線段樹",
       "fname": "seg_tree",
       "qlink": [
@@ -1630,6 +1780,39 @@
       ],
       "ans_code": "temp/seg_tree.cpp",
       "ans_TXT": "temp/seg_tree.md",
+      "AC": true
+    },
+    {
+      "qname": "圖連通分量",
+      "fname": "tarjan",
+      "qlink": [
+        {
+          "OJ": "CSES",
+          "PID": "2077",
+          "link": "https://cses.fi/problemset/task/2077/"
+        }
+      ],
+      "tag": [
+        "grapth",
+        "dfs"
+      ],
+      "ans_code": "temp/tarjan.cpp",
+      "ans_TXT": "temp/tarjan.md",
+      "AC": true
+    },
+    {
+      "qname": "Bitwise Operation Wizard",
+      "fname": "CF_1937_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1937 pC",
+          "link": "https://codeforces.com/contest/1937/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1937_pC.cpp",
+      "ans_TXT": "",
       "AC": true
     }
   ],

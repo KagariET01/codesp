@@ -1,3 +1,12 @@
+# [`CF 1933 pC`](https://codeforces.com/contest/1933/problem/C) Turtle Fingers: Count the Values of k
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -11,9 +20,6 @@ using namespace std;
 #define endl '\n'
 #define F first
 #define S second
-#define mins(a,b) a=min(a,b)
-#define maxs(a,b) a=max(a,b)
-
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 
@@ -22,10 +28,6 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,pair<T1,T2>p){
 }
 template<typename T1,typename T2>istream&operator>>(istream&in,pair<T1,T2>&p){
 	return in>>p.first>>p.second;
-}
-template<typename T>istream&operator>>(istream&in,vector<T>&vec){
-	for(T&i:vec)in>>i;
-	return in;
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
@@ -59,8 +61,30 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT l,a,b;
+		cin>>a>>b>>l;
+		set<INT> se;
+		INT aa=1;
+		for(INT i=0;i<30;i++){
+			if(aa>l)break;
+			INT bb=1;
+			for(INT j=0;j<30;j++){
+				INT nw=(l/aa)/bb;
+				if((nw*aa*bb)==l)se.insert(nw);
+				if(aa*bb>l)break;
+				bb*=b;
+			}
+			aa*=a;
+		}
+		cout<<se.size()<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

@@ -1,6 +1,10 @@
 # CF
 [back](..)  
 
+[`CF 1609 pA`  ](/codesp/docs/CF_1609_pA)  
+[`CF 1609 pB` William the Vigilant](/codesp/docs/CF_1609_pB)  
+[`CF 1609 pC` Complex Market Analysis](/codesp/docs/CF_1609_pC)  
+[`CF 1626 pC` Monsters And Spells](/codesp/docs/CF_1626_pC)  
 [`CF 1856 pB` Good Arrays](/codesp/docs/CF_1856_pB)  
 [`CF 1856 pC` To Become Max](/codesp/docs/CF_1856_pC)  
 [`CF 1888 pA` `CF 1883 pB` Chemistry](/codesp/docs/CF_1888_pA)  
@@ -53,3 +57,6 @@
 [`CF 1933 pB` Turtle Math: Fast Three Task](/codesp/docs/CF_1933_pB)  
 [`CF 1933 pC` Turtle Fingers: Count the Values of k](/codesp/docs/CF_1933_pC)  
 [`CF 1933 pD` Turtle Tenacity: Continual Mods](/codesp/docs/CF_1933_pD)  
+[`CF 1937 pA`  ](/codesp/docs/CF_1937_pA)  
+[`CF 1937 pB` Binary Path](/codesp/docs/CF_1937_pB)  
+[`CF 1937 pC` Bitwise Operation Wizard](/codesp/docs/CF_1937_pC)  

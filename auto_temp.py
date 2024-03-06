@@ -1,6 +1,6 @@
-supported = ["ZJ","TIOJ","CF"]
+supported = ["ZJ","TIOJ","CF","NEOJ","TEMP"]
 
-def ZJ(pid,cid,qname):
+def ZJ(cid,pid,qname):
 	return {
 		"qname": qname,
 		"fname": "ZJ_"+pid,
@@ -17,7 +17,7 @@ def ZJ(pid,cid,qname):
 		"AC": False
 	}
 
-def TIOJ(pid,cid,qname):
+def TIOJ(cid,pid,qname):
 	return {
 		"qname": qname,
 		"fname": "TIOJ_"+pid,
@@ -30,6 +30,23 @@ def TIOJ(pid,cid,qname):
 		],
 		"tag": [],
 		"ans_code": "pack/TIOJ_"+pid+".cpp",
+		"ans_TXT": "",
+		"AC": False
+	}
+
+def NEOJ(cid,pid,qname):
+	return {
+		"qname": qname,
+		"fname": "NEOJ_"+pid,
+		"qlink": [
+			{
+				"OJ": "NEOJ",
+				"PID": pid,
+				"link": "https://neoj.sprout.tw/problem/"+pid+"/"
+			}
+		],
+		"tag": [],
+		"ans_code": "pack/NEOJ_"+pid+".cpp",
 		"ans_TXT": "",
 		"AC": False
 	}

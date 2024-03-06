@@ -1,4 +1,5 @@
 
+
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -59,6 +60,30 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT n,q;
+	cin>>n>>q;
+	string str;
+	cin>>str;
+	INT bsc=0;
+	auto checker=[&](INT p){
+		if(p<0 || n<=p)return 0;
+		if(str[p]=='a' && str[p+1]=='b' && str[p+2]=='c')return 1;
+		return 0;
+	};
+
+	for(INT i=0;i<n-2;i++){
+		bsc+=checker(i);
+	}
+	for(INT i=0;i<q;i++){
+		INT p;
+		char c;
+		cin>>p>>c;
+		p--;
+		bsc-=checker(p-(str[p]-'a'));
+		str[p]=c;
+		bsc+=checker(p-(str[p]-'a'));
+		cout<<bsc<<endl;
+	}
 	return 0;
 }
 
