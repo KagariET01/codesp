@@ -1,11 +1,3 @@
-# [`CF 1937 pC`](https://codeforces.com/contest/1937/problem/C) [`CF 1936 pA`](https://codeforces.com/contest/1936/problem/A) Bitwise Operation Wizard
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 
 #include<bits/stdc++.h>
@@ -59,14 +51,7 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 
 
-char query(INT a,INT b,INT c,INT d){
-	cout<<"? "<<a<<' '<<b<<' '<<c<<' '<<d<<endl;
-	cout.flush();
-	char re;
-	cin>>re;
-	cout.flush();
-	return re;
-}
+
 
 
 
@@ -74,42 +59,49 @@ char query(INT a,INT b,INT c,INT d){
 
 
 int main(){
-	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
-		if(n==2){
-			cout<<"! 0 1"<<endl;
-			continue;
-		}
-		INT ans1=0,ans2;
-		vector<INT> vec;
-		vec.push_back(0);
-		for(INT i=1;i<n;i++){
-			char re=query(ans1,ans1,i,i);
-			if(re=='<'){
-				ans1=i;
+		INT n,m;
+		cin>>n>>m;
+		INT lu,ru,ld,rd;
+		cout<<"? 1 1"<<endl;//lu
+		cout<<"? 1 "<<m<<endl;//ru
+		cout<<"? "<<n<<" 1"<<endl;
+		cout<<"? "<<n<<" "<<m<<endl;
+		cout.flush();
+		cin>>lu>>ru>>ld>>rd;
+		INT x,y;
+		//get y
+		if(abs(lu-ru)+1==m){
+			if(lu>ru)y=m;
+			else y=1;
+		}else{
+			INT mn=min(lu,ru);
+			lu-=mn,ru-=mn;
+			if(lu==0){
+				y=m-ru-1;
+			}else{
+				y=lu+1;
 			}
+			lu+=mn,ru+=mn;
 		}
-		for(INT i=1;i<n;i++){
-			char re=query(ans1,vec[0],ans1,i);
-			if(re=='<'){
-				vec.clear();
-				vec.push_back(i);
-			}else if(re=='='){
-				vec.push_back(i);
+		//get x
+		if(abs(lu-ld)+1==n){
+			if(lu>ld)x=n;
+			else x=1;
+		}else{
+			INT mn=min(lu,ld);
+			lu-=mn,ld-=mn;
+			if(lu==0){
+				x=n-ld-1;
+			}else{
+				x=lu+1;
 			}
+			lu+=mn,ld+=mn;
 		}
-		ans2=vec[0];
-		for(INT i=1;i<vec.size();i++){
-			char re=query(ans2,ans2,vec[i],vec[i]);
-			if(re=='>'){
-				ans2=vec[i];
-			}
-		}
-		cout<<"! "<<ans1<<" "<<ans2<<endl;
+		cout<<"! "<<x<<" "<<y<<endl;
 		cout.flush();
 	}
 	return 0;
@@ -117,5 +109,3 @@ int main(){
 
 
 
-
-```

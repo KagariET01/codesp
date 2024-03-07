@@ -1,4 +1,4 @@
-# [`CF 1937 pA`](https://codeforces.com/contest/1937/problem/A)  
+# [`CF 1937 pA`](https://codeforces.com/contest/1937/problem/A) Shuffle Party
 ## 標籤
 
 ## 題解

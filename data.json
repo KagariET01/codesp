@@ -1834,6 +1834,105 @@
       "ans_code": "temp/tarjan.cpp",
       "ans_TXT": "temp/tarjan.md",
       "AC": true
+    },
+    {
+      "qname": " ",
+      "fname": "CF_1934_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1934 pA",
+          "link": "https://codeforces.com/contest/1934/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1934_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Yet Another Coin Problem",
+      "fname": "CF_1934_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1934 pB",
+          "link": "https://codeforces.com/contest/1934/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1934_pB.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Find a Mine",
+      "fname": "CF_1934_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1934 pC",
+          "link": "https://codeforces.com/contest/1934/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1934_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": " ",
+      "fname": "CF_1922_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1922 pA",
+          "link": "https://codeforces.com/contest/1922/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1922_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Forming Triangles",
+      "fname": "CF_1922_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1922 pB",
+          "link": "https://codeforces.com/contest/1922/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1922_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Closest Cities",
+      "fname": "CF_1922_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1922 pC",
+          "link": "https://codeforces.com/contest/1922/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1922_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [

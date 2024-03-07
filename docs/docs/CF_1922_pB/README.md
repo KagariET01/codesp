@@ -1,4 +1,4 @@
-# [`CF 1937 pC`](https://codeforces.com/contest/1937/problem/C) [`CF 1936 pA`](https://codeforces.com/contest/1936/problem/A) Bitwise Operation Wizard
+# [`CF 1922 pB`](https://codeforces.com/contest/1922/problem/B) Forming Triangles
 ## 標籤
 
 ## 題解
@@ -59,14 +59,7 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 
 
-char query(INT a,INT b,INT c,INT d){
-	cout<<"? "<<a<<' '<<b<<' '<<c<<' '<<d<<endl;
-	cout.flush();
-	char re;
-	cin>>re;
-	cout.flush();
-	return re;
-}
+
 
 
 
@@ -74,43 +67,28 @@ char query(INT a,INT b,INT c,INT d){
 
 
 int main(){
-	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	INT t;
 	cin>>t;
 	while(t--){
 		INT n;
 		cin>>n;
-		if(n==2){
-			cout<<"! 0 1"<<endl;
-			continue;
+		vector<INT> a(n+1);
+		for(INT i=0;i<n;i++){
+			a[read(INT)]++;
 		}
-		INT ans1=0,ans2;
-		vector<INT> vec;
-		vec.push_back(0);
-		for(INT i=1;i<n;i++){
-			char re=query(ans1,ans1,i,i);
-			if(re=='<'){
-				ans1=i;
+		INT nwtot=n;
+		INT ans=0;
+		for(INT i=n;i>=0;i--){
+			nwtot-=a[i];
+			if(a[i]>=3){//正三角
+				ans+=a[i]*(a[i]-1)*(a[i]-2)/(3*2*1);
+			}
+			if(a[i]>=2){//等腰三角
+				ans+=(a[i]*(a[i]-1))/2*nwtot;
 			}
 		}
-		for(INT i=1;i<n;i++){
-			char re=query(ans1,vec[0],ans1,i);
-			if(re=='<'){
-				vec.clear();
-				vec.push_back(i);
-			}else if(re=='='){
-				vec.push_back(i);
-			}
-		}
-		ans2=vec[0];
-		for(INT i=1;i<vec.size();i++){
-			char re=query(ans2,ans2,vec[i],vec[i]);
-			if(re=='>'){
-				ans2=vec[i];
-			}
-		}
-		cout<<"! "<<ans1<<" "<<ans2<<endl;
-		cout.flush();
+		cout<<ans<<endl;
 	}
 	return 0;
 }

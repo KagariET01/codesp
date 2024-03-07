@@ -87,3 +87,7 @@
 [`ZJ n222` 小明的作業 (t 筆測資版)](/codesp/docs/ZJ_n222)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
+[`CF 1934 pA`  ](/codesp/docs/CF_1934_pA)  
+[`CF 1922 pA`  ](/codesp/docs/CF_1922_pA)  
+[`CF 1922 pB` Forming Triangles](/codesp/docs/CF_1922_pB)  
+[`CF 1922 pC` Closest Cities](/codesp/docs/CF_1922_pC)  
