@@ -1,4 +1,4 @@
-# [`CF 1937 pC`](https://codeforces.com/contest/1937/problem/C) [`CF 1936 pA`](https://codeforces.com/contest/1936/problem/A) Bitwise Operation Wizard
+# [`CF 1937 pC`](https://codeforces.com/contest/1937/problem/C) Bitwise Operation Wizard
 ## 標籤
 
 ## 題解

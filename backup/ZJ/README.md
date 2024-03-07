@@ -11,3 +11,4 @@
 [`ZJ h561` 間諜(spy)](/codesp/docs/ZJ_h561)  
 [`ZJ k413` Python 縮排檢查](/codesp/docs/ZJ_k413)  
 [`ZJ k734` 開啟寶盒](/codesp/docs/ZJ_k734)  
+[`ZJ n222` 小明的作業 (t 筆測資版)](/codesp/docs/ZJ_n222)  

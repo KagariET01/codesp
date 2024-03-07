@@ -1175,7 +1175,22 @@
       "AC": false
     },
     {
-      "qname": " ",
+      "qname": "Messenger in MAC",
+      "fname": "CF_1935_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1935 pC",
+          "link": "https://codeforces.com/contest/1935/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1935_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Shuffle Party",
       "fname": "CF_1937_pA",
       "qlink": [
         {
@@ -1201,6 +1216,26 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_1937_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Bitwise Operation Wizard",
+      "fname": "CF_1937_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1937 pC",
+          "link": "https://codeforces.com/contest/1937/problem/C"
+        },
+        {
+          "OJ": "CF",
+          "PID": "1936 pA",
+          "link": "https://codeforces.com/contest/1936/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1937_pC.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -1798,21 +1833,6 @@
       ],
       "ans_code": "temp/tarjan.cpp",
       "ans_TXT": "temp/tarjan.md",
-      "AC": true
-    },
-    {
-      "qname": "Bitwise Operation Wizard",
-      "fname": "CF_1937_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1937 pC",
-          "link": "https://codeforces.com/contest/1937/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1937_pC.cpp",
-      "ans_TXT": "",
       "AC": true
     }
   ],
