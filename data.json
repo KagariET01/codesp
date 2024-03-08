@@ -37,6 +37,15 @@
       "AC": false
     },
     {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": " ",
       "fname": "CF_1609_pA",
       "qlink": [
@@ -354,6 +363,21 @@
       "AC": true
     },
     {
+      "qname": "",
+      "fname": "CF_1917_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1917 pA",
+          "link": "https://codeforces.com/contest/1917/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1917_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Brick Wall",
       "fname": "CF_1918_pA",
       "qlink": [
@@ -530,6 +554,51 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_1921_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": " ",
+      "fname": "CF_1922_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1922 pA",
+          "link": "https://codeforces.com/contest/1922/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1922_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Forming Triangles",
+      "fname": "CF_1922_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1922 pB",
+          "link": "https://codeforces.com/contest/1922/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1922_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Closest Cities",
+      "fname": "CF_1922_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1922 pC",
+          "link": "https://codeforces.com/contest/1922/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1922_pC.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -1175,6 +1244,51 @@
       "AC": false
     },
     {
+      "qname": " ",
+      "fname": "CF_1934_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1934 pA",
+          "link": "https://codeforces.com/contest/1934/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1934_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Yet Another Coin Problem",
+      "fname": "CF_1934_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1934 pB",
+          "link": "https://codeforces.com/contest/1934/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1934_pB.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Find a Mine",
+      "fname": "CF_1934_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1934 pC",
+          "link": "https://codeforces.com/contest/1934/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1934_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Messenger in MAC",
       "fname": "CF_1935_pC",
       "qlink": [
@@ -1254,6 +1368,21 @@
         "hash"
       ],
       "ans_code": "pack/CSES_1753.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "一天遊戲只能一小時",
+      "fname": "NEOJ_25",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "25",
+          "link": "https://neoj.sprout.tw/problem/25/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_25.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -1798,7 +1927,7 @@
       "tag": [],
       "ans_code": "pack/ZJ_n262.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "線段樹",
@@ -1836,101 +1965,47 @@
       "AC": true
     },
     {
-      "qname": " ",
-      "fname": "CF_1934_pA",
+      "qname": "Game with Multiset",
+      "fname": "CF_1913_pC",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1934 pA",
-          "link": "https://codeforces.com/contest/1934/problem/A"
+          "PID": "1913 pC",
+          "link": "https://codeforces.com/contest/1913/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1934_pA.cpp",
+      "ans_code": "pack/CF_1913_pC.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Yet Another Coin Problem",
-      "fname": "CF_1934_pB",
+      "qname": "Rating Increase",
+      "fname": "CF_1913_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1934 pB",
-          "link": "https://codeforces.com/contest/1934/problem/B"
+          "PID": "1913 pA",
+          "link": "https://codeforces.com/contest/1913/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1934_pB.cpp",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "Find a Mine",
-      "fname": "CF_1934_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1934 pC",
-          "link": "https://codeforces.com/contest/1934/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1934_pC.cpp",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": " ",
-      "fname": "CF_1922_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1922 pA",
-          "link": "https://codeforces.com/contest/1922/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1922_pA.cpp",
+      "ans_code": "pack/CF_1913_pA.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Forming Triangles",
-      "fname": "CF_1922_pB",
+      "qname": "Swap and Delete",
+      "fname": "CF_1913_pB",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1922 pB",
-          "link": "https://codeforces.com/contest/1922/problem/B"
+          "PID": "1913 pB",
+          "link": "https://codeforces.com/contest/1913/problem/B"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1922_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "Closest Cities",
-      "fname": "CF_1922_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1922 pC",
-          "link": "https://codeforces.com/contest/1922/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1922_pC.cpp",
+      "ans_code": "pack/CF_1913_pB.cpp",
       "ans_TXT": "",
       "AC": true
     }
