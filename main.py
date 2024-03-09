@@ -106,9 +106,10 @@ def edit_ans():
 				print("輸入-3向左移動")
 				print("輸入-4編輯")
 				print("輸入-5刪除")
-				print("輸入-6打開題解(code)")
-				print("輸入-7輸出題解(code)")
+				print("輸入-6打開題解(vim code)")
+				print("輸入-7輸出題解(cat < code)")
 				print("輸入-8打開題解(md)")
+				print("輸入-8打開題解(cat > code)")
 				op2=int(IN(">"))
 				if(op2==-1):#  結束
 					break
@@ -253,10 +254,13 @@ def edit_ans():
 					os.system("clear")
 					os.system("cat < "+dta["data"][nwid]["ans_code"])
 					print()
-					IN("按任意鍵繼續")
+					IN("")
 				elif(op2==-8):#  打開題解(md)
 					os.system("clear")
 					os.system("vim "+dta["data"][nwid]["ans_TXT"])
+				elif(op2==-9):#  打開題解(cpp)
+					os.system("clear")
+					os.system("cat > "+dta["data"][nwid]["ans_code"])
 
 
 def edit_tag():

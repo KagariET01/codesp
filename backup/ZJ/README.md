@@ -12,3 +12,4 @@
 [`ZJ k413` Python 縮排檢查](/codesp/docs/ZJ_k413)  
 [`ZJ k734` 開啟寶盒](/codesp/docs/ZJ_k734)  
 [`ZJ n222` 小明的作業 (t 筆測資版)](/codesp/docs/ZJ_n222)  
+[`ZJ n262` 我討厭零錢](/codesp/docs/ZJ_n262)  

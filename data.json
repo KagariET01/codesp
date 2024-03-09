@@ -331,6 +331,51 @@
       "AC": false
     },
     {
+      "qname": "Rating Increase",
+      "fname": "CF_1913_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1913 pA",
+          "link": "https://codeforces.com/contest/1913/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1913_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Swap and Delete",
+      "fname": "CF_1913_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1913 pB",
+          "link": "https://codeforces.com/contest/1913/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1913_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Game with Multiset",
+      "fname": "CF_1913_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1913 pC",
+          "link": "https://codeforces.com/contest/1913/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1913_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Training Before the Olympiad",
       "fname": "CF_1916_pC",
       "qlink": [
@@ -1387,6 +1432,36 @@
       "AC": true
     },
     {
+      "qname": "染色遊戲",
+      "fname": "NEOJ_46",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "46",
+          "link": "https://neoj.sprout.tw/problem/46/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_46.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "2024算法班入芽考_pA 芽芽與機器人",
+      "fname": "NEOJ_872",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "872",
+          "link": "https://neoj.sprout.tw/problem/872/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_872.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "網路遮罩",
       "fname": "TIOJ_1998",
       "qlink": [
@@ -1962,51 +2037,6 @@
       ],
       "ans_code": "temp/tarjan.cpp",
       "ans_TXT": "temp/tarjan.md",
-      "AC": true
-    },
-    {
-      "qname": "Game with Multiset",
-      "fname": "CF_1913_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1913 pC",
-          "link": "https://codeforces.com/contest/1913/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1913_pC.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Rating Increase",
-      "fname": "CF_1913_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1913 pA",
-          "link": "https://codeforces.com/contest/1913/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1913_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Swap and Delete",
-      "fname": "CF_1913_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1913 pB",
-          "link": "https://codeforces.com/contest/1913/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1913_pB.cpp",
-      "ans_TXT": "",
       "AC": true
     }
   ],
