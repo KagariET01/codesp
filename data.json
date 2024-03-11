@@ -1447,6 +1447,21 @@
       "AC": true
     },
     {
+      "qname": "1d-kd-tree",
+      "fname": "NEOJ_47",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "47",
+          "link": "https://neoj.sprout.tw/problem/47/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_47.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "2024算法班入芽考_pA 芽芽與機器人",
       "fname": "NEOJ_872",
       "qlink": [
@@ -2037,6 +2052,66 @@
       ],
       "ans_code": "temp/tarjan.cpp",
       "ans_TXT": "temp/tarjan.md",
+      "AC": true
+    },
+    {
+      "qname": "2024算法班入芽考_pB 芽芽的成績單",
+      "fname": "NEOJ_873",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "873",
+          "link": "https://neoj.sprout.tw/problem/873/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_873.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "2024算法班入芽考_pC 芽芽與密碼鎖",
+      "fname": "NEOJ_874",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "874",
+          "link": "https://neoj.sprout.tw/problem/874/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_874.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "2024算法班入芽考_pD 芽芽與新公車",
+      "fname": "NEOJ_875",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "875",
+          "link": "https://neoj.sprout.tw/problem/875/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_875.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "2024算法班入芽考_pE 芽芽與學習歷程",
+      "fname": "NEOJ_876",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "876",
+          "link": "https://neoj.sprout.tw/problem/876/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_876.cpp",
+      "ans_TXT": "",
       "AC": true
     }
   ],
