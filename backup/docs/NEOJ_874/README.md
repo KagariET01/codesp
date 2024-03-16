@@ -1,4 +1,12 @@
-#include<bits/stdc++.h>
+# [`NEOJ 874`](https://neoj.sprout.tw/problem/874/) 2024算法班入芽考_pC 芽芽與密碼鎖
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+[O[I#include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
 #define read(n) reader<n>()
@@ -32,3 +40,5 @@ int main(){
 	return 0;
 }
 
+
+```
