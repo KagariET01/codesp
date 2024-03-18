@@ -46,6 +46,15 @@
       "AC": false
     },
     {
+      "qname": "",
+      "fname": "0test",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "pack/test.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": " ",
       "fname": "CF_1609_pA",
       "qlink": [
@@ -1399,6 +1408,66 @@
       "AC": true
     },
     {
+      "qname": "",
+      "fname": "CF_1944_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1944 pA",
+          "link": "https://codeforces.com/contest/1944/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1944_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Equal XOR",
+      "fname": "CF_1944_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1944 pB",
+          "link": "https://codeforces.com/contest/1944/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1944_pB.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "MEX Game 1",
+      "fname": "CF_1944_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1944 pC",
+          "link": "https://codeforces.com/contest/1944/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1944_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "二元搜尋樹",
+      "fname": "CF__p48",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": " p48",
+          "link": "https://codeforces.com/contest//problem/48"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF__p48.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "String Matching",
       "fname": "CSES_1753",
       "qlink": [
@@ -2130,19 +2199,19 @@
       "AC": true
     },
     {
-      "qname": "二元搜尋樹",
-      "fname": "CF__p48",
+      "qname": "Entertainment in MAC",
+      "fname": "CF_1935_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": " p48",
-          "link": "https://codeforces.com/contest//problem/48"
+          "PID": "1935 pA",
+          "link": "https://codeforces.com/contest/1935/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF__p48.cpp",
+      "ans_code": "pack/CF_1935_pA.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     }
   ],
   "tag": [

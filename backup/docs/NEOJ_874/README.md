@@ -6,7 +6,7 @@ NOT FOUND
 
 ## 程式碼
 ```cpp
-[O[I#include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
 #define read(n) reader<n>()

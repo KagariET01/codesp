@@ -105,3 +105,4 @@
 [`ZJ n262` 我討厭零錢](/codesp/docs/ZJ_n262)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
+[`CF 1935 pA` Entertainment in MAC](/codesp/docs/CF_1935_pA)  

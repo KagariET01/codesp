@@ -1,3 +1,11 @@
+# [`ZJ m279`](https://zerojudge.tw/ShowProblem?problemid=m279) 加行號
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 
 #include<bits/stdc++.h>
@@ -59,48 +67,14 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 
 int main(){
-	cin.tie(0);cout.tie(0);cerr.tie(0);ios::sync_with_stdio(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT> lst(n+1);
-		INT ans=0;
-		for(INT i=0;i<n;i++){
-			INT inin=read(INT);
-			if(inin>n)continue;
-			lst[inin]++;
-		}
-		INT alltot=0;
-		INT need=0;
-		vector<INT> bit(n+5);
-		auto lb=[](INT x){
-			return x&(-x);
-		};
-		auto my=[&](INT x){
-			while(x<=n+1){
-				bit[x]++;
-				x+=lb(x);
-			}
-		};
-		auto qy=[&](INT x){
-			INT re=0;
-			while(x){
-				re+=bit[x];
-				x-=lb(x);
-			}
-			return re;
-		};
-		for(INT i=0;i<=n;i++){
-			if(!lst[i])break;
-			my(lst[i]);
-			if(qy(lst[i])>lst[i])break;
-			else ans=i+1;
-		}
-		//cerr<<pit(bit)<<endl;
-		//cerr<<pit(lst)<<endl;
-		cout<<ans<<endl;
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT it=1;
+	string str;
+	while(getline(cin,str)){
+		cout<<setw(3)<<it;
+		cout<<": ";
+		cout<<str<<endl;
+		it++;
 	}
 	return 0;
 }
@@ -108,3 +82,4 @@ int main(){
 
 
 
+```

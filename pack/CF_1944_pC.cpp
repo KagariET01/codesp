@@ -69,34 +69,16 @@ int main(){
 		INT ans=0;
 		for(INT i=0;i<n;i++){
 			INT inin=read(INT);
-			if(inin>n)continue;
 			lst[inin]++;
 		}
 		INT alltot=0;
 		INT need=0;
-		vector<INT> bit(n+5);
-		auto lb=[](INT x){
-			return x&(-x);
-		};
-		auto my=[&](INT x){
-			while(x<=n+1){
-				bit[x]++;
-				x+=lb(x);
-			}
-		};
-		auto qy=[&](INT x){
-			INT re=0;
-			while(x){
-				re+=bit[x];
-				x-=lb(x);
-			}
-			return re;
-		};
+		bool one=0;
 		for(INT i=0;i<=n;i++){
 			if(!lst[i])break;
-			my(lst[i]);
-			if(qy(lst[i])>lst[i])break;
-			else ans=i+1;
+			if(lst[i]==1&&one)break;
+			one=lst[i]==1;
+			ans=i+1;
 		}
 		//cerr<<pit(bit)<<endl;
 		//cerr<<pit(lst)<<endl;
@@ -104,7 +86,6 @@ int main(){
 	}
 	return 0;
 }
-
 
 
 

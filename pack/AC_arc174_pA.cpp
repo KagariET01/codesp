@@ -59,52 +59,43 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 
 
 int main(){
-	cin.tie(0);cout.tie(0);cerr.tie(0);ios::sync_with_stdio(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT> lst(n+1);
-		INT ans=0;
-		for(INT i=0;i<n;i++){
-			INT inin=read(INT);
-			if(inin>n)continue;
-			lst[inin]++;
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT n,c;
+	cin>>n>>c;
+	vector<INT> a(n);
+	cin>>a;
+	INT tot=0;
+	for(INT&i:a)tot+=i;
+	INT al=0;
+	INT bl=0;
+	INT mx=0;
+	INT mn=0;
+	INT anw=0;
+	INT bnw=0;
+	for(INT r=0;r<n;r++){
+		anw+=a[r];
+		bnw+=a[r];
+		while(anw<0){
+			anw-=a[al];
+			al++;
 		}
-		INT alltot=0;
-		INT need=0;
-		vector<INT> bit(n+5);
-		auto lb=[](INT x){
-			return x&(-x);
-		};
-		auto my=[&](INT x){
-			while(x<=n+1){
-				bit[x]++;
-				x+=lb(x);
-			}
-		};
-		auto qy=[&](INT x){
-			INT re=0;
-			while(x){
-				re+=bit[x];
-				x-=lb(x);
-			}
-			return re;
-		};
-		for(INT i=0;i<=n;i++){
-			if(!lst[i])break;
-			my(lst[i]);
-			if(qy(lst[i])>lst[i])break;
-			else ans=i+1;
+		while(bnw>0){
+			bnw-=a[bl];
+			bl++;
 		}
-		//cerr<<pit(bit)<<endl;
-		//cerr<<pit(lst)<<endl;
-		cout<<ans<<endl;
+		maxs(mx,anw);
+		mins(mn,bnw);
 	}
+	if(c<=0){
+		tot-=mn;
+		tot+=mn*c;
+	}else{
+		tot-=mx;
+		tot+=mx*c;
+	}
+	cout<<tot<<endl;
 	return 0;
 }
-
 
 
 
