@@ -1343,6 +1343,21 @@
       "AC": false
     },
     {
+      "qname": "Entertainment in MAC",
+      "fname": "CF_1935_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1935 pA",
+          "link": "https://codeforces.com/contest/1935/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1935_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Messenger in MAC",
       "fname": "CF_1935_pC",
       "qlink": [
@@ -2199,19 +2214,19 @@
       "AC": true
     },
     {
-      "qname": "Entertainment in MAC",
-      "fname": "CF_1935_pA",
+      "qname": "Meet in the Middle",
+      "fname": "CSES_1628",
       "qlink": [
         {
-          "OJ": "CF",
-          "PID": "1935 pA",
-          "link": "https://codeforces.com/contest/1935/problem/A"
+          "OJ": "CSES",
+          "PID": "1628",
+          "link": "https://cses.fi/problemset/task/1628"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1935_pA.cpp",
+      "ans_code": "pack/CSES_1628.cpp",
       "ans_TXT": "",
-      "AC": true
+      "AC": false
     }
   ],
   "tag": [
