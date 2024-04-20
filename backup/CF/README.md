@@ -65,6 +65,7 @@
 [`CF 1933 pC` Turtle Fingers: Count the Values of k](/codesp/docs/CF_1933_pC)  
 [`CF 1933 pD` Turtle Tenacity: Continual Mods](/codesp/docs/CF_1933_pD)  
 [`CF 1934 pA`  ](/codesp/docs/CF_1934_pA)  
+[`CF 1935 pA` Entertainment in MAC](/codesp/docs/CF_1935_pA)  
 [`CF 1935 pC` Messenger in MAC](/codesp/docs/CF_1935_pC)  
 [`CF 1937 pA` Shuffle Party](/codesp/docs/CF_1937_pA)  
 [`CF 1937 pB` Binary Path](/codesp/docs/CF_1937_pB)  

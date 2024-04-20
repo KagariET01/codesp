@@ -68,20 +68,15 @@ int main(){
 		vector<INT> lst(n+1);
 		INT ans=0;
 		for(INT i=0;i<n;i++){
-			INT inin=read(INT);
-			lst[inin]++;
+			lst[read(INT)]++;
 		}
-		INT alltot=0;
-		INT need=0;
 		bool one=0;
 		for(INT i=0;i<=n;i++){
 			if(!lst[i])break;
 			if(lst[i]==1&&one)break;
-			one=lst[i]==1;
+			one|=(lst[i]==1);
 			ans=i+1;
 		}
-		//cerr<<pit(bit)<<endl;
-		//cerr<<pit(lst)<<endl;
 		cout<<ans<<endl;
 	}
 	return 0;

@@ -55,6 +55,66 @@
       "AC": false
     },
     {
+      "qname": "",
+      "fname": "AT_abc348_pA",
+      "qlink": [
+        {
+          "OJ": "AT",
+          "PID": "abc348 pA",
+          "link": "https://atcoder.jp/contests/abc348/tasks/abc348_A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/AT_abc348_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Farthest Point",
+      "fname": "AT_abc348_pB",
+      "qlink": [
+        {
+          "OJ": "AT",
+          "PID": "abc348 pB",
+          "link": "https://atcoder.jp/contests/abc348/tasks/abc348_B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/AT_abc348_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Colorful Beans",
+      "fname": "AT_abc348_pC",
+      "qlink": [
+        {
+          "OJ": "AT",
+          "PID": "abc348 pC",
+          "link": "https://atcoder.jp/contests/abc348/tasks/abc348_C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/AT_abc348_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Medicines on Grid",
+      "fname": "AT_abc348_pD",
+      "qlink": [
+        {
+          "OJ": "AT",
+          "PID": "abc348 pD",
+          "link": "https://atcoder.jp/contests/abc348/tasks/abc348_D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/AT_abc348_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": " ",
       "fname": "CF_1609_pA",
       "qlink": [
@@ -1423,6 +1483,71 @@
       "AC": true
     },
     {
+      "qname": "Farmer John's Challenge",
+      "fname": "CF_1942_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1942 pA",
+          "link": "https://codeforces.com/contest/1942/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1942_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Bessie and MEX",
+      "fname": "CF_1942_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1942 pB",
+          "link": "https://codeforces.com/contest/1942/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1942_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Bessie's Birthday Cake",
+      "fname": "CF_1942_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1942 pC1",
+          "link": "https://codeforces.com/contest/1942/problem/C1"
+        },
+        {
+          "OJ": "CF",
+          "PID": "1942 pC2",
+          "link": "https://codeforces.com/contest/1942/problem/C2"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1942_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Learning to Paint",
+      "fname": "CF_1942_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1942 pD",
+          "link": "https://codeforces.com/contest/1942/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1942_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "",
       "fname": "CF_1944_pA",
       "qlink": [
@@ -1465,20 +1590,155 @@
       "tag": [],
       "ans_code": "pack/CF_1944_pC.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
-      "qname": "二元搜尋樹",
-      "fname": "CF__p48",
+      "qname": "Median of an Array",
+      "fname": "CF_1946_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": " p48",
-          "link": "https://codeforces.com/contest//problem/48"
+          "PID": "1946 pA",
+          "link": "https://codeforces.com/contest/1946/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF__p48.cpp",
+      "ans_code": "pack/CF_1946_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Maximum Sum",
+      "fname": "CF_1946_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1946 pB",
+          "link": "https://codeforces.com/contest/1946/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1946_pB.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Tree Cutting",
+      "fname": "CF_1946_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1946 pC",
+          "link": "https://codeforces.com/contest/1946/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1946_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Birthday Gift",
+      "fname": "CF_1946_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1946 pD",
+          "link": "https://codeforces.com/contest/1946/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1946_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Dual Trigger",
+      "fname": "CF_1951_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1951 pA",
+          "link": "https://codeforces.com/contest/1951/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1951_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Battle Cows",
+      "fname": "CF_1951_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1951 pB",
+          "link": "https://codeforces.com/contest/1951/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1951_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Ticket Hoarding",
+      "fname": "CF_1951_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1951 pC",
+          "link": "https://codeforces.com/contest/1951/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1951_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Buying Jewels",
+      "fname": "CF_1951_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1951 pD",
+          "link": "https://codeforces.com/contest/1951/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1951_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "No Palindromes",
+      "fname": "CF_1951_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1951 pE",
+          "link": "https://codeforces.com/contest/1951/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1951_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Meet in the Middle",
+      "fname": "CSES_1628",
+      "qlink": [
+        {
+          "OJ": "CSES",
+          "PID": "1628",
+          "link": "https://cses.fi/problemset/task/1628"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CSES_1628.cpp",
       "ans_TXT": "",
       "AC": false
     },
@@ -1542,6 +1802,21 @@
       ],
       "tag": [],
       "ans_code": "pack/NEOJ_47.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "円円攻略黃河",
+      "fname": "NEOJ_74",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "74",
+          "link": "https://neoj.sprout.tw/problem/74/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_74.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -1881,6 +2156,26 @@
       "AC": true
     },
     {
+      "qname": "髮廊服務優化問題",
+      "fname": "TIOJ_2251",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2251",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2251"
+        },
+        {
+          "OJ": "NHSPC",
+          "PID": "2021 pA",
+          "link": " "
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2251.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "房屋推薦",
       "fname": "TIOJ_2330",
       "qlink": [
@@ -2214,19 +2509,19 @@
       "AC": true
     },
     {
-      "qname": "Meet in the Middle",
-      "fname": "CSES_1628",
+      "qname": "Counting Towers",
+      "fname": "CSES_2413",
       "qlink": [
         {
           "OJ": "CSES",
-          "PID": "1628",
-          "link": "https://cses.fi/problemset/task/1628"
+          "PID": "2413",
+          "link": "https://cses.fi/problemset/task/2413"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CSES_1628.cpp",
+      "ans_code": "pack/CSES_2413.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     }
   ],
   "tag": [

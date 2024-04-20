@@ -1,4 +1,4 @@
-supported = ["ZJ","TIOJ","CF","NEOJ","TEMP"]
+supported = ["ZJ","TIOJ","CF","NEOJ","TEMP","AT","CSES"]
 
 def ZJ(cid,pid,qname):
 	return {
@@ -51,6 +51,23 @@ def NEOJ(cid,pid,qname):
 		"AC": False
 	}
 
+def CSES(cid,pid,qname):
+	return {
+		"qname": qname,
+		"fname": "CSES_"+pid,
+		"qlink": [
+			{
+				"OJ": "CSES",
+				"PID": pid,
+				"link": "https://cses.fi/problemset/task/"+pid
+			}
+		],
+		"tag": [],
+		"ans_code": "pack/CSES_"+pid+".cpp",
+		"ans_TXT": "",
+		"AC": False
+	}
+
 def CF(cid,pid,qname):
 	return {
 		"qname": qname,
@@ -68,6 +85,22 @@ def CF(cid,pid,qname):
 		"AC": False
 	}
 
+def AT(cid,pid,qname):
+	return{
+		"qname":qname,
+		"fname":"AT_"+cid+"_p"+pid,
+		"qlink":[
+			{
+				"OJ":"AT",
+				"PID":cid+" p"+pid,
+				"link":"https://atcoder.jp/contests/"+cid+"/tasks/"+cid+"_"+pid
+			}
+		],
+		"tag":[],
+		"ans_code":"pack/AT_"+cid+"_p"+pid+".cpp",
+		"ans_TXT":"",
+		"AC":False
+	}
 
 def TEMP(cid,pid,qname):
 	return {
