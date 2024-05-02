@@ -115,6 +115,81 @@
       "AC": false
     },
     {
+      "qname": "The bottom of the ninth",
+      "fname": "AT_abc351_pA",
+      "qlink": [
+        {
+          "OJ": "AT",
+          "PID": "abc351 pA",
+          "link": "https://atcoder.jp/contests/abc351/tasks/abc351_A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/AT_abc351_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Spot the Difference",
+      "fname": "AT_abc351_pB",
+      "qlink": [
+        {
+          "OJ": "AT",
+          "PID": "abc351 pB",
+          "link": "https://atcoder.jp/contests/abc351/tasks/abc351_B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/AT_abc351_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Merge the balls",
+      "fname": "AT_abc351_pC",
+      "qlink": [
+        {
+          "OJ": "AT",
+          "PID": "abc351 pC",
+          "link": "https://atcoder.jp/contests/abc351/tasks/abc351_C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/AT_abc351_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Grid and Magnet",
+      "fname": "AT_abc351_pD",
+      "qlink": [
+        {
+          "OJ": "AT",
+          "PID": "abc351 pD",
+          "link": "https://atcoder.jp/contests/abc351/tasks/abc351_D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/AT_abc351_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Jump Distance Sum",
+      "fname": "AT_abc351_pE",
+      "qlink": [
+        {
+          "OJ": "AT",
+          "PID": "abc351 pE",
+          "link": "https://atcoder.jp/contests/abc351/tasks/abc351_E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/AT_abc351_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": " ",
       "fname": "CF_1609_pA",
       "qlink": [
@@ -1728,6 +1803,81 @@
       "AC": true
     },
     {
+      "qname": "",
+      "fname": "CF_1957_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1957 pA",
+          "link": "https://codeforces.com/contest/1957/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1957_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "A BIT of a Construction",
+      "fname": "CF_1957_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1957 pB",
+          "link": "https://codeforces.com/contest/1957/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1957_pB.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "How Does the Rook Move?",
+      "fname": "CF_1957_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1957 pC",
+          "link": "https://codeforces.com/contest/1957/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1957_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Buy Low Sell High",
+      "fname": "CF_865_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "865 pD",
+          "link": "https://codeforces.com/contest/865/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_865_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Buy Low Sell High",
+      "fname": "CF_865_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "865 pD",
+          "link": "https://codeforces.com/contest/865/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_865_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Meet in the Middle",
       "fname": "CSES_1628",
       "qlink": [
@@ -1757,6 +1907,98 @@
         "hash"
       ],
       "ans_code": "pack/CSES_1753.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Counting Towers",
+      "fname": "CSES_2413",
+      "qlink": [
+        {
+          "OJ": "CSES",
+          "PID": "2413",
+          "link": "https://cses.fi/problemset/task/2413"
+        }
+      ],
+      "tag": [
+        "dp"
+      ],
+      "ans_code": "pack/CSES_2413.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "[USACO09OPEN] Work Scheduling G",
+      "fname": "LUOGU_2949",
+      "qlink": [
+        {
+          "OJ": "LUOGU",
+          "PID": "2949",
+          "link": "https://www.luogu.com.cn/problem/P2949"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/LUOGU_2949.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "円円送禮物",
+      "fname": "NEOJ_140",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "140",
+          "link": "https://neoj.sprout.tw/problem/140/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_140.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "取數字1",
+      "fname": "NEOJ_141",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "141",
+          "link": "https://neoj.sprout.tw/problem/141/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_141.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "取數字2",
+      "fname": "NEOJ_142",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "142",
+          "link": "https://neoj.sprout.tw/problem/142/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_142.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "合成円円",
+      "fname": "NEOJ_143",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "143",
+          "link": "https://neoj.sprout.tw/problem/143/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_143.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -1804,6 +2046,21 @@
       "ans_code": "pack/NEOJ_47.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "2024算法班第一階段認證考_pD",
+      "fname": "NEOJ_553",
+      "qlink": [
+        {
+          "OJ": "NEOJ",
+          "PID": "553",
+          "link": "https://neoj.sprout.tw/problem/553/"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/NEOJ_553.cpp",
+      "ans_TXT": "",
+      "AC": false
     },
     {
       "qname": "円円攻略黃河",
@@ -2218,6 +2475,21 @@
       "AC": true
     },
     {
+      "qname": "貪婪之糊",
+      "fname": "ZJ_d652",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "d652",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=d652"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_d652.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "勇者修煉",
       "fname": "ZJ_f314",
       "qlink": [
@@ -2506,21 +2778,6 @@
       ],
       "ans_code": "temp/tarjan.cpp",
       "ans_TXT": "temp/tarjan.md",
-      "AC": true
-    },
-    {
-      "qname": "Counting Towers",
-      "fname": "CSES_2413",
-      "qlink": [
-        {
-          "OJ": "CSES",
-          "PID": "2413",
-          "link": "https://cses.fi/problemset/task/2413"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CSES_2413.cpp",
-      "ans_TXT": "",
       "AC": true
     }
   ],

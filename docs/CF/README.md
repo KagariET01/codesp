@@ -80,3 +80,4 @@
 [`CF 1951 pC` Ticket Hoarding](/codesp/docs/CF_1951_pC)  
 [`CF 1951 pD` Buying Jewels](/codesp/docs/CF_1951_pD)  
 [`CF 1951 pE` No Palindromes](/codesp/docs/CF_1951_pE)  
+[`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  

@@ -1,4 +1,4 @@
-supported = ["ZJ","TIOJ","CF","NEOJ","TEMP","AT","CSES"]
+supported = ["ZJ","TIOJ","CF","NEOJ","TEMP","AT","CSES","LUOGU"]
 
 def ZJ(cid,pid,qname):
 	return {
@@ -16,6 +16,24 @@ def ZJ(cid,pid,qname):
 		"ans_TXT": "",
 		"AC": False
 	}
+
+def LUOGU(cid,pid,qname):
+	return {
+		"qname": qname,
+		"fname": "LUOGU_"+pid,
+		"qlink": [
+			{
+				"OJ": "LUOGU",
+				"PID": pid,
+				"link": "https://www.luogu.com.cn/problem/P"+pid
+			}
+		],
+		"tag": [],
+		"ans_code": "pack/LUOGU_"+pid+".cpp",
+		"ans_TXT": "",
+		"AC": False
+	}
+
 
 def TIOJ(cid,pid,qname):
 	return {

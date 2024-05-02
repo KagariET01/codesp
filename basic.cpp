@@ -43,7 +43,7 @@ template<typename T1,typename T2,typename T3>pair<T1,T2>operator/=(pair<T1,T2>&a
 }
 
 template<typename T1,typename T2>ostream&operator<<(ostream&ou,pair<T1,T2>p){
-	return ou<<"{"<<p.first<<","<<p.second<<"}";
+	return ou<<"["<<p.first<<","<<p.second<<"]";
 }
 template<typename T1,typename T2>istream&operator>>(istream&in,pair<T1,T2>&p){
 	return in>>p.first>>p.second;
@@ -52,13 +52,13 @@ template<typename T1,typename T2>istream&operator>>(istream&in,pair<T1,T2>&p){
 //deque
 template<typename T1,typename T2>ostream&operator<<(ostream&ou,deque<T1,T2>&que){
 	bool o=0;
-	ou<<"{";
+	ou<<"[";
 	for(T1(i):que){
 		if(o)ou<<",";
 		ou<<i;
 		o=1;
 	}
-	return(ou<<"}");
+	return(ou<<"]");
 }
 
 //stack
@@ -74,14 +74,14 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,stack<T1,T2>st){
 //queue
 template<typename T1,typename T2>ostream&operator<<(ostream&ou,queue<T1,T2>que){
 	bool o=0;
-	ou<<"{";
+	ou<<"[";
 	while(!que.empty()){
 		if(o)ou<<",";
 		ou<<que.front();
 		o=1;
 		que.pop();
 	}
-	return(ou<<"}");
+	return(ou<<"]");
 }
 
 //priority_queue
@@ -91,7 +91,7 @@ template<typename T1,typename T2,typename T3>ostream&operator<<(ostream&ou,prior
 		dq.push_front(pq.top());
 		pq.pop();
 	}
-	return(ou<<pq);
+	return(ou<<dq);
 }
 
 //vector
@@ -101,26 +101,38 @@ template<typename T>istream&operator>>(istream&in,vector<T>&vec){
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
-	ou<<"{";
+	ou<<"[";
 	for(T(i):vec){
 		if(o)ou<<",";
 		ou<<i;
 		o=1;
 	}
-	return(ou<<"}");
+	return(ou<<"]");
 }
 
 //array
 template<typename T,std::size_t N>ostream&operator<<(ostream&ou,array<T,N>&a){
 	bool o=0;
-	ou<<"{";
+	ou<<"[";
 	for(T&i:a){
 		if(o)ou<<",";
 		ou<<i;
 		o=1;
 	}
-	return ou<<"}";
+	return ou<<"]";
 }
+template<typename T,std::size_t N>istream&operator>>(istream&in,array<T,N>&a){
+	for(T&i:a)in>>i;
+	return in;
+}
+
+//list
+template<typename T,std::size_t N>istream&operator>>(istream&in,T(&a)[N]){
+	for(T&i:a)in>>i;
+	return in;
+}
+
+
 
 //map
 template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
@@ -128,10 +140,18 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 	ou<<"{";
 	for(pair<T1,T2>i:mp){
 		if(o)ou<<",";
-		ou<<i;
+		ou<<i.first<<":"<<i.second;
 		o=1;
 	}
 	return(ou<<"}");
+}
+
+//io
+template<typename T>ostream&operator>>(ostream&ou,T a){
+	return ou<<a;
+}
+template<typename T>istream&operator<<(istream&in,T a){
+	return in>>a;
 }
 
 
