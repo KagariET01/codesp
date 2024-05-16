@@ -1848,6 +1848,23 @@
       "AC": false
     },
     {
+      "qname": "Everything Nim",
+      "fname": "CF_1966_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1966 pC",
+          "link": "https://codeforces.com/contest/1966/problem/C"
+        }
+      ],
+      "tag": [
+        "greedy"
+      ],
+      "ans_code": "pack/CF_1966_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Buy Low Sell High",
       "fname": "CF_865_pD",
       "qlink": [
@@ -2779,6 +2796,21 @@
       "ans_code": "temp/tarjan.cpp",
       "ans_TXT": "temp/tarjan.md",
       "AC": true
+    },
+    {
+      "qname": "Missing Subsequence Sum",
+      "fname": "CF_1966_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1966 pD",
+          "link": "https://codeforces.com/contest/1966/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1966_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [
@@ -2802,6 +2834,7 @@
     "trie",
     "ioic2024",
     "fun",
-    "TEMP"
+    "TEMP",
+    "greedy"
   ]
 }
