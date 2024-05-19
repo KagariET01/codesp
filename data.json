@@ -1865,6 +1865,21 @@
       "AC": true
     },
     {
+      "qname": "Missing Subsequence Sum",
+      "fname": "CF_1966_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1966 pD",
+          "link": "https://codeforces.com/contest/1966/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1966_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Buy Low Sell High",
       "fname": "CF_865_pD",
       "qlink": [
@@ -2492,6 +2507,21 @@
       "AC": true
     },
     {
+      "qname": "我討厭你",
+      "fname": "ZJ_c402",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "c402",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=c402"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_c402.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "貪婪之糊",
       "fname": "ZJ_d652",
       "qlink": [
@@ -2798,18 +2828,18 @@
       "AC": true
     },
     {
-      "qname": "Missing Subsequence Sum",
-      "fname": "CF_1966_pD",
+      "qname": "Folding Strip",
+      "fname": "CF_1966_pE",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1966 pD",
-          "link": "https://codeforces.com/contest/1966/problem/D"
+          "PID": "1966 pE",
+          "link": "https://codeforces.com/contest/1966/problem/E"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1966_pD.cpp",
-      "ans_TXT": "",
+      "ans_code": "pack/CF_1966_pE.cpp",
+      "ans_TXT": "pack/CF_1966_pE.md",
       "AC": true
     }
   ],
