@@ -154,7 +154,9 @@ template<typename T>istream&operator<<(istream&in,T a){
 	return in>>a;
 }
 
-
+template<typename T>void sort(vector<T>&vec){
+	sort(vec.begin(),vec.end());
+}
 
 
 

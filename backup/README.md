@@ -9,4 +9,4 @@
 [NEOJ](/codesp/NEOJ)  
 [NHSPC](/codesp/NHSPC)  
 [AT](/codesp/AT)  
-[luogu](/codesp/luogu)  
+[LUOGU](/codesp/LUOGU)  
