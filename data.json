@@ -1942,6 +1942,21 @@
       "AC": false
     },
     {
+      "qname": "Shop Game",
+      "fname": "CF_1969_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1969 pD",
+          "link": "https://codeforces.com/contest/1969/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1969_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Buy Low Sell High",
       "fname": "CF_865_pD",
       "qlink": [
@@ -2033,6 +2048,24 @@
       ],
       "tag": [],
       "ans_code": "pack/LUOGU_2949.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "【模板】可持久化线段树 2",
+      "fname": "LUOGU_3834",
+      "qlink": [
+        {
+          "OJ": "LUOGU",
+          "PID": "3834",
+          "link": "https://www.luogu.com.cn/problem/P3834"
+        }
+      ],
+      "tag": [
+        "seg_tree",
+        "persistent_seg_tree"
+      ],
+      "ans_code": "pack/LUOGU_3834.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -2912,6 +2945,8 @@
     "ioic2024",
     "fun",
     "TEMP",
-    "greedy"
+    "greedy",
+    "seg_tree",
+    "persistent_seg_tree"
   ]
 }

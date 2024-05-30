@@ -95,6 +95,7 @@
 [`CSES 1753` String Matching](/codesp/docs/CSES_1753)  
 [`CSES 2413` Counting Towers](/codesp/docs/CSES_2413)  
 [`LUOGU 2949` [USACO09OPEN] Work Scheduling G](/codesp/docs/LUOGU_2949)  
+[`LUOGU 3834` 【模板】可持久化线段树 2](/codesp/docs/LUOGU_3834)  
 [`NEOJ 140` 円円送禮物](/codesp/docs/NEOJ_140)  
 [`NEOJ 141` 取數字1](/codesp/docs/NEOJ_141)  
 [`NEOJ 142` 取數字2](/codesp/docs/NEOJ_142)  
