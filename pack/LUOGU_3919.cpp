@@ -1,3 +1,5 @@
+
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -10,7 +12,7 @@ using namespace std;
 #define read(n) reader<n>()
 #define PII pair<INT,INT>
 #define PPIIPII pair<PII,PII>
-#define pit(n) #n<<":"<<n<<" "
+#define pit(n) #n<<":"<<n
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
 #define F first
@@ -177,10 +179,77 @@ template<typename T>void sort(vector<T>&vec){
   
 **  ****************************************************  */
 
-int main(){
-	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	return 0;
+struct seg{
+	INT v=0;
+	seg *l=nullptr;
+	seg *r=nullptr;
+};
+
+vector<INT>a;
+const INT mxn=1e6;
+INT n=0,m=0;
+seg *root[mxn+1];
+
+seg*init(INT l=0,INT r=n){
+	seg*now=new(seg);
+	if(r-l<=1){
+		now->v=a[l];
+		return now;
+	}else{
+		INT(mid)=(r-l)/2+l;
+		now->l=init(l,mid);
+		now->r=init(mid,r);
+		return now;
+	}
 }
 
+seg*update(INT v,INT id,INT l,INT r,seg *orig){
+	//cerr<<pit(v)<<pit(id)<<pit(l)<<pit(r)<<endl;
+	seg*now=new(seg);
+	now->l=orig->l;
+	now->r=orig->r;
+	if(r-l<=1){
+		now->v=v;
+		return now;
+	}else{
+		INT(mid)=(r-l)/2+l;
+		if(l<=id&&id<mid)now->l=update(v,id,l,mid,orig->l);
+		else now->r=update(v,id,mid,r,orig->r);
+		return now;
+	}
+}
 
+INT&query(INT id,INT l,INT r,seg*root){
+	//cerr<<pit(id)<<pit(l)<<pit(r)<<endl;
+	if(r-l<=1)return(root->v);
+	else{
+		INT(mid)=(r-l)/2+l;
+		if(l<=id&&id<mid)return(query(id,l,mid,root->l));
+		else{return(query(id,mid,r,root->r));}
+	}
+}
+
+int main(){
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	cin>>n>>m;
+	a.resize(n);
+	cin>>a;
+	root[0]=init();
+	for(INT t=1;t<=m;t++){
+		INT var=read(INT);
+		INT op=read(INT);
+		if(op==1){
+			INT id,v;
+			cin>>id>>v;
+			id--;
+			root[t]=update(v,id,0,n,root[var]);
+			//cerr<<endl;
+		}else{
+			cout<<query(read(INT)-1,0,n,root[var])<<endl;
+			root[t]=root[var];
+		}
+		
+	}
+	return 0;
+}
 

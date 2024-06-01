@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -179,6 +180,23 @@ template<typename T>void sort(vector<T>&vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t=read(INT);
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		vector<INT>b(n);
+		cin>>a>>b;
+		INT i=0;
+		INT ans=0;
+		for(INT j=0;j<n;j++){
+			if(a[i]<=b[j]){i++;}
+			else{
+				ans++;
+			}
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 

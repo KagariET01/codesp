@@ -1957,6 +1957,51 @@
       "AC": false
     },
     {
+      "qname": "Contest Proposal",
+      "fname": "CF_1972_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1972 pA",
+          "link": "https://codeforces.com/contest/1972/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1972_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Coin Games",
+      "fname": "CF_1972_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1972 pB",
+          "link": "https://codeforces.com/contest/1972/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1972_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Permutation Counting",
+      "fname": "CF_1972_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1972 pC",
+          "link": "https://codeforces.com/contest/1972/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1972_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Buy Low Sell High",
       "fname": "CF_865_pD",
       "qlink": [
@@ -2037,6 +2082,21 @@
       "AC": true
     },
     {
+      "qname": "Dynamic Rankings",
+      "fname": "LUOGU_2617",
+      "qlink": [
+        {
+          "OJ": "LUOGU",
+          "PID": "2617",
+          "link": "https://www.luogu.com.cn/problem/P2617"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/LUOGU_2617.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "[USACO09OPEN] Work Scheduling G",
       "fname": "LUOGU_2949",
       "qlink": [
@@ -2068,6 +2128,24 @@
       "ans_code": "pack/LUOGU_3834.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "【模板】可持久化线段树 1（可持久化数组）",
+      "fname": "LUOGU_3919",
+      "qlink": [
+        {
+          "OJ": "LUOGU",
+          "PID": "3919",
+          "link": "https://www.luogu.com.cn/problem/P3919"
+        }
+      ],
+      "tag": [
+        "seg_tree",
+        "persistent_seg_tree"
+      ],
+      "ans_code": "pack/LUOGU_3919.cpp",
+      "ans_TXT": "",
+      "AC": false
     },
     {
       "qname": "円円送禮物",
@@ -2856,6 +2934,21 @@
       "ans_code": "pack/ZJ_m713.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "合併成本",
+      "fname": "ZJ_m934",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m934",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m934"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m934.cpp",
+      "ans_TXT": "",
+      "AC": true
     },
     {
       "qname": "小明的作業 (t 筆測資版)",

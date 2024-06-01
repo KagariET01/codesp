@@ -1,9 +1,14 @@
-#include<bits/stdc++.h>
-//#pragma GCC optimize("Ofast")
-//#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
-#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,tune=native")
-#pragma comment(linker, "/stack:200000000")
+# [`LUOGU 3834`](https://www.luogu.com.cn/problem/P3834) 【模板】可持久化线段树 2
+## 標籤
+`seg_tree` `persistent_seg_tree` 
+## 題解
+NOT FOUND  
 
+## 程式碼
+```cpp
+
+
+#include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
 #define superINT INT
@@ -167,6 +172,11 @@ template<typename T>void sort(vector<T>&vec){
 
 
 
+
+
+
+
+
 /*  ****************************************************  **
 
     ____ ___  ____  _____   ____ _____  _    ____ _____
@@ -177,10 +187,112 @@ template<typename T>void sort(vector<T>&vec){
   
 **  ****************************************************  */
 
+const INT mxn=2e5;
+
+struct seg{
+	seg *l=nullptr;
+	seg *r=nullptr;
+	INT sum=0;
+	void init(){
+		l=nullptr;
+		r=nullptr;
+		sum=0;
+	}
+};
+
+ostream&operator<<(ostream&ou,seg *s){
+	if(s->l==nullptr)return ou<<s->sum<<" ";
+	else return ou<<s->l<<s->r;
+}
+
+seg *tl[mxn+1];
+INT n=0;//原始資料的大小，[1,2,2]==>  n=3 [2,1,4,3,3]==>  n=5
+INT len;//不同數字的數量，[1,2,2]==>len=2 [2,1,4,3,3]==>len=4
+vector<INT>a,b,c;
+map<INT,INT>mp;
+// seg[i:j]==>第i:j小的數字有多少個
+
+seg *init(INT sz=0){//初始化
+	seg *re=new(seg);
+	if(sz<=1)return re;
+	INT ls=sz/2;
+	INT rs=sz-ls;
+	re->l=init(ls);
+	re->r=init(rs);
+	return re;
+}
+
+seg *modify(INT k,INT l,INT r,seg *root){//改值
+	//k=位置
+	seg *re=new(seg);
+	//cout<<pit(k)<<pit(l)<<pit(r);
+	re->l=root->l;
+	re->r=root->r;
+	re->sum=root->sum+1;
+	if(r-l<=1)return re;
+	INT mid=(r-l)/2+l;
+	//cout<<pit(mid)<<endl;
+	if(l<=k&&k<mid)re->l=modify(k,l,mid,root->l);
+	else re->r=modify(k,mid,r,root->r);
+	return re;
+}
+
+INT query(seg *root1,seg *root2,INT k,INT l,INT r){
+	//root1,root2:seg_tree root
+	//k:第k大
+	//l,r:seg_tree範圍
+	//cout<<pit(k)<<pit(l)<<pit(r)<<pit(root1->sum)<<pit(root2->sum)<<endl;
+	//cout<<pit(root1)<<endl;
+	//cout<<pit(root2)<<endl;
+	if(r-l<=1)return l;
+	INT lsz=root2->l->sum-root1->l->sum;
+	//cerr<<lsz<<endl;
+	INT mid=(r-l)/2+l;
+	if(k<=lsz)return query(root1->l,root2->l,k,l,mid);
+	else return query(root1->r,root2->r,k-lsz,mid,r);
+}
+
+void solve(){
+	INT m;
+	cin>>n>>m;
+	a.resize(n);
+	cin>>a;
+	b=a;
+	sort(b);
+	len=1;
+	c.push_back(b[0]);
+	mp[b[0]]=0;
+	for(INT i=1;i<n;i++){
+		if(b[i]!=b[i-1]){
+			mp[b[i]]=len;
+			c.push_back(b[i]);
+			len++;
+		}
+	}
+	//cout<<pit(mp)<<pit(c)<<endl;
+	tl[0]=init(len);
+	for(INT i=0;i<n;i++){
+		tl[i+1]=modify(mp[a[i]],0,len,tl[i]);
+		//cout<<"add "<<mp[a[i]]<<endl;
+		//cout<<tl[i+1]<<endl;
+	}
+	
+	while(m--){
+		INT l,r,kk;
+		cin>>l>>r>>kk;
+		//kk--;
+		cout<<c[query(tl[l-1],tl[r],kk,0,len)]<<endl;
+	}
+	
+}
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	solve();
 	return 0;
 }
 
 
 
+
+```

@@ -1,3 +1,12 @@
+# [`CF 1972 pC`](https://codeforces.com/contest/1972/problem/C) Permutation Counting
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -179,8 +188,55 @@ template<typename T>void sort(vector<T>&vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		vector<INT>a(n);
+		cin>>a;
+		INT l=0,r=1e18;
+		while(l<r){
+			INT mid=(r-l)/2+l+1;
+			//check
+			INT nw=k;
+			for(INT&i:a){
+				if(i>=mid)continue;
+				if(mid-i>nw){
+					nw=-1;
+					break;
+				}
+				nw-=(mid-i);
+			}
+
+			if(nw<0)r=mid-1;
+			else l=mid;
+		}
+
+		INT nw=k;
+		INT cnt=0;
+		for(INT&i:a){
+			cnt+=l;
+			if(i>=l)continue;
+			nw-=(l-i);
+		}
+		for(INT&i:a){
+			if(i>l){
+				cnt++;
+				continue;
+			}
+			else if(nw>0){
+				cnt++;
+				nw--;
+			}
+		}
+
+		cout<<cnt-n+1<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

@@ -85,4 +85,7 @@
 [`CF 1966 pE` Folding Strip](/codesp/docs/CF_1966_pE)  
 [`CF 1969 pA` Two Friends](/codesp/docs/CF_1969_pA)  
 [`CF 1969 pB` Shifts and Sorting](/codesp/docs/CF_1969_pB)  
+[`CF 1972 pA` Contest Proposal](/codesp/docs/CF_1972_pA)  
+[`CF 1972 pB` Coin Games](/codesp/docs/CF_1972_pB)  
+[`CF 1972 pC` Permutation Counting](/codesp/docs/CF_1972_pC)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  

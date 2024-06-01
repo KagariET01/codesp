@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -179,6 +180,16 @@ template<typename T>void sort(vector<T>&vec){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		read(INT);
+		string str=read(string);
+		INT u=0;
+		for(char&c:str)if(c=='U')u++;
+		if(u%2)cout<<"yes"<<endl;
+		else cout<<"no"<<endl;
+	}
 	return 0;
 }
 

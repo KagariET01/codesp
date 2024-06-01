@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -177,8 +178,29 @@ template<typename T>void sort(vector<T>&vec){
   
 **  ****************************************************  */
 
+PII operator+(PII a,PII b){
+	return PII(a.F+b.F+abs(a.S-b.S),a.S+b.S);
+}
+
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT n;
+	cin>>n;
+	PII dp[n+1][n+1];
+	for(INT i=0;i<n;i++){
+		dp[i][i+1]={0,read(INT)};
+	}
+	for(INT i=2;i<=n;i++){
+		for(INT j=0;j+i<=n;j++){
+			dp[j][j+i]={1e9+7,1e9+7};
+			for(INT k=j+1;k<j+i;k++){
+				mins(dp[j][j+i],dp[j][k]+dp[k][j+i]);
+			}
+			//cout<<pit(j)<<pit(j+i)<<pit(dp[j][j+i])<<endl;
+		}
+	}
+	cout<<dp[0][n].F<<endl;
 	return 0;
 }
 
