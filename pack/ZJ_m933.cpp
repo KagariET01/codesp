@@ -1,11 +1,3 @@
-# [`APCS 2024 01 pD`]( ) [`ZJ m934`](https://zerojudge.tw/ShowProblem?problemid=m934) 合併成本
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -114,13 +106,13 @@ template<typename T>istream&operator>>(istream&in,vector<T>&vec){
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
-	ou<<"[";
+	//ou<<"[";
 	for(T(i):vec){
-		if(o)ou<<",";
+		if(o)ou<<" ";
 		ou<<i;
 		o=1;
 	}
-	return(ou<<"]");
+	return(ou<<"");
 }
 
 //array
@@ -186,33 +178,154 @@ template<typename T>void sort(vector<T>&vec){
   
 **  ****************************************************  */
 
-PII operator+(PII a,PII b){
-	return PII(a.F+b.F+abs(a.S-b.S),a.S+b.S);
-}
+function<bool(bool,bool)>
+	o_self=[](bool a,bool b){return(a);},
+	o_not=[](bool a,bool b){return(!a);},
+	o_or=[](bool a,bool b){return(a|b);},
+	o_and=[](bool a,bool b){return(a&b);},
+	o_xor=[](bool a,bool b){return(a^b);};
 
+
+
+struct pnt{
+
+	//root node
+	pnt *lp=nullptr;
+	pnt *rp=nullptr;
+	
+	INT ld=0;
+	INT rd=0;
+
+	//value get
+	bool lg=false;
+	bool rg=false;
+	bool meg=false;
+	//false:not get
+	//true:get
+
+	//value
+	bool l=false;
+	bool r=false;
+	bool me=false;
+
+	INT delay=0;
+
+	//operator
+	function<bool(bool,bool)>*op=nullptr;
+
+	void add_link(pnt*p){
+		if(lp==nullptr && lg==false)lp=p;
+		else rp=p;
+	}
+
+	void set_value(bool v){
+		if(lp==nullptr && lg==false)l=v,lg=1;
+		else r=v,rg=1;
+	}
+
+	void set_ans(bool v){
+		me=v;
+		meg=1;
+	}
+
+	void passby(){
+		op=&o_or;
+		rg=1;
+		r=0;
+	}
+
+	bool get_v(){
+		if(meg){
+			return(me);
+		}
+		//cerr<<"o(";
+		if(!lg){
+			l=lp->get_v();
+			ld=lp->delay;
+			lg=true;
+		}
+		//cerr<<l;
+		//cerr<<",";
+		if(!rg){
+			r=rp->get_v();
+			rd=rp->delay;
+			rg=true;
+		}
+		//cerr<<r;
+		//cerr<<")->";
+		me=(*op)(l,r);
+		//cerr<<me;
+		delay+=max(ld,rd);
+		meg=true;
+		return me;
+	}
+};
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n;
-	cin>>n;
-	PII dp[n+1][n+1];
-	for(INT i=0;i<n;i++){
-		dp[i][i+1]={0,read(INT)};
+
+	INT p,q,r,m;
+	cin>>p>>q>>r>>m;
+	pnt *v[p+q+r];
+	for(auto&i:v)i=new pnt;
+	for(INT i=0;i<p;i++){
+		v[i]->set_ans(read(INT));
+		//cerr<<i<<"->"<<v[i]->get_v()<<endl;
 	}
-	for(INT i=2;i<=n;i++){
-		for(INT j=0;j+i<=n;j++){
-			dp[j][j+i]={1e9+7,1e9+7};
-			for(INT k=j+1;k<j+i;k++){
-				mins(dp[j][j+i],dp[j][k]+dp[k][j+i]);
-			}
-			//cout<<pit(j)<<pit(j+i)<<pit(dp[j][j+i])<<endl;
+	//cerr<<"st_pnt_seted"<<endl;
+	for(INT i=p;i<p+q;i++){
+		v[i]->delay=1;
+		INT inin=read(INT);
+		if(inin==4){
+			v[i]->set_value(true);
+			v[i]->op=&o_xor;
+			//cerr<<i<<" -> [xor]"<<endl;
+			//cerr<<"1 ->"<<endl;
+			//cerr<<endl;
+		}else if(inin==1){
+			v[i]->op=&o_and;
+			//cerr<<i<<" -> [and]"<<endl;
+			//cerr<<endl;
+		}else if(inin==2){
+			v[i]->op=&o_or;
+			//cerr<<i<<" -> [or]"<<endl;
+			//cerr<<endl;
+		}else if(inin==3){
+			v[i]->op=&o_xor;
+			//cerr<<i<<" -> [xor]"<<endl;
+			//cerr<<endl;
 		}
 	}
-	cout<<dp[0][n].F<<endl;
+	//cerr<<"operator_seted"<<endl;
+	for(INT i=0;i<m;i++){
+		INT a,b;
+		cin>>a>>b;
+		a--,b--;
+		//cerr<<a<<" -> "<<b;
+		if(p+q<=b){
+			v[b]=v[a];
+			//cerr<<" [fast]";
+		}else{
+			v[b]->add_link(v[a]);
+		}
+		//cerr<<" [set]"<<endl;
+	}
+	//cerr<<"link_seted"<<endl;
+	//cerr<<"passby_seted"<<endl;
+	INT mx=0;
+	vector<bool>ans;
+	for(INT i=p+q;i<p+q+r;i++){
+		ans.push_back(v[i]->get_v());
+		//cerr<<endl;
+		//cerr<<i<<" -> "<<v[i]->get_v()<<" , "<<v[i]->delay<<endl;
+		maxs(mx,v[i]->delay);
+	}
+	//cerr<<"finish"<<endl;
+	cout<<mx<<endl;
+	cout<<ans<<endl;
+
 	return 0;
 }
 
 
 
-
-```

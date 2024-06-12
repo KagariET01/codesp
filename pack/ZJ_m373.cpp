@@ -1,11 +1,3 @@
-# [`APCS 2024 01 pD`]( ) [`ZJ m934`](https://zerojudge.tw/ShowProblem?problemid=m934) 合併成本
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -186,33 +178,30 @@ template<typename T>void sort(vector<T>&vec){
   
 **  ****************************************************  */
 
-PII operator+(PII a,PII b){
-	return PII(a.F+b.F+abs(a.S-b.S),a.S+b.S);
-}
-
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n;
-	cin>>n;
-	PII dp[n+1][n+1];
-	for(INT i=0;i<n;i++){
-		dp[i][i+1]={0,read(INT)};
+	INT n,k;
+	cin>>n>>k;
+	vector<vector<INT>>dp(k+1,vector<INT>(n+1,0));
+	vector<INT>vec;
+	vec.push_back(0);
+	INT ans=0;
+	for(INT i=1;i<=n;i++){
+		vec.push_back(read(INT));
+		dp[0][i]=max(dp[0][i-1]+vec[i],0ll);
 	}
-	for(INT i=2;i<=n;i++){
-		for(INT j=0;j+i<=n;j++){
-			dp[j][j+i]={1e9+7,1e9+7};
-			for(INT k=j+1;k<j+i;k++){
-				mins(dp[j][j+i],dp[j][k]+dp[k][j+i]);
-			}
-			//cout<<pit(j)<<pit(j+i)<<pit(dp[j][j+i])<<endl;
+	for(INT i=1;i<=k;i++){
+		for(INT j=1;j<=n;j++){
+			dp[i][j]=max(
+					dp[i][j-1]+vec[j],
+					dp[i-1][j-1]
+			);
 		}
 	}
-	cout<<dp[0][n].F<<endl;
+	for(auto&i:dp)for(auto&j:i)maxs(ans,j);
+	cout<<ans<<endl;
 	return 0;
 }
 
 
 
-
-```

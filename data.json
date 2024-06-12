@@ -2921,6 +2921,21 @@
       "AC": true
     },
     {
+      "qname": "投資遊戲",
+      "fname": "ZJ_m373",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m373",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m373"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m373.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "The Strongest Chain (0 尾版)",
       "fname": "ZJ_m713",
       "qlink": [
@@ -2936,6 +2951,26 @@
       "AC": false
     },
     {
+      "qname": "邏輯電路",
+      "fname": "ZJ_m933",
+      "qlink": [
+        {
+          "OJ": "APCS",
+          "PID": "2024 01 pC",
+          "link": " "
+        },
+        {
+          "OJ": "ZJ",
+          "PID": "m933",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m933"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m933.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "合併成本",
       "fname": "ZJ_m934",
       "qlink": [
@@ -2943,6 +2978,11 @@
           "OJ": "ZJ",
           "PID": "m934",
           "link": "https://zerojudge.tw/ShowProblem?problemid=m934"
+        },
+        {
+          "OJ": "APCS",
+          "PID": "2024 01 pD",
+          "link": " "
         }
       ],
       "tag": [],
