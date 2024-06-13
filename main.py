@@ -249,18 +249,18 @@ def edit_ans():
 						break
 				elif(op2==-6):#  打開題解(cpp)
 					os.system("clear")
-					os.system("vim "+dta["data"][nwid]["ans_code"])
+					os.system("vim \""+dta["data"][nwid]["ans_code"]+"\"")
 				elif(op2==-7):
 					os.system("clear")
-					os.system("cat < "+dta["data"][nwid]["ans_code"])
+					os.system("cat < \""+dta["data"][nwid]["ans_code"]+"\"")
 					print()
 					IN("")
 				elif(op2==-8):#  打開題解(md)
 					os.system("clear")
-					os.system("vim "+dta["data"][nwid]["ans_TXT"])
+					os.system("vim \""+dta["data"][nwid]["ans_TXT"]+"\"")
 				elif(op2==-9):#  打開題解(cpp)
 					os.system("clear")
-					os.system("cat > "+dta["data"][nwid]["ans_code"])
+					os.system("cat > \""+dta["data"][nwid]["ans_code"]+"\"")
 
 
 def edit_tag():

@@ -178,7 +178,7 @@ template<typename T>void sort(vector<T>&vec){
 **  ****************************************************  */
 
 int main(){
-	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
 	return 0;
 }
 

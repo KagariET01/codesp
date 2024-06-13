@@ -47,6 +47,24 @@
     },
     {
       "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
+      "fname": "",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "",
       "fname": "0test",
       "qlink": [],
       "tag": [],
@@ -188,6 +206,21 @@
       "ans_code": "pack/AT_abc351_pE.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "Almost Equal",
+      "fname": "CF_1205_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1205 pA",
+          "link": "https://codeforces.com/contest/1205/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1205_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
     },
     {
       "qname": " ",
@@ -2002,6 +2035,186 @@
       "AC": true
     },
     {
+      "qname": " ",
+      "fname": "CF_1983_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1983 pA",
+          "link": "https://codeforces.com/contest/1983/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1983_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Corner Twist",
+      "fname": "CF_1983_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1983 pB",
+          "link": "https://codeforces.com/contest/1983/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1983_pB.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Have Your Cake and Eat It Too",
+      "fname": "CF_1983_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1983 pC",
+          "link": "https://codeforces.com/contest/1983/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1983_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Swap Dilemma",
+      "fname": "CF_1983_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1983 pD",
+          "link": "https://codeforces.com/contest/1983/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1983_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Upload More RAM",
+      "fname": "CF_1987_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1987 pA",
+          "link": "https://codeforces.com/contest/1987/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1987_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "K-Sort",
+      "fname": "CF_1987_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1987 pB",
+          "link": "https://codeforces.com/contest/1987/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1987_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Basil's Garden",
+      "fname": "CF_1987_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1987 pC",
+          "link": "https://codeforces.com/contest/1987/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1987_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "World is Mine",
+      "fname": "CF_1987_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1987 pD",
+          "link": "https://codeforces.com/contest/1987/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1987_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Wonderful Tree!",
+      "fname": "CF_1987_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1987 pE",
+          "link": "https://codeforces.com/contest/1987/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1987_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Interesting Problem",
+      "fname": "CF_1987_pF2",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1987 pF2",
+          "link": "https://codeforces.com/contest/1987/problem/F2"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1987_pF2.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": " ",
+      "fname": "CF_1992_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1992 pA",
+          "link": "https://codeforces.com/contest/1992/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1992_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Angry Monk",
+      "fname": "CF_1992_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1992 pB",
+          "link": "https://codeforces.com/contest/1992/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1992_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Buy Low Sell High",
       "fname": "CF_865_pD",
       "qlink": [
@@ -2063,6 +2276,23 @@
       "ans_code": "pack/CSES_1753.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "Convex Hull",
+      "fname": "CSES_2195",
+      "qlink": [
+        {
+          "OJ": "CSES",
+          "PID": "2195",
+          "link": "https://cses.fi/problemset/task/2195"
+        }
+      ],
+      "tag": [
+        "convex hull"
+      ],
+      "ans_code": "pack/CSES_2195.cpp",
+      "ans_TXT": "",
+      "AC": false
     },
     {
       "qname": "Counting Towers",
@@ -2882,6 +3112,21 @@
       "AC": true
     },
     {
+      "qname": "磁軌移動序列",
+      "fname": "ZJ_k733",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "k733",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=k733"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_k733.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "開啟寶盒",
       "fname": "ZJ_k734",
       "qlink": [
@@ -3021,6 +3266,35 @@
       "AC": true
     },
     {
+      "qname": "最佳選擇",
+      "fname": "ZJ_o079",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "o079",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=o079"
+        },
+        {
+          "OJ": "APCS",
+          "PID": "2024 06 pD",
+          "link": " "
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_o079.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "凸包",
+      "fname": "convex hull",
+      "qlink": [],
+      "tag": [],
+      "ans_code": "temp/convex hull.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "線段樹",
       "fname": "seg_tree",
       "qlink": [
@@ -3054,6 +3328,66 @@
       "ans_code": "temp/tarjan.cpp",
       "ans_TXT": "temp/tarjan.md",
       "AC": true
+    },
+    {
+      "qname": "Diverse Game",
+      "fname": "CF_1994_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1994 pA",
+          "link": "https://codeforces.com/contest/1994/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1994_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Fun Game",
+      "fname": "CF_1994_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1994 pB",
+          "link": "https://codeforces.com/contest/1994/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1994_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Hungry Games",
+      "fname": "CF_1994_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1994 pC",
+          "link": "https://codeforces.com/contest/1994/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1994_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Funny Game",
+      "fname": "CF_1994_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1994 pD",
+          "link": "https://codeforces.com/contest/1994/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1994_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
     }
   ],
   "tag": [
@@ -3080,6 +3414,7 @@
     "TEMP",
     "greedy",
     "seg_tree",
-    "persistent_seg_tree"
+    "persistent_seg_tree",
+    "convex hull"
   ]
 }
