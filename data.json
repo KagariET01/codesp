@@ -2882,6 +2882,21 @@
       "AC": true
     },
     {
+      "qname": "磁軌移動序列",
+      "fname": "ZJ_k733",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "k733",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=k733"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_k733.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "開啟寶盒",
       "fname": "ZJ_k734",
       "qlink": [

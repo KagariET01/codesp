@@ -135,6 +135,7 @@
 [`ZJ g598` `APCS 2021 11 pD` 真假子圖](/codesp/docs/ZJ_g598)  
 [`ZJ h561` `TIOJ 2250` `TOI 2022 pE` 間諜(spy)](/codesp/docs/ZJ_h561)  
 [`ZJ k413` Python 縮排檢查](/codesp/docs/ZJ_k413)  
+[`ZJ k733` 磁軌移動序列](/codesp/docs/ZJ_k733)  
 [`ZJ k734` `APCS 2023 06 PD` 開啟寶盒](/codesp/docs/ZJ_k734)  
 [`ZJ m279` 加行號](/codesp/docs/ZJ_m279)  
 [`ZJ m373` 投資遊戲](/codesp/docs/ZJ_m373)  

@@ -1,4 +1,4 @@
-# [`APCS 2024 01 pD`]( ) [`ZJ m934`](https://zerojudge.tw/ShowProblem?problemid=m934) 合併成本
+# [`ZJ k733`](https://zerojudge.tw/ShowProblem?problemid=k733) 磁軌移動序列
 ## 標籤
 
 ## 題解
@@ -15,6 +15,7 @@ NOT FOUND
 
 using namespace std;
 #define INT long long int
+#define UINT unsigned INT
 #define superINT INT
 #define read(n) reader<n>()
 #define PII pair<INT,INT>
@@ -186,29 +187,75 @@ template<typename T>void sort(vector<T>&vec){
   
 **  ****************************************************  */
 
-PII operator+(PII a,PII b){
-	return PII(a.F+b.F+abs(a.S-b.S),a.S+b.S);
-}
+INT solve(string str){
+	INT i=0;
+	stack<INT>xx;// 倍率
+	stack<INT>nw;// 目前的旋轉總路徑長
+	stack<INT>st2;// 目前此迴圈的起始點
+	stack<INT>ed;// 目前此迴圈的終點
+	xx.push(1);
+	nw.push(0);
+	st2.push(10);
+	ed.push(10);
+	//cerr<<"10 -> ";
+	for(;i<str.size();i++){
+		if(str[i]=='T'){
+			
+			INT nxt=0;
+			for(INT j=0;j<2;j++){
+				nxt*=10;
+				i++;
+				nxt+=(str[i]-'0');
+			}
+			//cerr<<nxt<<" ";
+			if(st2.size()!=xx.size()){// 第一次進入此迴圈
+				nw.top()+=abs(ed.top()-nxt);
+				while(nw.size()!=xx.size()){
+					nw.push(0);
+				}
+				while(st2.size()!=xx.size()){
+					st2.push(nxt);
+				}
+				while(ed.size()!=xx.size()){
+					ed.push(nxt);
+				}
+			}else{
+				//cerr<<"{add "<<abs(ed.top()-nxt)<<"}";
+				nw.top()+=abs(ed.top()-nxt);
+				ed.top()=nxt;
+			}
+			//cerr<<" -> ";
+		}else if(str[i]=='L'){
+			
+			INT loopx=0;
+			for(INT j=0;j<1;j++){
+				loopx*=10;
+				i++;
+				loopx+=(str[i]-'0');
+			}
+			xx.push(loopx);
+			//cerr<<"["<<endl;
 
+		}else if(str[i]=='E'){
+			nw.top()*=xx.top();
+			nw.top()+=(xx.top()-1)*abs(st2.top()-ed.top());
+			INT nwb=nw.top();
+			INT edb=ed.top();
+			xx.pop();
+			nw.pop();
+			st2.pop();
+			ed.pop();
+			nw.top()+=nwb;
+			ed.top()=edb;
+		}else return -1;
+
+	}
+	return nw.top();
+}
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT n;
-	cin>>n;
-	PII dp[n+1][n+1];
-	for(INT i=0;i<n;i++){
-		dp[i][i+1]={0,read(INT)};
-	}
-	for(INT i=2;i<=n;i++){
-		for(INT j=0;j+i<=n;j++){
-			dp[j][j+i]={1e9+7,1e9+7};
-			for(INT k=j+1;k<j+i;k++){
-				mins(dp[j][j+i],dp[j][k]+dp[k][j+i]);
-			}
-			//cout<<pit(j)<<pit(j+i)<<pit(dp[j][j+i])<<endl;
-		}
-	}
-	cout<<dp[0][n].F<<endl;
+	cout<<solve(read(string))<<endl;
 	return 0;
 }
 
