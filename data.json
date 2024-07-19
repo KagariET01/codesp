@@ -328,6 +328,21 @@
       "AC": true
     },
     {
+      "qname": "Matrix Cascade.",
+      "fname": "CF_1864_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1864 pD",
+          "link": "https://codeforces.com/contest/1864/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1864_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Chemistry",
       "fname": "CF_1888_pA",
       "qlink": [
@@ -2185,6 +2200,66 @@
       "AC": false
     },
     {
+      "qname": "Submission Bait",
+      "fname": "CF_1990_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1990 pA",
+          "link": "https://codeforces.com/contest/1990/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1990_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Array Craft",
+      "fname": "CF_1990_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1990 pB",
+          "link": "https://codeforces.com/contest/1990/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1990_pB.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Mad MAD Sum",
+      "fname": "CF_1990_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1990 pC",
+          "link": "https://codeforces.com/contest/1990/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1990_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Grid Puzzle",
+      "fname": "CF_1990_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1990 pD",
+          "link": "https://codeforces.com/contest/1990/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1990_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": " ",
       "fname": "CF_1992_pA",
       "qlink": [
@@ -2211,6 +2286,501 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_1992_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Question Marks",
+      "fname": "CF_1993_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1993 pA",
+          "link": "https://codeforces.com/contest/1993/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1993_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Parity and Sum",
+      "fname": "CF_1993_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1993 pB",
+          "link": "https://codeforces.com/contest/1993/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1993_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Light Switches",
+      "fname": "CF_1993_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1993 pC",
+          "link": "https://codeforces.com/contest/1993/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1993_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Med-imize",
+      "fname": "CF_1993_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1993 pD",
+          "link": "https://codeforces.com/contest/1993/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1993_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Diverse Game",
+      "fname": "CF_1994_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1994 pA",
+          "link": "https://codeforces.com/contest/1994/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1994_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Fun Game",
+      "fname": "CF_1994_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1994 pB",
+          "link": "https://codeforces.com/contest/1994/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1994_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Hungry Games",
+      "fname": "CF_1994_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1994 pC",
+          "link": "https://codeforces.com/contest/1994/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1994_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Funny Game",
+      "fname": "CF_1994_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1994 pD",
+          "link": "https://codeforces.com/contest/1994/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1994_pD.cpp",
+      "ans_TXT": "pack/CF_1994_pD.md",
+      "AC": true
+    },
+    {
+      "qname": "",
+      "fname": "CF_1995_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1995 pA",
+          "link": "https://codeforces.com/contest/1995/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1995_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Bouquet (Hard Version)",
+      "fname": "CF_1995_pB2",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1995 pB2",
+          "link": "https://codeforces.com/contest/1995/problem/B2"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1995_pB2.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Squaring",
+      "fname": "CF_1995_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1995 pC",
+          "link": "https://codeforces.com/contest/1995/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1995_pC.py",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Strong Password",
+      "fname": "CF_1997_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1997 pA",
+          "link": "https://codeforces.com/contest/1997/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1997_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Make Three Regions",
+      "fname": "CF_1997_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1997 pB",
+          "link": "https://codeforces.com/contest/1997/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1997_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Even Positions",
+      "fname": "CF_1997_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1997 pC",
+          "link": "https://codeforces.com/contest/1997/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1997_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Maximize the Root",
+      "fname": "CF_1997_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1997 pD",
+          "link": "https://codeforces.com/contest/1997/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1997_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Find K Distinct Points with Fixed Center",
+      "fname": "CF_1998_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1998 pA",
+          "link": "https://codeforces.com/contest/1998/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1998_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Minimize Equal Sum Subarrays",
+      "fname": "CF_1998_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1998 pB",
+          "link": "https://codeforces.com/contest/1998/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1998_pB.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Perform Operations to Maximize Score",
+      "fname": "CF_1998_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1998 pC",
+          "link": "https://codeforces.com/contest/1998/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1998_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Make All Equal",
+      "fname": "CF_2001_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2001 pA",
+          "link": "https://codeforces.com/contest/2001/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2001_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Generate Permutation",
+      "fname": "CF_2001_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2001 pB",
+          "link": "https://codeforces.com/contest/2001/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2001_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Guess The Tree",
+      "fname": "CF_2001_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2001 pC",
+          "link": "https://codeforces.com/contest/2001/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2001_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Distanced Coloring",
+      "fname": "CF_2002_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2002 pA",
+          "link": "https://codeforces.com/contest/2002/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2002_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Removals Game",
+      "fname": "CF_2002_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2002 pB",
+          "link": "https://codeforces.com/contest/2002/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2002_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Turtle and Good Strings",
+      "fname": "CF_2003_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2003 pA",
+          "link": "https://codeforces.com/contest/2003/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2003_pA.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Turtle and Piggy Are Playing a Game 2",
+      "fname": "CF_2003_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2003 pB",
+          "link": "https://codeforces.com/contest/2003/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2003_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Turtle and Good Pairs+",
+      "fname": "CF_2003_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2003 pC",
+          "link": "https://codeforces.com/contest/2003/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2003_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Simple Palindrome",
+      "fname": "CF_2005_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2005 pA",
+          "link": "https://codeforces.com/contest/2005/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2005_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "The Strict Teacher",
+      "fname": "CF_2005_pB2",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2005 pB2",
+          "link": "https://codeforces.com/contest/2005/problem/B2"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2005_pB2.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Lazy Narek",
+      "fname": "CF_2005_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2005 pC",
+          "link": "https://codeforces.com/contest/2005/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2005_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Dora's Set",
+      "fname": "CF_2007_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2007 pA",
+          "link": "https://codeforces.com/contest/2007/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2007_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Index and Maximum Value",
+      "fname": "CF_2007_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2007 pB",
+          "link": "https://codeforces.com/contest/2007/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2007_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Dora and C++",
+      "fname": "CF_2007_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2007 pC",
+          "link": "https://codeforces.com/contest/2007/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2007_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Iris and Game on the Tree",
+      "fname": "CF_2007_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2007 pD",
+          "link": "https://codeforces.com/contest/2007/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2007_pD.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -2868,6 +3438,21 @@
       "AC": false
     },
     {
+      "qname": "挑水果",
+      "fname": "TIOJ_2256",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2256",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2256"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2256.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "房屋推薦",
       "fname": "TIOJ_2330",
       "qlink": [
@@ -2906,6 +3491,21 @@
         "binaryS"
       ],
       "ans_code": "pack/TIOJ_2331.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "區間眾數",
+      "fname": "ZJ_b417",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "b417",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=b417"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_b417.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -3181,6 +3781,21 @@
       "AC": true
     },
     {
+      "qname": "112北二1a.推骨牌 (Domino)",
+      "fname": "ZJ_m601",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m601",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m601"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m601.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "The Strongest Chain (0 尾版)",
       "fname": "ZJ_m713",
       "qlink": [
@@ -3330,64 +3945,28 @@
       "AC": true
     },
     {
-      "qname": "Diverse Game",
-      "fname": "CF_1994_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1994 pA",
-          "link": "https://codeforces.com/contest/1994/problem/A"
-        }
-      ],
+      "qname": "",
+      "fname": "z_sandbox",
+      "qlink": [],
       "tag": [],
-      "ans_code": "pack/CF_1994_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Fun Game",
-      "fname": "CF_1994_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1994 pB",
-          "link": "https://codeforces.com/contest/1994/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1994_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Hungry Games",
-      "fname": "CF_1994_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1994 pC",
-          "link": "https://codeforces.com/contest/1994/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1994_pC.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Funny Game",
-      "fname": "CF_1994_pD",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1994 pD",
-          "link": "https://codeforces.com/contest/1994/problem/D"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1994_pD.cpp",
+      "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "112北二2a.教練 (Coach)",
+      "fname": "ZJ_m602",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m602",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m602"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m602.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [
