@@ -106,13 +106,13 @@ template<typename T>istream&operator>>(istream&in,vector<T>&vec){
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
-	ou<<"[";
+	ou<<"";
 	for(T(i):vec){
-		if(o)ou<<",";
+		if(o)ou<<"\n";
 		ou<<i;
 		o=1;
 	}
-	return(ou<<"]");
+	return(ou<<"");
 }
 
 //array
@@ -163,7 +163,13 @@ template<typename T>void sort(vector<T>&vec){
 	sort(vec.begin(),vec.end());
 }
 
-
+template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b){
+	vector<pair<T1,T2>>re;
+	for(INT i=0;i<a.size()&&i<b.size();i++){
+		re.push_back(PII(a[i],b[i]));
+	}
+	return re;
+}
 
 
 
@@ -178,34 +184,77 @@ template<typename T>void sort(vector<T>&vec){
   
 **  ****************************************************  */
 
-int main(){
-	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT>a(n);
-		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
-			}
-		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
+struct dsu{
+	vector<INT>a;
+	void init(INT n){
+		a.resize(n);
+		for(INT i=0;i<n;i++){
+			a[i]=i;
 		}
 	}
+	INT boss(INT u){
+		if(a[u]==u)return u;
+		else return a[u]=boss(a[u]);
+	}
+	void link(INT u,INT v){// u -> v
+		a[boss(u)]=boss(v);
+	}
+};
+
+struct edge{
+	INT w=0;// 過路費
+	INT u=0,v=0;// 連接點
+	INT id=0;
+	edge(INT a,INT b,INT c){
+		w=u=a,v=b,w=c;
+	}
+	edge(){
+		u=v=w=0;
+	}
+};
+
+ostream&operator<<(ostream&ou,edge&e){
+	return ou<<"{\"u\":"<<e.u<<", \"v\":"<<e.v<<", \"w\":"<<e.w<<"}";
+}
+
+istream&operator>>(istream&in,edge&e){
+	return in>>e.u>>e.v>>e.w;
+}
+
+bool operator<(edge a,edge b){
+	return a.w<b.w;
+}
+bool operator>(edge a,edge b){
+	return a.w>b.w;
+}
+
+int main(){
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT n,m;
+	cin>>n>>m;
+	vector<edge>vec(m);
+	for(INT i=0;i<m;i++){
+		cin>>vec[i];
+		vec[i].id=i;
+	}
+	vector<edge>veccopy=vec;
+	sort(vec);
+	vector<INT>ans(m);
+	for(INT i=0;i<m;i++){
+		dsu nwdsu;
+		nwdsu.init(n+1);
+		INT nwans=0;
+		// add first line
+		nwdsu.link(veccopy[i].u,veccopy[i].v);
+		nwans+=veccopy[i].w;
+		for(edge&j:vec){
+			if(nwdsu.boss(j.u)==nwdsu.boss(j.v))continue;
+			nwdsu.link(j.u,j.v);
+			nwans+=j.w;
+		}
+		ans[i]=nwans;
+	}
+	cout<<ans;
 	return 0;
 }
 

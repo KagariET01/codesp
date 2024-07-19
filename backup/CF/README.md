@@ -95,4 +95,8 @@
 [`CF 1987 pE` Wonderful Tree!](/codesp/docs/CF_1987_pE)  
 [`CF 1992 pA`  ](/codesp/docs/CF_1992_pA)  
 [`CF 1992 pB` Angry Monk](/codesp/docs/CF_1992_pB)  
+[`CF 1994 pA` Diverse Game](/codesp/docs/CF_1994_pA)  
+[`CF 1994 pB` Fun Game](/codesp/docs/CF_1994_pB)  
+[`CF 1994 pC` Hungry Games](/codesp/docs/CF_1994_pC)  
+[`CF 1994 pD` Funny Game](/codesp/docs/CF_1994_pD)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  

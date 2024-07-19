@@ -163,7 +163,13 @@ template<typename T>void sort(vector<T>&vec){
 	sort(vec.begin(),vec.end());
 }
 
-
+template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b){
+	vector<pair<T1,T2>>re;
+	for(INT i=0;i<a.size()&&i<b.size();i++){
+		re.push_back(PII(a[i],b[i]));
+	}
+	return re;
+}
 
 
 
@@ -183,28 +189,37 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
+		INT n,k;
+		cin>>n>>k;
 		vector<INT>a(n);
 		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
+		sort(a);
+		bool status[n]={};
+		INT att=0;
+		priority_queue<PII,vector<PII>,greater<PII>>pq;
+		for(INT i=0;i<n;i++){
+			status[i]=((a[n-1]-a[i])/k)%2==0;
+			att+=status[i];
+			pq.push(PII(
+						((a[n-1]-a[i])/k+1)*k+a[i]
+						,i));
+		}
+		INT nwt=a[n-1];
+		while(nwt<=a[n-1]+k*2 && att<n){
+	//		cerr<<pit(nwt)<<pit(pq)<<endl;
+			while(pq.top().F<=nwt){
+				PII nw=pq.top();
+				pq.pop();
+				att-=status[nw.S];
+				status[nw.S]=!status[nw.S];
+				att+=status[nw.S];
+				pq.push(PII(nw.F+k,nw.S));
 			}
+			if(att>=n)break;
+			nwt=pq.top().F;
 		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
-		}
+		if(att>=n)cout<<nwt<<endl;
+		else cout<<-1<<endl;
 	}
 	return 0;
 }

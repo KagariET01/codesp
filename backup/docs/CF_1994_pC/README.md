@@ -1,3 +1,11 @@
+# [`CF 1994 pC`](https://codeforces.com/contest/1994/problem/C) Hungry Games
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -183,31 +191,39 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
+		INT n,x;
+		cin>>n>>x;
 		vector<INT>a(n);
 		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
+		priority_queue<PII,vector<PII>,greater<PII>>pq;
+		INT l=0;
+		INT r=0;
+		INT nw=0;
+		INT ans=0;
+		for(;r<n;r++){
+			nw+=a[r];
+			if(nw>x){
+				INT thiscnt=0;
+				while(nw>x){
+					if(!pq.empty() && pq.top().F<l){
+						thiscnt+=pq.top().S;
+						pq.pop();
+					}
+					thiscnt++;
+					// cerr<<pit(l)<<pit(r)<<pit(nw)<<pit(thiscnt)<<endl;
+					nw-=a[l];
+					l++;
 				}
-				ph[a[j]%i]=j;
+				ans+=thiscnt;
+				pq.push(PII(r,thiscnt));
 			}
 		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
-		}
+		cout<<(n*(n+1)/2)-ans<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```

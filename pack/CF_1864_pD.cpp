@@ -168,6 +168,9 @@ template<typename T>void sort(vector<T>&vec){
 
 
 
+
+
+
 /*  ****************************************************  **
 
     ____ ___  ____  _____   ____ _____  _    ____ _____
@@ -185,26 +188,56 @@ int main(){
 	while(t--){
 		INT n;
 		cin>>n;
-		vector<INT>a(n);
-		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
+		vector<string>mps(n);
+		cin>>mps;
+		vector<vector<bool>>a;
+		for(INT i=0;i<n;i++){
+			a.push_back(vector<bool>());
 			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
+				a[i].push_back(mps[i][j]-'0');
 			}
 		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
+		vector<bool>
+			addl(n),// 往左+往下
+			addr(n),// 往右+往下
+			addd(n);// 往下
+		INT ans=0;
+		for(INT i=0;i<n;i++){
+			// op
+			for(INT j=0;j<n;j++){
+				a[i][j]=a[i][j]^addl[j];
+				a[i][j]=a[i][j]^addr[j];
+				a[i][j]=a[i][j]^addd[j];
+			}
+			// 計算operate
+			vector<bool>nextl(n),nextr(n),nextd(n);
+			for(INT j=0;j<n;j++){
+				if(a[i][j]){
+					ans++;
+					if(j)nextl[j-1]=nextl[j-1]^true;
+					if(j+1<n)nextr[j+1]=nextr[j+1]^true;
+					nextd[j]=nextd[j]^true;
+				}
+			}
+			//next op
+			for(INT j=0;j<n;j++){
+				if(addl[j]){
+					if(j)nextl[j-1]=nextl[j-1]^true;
+					nextd[j]=nextd[j]^true;
+				}
+				if(addr[j]){
+					if(j+1<n)nextr[j+1]=nextr[j+1]^true;
+					nextd[j]=nextd[j]^true;
+				}
+				if(addd[j]){
+					nextd[j]=nextd[j]^true;
+				}
+			}
+			addl=nextl;
+			addr=nextr;
+			addd=nextd;
 		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

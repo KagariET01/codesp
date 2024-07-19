@@ -1,3 +1,11 @@
+# [`CF 1994 pA`](https://codeforces.com/contest/1994/problem/A) Diverse Game
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -183,27 +191,24 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT>a(n);
+		INT n,m;
+		cin>>n>>m;
+		vector<vector<INT>>a(n,vector<INT>(m));
 		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
-			}
+		if(n==1 && m==1){
+			cout<< -1 <<endl;
+			continue;
 		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
+		for(INT i=0;i<n;i++){
+			for(INT j=0;j<m;j++){
+				if(n>1)i++;
+				if(m>1)j++;
+				cout<<a[i%n][j%m]<<" ";
+				if(n>1)i--;
+				if(m>1)j--;
+
+			}
+			cout<<endl;
 		}
 	}
 	return 0;
@@ -211,3 +216,5 @@ int main(){
 
 
 
+
+```

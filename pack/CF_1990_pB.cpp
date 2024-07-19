@@ -106,13 +106,13 @@ template<typename T>istream&operator>>(istream&in,vector<T>&vec){
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
-	ou<<"[";
+	ou<<"";
 	for(T(i):vec){
-		if(o)ou<<",";
+		if(o)ou<<" ";
 		ou<<i;
 		o=1;
 	}
-	return(ou<<"]");
+	return(ou<<"");
 }
 
 //array
@@ -183,28 +183,24 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
+		INT n,x,y;
+		cin>>n>>x>>y;
+		x--,y--;
 		vector<INT>a(n);
-		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
-			}
+		INT nw=-1;
+		for(INT i=y-1;i>=0;i--){
+			a[i]=nw;
+			nw=-nw;
 		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
+		nw=-1;
+		for(INT i=x-1;i<n;i++){
+			a[i]=nw;
+			nw=-nw;
 		}
+		for(INT i=y;i<=x;i++){
+			a[i]=1;
+		}
+		cout<<a<<endl;
 	}
 	return 0;
 }

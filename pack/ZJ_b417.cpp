@@ -163,7 +163,13 @@ template<typename T>void sort(vector<T>&vec){
 	sort(vec.begin(),vec.end());
 }
 
-
+template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b){
+	vector<pair<T1,T2>>re;
+	for(INT i=0;i<a.size()&&i<b.size();i++){
+		re.push_back(PII(a[i],b[i]));
+	}
+	return re;
+}
 
 
 
@@ -177,35 +183,76 @@ template<typename T>void sort(vector<T>&vec){
    \____\___/|____/|_____| |____/ |_/_/   \_\_| \_\|_|
   
 **  ****************************************************  */
+struct qs{
+	INT first=0;
+	INT second=0;
+	INT id=0;
+};
+
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT>a(n);
-		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
-			}
-		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
-		}
+	INT n,m;
+	cin>>n>>m;
+	vector<INT>a(n);
+	vector<qs>q(m);
+	cin>>a;
+	for(INT i=0;i<m;i++){
+		cin>>q[i].F>>q[i].S;
+		q[i].F--,q[i].S--;
+		q[i].id=i;
 	}
+	INT bsz=300;
+	sort(q.begin(),q.end(),[&](qs a,qs b){
+		if(a.F/bsz!=b.F/bsz)return a.F<b.F;//l在不同塊？l小的在前面
+		else return a.S<b.S;// 否則，r小的左邊
+	});
+	vector<PII>ans(m);
+	vector<INT>num_cnt(n+2);
+	vector<INT>cnt_cnt(n+2);
+	cnt_cnt[0]=n;
+	INT l=0,r=0;
+	INT nw=1;
+
+	num_cnt[a[0]]++;
+	cnt_cnt[1]++;
+
+	for(auto i:q){
+		while(i.F<l){
+			l--;
+			cnt_cnt[num_cnt[a[l]]]--;
+			num_cnt[a[l]]++;
+			cnt_cnt[num_cnt[a[l]]]++;
+			while(cnt_cnt[nw+1])nw++;
+		}
+		while(r<i.S){
+			r++;
+			cnt_cnt[num_cnt[a[r]]]--;
+			num_cnt[a[r]]++;
+			cnt_cnt[num_cnt[a[r]]]++;
+			while(cnt_cnt[nw+1])nw++;
+		}
+		while(l<i.F){
+			cnt_cnt[num_cnt[a[l]]]--;
+			num_cnt[a[l]]--;
+			cnt_cnt[num_cnt[a[l]]]++;
+			while(!cnt_cnt[nw]){
+				nw--;
+			}
+			l++;
+		}
+		while(i.S<r){
+			cnt_cnt[num_cnt[a[r]]]--;
+			num_cnt[a[r]]--;
+			cnt_cnt[num_cnt[a[r]]]++;
+			while(!cnt_cnt[nw]){
+				nw--;
+			}
+			r--;
+		}
+		ans[i.id]=PII(nw,cnt_cnt[nw]);
+	}
+	for(auto&i:ans)cout<<i.F<<" "<<i.S<<endl;
 	return 0;
 }
 

@@ -183,28 +183,23 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
+		INT n,m;
+		cin>>n>>m;
 		vector<INT>a(n);
 		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
+		sort(a);
+		INT ans=0;
+		INT nw=0;
+		INT l=0,r=0;
+		for(;r<n;r++){
+			nw+=a[r];
+			while(nw>m || (l<n && a[r]-a[l]>1)){
+				nw-=a[l];
+				l++;
 			}
+			maxs(ans,nw);
 		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
-		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

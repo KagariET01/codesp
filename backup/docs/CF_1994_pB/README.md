@@ -1,3 +1,11 @@
+# [`CF 1994 pB`](https://codeforces.com/contest/1994/problem/B) Fun Game
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -185,25 +193,26 @@ int main(){
 	while(t--){
 		INT n;
 		cin>>n;
-		vector<INT>a(n);
-		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
+		string s,t;
+		cin>>s>>t;
+		INT a=n+10;
+		INT b=-1;
+		for(INT i=0;i<n;i++){
+			if(s[i]=='1'){
+				a=i;
+				break;
 			}
 		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
+		for(INT i=0;i<n;i++){
+			if(t[i]!=s[i]){
+				b=i;
+				break;
+			}
+		}
+		if(a<=b || b==-1){
+			cout<<"yes"<<endl;
+		}else{
+			cout<<"no"<<endl;
 		}
 	}
 	return 0;
@@ -211,3 +220,5 @@ int main(){
 
 
 
+
+```

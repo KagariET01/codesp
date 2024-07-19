@@ -1,3 +1,11 @@
+# [`TIOJ 2256`](https://tioj.ck.tp.edu.tw/problems/2256) 挑水果
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,36 +186,92 @@ template<typename T>void sort(vector<T>&vec){
   
 **  ****************************************************  */
 
+// const INT mxc=50;
+// INT c,t;
+// vector<INT> p(mxc);// stay_fee
+// vector<INT> s(mxc);// sell_fee
+// vector<INT> n(mxc);// get
+// vector<vector<INT>> r(mxc,vector<INT>(mxc));
+
+// vector<vector<INT>> dp(mxc,vector<INT>(mxc*mxc,-1));// i=上一個出售地 j=可賣出的數量 dp[i][j]=價格
+// 特別的，dp[i][j]=-1表不可能
+// vector<INT> pt(mxc);
+// vector<INT> nt(mxc);
+// vector<vector<INT>> rt(mxc,vector<INT>(mxc));
+
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT t;
-	cin>>t;
-	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT>a(n);
-		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
-			}
-		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
+	INT c,t;
+	cin>>c>>t;
+
+	vector<INT> p(c+1);// stay_fee
+	vector<INT> s(c+1);// sell_fee
+	vector<INT> n(c+1);// get
+	vector<vector<INT>> r(c+1,vector<INT>(c+1));
+
+	//vector<vector<INT>> dp(c+1,vector<INT>(c*40+40,-1));// i=上一個出售地 j=可賣出的數量 dp[i][j]=價格
+	// 特別的，dp[i][j]=-1表不可能
+	vector<INT> pt(c+1);
+	vector<INT> nt(c+1);
+	vector<vector<INT>> rt(c+1,vector<INT>(c+1));
+
+
+
+	for(INT i=1;i<=c;i++){
+		cin>>p[i];
+		pt[i]=pt[i-1]+p[i];
+	}
+	for(INT i=1;i<=c;i++){
+		cin>>s[i];
+	}
+	for(INT i=1;i<=c;i++){
+		cin>>n[i];
+		nt[i]=nt[i-1]+n[i];
+	}
+	INT nat=nt[c];
+	for(INT i=1;i<=c;i++){
+		for(INT j=1;j<=i;j++){
+			cin>>r[i][j];
+			rt[i][j]=rt[i][j-1]+r[i][j];
 		}
 	}
+	vector<vector<INT>>dp(c+1,vector<INT>(nat+1,-1));
+	dp[0][0]=0;
+	for(INT i=1;i<=c;i++){ // （賣之後）最後賣出的城市
+		for(INT j=0;j<=nat;j++){ // （賣之前）已賣出
+			for(INT k=0;k<i;k++){ //（賣之前）最後賣出的城市
+				if(dp[k][j]==-1)continue;
+				// 決定賣出
+				INT stay_fee=(nt[c]-nt[k])*(pt[i]-pt[k]);
+				INT sell_fee=(nt[i]-nt[k])*s[i];
+				INT get=rt[i][i]-rt[i][k];
+				if(dp[i][j+get]==-1)dp[i][j+get]=dp[k][j]+stay_fee+sell_fee;
+				mins(dp[i][j+get],dp[k][j]+stay_fee+sell_fee);
+				if(dp[i][j+get]>t){ // 花費超過上限
+					dp[i][j+get]=-1;
+				}
+
+			}
+		}
+	}
+	INT ans=-1;
+	for(INT i=0;i<=c;i++){
+		for(INT j=0;j<=nat;j++){
+			if(dp[i][j]==-1)continue;
+			INT msf=(nt[c]-nt[i])*(pt[c]-pt[i]);
+			INT fee=dp[i][j]+msf;
+			if(fee<=t){
+				maxs(ans,j);
+			}
+		}
+	}
+	cout<<ans<<endl;
+	//cerr<<pit(dp)<<endl;
 	return 0;
 }
 
 
 
+
+```

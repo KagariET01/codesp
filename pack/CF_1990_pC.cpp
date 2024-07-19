@@ -187,24 +187,34 @@ int main(){
 		cin>>n;
 		vector<INT>a(n);
 		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
+		INT ans=0;
+		for(INT&i:a)ans+=i;
+		vector<PII>b;
+		INT nw=0;
+		vector<INT>cnt(n+5,0);
+		for(INT&i:a){
+			cnt[i]++;
+			if(cnt[i]>=2)maxs(nw,i);
+			if(nw){
+				if(!b.empty() && b.back().F==nw)b.back().S++;
+				else b.push_back(PII(nw,1));
 			}
 		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
+		INT lst=0;
+		INT all=0;
+		for(PII&i:b)all+=i.S;
+		for(PII&i:b){
+			if(i.S>=2){
+				ans-=lst*((all+1)*all/2);
+				ans+=i.F*((all+1)*all/2);
+				lst=i.F;
+			}else{
+				ans-=lst;
+				ans+=i.F;
+			}
+			all-=i.S;
 		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

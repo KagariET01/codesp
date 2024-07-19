@@ -163,6 +163,14 @@ template<typename T>void sort(vector<T>&vec){
 	sort(vec.begin(),vec.end());
 }
 
+template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b){
+	vector<pair<T1,T2>>re;
+	for(INT i=0;i<a.size()&&i<b.size();i++){
+		re.push_back(PII(a[i],b[i]));
+	}
+	return re;
+}
+
 
 
 
@@ -183,28 +191,31 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
+		INT n,m;
+		cin>>n>>m;
 		vector<INT>a(n);
-		cin>>a;
-		vector<PII>ans(n-1,PII(0,0));
-		vector<bool>take(n,false);
-		for(INT i=n-1;i>=1;i--){
-			vector<INT>ph(i,-1);
-			for(INT j=0;j<n;j++){
-				if(take[j])continue;
-				if(ph[a[j]%i]!=-1){
-					ans[i-1]=PII(j,ph[a[j]%i]);
-					take[j]=1;
-					break;
-				}
-				ph[a[j]%i]=j;
-			}
+		vector<INT>b(n);
+		cin>>a>>b;
+		map<INT,INT>d;
+		for(INT i=0;i<n;i++){
+			if(!d[a[i]])d[a[i]]=0;
+			d[a[i]]+=b[i];
 		}
-		cout<<"yes"<<endl;
-		for(PII i:ans){
-			cout<<i.F+1<<" "<<i.S+1<<endl;
+		INT ans=0;
+		for(INT i:a){
+			maxs(ans,min(m/i,d[i])*i);
+
+			INT c1=min(m/i,d[i]);
+			INT coin=m-c1*i;
+			INT c2=min(coin/(i+1),d[i+1]);
+			INT nw=c1*i+c2*(i+1);
+			coin=m-nw;
+			INT lft=d[i+1]-c2;
+			mins(lft,c1);
+			mins(lft,coin);
+			maxs(ans,nw+lft);
 		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

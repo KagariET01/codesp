@@ -14,5 +14,6 @@
 [`TIOJ 2246` 迷宮入口](/codesp/docs/TIOJ_2246)  
 [`TIOJ 2247` 打鍵盤(keyboard)](/codesp/docs/TIOJ_2247)  
 [`TIOJ 2250` 間諜(spy)](/codesp/docs/ZJ_h561)  
+[`TIOJ 2256` 挑水果](/codesp/docs/TIOJ_2256)  
 [`TIOJ 2330` 房屋推薦](/codesp/docs/TIOJ_2330)  
 [`TIOJ 2331` 裁員風暴](/codesp/docs/TIOJ_2331)  
