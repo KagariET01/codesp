@@ -3176,6 +3176,21 @@
       "AC": true
     },
     {
+      "qname": "正手不精",
+      "fname": "TIOJ_2026",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2026",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2026"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2026.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "化學元素分析",
       "fname": "TIOJ_2051",
       "qlink": [
@@ -3796,6 +3811,96 @@
       "AC": true
     },
     {
+      "qname": "112北二2a.教練 (Coach)",
+      "fname": "ZJ_m602",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m602",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m602"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m602.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "112北二3a.忍術學園的期中考 (Gallery)",
+      "fname": "ZJ_m603",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m603",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m603"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m603.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "112北二4a.訂購臘腸 (Sausage)",
+      "fname": "ZJ_m604",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m604",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m604"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m604.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "112北二5a.階乘計算 (Factorial)",
+      "fname": "ZJ_m605",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m605",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m605"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m605.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "112北二1b.開場列隊 (Line up)",
+      "fname": "ZJ_m606",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m606",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m606"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m606.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "112北二4b.浮點數之連分數表示法 (Fraction)",
+      "fname": "ZJ_m608",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "m608",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=m608"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_m608.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "The Strongest Chain (0 尾版)",
       "fname": "ZJ_m713",
       "qlink": [
@@ -3954,17 +4059,17 @@
       "AC": false
     },
     {
-      "qname": "112北二2a.教練 (Coach)",
-      "fname": "ZJ_m602",
+      "qname": "Password Cracking",
+      "fname": "CF_2013_pC",
       "qlink": [
         {
-          "OJ": "ZJ",
-          "PID": "m602",
-          "link": "https://zerojudge.tw/ShowProblem?problemid=m602"
+          "OJ": "CF",
+          "PID": "2013 pC",
+          "link": "https://codeforces.com/contest/2013/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/ZJ_m602.cpp",
+      "ans_code": "pack/CF_2013_pC.cpp",
       "ans_TXT": "",
       "AC": true
     }

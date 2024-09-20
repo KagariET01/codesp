@@ -114,6 +114,7 @@
 [`CF 2003 pB` Turtle and Piggy Are Playing a Game 2](/codesp/docs/CF_2003_pB)  
 [`CF 2003 pC` Turtle and Good Pairs+](/codesp/docs/CF_2003_pC)  
 [`CF 2005 pA` Simple Palindrome](/codesp/docs/CF_2005_pA)  
+[`CF 2005 pB2` The Strict Teacher](/codesp/docs/CF_2005_pB2)  
 [`CF 2007 pA` Dora's Set](/codesp/docs/CF_2007_pA)  
 [`CF 2007 pB` Index and Maximum Value](/codesp/docs/CF_2007_pB)  
 [`CF 2007 pC` Dora and C++](/codesp/docs/CF_2007_pC)  
