@@ -4102,6 +4102,21 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "質數切割法",
+      "fname": "ZJ_131",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "131",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=131"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_131.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [
