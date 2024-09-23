@@ -24,5 +24,7 @@
 [`ZJ m608` 112北二4b.浮點數之連分數表示法 (Fraction)](/codesp/docs/ZJ_m608)  
 [`ZJ m933` 邏輯電路](/codesp/docs/ZJ_m933)  
 [`ZJ m934` 合併成本](/codesp/docs/ZJ_m934)  
+[`ZJ n129` 鋪磁磚問題](/codesp/docs/ZJ_n129)  
+[`ZJ n130` 製作看板](/codesp/docs/ZJ_n130)  
 [`ZJ n222` 小明的作業 (t 筆測資版)](/codesp/docs/ZJ_n222)  
 [`ZJ n262` 我討厭零錢](/codesp/docs/ZJ_n262)  
