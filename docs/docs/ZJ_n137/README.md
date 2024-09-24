@@ -1,3 +1,12 @@
+# [`ZJ n137`](https://zerojudge.tw/ShowProblem?problemid=n137) 報表排序
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -179,8 +188,35 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	string str;
+	getline(cin,str);
+	while(t--){
+		string stra,strb;
+		getline(cin,stra);
+		getline(cin,strb);
+		stringstream ss;
+		ss<<stra<<endl;
+		vector<pair<string,INT>>a;
+		while(ss>>str){
+			a.push_back(pair<string,INT>(str,0));
+		}
+		ss.clear();
+		ss<<strb<<endl;
+		INT nw=0;
+		for(auto&i:a){
+			ss>>nw;
+			i.S=nw;
+		}
+		sort(a);
+		for(auto&i:a)cout<<i.F<<" "<<i.S<<endl;
+
+	}
 	return 0;
 }
 
 
 
+
+```

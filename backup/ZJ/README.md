@@ -28,5 +28,6 @@
 [`ZJ n129` 鋪磁磚問題](/codesp/docs/ZJ_n129)  
 [`ZJ n130` 製作看板](/codesp/docs/ZJ_n130)  
 [`ZJ n133` 大雄的煩惱](/codesp/docs/ZJ_n133)  
+[`ZJ n136` 賓果遊戲](/codesp/docs/ZJ_n136)  
 [`ZJ n222` 小明的作業 (t 筆測資版)](/codesp/docs/ZJ_n222)  
 [`ZJ n262` 我討厭零錢](/codesp/docs/ZJ_n262)  

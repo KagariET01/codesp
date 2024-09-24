@@ -1,3 +1,12 @@
+# [`ZJ n136`](https://zerojudge.tw/ShowProblem?problemid=n136) 賓果遊戲
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -151,6 +160,12 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 }
 
 //io
+template<typename T>ostream&operator>>(ostream&ou,T a){
+	return ou<<a;
+}
+template<typename T>istream&operator<<(istream&in,T a){
+	return in>>a;
+}
 
 template<typename T>void sort(vector<T>&vec){
 	sort(vec.begin(),vec.end());
@@ -179,8 +194,50 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT n;
+	cin>>n;
+	bool a[30]={};
+	for(INT i=0;i<n;i++)a[read(INT)]=1;
+	INT mpa[5][5];
+	bool mpb[5][5]={};
+	for(auto&i:mpa)for(INT&j:i)cin>>j;
+	for(INT i=0;i<5;i++){
+		for(INT j=0;j<5;j++){
+			mpb[i][j]=a[mpa[i][j]];
+		}
+	}
+	INT ansa=0,ansb=0;
+	INT cnt=0;
+	for(INT i=0;i<5;i++)if(mpb[i][i])cnt++;
+	if(cnt==4)ansb++;
+	if(cnt==5)ansa++;
+	cnt=0;
+	for(INT i=0;i<5;i++)if(mpb[i][4-i])cnt++;
+	if(cnt==4)ansb++;
+	if(cnt==5)ansa++;
+	cnt=0;
+	for(INT i=0;i<5;i++){
+		cnt=0;
+		for(INT j=0;j<5;j++){
+			if(mpb[i][j])cnt++;
+		}
+		if(cnt==4)ansb++;
+		if(cnt==5)ansa++;
+	}
+	cnt=0;
+	for(INT i=0;i<5;i++){
+		cnt=0;
+		for(INT j=0;j<5;j++){
+			if(mpb[j][i])cnt++;
+		}
+		if(cnt==4)ansb++;
+		if(cnt==5)ansa++;
+	}
+	cout<<ansa<<" "<<ansb<<endl;
 	return 0;
 }
 
 
 
+
+```
