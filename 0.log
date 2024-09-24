@@ -1,4 +1,3 @@
-dp:[[0,0,0,0,0,0,0],[-1000000007,-10010,-10010,-5005,-5005,-5005,-5005],[0,0,11968,11968,69920,69920,74915],[-1000000007,-10010,-10010,6963,6963,6963,6963],[0,0,11968,11968,81888,81888,86883]] 
 	Command being timed: "./run"
 	User time (seconds): 0.00
 	System time (seconds): 0.00
@@ -11,12 +10,12 @@ dp:[[0,0,0,0,0,0,0],[-1000000007,-10010,-10010,-5005,-5005,-5005,-5005],[0,0,119
 	Maximum resident set size (kbytes): 3456
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 142
+	Minor (reclaiming a frame) page faults: 143
 	Voluntary context switches: 1
 	Involuntary context switches: 0
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 16
+	File system outputs: 8
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
