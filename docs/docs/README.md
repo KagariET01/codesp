@@ -160,6 +160,7 @@
 [`TIOJ 2256` 挑水果](/codesp/docs/TIOJ_2256)  
 [`TIOJ 2330` `TOI 2023 pA` 房屋推薦](/codesp/docs/TIOJ_2330)  
 [`TIOJ 2331` `TOI 2023 pB` 裁員風暴](/codesp/docs/TIOJ_2331)  
+[`ZJ 131` 質數切割法](/codesp/docs/ZJ_131)  
 [`ZJ b417` 區間眾數](/codesp/docs/ZJ_b417)  
 [`ZJ c402` 我討厭你](/codesp/docs/ZJ_c402)  
 [`ZJ ZJ f314` `APCS 2020 10 pC` 勇者修煉](/codesp/docs/ZJ_f314)  
@@ -188,4 +189,4 @@
 [`ZJ n262` 我討厭零錢](/codesp/docs/ZJ_n262)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
-[`ZJ 131` 質數切割法](/codesp/docs/ZJ_131)  
+[`ZJ n133` 大雄的煩惱](/codesp/docs/ZJ_n133)  

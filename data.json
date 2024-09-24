@@ -3525,6 +3525,21 @@
       "AC": true
     },
     {
+      "qname": "質數切割法",
+      "fname": "ZJ_131",
+      "qlink": [
+        {
+          "OJ": "ZJ",
+          "PID": "131",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=131"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/ZJ_131.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "區間眾數",
       "fname": "ZJ_b417",
       "qlink": [
@@ -4104,17 +4119,17 @@
       "AC": false
     },
     {
-      "qname": "質數切割法",
-      "fname": "ZJ_131",
+      "qname": "大雄的煩惱",
+      "fname": "ZJ_n133",
       "qlink": [
         {
           "OJ": "ZJ",
-          "PID": "131",
-          "link": "https://zerojudge.tw/ShowProblem?problemid=131"
+          "PID": "n133",
+          "link": "https://zerojudge.tw/ShowProblem?problemid=n133"
         }
       ],
       "tag": [],
-      "ans_code": "pack/ZJ_131.cpp",
+      "ans_code": "pack/ZJ_n133.cpp",
       "ans_TXT": "",
       "AC": true
     }

@@ -1,6 +1,7 @@
 # ZJ
 [back](..)  
 
+[`ZJ 131` 質數切割法](/codesp/docs/ZJ_131)  
 [`ZJ ZJ f314` 勇者修煉](/codesp/docs/ZJ_f314)  
 [`ZJ b417` 區間眾數](/codesp/docs/ZJ_b417)  
 [`ZJ c402` 我討厭你](/codesp/docs/ZJ_c402)  
