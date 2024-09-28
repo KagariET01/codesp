@@ -127,7 +127,6 @@
 [`CF 2007 pD` Iris and Game on the Tree](/codesp/docs/CF_2007_pD)  
 [`CF 2013 pC` Password Cracking](/codesp/docs/CF_2013_pC)  
 [`CF 2013 pD` Minimize the Difference](/codesp/docs/CF_2013_pD)  
-[`CF 2013 pD` Minimize the Difference](/codesp/docs/CF_2013_pD)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  
 [`CSES 1753` String Matching](/codesp/docs/CSES_1753)  
 [`CSES 2413` Counting Towers](/codesp/docs/CSES_2413)  
