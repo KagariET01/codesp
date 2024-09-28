@@ -152,12 +152,6 @@ template<typename T1,typename T2>ostream&operator<<(ostream&ou,map<T1,T2>mp){
 }
 
 //io
-template<typename T>ostream&operator>>(ostream&ou,T a){
-	return ou<<a;
-}
-template<typename T>istream&operator<<(istream&in,T a){
-	return in>>a;
-}
 
 template<typename T>void sort(vector<T>&vec){
 	sort(vec.begin(),vec.end());
@@ -184,34 +178,42 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-void fix(PII&a){
-	if(a==PII(0,0))return;
-	INT gcd=__gcd(a.F,a.S);
-	a.F/=gcd;
-	a.S/=gcd;
-	if(a.F<0){
-		a.F=-a.F;
-		a.S=-a.S;
-	}
-}
+const INT sq=50;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
 	INT n;
 	cin>>n;
-	vector<PII>a(n);
+	vector<INT>a(n);
 	cin>>a;
-	PII ans=PII(-1,-1);
-	for(INT i=0;i<n;i++){
-		set<PII>se;
-		for(INT j=0;j<n;j++){
-			PII nw=a[i]-a[j];
-			fix(nw);
-			se.insert(nw);
+	vector<INT>b;
+	for(INT i=0;i<n;i+=sq){
+		b.push_back(a[i]);
+		for(INT j=i;j<n&&j<i+sq;j++){
+			b[i]=__gcd(b[i],a[j]);
 		}
-		if(se.size()>=n)ans=a[i];
 	}
-	cout<<ans.F<<" "<<ans.S<<endl;
+	INT mx=0;
+	for(INT i=0;i<n;i++){
+		for(INT j=i+1;j<n;j++){
+			INT it=0;
+			INT ans=0;
+			while(it<n){
+				if(it!=i && it!=j){
+					if(it%sq|| ( (it<=i && i<it+sq) || (it<=j && j<it+sq) )){
+						if(ans==0)ans=a[it];
+						ans=__gcd(a[it],ans);
+					}else{
+						if(ans==0)ans=b[it/sq];
+						ans=__gcd(b[it/sq],ans);
+					}
+				}
+				it++;
+			}
+			maxs(mx,ans);
+		}
+	}
+	cout<<mx<<endl;
 	return 0;
 }
 

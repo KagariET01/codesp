@@ -126,6 +126,8 @@
 [`CF 2007 pC` Dora and C++](/codesp/docs/CF_2007_pC)  
 [`CF 2007 pD` Iris and Game on the Tree](/codesp/docs/CF_2007_pD)  
 [`CF 2013 pC` Password Cracking](/codesp/docs/CF_2013_pC)  
+[`CF 2013 pD` Minimize the Difference](/codesp/docs/CF_2013_pD)  
+[`CF 2013 pD` Minimize the Difference](/codesp/docs/CF_2013_pD)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  
 [`CSES 1753` String Matching](/codesp/docs/CSES_1753)  
 [`CSES 2413` Counting Towers](/codesp/docs/CSES_2413)  
@@ -192,4 +194,3 @@
 [`ZJ n262` 我討厭零錢](/codesp/docs/ZJ_n262)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
-[`CF 2013 pD` Minimize the Difference](/codesp/docs/CF_2013_pD)  

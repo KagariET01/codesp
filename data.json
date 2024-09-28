@@ -2811,8 +2811,23 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2013_pD.cpp",
+      "ans_TXT": "pack/CF_2013_pD.md",
+      "AC": true
+    },
+    {
+      "qname": "Minimize the Difference",
+      "fname": "CF_2013_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2013 pD",
+          "link": "https://codeforces.com/contest/2013/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2013_pD.cpp",
       "ans_TXT": "",
-      "AC": false
+      "AC": true
     },
     {
       "qname": "Buy Low Sell High",
@@ -4192,21 +4207,6 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
-    },
-    {
-      "qname": "Minimize the Difference",
-      "fname": "CF_2013_pD",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2013 pD",
-          "link": "https://codeforces.com/contest/2013/problem/D"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2013_pD.cpp",
-      "ans_TXT": "",
-      "AC": true
     }
   ],
   "tag": [

@@ -1,3 +1,12 @@
+# [`CF 2013 pD`](https://codeforces.com/contest/2013/problem/D) Minimize the Difference
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -179,8 +188,35 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		stack<PII>st;
+		for(INT i=0;i<n;i++){
+			INT sum=a[i],cnt=1;
+			while(!st.empty()&&st.top().F>=sum/cnt){
+				sum+=st.top().F*st.top().S;
+				cnt+=st.top().S;
+				st.pop();
+			}
+			st.push(PII(sum/cnt,cnt-sum%cnt));
+			if(sum%cnt){
+				st.push(PII(sum/cnt+1,sum%cnt));
+			}
+		}
+		INT mx=st.top().F;
+		INT mn=mx;
+		while(!st.empty()){mins(mn,st.top().F);st.pop();}
+		cout<<mx-mn<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```
