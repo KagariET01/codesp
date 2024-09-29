@@ -2,78 +2,6 @@
   "data": [
     {
       "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "",
-      "fname": "",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "",
-      "fname": "0test",
-      "qlink": [],
-      "tag": [],
-      "ans_code": "pack/test.cpp",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "",
       "fname": "AT_abc348_pA",
       "qlink": [
         {
@@ -2845,6 +2773,36 @@
       "AC": true
     },
     {
+      "qname": "Cards Partition",
+      "fname": "CF_2019_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2019 pC",
+          "link": "https://codeforces.com/contest/2019/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2019_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Speedbreaker",
+      "fname": "CF_2019_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2019 pD",
+          "link": "https://codeforces.com/contest/2019/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2019_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Buy Low Sell High",
       "fname": "CF_865_pD",
       "qlink": [
@@ -4222,36 +4180,6 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
-    },
-    {
-      "qname": "Cards Partition",
-      "fname": "CF_2019_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2019 pC",
-          "link": "https://codeforces.com/contest/2019/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2019_pC.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Speedbreaker",
-      "fname": "CF_2019_pD",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2019 pD",
-          "link": "https://codeforces.com/contest/2019/problem/D"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2019_pD.cpp",
-      "ans_TXT": "",
-      "AC": true
     }
   ],
   "tag": [

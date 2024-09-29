@@ -18,6 +18,8 @@ def IN(txt):
 			print("[sys]儲存中...")
 			open("data.json", "w").write(json.dumps(dta, indent=2, ensure_ascii=False))
 			print("[sys]儲存完成")
+		elif(re=="pb"):
+			os.system("python3 push.py")
 		elif(len(re)>0 and re[0]=="!"):
 			os.system(re[1:])
 		elif(re==""):

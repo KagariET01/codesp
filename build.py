@@ -8,6 +8,8 @@ os.system("rm -rf backup")
 os.system("mkdir backup")
 os.system("mv docs/* backup/")
 
+
+
 dta=json.load(open("data.json","r"))
 OJlist=json.load(open("OJlist.json","r"))
 
