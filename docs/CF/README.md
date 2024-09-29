@@ -1,6 +1,7 @@
 # CF
 [back](..)  
 
+[`CF 1 pA` test](/codesp/docs/CF_1_pA)  
 [`CF 1609 pA`  ](/codesp/docs/CF_1609_pA)  
 [`CF 1609 pB` William the Vigilant](/codesp/docs/CF_1609_pB)  
 [`CF 1609 pC` Complex Market Analysis](/codesp/docs/CF_1609_pC)  

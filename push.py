@@ -8,31 +8,33 @@ new_dta=json.load(open("data.json","r"))
 old_dta["data"].sort(key=lambda a: a["fname"])
 new_dta["data"].sort(key=lambda a: a["fname"])
 
-
+old_file=[]
+old_ac=[]
 new_file=[]
 new_ac=[]
 
-it=0
-n=new_dta["data"].__len__()
-def doit(i=None):
-	global it,old_dta,new_dta
-	while(it<n):
-		if(i!=None and i["fname"]==new_dta["data"][it]["fname"]):
-			if(i["AC"]==new_dta["data"][it]["AC"]):
-				it+=1
-				break
-			else:
-				new_ac.append(new_dta["data"][it]["fname"])
-		elif(new_dta["data"][it]["AC"]):
-			new_ac.append(new_dta["data"][it]["fname"])
-		else:
-			new_file.append(new_dta["data"][it]["fname"])
-		it+=1
-
-
 for i in old_dta["data"]:
-	doit(i)
-doit(None)
+	old_file.append(i["fname"]);
+	if(i["AC"]):
+		old_ac.append(i["fname"]);
+
+it=0
+n=old_file.__len__()
+it2=0
+n2=old_file.__len__()
+
+for i in new_dta["data"]:
+	if(it<n and i["fname"]==old_file[it]):
+		it+=1
+		continue
+	new_file.append(i["fname"])
+
+for i in new_dta["data"]:
+	if(it2<n2 and i["fname"]==old_ac[it2]):
+		it+=1
+		continue
+	if(i["AC"]):
+		new_ac.append(i["fname"])
 
 
 print("you add some new file")
