@@ -4180,6 +4180,21 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Tree Pruning",
+      "fname": "CF_2019_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2019 pE",
+          "link": "https://codeforces.com/contest/2019/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2019_pE.cpp",
+      "ans_TXT": "",
+      "AC": false
     }
   ],
   "tag": [
