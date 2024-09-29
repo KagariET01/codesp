@@ -131,6 +131,7 @@
 [`CF 2013 pD` Minimize the Difference](/codesp/docs/CF_2013_pD)  
 [`CF 2019 pC` Cards Partition](/codesp/docs/CF_2019_pC)  
 [`CF 2019 pD` Speedbreaker](/codesp/docs/CF_2019_pD)  
+[`CF 2019 pE` Tree Pruning](/codesp/docs/CF_2019_pE)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  
 [`CSES 1753` String Matching](/codesp/docs/CSES_1753)  
 [`CSES 2413` Counting Towers](/codesp/docs/CSES_2413)  

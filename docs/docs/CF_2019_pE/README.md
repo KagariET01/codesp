@@ -1,3 +1,11 @@
+# [`CF 2019 pE`](https://codeforces.com/contest/2019/problem/E) Tree Pruning
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -256,3 +264,5 @@ int main(){
 
 
 
+
+```
