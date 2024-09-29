@@ -2785,6 +2785,36 @@
       "AC": true
     },
     {
+      "qname": "Zhan's Blender",
+      "fname": "CF_2013_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2013 pA",
+          "link": "https://codeforces.com/contest/2013/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2013_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Battle for Survive",
+      "fname": "CF_2013_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2013 pB",
+          "link": "https://codeforces.com/contest/2013/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2013_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Password Cracking",
       "fname": "CF_2013_pC",
       "qlink": [
@@ -4194,32 +4224,32 @@
       "AC": false
     },
     {
-      "qname": "Zhan's Blender",
-      "fname": "CF_2013_pA",
+      "qname": "Cards Partition",
+      "fname": "CF_2019_pC",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2013 pA",
-          "link": "https://codeforces.com/contest/2013/problem/A"
+          "PID": "2019 pC",
+          "link": "https://codeforces.com/contest/2019/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2013_pA.cpp",
+      "ans_code": "pack/CF_2019_pC.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Battle for Survive",
-      "fname": "CF_2013_pB",
+      "qname": "Speedbreaker",
+      "fname": "CF_2019_pD",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2013 pB",
-          "link": "https://codeforces.com/contest/2013/problem/B"
+          "PID": "2019 pD",
+          "link": "https://codeforces.com/contest/2019/problem/D"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2013_pB.cpp",
+      "ans_code": "pack/CF_2019_pD.cpp",
       "ans_TXT": "",
       "AC": true
     }

@@ -119,6 +119,8 @@
 [`CF 2007 pB` Index and Maximum Value](/codesp/docs/CF_2007_pB)  
 [`CF 2007 pC` Dora and C++](/codesp/docs/CF_2007_pC)  
 [`CF 2007 pD` Iris and Game on the Tree](/codesp/docs/CF_2007_pD)  
+[`CF 2013 pA` Zhan's Blender](/codesp/docs/CF_2013_pA)  
+[`CF 2013 pB` Battle for Survive](/codesp/docs/CF_2013_pB)  
 [`CF 2013 pC` Password Cracking](/codesp/docs/CF_2013_pC)  
 [`CF 2013 pD` Minimize the Difference](/codesp/docs/CF_2013_pD)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  

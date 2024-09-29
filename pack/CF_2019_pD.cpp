@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -17,7 +18,7 @@ using namespace std;
 #define S second
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
-#define dequeue deque
+
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 //PII
@@ -179,6 +180,42 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		INT mx[n+1]={};
+		INT mn[n+1]={};
+		for(auto&i:mn)i=n+5;
+		for(INT i=0;i<n;i++){
+			maxs(mx[a[i]],i);
+			mins(mn[a[i]],i);
+		}
+		INT ansl=0;
+		INT ansr=n+5;
+		INT ans=0;
+		for(INT i=1;i<=n;i++){
+			//cerr<<pit(i)<<pit(ansl)<<pit(ansr)<<pit(ans)<<endl;
+			maxs(mx[i],mx[i-1]);
+			mins(mn[i],mn[i-1]);
+			if(mx[i]<mn[i])continue;
+			if(mx[i]-mn[i]<i){
+				INT nw=mx[i]-mn[i]+1;
+				INT r=min(mx[i]+(i-nw),n-1);
+				INT l=max(mn[i]-(i-nw),0ll);
+				maxs(ansl,l);
+				mins(ansr,r);
+				ans=ansr-ansl+1;
+			}else{
+				ans=0;
+				break;
+			}
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 

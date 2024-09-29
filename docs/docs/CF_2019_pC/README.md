@@ -1,3 +1,12 @@
+# [`CF 2019 pC`](https://codeforces.com/contest/2019/problem/C) Cards Partition
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -17,7 +26,7 @@ using namespace std;
 #define S second
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
-#define dequeue deque
+
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 //PII
@@ -179,8 +188,37 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		//cerr<<"=========================="<<endl;
+
+		INT n,m;
+		cin>>n>>m;
+		vector<INT>a(n);
+		cin>>a;
+		INT mx=0;
+		for(auto&i:a)maxs(mx,i);
+		INT tot=0;
+		for(auto&i:a)tot+=i;
+		INT ans=-1;
+		for(INT i=1;i<=n;i++){
+			INT box=tot/i;
+			if(tot%i)box++;
+			INT nm=m;
+			if(tot%i && i-tot%i>m)continue;
+			else if(tot%i) nm-=i-tot%i;
+			box+=nm/i;
+			//cerr<<pit(i)<<pit(tot)<<pit(mx)<<pit(ans)<<pit(box)<<pit(nm)<<endl;
+			if(box<mx)break;
+			maxs(ans,i);
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```
