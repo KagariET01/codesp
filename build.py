@@ -35,7 +35,7 @@ def getN(dta,OJ=[]):#  製造題目列表（單一題目）
 	return re
 
 fix()
-print("data:",dta["data"])
+#print("data:",dta["data"])
 os.system("mkdir docs/docs")
 book={}
 

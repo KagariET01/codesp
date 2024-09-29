@@ -12,16 +12,15 @@ old_file=[]
 old_ac=[]
 new_file=[]
 new_ac=[]
-
 for i in old_dta["data"]:
-	old_file.append(i["fname"]);
-	if(i["AC"]):
-		old_ac.append(i["fname"]);
+	old_file.append(i["fname"])
+	if(i["AC"]==True):
+		old_ac.append(i["fname"])
 
 it=0
 n=old_file.__len__()
 it2=0
-n2=old_file.__len__()
+n2=old_ac.__len__()
 
 for i in new_dta["data"]:
 	if(it<n and i["fname"]==old_file[it]):
@@ -30,11 +29,12 @@ for i in new_dta["data"]:
 	new_file.append(i["fname"])
 
 for i in new_dta["data"]:
-	if(it2<n2 and i["fname"]==old_ac[it2]):
-		it+=1
+	if(not i["AC"]):
 		continue
-	if(i["AC"]):
-		new_ac.append(i["fname"])
+	if(it2<n2 and i["fname"]==old_ac[it2]):
+		it2+=1
+		continue
+	new_ac.append(i["fname"])
 
 
 print("you add some new file")

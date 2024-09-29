@@ -4195,21 +4195,6 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
-    },
-    {
-      "qname": "test",
-      "fname": "CF_1_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1 pA",
-          "link": "https://codeforces.com/contest/1/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
     }
   ],
   "tag": [
