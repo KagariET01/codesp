@@ -4195,6 +4195,21 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Prefix GCD",
+      "fname": "CF_2013_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2013 pE",
+          "link": "https://codeforces.com/contest/2013/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2013_pE.cpp",
+      "ans_TXT": "",
+      "AC": false
     }
   ],
   "tag": [
