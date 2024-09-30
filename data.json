@@ -2773,6 +2773,21 @@
       "AC": true
     },
     {
+      "qname": "Prefix GCD",
+      "fname": "CF_2013_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2013 pE",
+          "link": "https://codeforces.com/contest/2013/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2013_pE.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Cards Partition",
       "fname": "CF_2019_pC",
       "qlink": [
@@ -4197,19 +4212,34 @@
       "AC": false
     },
     {
-      "qname": "Prefix GCD",
-      "fname": "CF_2013_pE",
+      "qname": "Max Plus Min Plus Size",
+      "fname": "CF_2019_pF",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2013 pE",
-          "link": "https://codeforces.com/contest/2013/problem/E"
+          "PID": "2019 pF",
+          "link": "https://codeforces.com/contest/2019/problem/F"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2013_pE.cpp",
+      "ans_code": "pack/CF_2019_pF.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Bitwise Balancing",
+      "fname": "CF_2020_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2020 pC",
+          "link": "https://codeforces.com/contest/2020/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2020_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [
