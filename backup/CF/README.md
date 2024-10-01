@@ -126,4 +126,5 @@
 [`CF 2019 pC` Cards Partition](/codesp/docs/CF_2019_pC)  
 [`CF 2019 pD` Speedbreaker](/codesp/docs/CF_2019_pD)  
 [`CF 2019 pE` Tree Pruning](/codesp/docs/CF_2019_pE)  
+[`CF 2020 pC` Bitwise Balancing](/codesp/docs/CF_2020_pC)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  
