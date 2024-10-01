@@ -2833,6 +2833,36 @@
       "AC": true
     },
     {
+      "qname": "Max Plus Min Plus Size",
+      "fname": "CF_2019_pF",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2019 pF",
+          "link": "https://codeforces.com/contest/2019/problem/F"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2019_pF.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Bitwise Balancing",
+      "fname": "CF_2020_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2020 pC",
+          "link": "https://codeforces.com/contest/2020/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2020_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Buy Low Sell High",
       "fname": "CF_865_pD",
       "qlink": [
@@ -4212,32 +4242,17 @@
       "AC": false
     },
     {
-      "qname": "Max Plus Min Plus Size",
-      "fname": "CF_2019_pF",
+      "qname": "Connect the Dots",
+      "fname": "CF_2020_pD",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2019 pF",
-          "link": "https://codeforces.com/contest/2019/problem/F"
+          "PID": "2020 pD",
+          "link": "https://codeforces.com/contest/2020/problem/D"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2019_pF.cpp",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "Bitwise Balancing",
-      "fname": "CF_2020_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2020 pC",
-          "link": "https://codeforces.com/contest/2020/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2020_pC.cpp",
+      "ans_code": "pack/CF_2020_pD.cpp",
       "ans_TXT": "",
       "AC": true
     }

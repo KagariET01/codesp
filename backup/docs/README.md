@@ -132,6 +132,7 @@
 [`CF 2019 pC` Cards Partition](/codesp/docs/CF_2019_pC)  
 [`CF 2019 pD` Speedbreaker](/codesp/docs/CF_2019_pD)  
 [`CF 2019 pE` Tree Pruning](/codesp/docs/CF_2019_pE)  
+[`CF 2020 pC` Bitwise Balancing](/codesp/docs/CF_2020_pC)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  
 [`CSES 1753` String Matching](/codesp/docs/CSES_1753)  
 [`CSES 2413` Counting Towers](/codesp/docs/CSES_2413)  
@@ -198,4 +199,4 @@
 [`ZJ n262` 我討厭零錢](/codesp/docs/ZJ_n262)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
-[`CF 2020 pC` Bitwise Balancing](/codesp/docs/CF_2020_pC)  
+[`CF 2020 pD` Connect the Dots](/codesp/docs/CF_2020_pD)  
