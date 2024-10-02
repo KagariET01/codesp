@@ -1,0 +1,1175 @@
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h: In instantiation of ‘constexpr bool std::greater<_Tp>::operator()(const _Tp&, const _Tp&) const [with _Tp = str]’:
+/usr/include/c++/11/bits/predefined_ops.h:196:23:   required from ‘bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<str*, std::vector<str> >; _Value = str; _Compare = std::greater<str>]’
+/usr/include/c++/11/bits/stl_heap.h:139:48:   required from ‘void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<str*, std::vector<str> >; _Distance = long int; _Tp = str; _Compare = __gnu_cxx::__ops::_Iter_comp_val<std::greater<str> >]’
+/usr/include/c++/11/bits/stl_heap.h:215:23:   required from ‘void std::push_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<str*, std::vector<str> >; _Compare = std::greater<str>]’
+/usr/include/c++/11/bits/stl_queue.h:651:16:   required from ‘void std::priority_queue<_Tp, _Sequence, _Compare>::push(std::priority_queue<_Tp, _Sequence, _Compare>::value_type&&) [with _Tp = str; _Sequence = std::vector<str>; _Compare = std::greater<str>; std::priority_queue<_Tp, _Sequence, _Compare>::value_type = str]’
+pack/CF_2014_pE.cpp:220:10:   required from here
+/usr/include/c++/11/bits/stl_function.h:390:20: error: no match for ‘operator>’ (operand types are ‘const str’ and ‘const str’)
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/specfun.h:45,
+                 from /usr/include/c++/11/cmath:1935,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:41,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_pair.h:502:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
+  502 |     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_pair.h:502:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::pair<_T1, _T2>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/specfun.h:45,
+                 from /usr/include/c++/11/cmath:1935,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:41,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_iterator.h:438:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
+  438 |     operator>(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:438:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/specfun.h:45,
+                 from /usr/include/c++/11/cmath:1935,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:41,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_iterator.h:477:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
+  477 |     operator>(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:477:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/specfun.h:45,
+                 from /usr/include/c++/11/cmath:1935,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:41,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_iterator.h:1627:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1627 |     operator>(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1627:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/specfun.h:45,
+                 from /usr/include/c++/11/cmath:1935,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:41,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_iterator.h:1679:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
+ 1679 |     operator>(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1679:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/string_view:608:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator>(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)’
+  608 |     operator> (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:608:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘str’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/string_view:614:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator>(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)’
+  614 |     operator> (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:614:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘str’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/string_view:621:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator>(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)’
+  621 |     operator> (__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:621:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘str’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/basic_string.h:6378:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6378 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6378:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/basic_string.h:6391:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’
+ 6391 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6391:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/basic_string.h:6403:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6403 |     operator>(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6403:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   mismatched types ‘const _CharT*’ and ‘str’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/tuple:39,
+                 from /usr/include/c++/11/functional:54,
+                 from /usr/include/c++/11/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/11/algorithm:74,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:65,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/array:320:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> bool std::operator>(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’
+  320 |     operator>(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     ^~~~~~~~
+/usr/include/c++/11/array:320:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::array<_Tp, _Nm>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/functional:54,
+                 from /usr/include/c++/11/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/11/algorithm:74,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:65,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/tuple:1585:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator>(const std::tuple<_Tps ...>&, const std::tuple<_UTypes ...>&)’
+ 1585 |     operator>(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+/usr/include/c++/11/tuple:1585:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::tuple<_Tps ...>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/vector:67,
+                 from /usr/include/c++/11/functional:62,
+                 from /usr/include/c++/11/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/11/algorithm:74,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:65,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_vector.h:1943:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’
+ 1943 |     operator>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:1943:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/deque:67,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:68,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_deque.h:2298:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)’
+ 2298 |     operator>(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_deque.h:2298:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::deque<_Tp, _Alloc>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:72,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/unique_ptr.h:846:5: note: candidate: ‘template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)’
+  846 |     operator>(const unique_ptr<_Tp, _Dp>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:846:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:72,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/unique_ptr.h:853:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)’
+  853 |     operator>(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:853:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:72,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/unique_ptr.h:862:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator>(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)’
+  862 |     operator>(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:862:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/list:63,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:79,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_list.h:2098:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)’
+ 2098 |     operator>(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_list.h:2098:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/map:61,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:81,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_map.h:1515:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)’
+ 1515 |     operator>(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_map.h:1515:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Allocator>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/map:62,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:81,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_multimap.h:1180:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)’
+ 1180 |     operator>(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_multimap.h:1180:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Allocator>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/shared_ptr.h:53,
+                 from /usr/include/c++/11/memory:77,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:82,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/shared_ptr_base.h:1500:5: note: candidate: ‘template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)’
+ 1500 |     operator>(const __shared_ptr<_Tp1, _Lp>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr_base.h:1500:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__shared_ptr<_Tp1, _Lp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/shared_ptr.h:53,
+                 from /usr/include/c++/11/memory:77,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:82,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/shared_ptr_base.h:1506:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)’
+ 1506 |     operator>(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr_base.h:1506:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/bits/shared_ptr.h:53,
+                 from /usr/include/c++/11/memory:77,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:82,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/shared_ptr_base.h:1511:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)’
+ 1511 |     operator>(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr_base.h:1511:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/memory:77,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:82,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/shared_ptr.h:535:5: note: candidate: ‘template<class _Tp, class _Up> bool std::operator>(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)’
+  535 |     operator>(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:535:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::shared_ptr<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/memory:77,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:82,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/shared_ptr.h:541:5: note: candidate: ‘template<class _Tp> bool std::operator>(const std::shared_ptr<_Tp>&, std::nullptr_t)’
+  541 |     operator>(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:541:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::shared_ptr<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/memory:77,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:82,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/shared_ptr.h:547:5: note: candidate: ‘template<class _Tp> bool std::operator>(std::nullptr_t, const std::shared_ptr<_Tp>&)’
+  547 |     operator>(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:547:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::shared_ptr<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/queue:64,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:86,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_queue.h:374:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator>(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)’
+  374 |     operator>(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_queue.h:374:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::queue<_Tp, _Seq>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/set:61,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:87,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_set.h:1037:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)’
+ 1037 |     operator>(const set<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_set.h:1037:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::set<_Key, _Compare, _Allocator>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/set:62,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:87,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_multiset.h:1023:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)’
+ 1023 |     operator>(const multiset<_Key,_Compare,_Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_multiset.h:1023:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::multiset<_Key, _Compare, _Allocator>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/stack:61,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:89,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_stack.h:349:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator>(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)’
+  349 |     operator>(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_stack.h:349:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::stack<_Tp, _Seq>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/valarray:603,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:95,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/valarray_after.h:420:5: note: candidate: ‘template<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__greater, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__greater, typename _Dom1::value_type>::result_type> std::operator>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)’
+  420 |     _DEFINE_EXPR_BINARY_OPERATOR(>, struct std::__greater)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/valarray_after.h:420:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/valarray:603,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:95,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/valarray_after.h:420:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__greater, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__greater, typename _Dom1::value_type>::result_type> std::operator>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)’
+  420 |     _DEFINE_EXPR_BINARY_OPERATOR(>, struct std::__greater)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/valarray_after.h:420:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/valarray:603,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:95,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/valarray_after.h:420:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__greater, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__greater, typename _Dom1::value_type>::result_type> std::operator>(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  420 |     _DEFINE_EXPR_BINARY_OPERATOR(>, struct std::__greater)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/valarray_after.h:420:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/valarray:603,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:95,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/valarray_after.h:420:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__greater, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__greater, typename _Dom1::value_type>::result_type> std::operator>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)’
+  420 |     _DEFINE_EXPR_BINARY_OPERATOR(>, struct std::__greater)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/valarray_after.h:420:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/valarray:603,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:95,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/valarray_after.h:420:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__greater, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__greater, typename _Dom1::value_type>::result_type> std::operator>(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  420 |     _DEFINE_EXPR_BINARY_OPERATOR(>, struct std::__greater)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/valarray_after.h:420:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:95,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/valarray:1201:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__greater, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__greater, _Tp>::result_type> std::operator>(const std::valarray<_Tp>&, const std::valarray<_Tp>&)’
+ 1201 | _DEFINE_BINARY_OPERATOR(>, __greater)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/valarray:1201:1: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::valarray<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:95,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/valarray:1201:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__greater, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__greater, _Tp>::result_type> std::operator>(const std::valarray<_Tp>&, const typename std::valarray<_Tp>::value_type&)’
+ 1201 | _DEFINE_BINARY_OPERATOR(>, __greater)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/valarray:1201:1: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::valarray<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:95,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/valarray:1201:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__greater, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__greater, _Tp>::result_type> std::operator>(const typename std::valarray<_Tp>::value_type&, const std::valarray<_Tp>&)’
+ 1201 | _DEFINE_BINARY_OPERATOR(>, __greater)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/valarray:1201:1: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::valarray<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/forward_list:38,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:104,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/forward_list.h:1483:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::forward_list<_Tp, _Alloc>&, const std::forward_list<_Tp, _Alloc>&)’
+ 1483 |     operator>(const forward_list<_Tp, _Alloc>& __lx,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/forward_list.h:1483:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::forward_list<_Tp, _Alloc>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:130,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/optional:1071:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_gt_t<_Tp, _Up> std::operator>(const std::optional<_Tp>&, const std::optional<_Up>&)’
+ 1071 |     operator>(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1071:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::optional<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:130,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/optional:1141:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator>(const std::optional<_Tp>&, std::nullopt_t)’
+ 1141 |     operator>(const optional<_Tp>& __lhs, nullopt_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1141:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::optional<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:130,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/optional:1146:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator>(std::nullopt_t, const std::optional<_Tp>&)’
+ 1146 |     operator>(nullopt_t, const optional<_Tp>& /* __rhs */) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1146:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::optional<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:130,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/optional:1209:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_gt_t<_Tp, _Up> std::operator>(const std::optional<_Tp>&, const _Up&)’
+ 1209 |     operator>(const optional<_Tp>& __lhs, const _Up& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1209:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::optional<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:130,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/optional:1215:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_gt_t<_Up, _Tp> std::operator>(const _Up&, const std::optional<_Tp>&)’
+ 1215 |     operator>(const _Up& __lhs, const optional<_Tp>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1215:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::optional<_Tp>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:133,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/variant:1235:3: note: candidate: ‘template<class ... _Types> constexpr bool std::operator>(const std::variant<_Types ...>&, const std::variant<_Types ...>&)’
+ 1235 |   _VARIANT_RELATION_FUNCTION_TEMPLATE(>, greater)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/variant:1235:3: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::variant<_Types ...>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/regex:63,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:110,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/regex.h:1132:5: note: candidate: ‘template<class _BiIter> bool std::__cxx11::operator>(const std::__cxx11::sub_match<_BiIter>&, const std::__cxx11::sub_match<_BiIter>&)’
+ 1132 |     operator>(const sub_match<_BiIter>& __lhs, const sub_match<_BiIter>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/regex.h:1132:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__cxx11::sub_match<_BiIter>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/regex:63,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:110,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/regex.h:1192:5: note: candidate: ‘template<class _Bi_iter, class _Ch_traits, class _Ch_alloc> bool std::__cxx11::operator>(std::__cxx11::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>&, const std::__cxx11::sub_match<_BiIter>&)’
+ 1192 |     operator>(const __sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/regex.h:1192:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘std::__cxx11::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/regex:63,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:110,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/regex.h:1285:5: note: candidate: ‘template<class _Bi_iter, class _Ch_traits, class _Ch_alloc> bool std::__cxx11::operator>(const std::__cxx11::sub_match<_BiIter>&, std::__cxx11::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>&)’
+ 1285 |     operator>(const sub_match<_Bi_iter>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/regex.h:1285:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__cxx11::sub_match<_BiIter>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/regex:63,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:110,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/regex.h:1359:5: note: candidate: ‘template<class _Bi_iter> bool std::__cxx11::operator>(const typename std::iterator_traits<_Iter>::value_type*, const std::__cxx11::sub_match<_BiIter>&)’
+ 1359 |     operator>(typename iterator_traits<_Bi_iter>::value_type const* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/regex.h:1359:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__cxx11::sub_match<_BiIter>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/regex:63,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:110,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/regex.h:1453:5: note: candidate: ‘template<class _Bi_iter> bool std::__cxx11::operator>(const std::__cxx11::sub_match<_BiIter>&, const typename std::iterator_traits<_Iter>::value_type*)’
+ 1453 |     operator>(const sub_match<_Bi_iter>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/regex.h:1453:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__cxx11::sub_match<_BiIter>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/regex:63,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:110,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/regex.h:1529:5: note: candidate: ‘template<class _Bi_iter> bool std::__cxx11::operator>(const typename std::iterator_traits<_Iter>::value_type&, const std::__cxx11::sub_match<_BiIter>&)’
+ 1529 |     operator>(typename iterator_traits<_Bi_iter>::value_type const& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/regex.h:1529:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__cxx11::sub_match<_BiIter>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11/regex:63,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:110,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/regex.h:1629:5: note: candidate: ‘template<class _Bi_iter> bool std::__cxx11::operator>(const std::__cxx11::sub_match<_BiIter>&, const typename std::iterator_traits<_Iter>::value_type&)’
+ 1629 |     operator>(const sub_match<_Bi_iter>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/regex.h:1629:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: note:   ‘const str’ is not derived from ‘const std::__cxx11::sub_match<_BiIter>’
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:113,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/thread:82:3: note: candidate: ‘bool std::operator>(std::thread::id, std::thread::id)’
+   82 |   operator>(thread::id __x, thread::id __y) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/11/thread:82:24: note:   no known conversion for argument 1 from ‘const str’ to ‘std::thread::id’
+   82 |   operator>(thread::id __x, thread::id __y) noexcept
+      |             ~~~~~~~~~~~^~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:133,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/variant:1273:18: note: candidate: ‘constexpr bool std::operator>(std::monostate, std::monostate)’
+ 1273 |   constexpr bool operator>(monostate, monostate) noexcept { return false; }
+      |                  ^~~~~~~~
+/usr/include/c++/11/variant:1273:28: note:   no known conversion for argument 1 from ‘const str’ to ‘std::monostate’
+ 1273 |   constexpr bool operator>(monostate, monostate) noexcept { return false; }
+      |                            ^~~~~~~~~
+pack/CF_2014_pE.cpp:195:6: note: candidate: ‘bool operator>(str&, str&)’ (near match)
+  195 | bool operator>(str&a,str&b){
+      |      ^~~~~~~~
+pack/CF_2014_pE.cpp:195:6: note:   conversion of argument 2 would be ill-formed:
+In file included from /usr/include/c++/11/string:48,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /usr/include/c++/11/complex:45,
+                 from /usr/include/c++/11/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:54,
+                 from pack/CF_2014_pE.cpp:2:
+/usr/include/c++/11/bits/stl_function.h:390:20: error: binding reference of type ‘str&’ to ‘const str’ discards qualifiers
+  390 |       { return __x > __y; }
+      |                ~~~~^~~~~

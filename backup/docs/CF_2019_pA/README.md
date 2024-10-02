@@ -1,3 +1,11 @@
+# [`CF 2019 pA`](https://codeforces.com/contest/2019/problem/A) Max Plus Size
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,31 +186,28 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-namespace ET01{
-	INT sqrt(INT n){
-		INT l=0,r=n+1;
-		while(l<r){
-			INT mid=(r-l)/2ll+l+1;
-			if(mid*mid<=n){
-				l=mid;
-			}else{
-				r=mid-1;
-			}
-		}
-		return l;
-	}
-};
-
-
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT nw=0;
-	while(cin>>nw){
-		cout<<nw<<" "<<ET01::sqrt(nw)<<endl;
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		INT ad=(n&1);
+		INT ans=0;
+		for(INT i=0;i<n;i++){
+			if(i&1)maxs(ans,a[i]);
+			else maxs(ans,a[i]+ad);
+		}
+		ans+=n/2;
+		cout<<ans<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```

@@ -178,28 +178,23 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-namespace ET01{
-	INT sqrt(INT n){
-		INT l=0,r=n+1;
-		while(l<r){
-			INT mid=(r-l)/2ll+l+1;
-			if(mid*mid<=n){
-				l=mid;
-			}else{
-				r=mid-1;
-			}
-		}
-		return l;
-	}
-};
-
-
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT nw=0;
-	while(cin>>nw){
-		cout<<nw<<" "<<ET01::sqrt(nw)<<endl;
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		INT ans=0;
+		if(k==1){
+			cout<<n<<endl;
+			continue;
+		}
+		while(n){
+			ans+=n%k;
+			n/=k;
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

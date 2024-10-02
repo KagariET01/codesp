@@ -2788,6 +2788,36 @@
       "AC": false
     },
     {
+      "qname": "Max Plus Size",
+      "fname": "CF_2019_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2019 pA",
+          "link": "https://codeforces.com/contest/2019/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2019_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "All Pairs Segments",
+      "fname": "CF_2019_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2019 pB",
+          "link": "https://codeforces.com/contest/2019/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2019_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Cards Partition",
       "fname": "CF_2019_pC",
       "qlink": [
@@ -2846,6 +2876,21 @@
       "ans_code": "pack/CF_2019_pF.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Find Minimum Operations",
+      "fname": "CF_2020_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2020 pA",
+          "link": "https://codeforces.com/contest/2020/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2020_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
     },
     {
       "qname": "Bitwise Balancing",
@@ -4257,32 +4302,32 @@
       "AC": false
     },
     {
-      "qname": "Max Plus Size",
-      "fname": "CF_2019_pA",
+      "qname": "Brightness Begins",
+      "fname": "CF_2020_pB",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2019 pA",
-          "link": "https://codeforces.com/contest/2019/problem/A"
+          "PID": "2020 pB",
+          "link": "https://codeforces.com/contest/2020/problem/B"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2019_pA.cpp",
+      "ans_code": "pack/CF_2020_pB.cpp",
       "ans_TXT": "",
-      "AC": true
+      "AC": false
     },
     {
-      "qname": "All Pairs Segments",
-      "fname": "CF_2019_pB",
+      "qname": "Rendez-vous de Marian et Robin",
+      "fname": "CF_2014_pE",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2019 pB",
-          "link": "https://codeforces.com/contest/2019/problem/B"
+          "PID": "2014 pE",
+          "link": "https://codeforces.com/contest/2014/problem/E"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2019_pB.cpp",
+      "ans_code": "pack/CF_2014_pE.cpp",
       "ans_TXT": "",
       "AC": true
     }

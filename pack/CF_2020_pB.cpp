@@ -197,9 +197,21 @@ namespace ET01{
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT nw=0;
-	while(cin>>nw){
-		cout<<nw<<" "<<ET01::sqrt(nw)<<endl;
+	INT t;
+	cin>>t;
+	while(t--){
+		INT k;
+		cin>>k;
+		INT ans=k;
+		INT lstans=0;
+		while(1){
+			INT gt=ET01::sqrt(ans);
+			INT lstgt=ET01::sqrt(lstans);
+			if(gt==lstgt)break;
+			lstans=ans;
+			ans+=gt-lstgt;
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

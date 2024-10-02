@@ -178,31 +178,127 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-namespace ET01{
-	INT sqrt(INT n){
-		INT l=0,r=n+1;
-		while(l<r){
-			INT mid=(r-l)/2ll+l+1;
-			if(mid*mid<=n){
-				l=mid;
-			}else{
-				r=mid-1;
-			}
-		}
-		return l;
-	}
+INT n,m,h;
+vector<vector<PII>>tree;
+vector<INT>path_len[4];
+vector<bool>ho; // hourse
+INT ans=0;
+struct str{
+	INT id=0;
+	INT len=0;
+	INT user=0;
+	str(){}
+	str(INT a,INT b,INT c):user(a),len(b),id(c){}
 };
-
-
+ostream&operator<<(ostream&ou,str&s){
+	return ou<<"{user:"<<s.user<<", len:"<<s.len<<", id:"<<s.id<<"} ";
+}
+bool operator>(str a,str b){
+	if(a.len!=b.len)return a.len>b.len;
+	else return a.user<b.user;
+}
+priority_queue<str,vector<str>,greater<str>>pq;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT nw=0;
-	while(cin>>nw){
-		cout<<nw<<" "<<ET01::sqrt(nw)<<endl;
+	INT t;
+	cin>>t;
+	while(t--){
+		cin>>n>>m>>h;
+		tree.clear();
+		path_len[0].clear();
+		path_len[1].clear();
+		path_len[2].clear();
+		path_len[3].clear();
+		ho.clear();
+
+		tree.resize(n+5,vector<PII>(0,PII(0,0)));
+		path_len[0].resize(n+5,1e13);
+		path_len[1].resize(n+5,1e13);
+		path_len[2].resize(n+5,1e13);
+		path_len[3].resize(n+5,1e13);
+		path_len[0][1]=path_len[2][n]=0;
+		ho.resize(n+5,0);
+		ans=1e13;
+		while(h--)ho[read(INT)]=1;
+		while(m--){
+			INT a,b,c;
+			cin>>a>>b>>c;
+			tree[a].push_back(PII(b,c));
+			tree[b].push_back(PII(a,c));
+		}
+		pq.push(str(0,0,1));
+		pq.push(str(2,0,n));
+		
+		while(!pq.empty()){
+			str nw=pq.top();
+			pq.pop();
+			if(path_len[nw.user][nw.id]<nw.len)continue;
+			nw.user|=ho[nw.id];
+			for(PII&i:tree[nw.id]){
+				INT nx=i.S-(i.S/2*(nw.user&1))+nw.len;
+				if(nx<path_len[nw.user][i.F]){
+					path_len[nw.user][i.F]=nx;
+					pq.push(str(nw.user,nx,i.F));
+				}
+			}
+		}
+		if(path_len[0][n]>=1e13&&path_len[1][n]>=1e13){
+			cout<<-1<<endl;
+			continue;
+		}else{
+			for(INT i=1;i<=n;i++){
+				mins(ans,max(min(path_len[0][i],path_len[1][i]),min(path_len[2][i],path_len[3][i])));
+			}
+			cout<<ans<<endl;
+		}
+		#ifdef DBG
+		#endif
 	}
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

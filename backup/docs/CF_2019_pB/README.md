@@ -1,3 +1,11 @@
+# [`CF 2019 pB`](https://codeforces.com/contest/2019/problem/B) All Pairs Segments
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,31 +186,31 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-namespace ET01{
-	INT sqrt(INT n){
-		INT l=0,r=n+1;
-		while(l<r){
-			INT mid=(r-l)/2ll+l+1;
-			if(mid*mid<=n){
-				l=mid;
-			}else{
-				r=mid-1;
-			}
-		}
-		return l;
-	}
-};
-
-
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT nw=0;
-	while(cin>>nw){
-		cout<<nw<<" "<<ET01::sqrt(nw)<<endl;
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,q;
+		cin>>n>>q;
+		vector<INT>a(n);
+		vector<INT>que(q);
+		cin>>a>>que;
+		map<INT,INT>mp;
+		INT nw=0;
+		for(INT i=0;i<n;i++){
+			nw+=n-i-1;
+			mp[nw]++;
+			nw-=i;
+			if(i+1<n)mp[nw]+=a[i+1]-a[i]-1;
+		}
+		for(INT&i:que)cout<<mp[i]<<" ";
+		cout<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```
