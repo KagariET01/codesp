@@ -1,3 +1,11 @@
+# [`CF 2020 pB`](https://codeforces.com/contest/2020/problem/B) Brightness Begins
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -201,3 +209,5 @@ int main(){
 
 
 
+
+```

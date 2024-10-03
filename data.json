@@ -2788,6 +2788,36 @@
       "AC": false
     },
     {
+      "qname": "Robin Hood in Town",
+      "fname": "CF_2014_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2014 pC",
+          "link": "https://codeforces.com/contest/2014/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2014_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Rendez-vous de Marian et Robin",
+      "fname": "CF_2014_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2014 pE",
+          "link": "https://codeforces.com/contest/2014/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2014_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Max Plus Size",
       "fname": "CF_2019_pA",
       "qlink": [
@@ -2889,6 +2919,21 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2020_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Brightness Begins",
+      "fname": "CF_2020_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2020 pB",
+          "link": "https://codeforces.com/contest/2020/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2020_pB.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -4300,36 +4345,6 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
-    },
-    {
-      "qname": "Brightness Begins",
-      "fname": "CF_2020_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2020 pB",
-          "link": "https://codeforces.com/contest/2020/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2020_pB.cpp",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "Rendez-vous de Marian et Robin",
-      "fname": "CF_2014_pE",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2014 pE",
-          "link": "https://codeforces.com/contest/2014/problem/E"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2014_pE.cpp",
-      "ans_TXT": "",
-      "AC": true
     }
   ],
   "tag": [

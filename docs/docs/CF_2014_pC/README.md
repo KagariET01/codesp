@@ -1,3 +1,11 @@
+# [`CF 2014 pC`](https://codeforces.com/contest/2014/problem/C) Robin Hood in Town
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -8,7 +16,6 @@
 using namespace std;
 #define INT long long int
 #define superINT INT
-#define UINT unsigned INT
 #define read(n) reader<n>()
 #define PII pair<INT,INT>
 #define PPIIPII pair<PII,PII>
@@ -184,20 +191,27 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		UINT n;
+		INT n;
 		cin>>n;
-		UINT l=1,r=n<<1;
-		while(l<r){
-			UINT mid=((r-l)>>1)+l;
-			UINT gt=mid-(UINT)sqrtl(mid);
-			if(gt<n){
-				l=mid+1;
-			}else r=mid;
+		vector<INT>a(n);
+		cin>>a;
+		if(n<=2){
+			cout<<-1<<endl;
+			continue;
 		}
-		cout<<l<<endl;
+		sort(a);
+		INT ans=a[n/2];
+		ans*=2;
+		ans*=n;
+		ans++;
+		cerr<<pit(ans)<<endl;
+		for(INT&i:a)ans-=i;
+		cout<<max(ans,0ll)<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```
