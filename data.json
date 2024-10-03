@@ -4345,6 +4345,51 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Primary Task",
+      "fname": "CF_2000_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2000 pA",
+          "link": "https://codeforces.com/contest/2000/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2000_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Seating in a Bus",
+      "fname": "CF_2000_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2000 pB",
+          "link": "https://codeforces.com/contest/2000/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2000_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Numeric String Template",
+      "fname": "CF_2000_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2000 pC",
+          "link": "https://codeforces.com/contest/2000/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2000_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
     }
   ],
   "tag": [
