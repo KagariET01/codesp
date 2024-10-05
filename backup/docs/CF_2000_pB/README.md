@@ -1,3 +1,11 @@
+# [`CF 2000 pB`](https://codeforces.com/contest/2000/problem/B) Seating in a Bus
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -18,7 +26,7 @@ using namespace std;
 #define S second
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
-
+#define dequeue deque
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 //PII
@@ -178,18 +186,31 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-namespace ET01{
-	namespace fn{
-		void test(){
-			cout<<"hi"<<endl;
-		}
-	};
-};
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		bool seat[n+2]={};
+		bool ans=1;
+		for(INT i=0;i<n&&ans;i++){
+			seat[a[i]]=1;
+			if(!i)continue;
+			if(seat[a[i]-1] || seat[a[i]+1])continue;
+			else ans=0;
+		}
+		if(ans)cout<<"yes"<<endl;
+		else cout<<"no"<<endl;
+		
+	}
 	return 0;
 }
 
 
 
+
+```

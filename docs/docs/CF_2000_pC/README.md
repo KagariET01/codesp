@@ -1,3 +1,11 @@
+# [`CF 2000 pC`](https://codeforces.com/contest/2000/problem/C) Numeric String Template
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -18,7 +26,7 @@ using namespace std;
 #define S second
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
-
+#define dequeue deque
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 //PII
@@ -178,18 +186,49 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-namespace ET01{
-	namespace fn{
-		void test(){
-			cout<<"hi"<<endl;
-		}
-	};
-};
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		#ifdef DBG
+			cout<<endl;
+		#endif
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		INT q;
+		cin>>q;
+		map<INT,char>mp;
+		map<char,INT>mp2;
+		while(q--){
+			string str;
+			cin>>str;
+			if(str.size()!=n){
+				cout<<"No"<<endl;
+				continue;
+			}
+			mp.clear();
+			mp2.clear();
+			bool ans=1;
+			for(INT i=0;i<n;i++){
+				if(!mp.count(a[i]) && !mp2.count(str[i])){
+					mp[a[i]]=str[i];
+					mp2[str[i]]=a[i];
+				}else if(mp[a[i]]!=str[i]||mp2[str[i]]!=a[i]){
+					ans=0;
+					break;
+				}
+			}
+			if(ans)cout<<"yes"<<endl;
+			else cout<<"no"<<endl;
+		}
+	}
 	return 0;
 }
 
 
 
+
+```

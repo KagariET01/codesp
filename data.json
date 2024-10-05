@@ -2488,6 +2488,51 @@
       "AC": false
     },
     {
+      "qname": "Primary Task",
+      "fname": "CF_2000_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2000 pA",
+          "link": "https://codeforces.com/contest/2000/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2000_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Seating in a Bus",
+      "fname": "CF_2000_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2000 pB",
+          "link": "https://codeforces.com/contest/2000/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2000_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Numeric String Template",
+      "fname": "CF_2000_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2000 pC",
+          "link": "https://codeforces.com/contest/2000/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2000_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Make All Equal",
       "fname": "CF_2001_pA",
       "qlink": [
@@ -4347,49 +4392,19 @@
       "AC": false
     },
     {
-      "qname": "Primary Task",
-      "fname": "CF_2000_pA",
+      "qname": "Right Left Wrong",
+      "fname": "CF_2000_pD",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2000 pA",
-          "link": "https://codeforces.com/contest/2000/problem/A"
+          "PID": "2000 pD",
+          "link": "https://codeforces.com/contest/2000/problem/D"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2000_pA.cpp",
+      "ans_code": "pack/CF_2000_pD.cpp",
       "ans_TXT": "",
       "AC": true
-    },
-    {
-      "qname": "Seating in a Bus",
-      "fname": "CF_2000_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2000 pB",
-          "link": "https://codeforces.com/contest/2000/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2000_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Numeric String Template",
-      "fname": "CF_2000_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2000 pC",
-          "link": "https://codeforces.com/contest/2000/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2000_pC.cpp",
-      "ans_TXT": "",
-      "AC": false
     }
   ],
   "tag": [

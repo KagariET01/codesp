@@ -1,3 +1,11 @@
+# [`CF 2000 pD`](https://codeforces.com/contest/2000/problem/D) Right Left Wrong
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -18,7 +26,7 @@ using namespace std;
 #define S second
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
-
+#define dequeue deque
 template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 //PII
@@ -178,18 +186,49 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-namespace ET01{
-	namespace fn{
-		void test(){
-			cout<<"hi"<<endl;
-		}
-	};
-};
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		vector<INT>att(n);
+		INT nw=0;
+		for(INT i=0;i<n;i++){
+			nw+=a[i];
+			att[i]=nw;
+		}
+		string str;
+		cin>>str;
+		vector<INT>l;
+		vector<INT>r;
+		for(INT i=0;i<n;i++){
+			if(str[i]=='L')l.push_back(i);
+		}
+		for(INT i=n-1;i>=0;i--){
+			if(str[i]=='R')r.push_back(i);
+		}
+		INT ans=0;
+		INT ls=l.size();
+		INT rs=r.size();
+		for(INT i=0;i<ls&&i<rs;i++){
+			if(r[i]<l[i])break;
+			ans+=att[r[i]];
+			if(l[i])ans-=att[l[i]-1];
+		}
+		cout<<ans<<endl;
+		#ifdef DBG
+		cerr<<pit(l)<<endl;
+		cerr<<pit(r)<<endl;
+		#endif
+	}
 	return 0;
 }
 
 
 
+
+```
