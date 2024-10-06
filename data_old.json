@@ -2533,6 +2533,21 @@
       "AC": true
     },
     {
+      "qname": "Right Left Wrong",
+      "fname": "CF_2000_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2000 pD",
+          "link": "https://codeforces.com/contest/2000/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2000_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Make All Equal",
       "fname": "CF_2001_pA",
       "qlink": [
@@ -4392,17 +4407,17 @@
       "AC": false
     },
     {
-      "qname": "Right Left Wrong",
-      "fname": "CF_2000_pD",
+      "qname": "Photoshoot for Gorillas",
+      "fname": "CF_2000_pE",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2000 pD",
-          "link": "https://codeforces.com/contest/2000/problem/D"
+          "PID": "2000 pE",
+          "link": "https://codeforces.com/contest/2000/problem/E"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2000_pD.cpp",
+      "ans_code": "pack/CF_2000_pE.cpp",
       "ans_TXT": "",
       "AC": true
     }
