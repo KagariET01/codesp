@@ -2548,6 +2548,21 @@
       "AC": true
     },
     {
+      "qname": "Photoshoot for Gorillas",
+      "fname": "CF_2000_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2000 pE",
+          "link": "https://codeforces.com/contest/2000/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2000_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Make All Equal",
       "fname": "CF_2001_pA",
       "qlink": [
@@ -4407,17 +4422,17 @@
       "AC": false
     },
     {
-      "qname": "Photoshoot for Gorillas",
-      "fname": "CF_2000_pE",
+      "qname": "Robert Hood and Mrs Hood",
+      "fname": "CF_2014_pD",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2000 pE",
-          "link": "https://codeforces.com/contest/2000/problem/E"
+          "PID": "2014 pD",
+          "link": "https://codeforces.com/contest/2014/problem/D"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2000_pE.cpp",
+      "ans_code": "pack/CF_2014_pD.cpp",
       "ans_TXT": "",
       "AC": true
     }

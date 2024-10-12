@@ -129,6 +129,7 @@
 [`CF 2013 pC` Password Cracking](/codesp/docs/CF_2013_pC)  
 [`CF 2013 pD` Minimize the Difference](/codesp/docs/CF_2013_pD)  
 [`CF 2014 pC` Robin Hood in Town](/codesp/docs/CF_2014_pC)  
+[`CF 2014 pD` Robert Hood and Mrs Hood](/codesp/docs/CF_2014_pD)  
 [`CF 2014 pE` Rendez-vous de Marian et Robin](/codesp/docs/CF_2014_pE)  
 [`CF 2019 pA` Max Plus Size](/codesp/docs/CF_2019_pA)  
 [`CF 2019 pB` All Pairs Segments](/codesp/docs/CF_2019_pB)  

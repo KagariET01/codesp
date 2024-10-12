@@ -116,6 +116,7 @@
 [`CF 2000 pB` Seating in a Bus](/codesp/docs/CF_2000_pB)  
 [`CF 2000 pC` Numeric String Template](/codesp/docs/CF_2000_pC)  
 [`CF 2000 pD` Right Left Wrong](/codesp/docs/CF_2000_pD)  
+[`CF 2000 pE` Photoshoot for Gorillas](/codesp/docs/CF_2000_pE)  
 [`CF 2001 pA` Make All Equal](/codesp/docs/CF_2001_pA)  
 [`CF 2001 pB` Generate Permutation](/codesp/docs/CF_2001_pB)  
 [`CF 2001 pC` Guess The Tree](/codesp/docs/CF_2001_pC)  
@@ -210,4 +211,4 @@
 [`ZJ n262` 我討厭零錢](/codesp/docs/ZJ_n262)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
-[`CF 2000 pE` Photoshoot for Gorillas](/codesp/docs/CF_2000_pE)  
+[`CF 2014 pD` Robert Hood and Mrs Hood](/codesp/docs/CF_2014_pD)  
