@@ -2863,6 +2863,21 @@
       "AC": false
     },
     {
+      "qname": "Robin Helps",
+      "fname": "CF_2014_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2014 pA",
+          "link": "https://codeforces.com/contest/2014/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2014_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Robin Hood in Town",
       "fname": "CF_2014_pC",
       "qlink": [
@@ -2874,6 +2889,21 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2014_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Robert Hood and Mrs Hood",
+      "fname": "CF_2014_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2014 pD",
+          "link": "https://codeforces.com/contest/2014/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2014_pD.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -4422,19 +4452,64 @@
       "AC": false
     },
     {
-      "qname": "Robert Hood and Mrs Hood",
-      "fname": "CF_2014_pD",
+      "qname": "Closest Point",
+      "fname": "CF_2004_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2014 pD",
-          "link": "https://codeforces.com/contest/2014/problem/D"
+          "PID": "2004 pA",
+          "link": "https://codeforces.com/contest/2004/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2014_pD.cpp",
+      "ans_code": "pack/CF_2004_pA.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "Game with Doors",
+      "fname": "CF_2004_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2004 pB",
+          "link": "https://codeforces.com/contest/2004/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2004_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Splitting Items",
+      "fname": "CF_2004_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2004 pC",
+          "link": "https://codeforces.com/contest/2004/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2004_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Colored Portals",
+      "fname": "CF_2004_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2004 pD",
+          "link": "https://codeforces.com/contest/2004/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2004_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
     }
   ],
   "tag": [

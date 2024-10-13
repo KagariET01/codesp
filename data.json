@@ -2683,6 +2683,66 @@
       "AC": true
     },
     {
+      "qname": "Closest Point",
+      "fname": "CF_2004_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2004 pA",
+          "link": "https://codeforces.com/contest/2004/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2004_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Game with Doors",
+      "fname": "CF_2004_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2004 pB",
+          "link": "https://codeforces.com/contest/2004/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2004_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Splitting Items",
+      "fname": "CF_2004_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2004 pC",
+          "link": "https://codeforces.com/contest/2004/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2004_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Colored Portals",
+      "fname": "CF_2004_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2004 pD",
+          "link": "https://codeforces.com/contest/2004/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2004_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Simple Palindrome",
       "fname": "CF_2005_pA",
       "qlink": [
@@ -4452,64 +4512,49 @@
       "AC": false
     },
     {
-      "qname": "Closest Point",
-      "fname": "CF_2004_pA",
+      "qname": "Catch the Coin",
+      "fname": "CF_1989_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2004 pA",
-          "link": "https://codeforces.com/contest/2004/problem/A"
+          "PID": "1989 pA",
+          "link": "https://codeforces.com/contest/1989/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2004_pA.cpp",
+      "ans_code": "pack/CF_1989_pA.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Game with Doors",
-      "fname": "CF_2004_pB",
+      "qname": "Substring and Subsequence",
+      "fname": "CF_1989_pB",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2004 pB",
-          "link": "https://codeforces.com/contest/2004/problem/B"
+          "PID": "1989 pB",
+          "link": "https://codeforces.com/contest/1989/problem/B"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2004_pB.cpp",
+      "ans_code": "pack/CF_1989_pB.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Splitting Items",
-      "fname": "CF_2004_pC",
+      "qname": "Two Movies",
+      "fname": "CF_1989_pC",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2004 pC",
-          "link": "https://codeforces.com/contest/2004/problem/C"
+          "PID": "1989 pC",
+          "link": "https://codeforces.com/contest/1989/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2004_pC.cpp",
+      "ans_code": "pack/CF_1989_pC.cpp",
       "ans_TXT": "",
       "AC": true
-    },
-    {
-      "qname": "Colored Portals",
-      "fname": "CF_2004_pD",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2004 pD",
-          "link": "https://codeforces.com/contest/2004/problem/D"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2004_pD.cpp",
-      "ans_TXT": "",
-      "AC": false
     }
   ],
   "tag": [

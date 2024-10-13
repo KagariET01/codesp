@@ -183,74 +183,13 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,q;
-		cin>>n>>q;
-		string a[n+2]={};
-		for(INT i=1;i<=n;i++){
-			cin>>a[i];
+		INT x,y;
+		cin>>x>>y;
+		if(y<-1){
+			cout<<"NO"<<endl;
+		}else{
+			cout<<"YES"<<endl;
 		}
-		map<string,INT>mp;
-		INT l[n+2]={},r[n+2]={};
-		for(INT i=0;i<=n;i++)l[i]=-1,r[i]=-1;
-		for(INT i=1;i<=n;i++){
-			for(auto j:mp){
-				if(j.F==a[i])continue;
-				if(!(j.F[0]==a[i][0] ||
-						j.F[0]==a[i][1] ||
-						j.F[1]==a[i][0] ||
-						j.F[1]==a[i][1]))continue;
-				if(l[i]==-1)l[i]=j.S;
-				maxs(l[i],j.S);
-			}
-			mp[a[i]]=i;
-		}
-		mp.clear();
-		for(INT i=n;i>=1;i--){
-			for(auto j:mp){
-				if(j.F==a[i])continue;
-				if(!(j.F[0]==a[i][0] ||
-						j.F[0]==a[i][1] ||
-						j.F[1]==a[i][0] ||
-						j.F[1]==a[i][1]))continue;
-				if(r[i]==-1)r[i]=j.S;
-				mins(r[i],j.S);
-			}
-			mp[a[i]]=i;
-		}
-		while(q--){
-			INT x,y;
-			cin>>x>>y;
-			if(a[x][0]==a[y][0] ||
-					a[x][0]==a[y][1] ||
-					a[x][1]==a[y][0] ||
-					a[x][1]==a[y][1]){
-				cout<<abs(y-x)<<endl;
-				continue;
-			}else{
-				vector<INT>mid;
-				mid.push_back(l[x]);
-				mid.push_back(r[x]);
-				mid.push_back(l[y]);
-				mid.push_back(r[y]);
-				INT ans=-1;
-				for(auto&i:mid){
-					if(i==-1)continue;
-					if(ans==-1)ans=1e9+7;
-					mins(ans,abs(x-i)+abs(y-i));
-				}
-				cout<<ans<<endl;
-			}
-		}
-		#ifdef DBG
-		for(INT i=1;i<=n;i++){
-			cout<<l[i]<<" ";
-		}
-		cout<<endl;
-		for(INT i=1;i<=n;i++){
-			cout<<r[i]<<" ";
-		}
-		cout<<endl;
-		#endif
 	}
 	return 0;
 }

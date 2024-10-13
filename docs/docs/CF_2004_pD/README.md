@@ -1,3 +1,11 @@
+# [`CF 2004 pD`](https://codeforces.com/contest/2004/problem/D) Colored Portals
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -257,3 +265,5 @@ int main(){
 
 
 
+
+```
