@@ -96,6 +96,7 @@
 [`CF 1989 pA` Catch the Coin](/codesp/docs/CF_1989_pA)  
 [`CF 1989 pB` Substring and Subsequence](/codesp/docs/CF_1989_pB)  
 [`CF 1989 pC` Two Movies](/codesp/docs/CF_1989_pC)  
+[`CF 1989 pD` Smithing Skill](/codesp/docs/CF_1989_pD)  
 [`CF 1992 pA`  ](/codesp/docs/CF_1992_pA)  
 [`CF 1992 pB` Angry Monk](/codesp/docs/CF_1992_pB)  
 [`CF 1993 pA` Question Marks](/codesp/docs/CF_1993_pA)  
