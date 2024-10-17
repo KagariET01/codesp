@@ -2173,6 +2173,21 @@
       "AC": true
     },
     {
+      "qname": "Smithing Skill",
+      "fname": "CF_1989_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1989 pD",
+          "link": "https://codeforces.com/contest/1989/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1989_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Submission Bait",
       "fname": "CF_1990_pA",
       "qlink": [
@@ -2728,6 +2743,36 @@
       "AC": true
     },
     {
+      "qname": "Turtle and a MEX Problem (Easy Version)",
+      "fname": "CF_2003_pD1",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2003 pD1",
+          "link": "https://codeforces.com/contest/2003/problem/D1"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2003_pD1.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Turtle and a MEX Problem (Hard Version)",
+      "fname": "CF_2003_pD2",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2003 pD2",
+          "link": "https://codeforces.com/contest/2003/problem/D2"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2003_pD2.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Closest Point",
       "fname": "CF_2004_pA",
       "qlink": [
@@ -3174,6 +3219,21 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2020_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Bus to Pénjamo",
+      "fname": "CF_2022_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2022 pA",
+          "link": "https://codeforces.com/contest/2022/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2022_pA.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -4557,17 +4617,17 @@
       "AC": false
     },
     {
-      "qname": "Smithing Skill",
-      "fname": "CF_1989_pD",
+      "qname": "Gerrymandering",
+      "fname": "CF_2022_pC",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1989 pD",
-          "link": "https://codeforces.com/contest/1989/problem/D"
+          "PID": "2022 pC",
+          "link": "https://codeforces.com/contest/2022/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1989_pD.cpp",
+      "ans_code": "pack/CF_2022_pC.cpp",
       "ans_TXT": "",
       "AC": true
     }

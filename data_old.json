@@ -2128,6 +2128,51 @@
       "AC": false
     },
     {
+      "qname": "Catch the Coin",
+      "fname": "CF_1989_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1989 pA",
+          "link": "https://codeforces.com/contest/1989/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1989_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Substring and Subsequence",
+      "fname": "CF_1989_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1989 pB",
+          "link": "https://codeforces.com/contest/1989/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1989_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Two Movies",
+      "fname": "CF_1989_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1989 pC",
+          "link": "https://codeforces.com/contest/1989/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1989_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Submission Bait",
       "fname": "CF_1990_pA",
       "qlink": [
@@ -4512,47 +4557,17 @@
       "AC": false
     },
     {
-      "qname": "Catch the Coin",
-      "fname": "CF_1989_pA",
+      "qname": "Smithing Skill",
+      "fname": "CF_1989_pD",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1989 pA",
-          "link": "https://codeforces.com/contest/1989/problem/A"
+          "PID": "1989 pD",
+          "link": "https://codeforces.com/contest/1989/problem/D"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1989_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Substring and Subsequence",
-      "fname": "CF_1989_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1989 pB",
-          "link": "https://codeforces.com/contest/1989/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1989_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Two Movies",
-      "fname": "CF_1989_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1989 pC",
-          "link": "https://codeforces.com/contest/1989/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1989_pC.cpp",
+      "ans_code": "pack/CF_1989_pD.cpp",
       "ans_TXT": "",
       "AC": true
     }
