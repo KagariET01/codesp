@@ -4735,6 +4735,21 @@
       "ans_code": "pack/CF_2009_pB.py",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "A TRUE Battle",
+      "fname": "CF_2030_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2030 pC",
+          "link": "https://codeforces.com/contest/2030/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2030_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [

@@ -231,3 +231,4 @@
 [`CF 2009 pB` osu!mania](/codesp/docs/CF_2009_pB)  
 [`CF 2009 pA` Minimize!](/codesp/docs/CF_2009_pA_py)  
 [`CF 2009 pB` osu!mania](/codesp/docs/CF_2009_pB_py)  
+[`CF 2030 pC` A TRUE Battle](/codesp/docs/CF_2030_pC)  
