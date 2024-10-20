@@ -1,3 +1,11 @@
+# [`CF 2022 pC`](https://codeforces.com/contest/2022/problem/C) Gerrymandering
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -183,19 +191,122 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT mx=0;
-		INT tot=0;
-		while(n--){
-			INT inin=read(INT);
-			maxs(mx,inin);
-			tot+=inin;
+		INT n;
+		cin>>n;
+		vector<string>mp(2);
+		cin>>mp;
+		INT dp[3][n+5]={};
+		for(INT i=0;i<=n;i++){
+			dp[0][i]=dp[1][i]=dp[2][i]=-1e9-7;
 		}
-		cout<<max(mx,(tot+x-1)/x)<<endl;
+		dp[0][0]=0;
+		for(INT i=0;i<n;i++){
+			if(i%3==1)continue;
+			// start from 0
+				if(i+3<=n){
+					INT ad=0,cnt=0;
+					// add two 1*3 box
+					if(i+3<=n){
+						ad=0;
+						cnt=0;
+						for(INT j=0;j<3;j++)
+							cnt+=(mp[0][i+j]=='A');
+						if(cnt>=2)ad++;
+						
+						cnt=0;
+						for(INT j=0;j<3;j++)
+							cnt+=(mp[1][i+j]=='A');
+						if(cnt>=2)ad++;
+						maxs(dp[0][i+3],dp[0][i]+ad);
+					}
+					// add ┌
+					if(i+2<=n){
+						ad=0;
+						cnt=0;
+						cnt+=(mp[0][i]=='A');
+						cnt+=(mp[0][i+1]=='A');
+						cnt+=(mp[1][i]=='A');
+						ad+=(cnt>=2);
+						maxs(dp[1][i+2],dp[0][i]+ad);
+					}
+					// add └
+					if(i+2<=n){
+						ad=0;
+						cnt=0;
+						cnt+=(mp[0][i]=='A');
+						cnt+=(mp[1][i]=='A');
+						cnt+=(mp[1][i+1]=='A');
+						ad+=(cnt>=2);
+						maxs(dp[2][i+2],dp[0][i]+ad);
+					}
+				}
+			// start from 1
+				if(dp[1][i]>=0){
+					INT ad=0,cnt=0;
+					// add more 1*3 box
+					if(i+3<=n){
+						ad=0;
+						cnt=0;
+						for(INT j=0;j<3;j++){
+							cnt+=(mp[0][i+j]=='A');
+						}
+						ad+=(cnt>=2);
+						cnt=0;
+						for(INT j=0;j<3;j++){
+							cnt+=(mp[1][i+j-1]=='A');
+						}
+						ad+=(cnt>=2);
+						maxs(dp[1][i+3],dp[1][i]+ad);
+					}
+					// add ┘
+					if(i+1<=n){
+						ad=0;
+						cnt=0;
+						cnt+=(mp[0][i]=='A');
+						cnt+=(mp[1][i-1]=='A');
+						cnt+=(mp[1][i]=='A');
+						ad+=(cnt>=2);
+						maxs(dp[0][i+1],dp[1][i]+ad);
+					}
+				}
+			// start from 2
+				if(dp[2][i]>=0){
+					INT ad=0,cnt=0;
+					// add more 1*3 box
+					if(i+3<=n){
+						ad=0;
+						cnt=0;
+						for(INT j=0;j<3;j++){
+							cnt+=(mp[0][i+j-1]=='A');
+						}
+						ad+=(cnt>=2);
+
+						cnt=0;
+						for(INT j=0;j<3;j++){
+							cnt+=(mp[1][i+j]=='A');
+						}
+						ad+=(cnt>=2);
+						maxs(dp[2][i+3],dp[2][i]+ad);
+					}
+					// add ┐
+					if(i+1<=n){
+						cnt=0;
+						ad=0;
+						cnt+=(mp[0][i-1]=='A');
+						cnt+=(mp[0][i]=='A');
+						cnt+=(mp[1][i]=='A');
+						ad+=(cnt>=2);
+						maxs(dp[0][i+1],dp[2][i]+ad);
+					}
+				}
+
+		}
+		cout<<dp[0][n]<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```

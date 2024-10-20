@@ -1,3 +1,11 @@
+# [`CF 2022 pA`](https://codeforces.com/contest/2022/problem/A) Bus to Pénjamo
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -183,19 +191,27 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT mx=0;
-		INT tot=0;
-		while(n--){
-			INT inin=read(INT);
-			maxs(mx,inin);
-			tot+=inin;
+		INT n,r;
+		cin>>n>>r;
+		vector<INT>a(n);
+		cin>>a;
+		INT ans=0;
+		INT odd=0;
+		for(INT&i:a){
+			INT nwadd=i/2;
+			ans+=nwadd*2;
+			odd+=i&1;
 		}
-		cout<<max(mx,(tot+x-1)/x)<<endl;
+		r-=ans/2;
+		INT lst=odd-r;
+		ans+=min(r-lst,odd);
+		cout<<ans<<endl;
+
 	}
 	return 0;
 }
 
 
 
+
+```

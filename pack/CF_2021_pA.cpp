@@ -183,16 +183,19 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT mx=0;
-		INT tot=0;
-		while(n--){
-			INT inin=read(INT);
-			maxs(mx,inin);
-			tot+=inin;
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		//sort(a.begin(),a.end(),[](INT a,INT b){return (a&1)>(b&1);});
+		sort(a);
+		cerr<<pit(a)<<endl;
+		for(INT i=0;i<n-1;i++){
+			a[i+1]+=a[i];
+			a[i+1]/=2;
 		}
-		cout<<max(mx,(tot+x-1)/x)<<endl;
+		cerr<<pit(a)<<endl;
+		cout<<a[n-1]<<endl;
 	}
 	return 0;
 }

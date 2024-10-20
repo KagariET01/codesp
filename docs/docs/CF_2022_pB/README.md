@@ -1,3 +1,11 @@
+# [`CF 2022 pB`](https://codeforces.com/contest/2022/problem/B) Kar Salesman
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -199,3 +207,5 @@ int main(){
 
 
 
+
+```

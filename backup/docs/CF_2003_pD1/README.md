@@ -1,3 +1,11 @@
+# [`CF 2003 pD1`](https://codeforces.com/contest/2003/problem/D1) Turtle and a MEX Problem (Easy Version)
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,24 +186,49 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
+const INT mxa=2e5+5;
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT mx=0;
-		INT tot=0;
-		while(n--){
-			INT inin=read(INT);
-			maxs(mx,inin);
-			tot+=inin;
+		INT n,m;
+		cin>>n>>m;
+		INT mxmen=0;
+		for(INT i=0;i<n;i++){
+			bool hve[mxa]={};
+			INT sz=read(INT);
+			while(sz--){
+				INT inin=read(INT);
+				if(inin>=mxa)continue;
+				hve[inin]=1;
+			}
+			bool status=0;
+			for(INT i=0;i<mxa;i++){
+				if(!hve[i]){
+					if(!status)status=1;
+					else{
+						maxs(mxmen,i);
+						break;
+					}
+				}
+			}
 		}
-		cout<<max(mx,(tot+x-1)/x)<<endl;
+		INT ans=0;
+		INT x=min(m,mxmen);
+		ans+=mxmen*(x+1);
+		if(m>mxmen){
+			INT bs=(mxmen+1)+m;
+			INT len=m-mxmen;
+			ans+=(bs*len)/2ll;
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```

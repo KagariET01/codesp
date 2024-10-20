@@ -183,16 +183,27 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT mx=0;
-		INT tot=0;
-		while(n--){
-			INT inin=read(INT);
-			maxs(mx,inin);
-			tot+=inin;
+		INT n,m,q;
+		cin>>n>>m>>q;
+		vector<INT>a(n),b(m);
+		cin>>a>>b;
+		queue<INT>que;
+		for(auto&i:a)que.push(i);
+		bool talk[n+1]={};
+		bool ans=1;
+		for(INT i=0;i<m;i++){
+			if(talk[b[i]])continue;
+			else{
+				INT nw=que.front();
+				que.pop();
+				if(nw!=b[i]){
+					ans=0;
+					break;
+				}else talk[nw]=1;
+			}
 		}
-		cout<<max(mx,(tot+x-1)/x)<<endl;
+		if(ans)cout<<"YA"<<endl;
+		else cout<<"TIDAK"<<endl;
 	}
 	return 0;
 }

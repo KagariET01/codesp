@@ -185,14 +185,15 @@ int main(){
 	while(t--){
 		INT n,x;
 		cin>>n>>x;
-		INT mx=0;
-		INT tot=0;
-		while(n--){
-			INT inin=read(INT);
-			maxs(mx,inin);
-			tot+=inin;
+		map<INT,INT>mp;
+		for(INT i=0;i<n;i++)mp[read(INT)]++;
+		INT ans=0;
+		for(INT i=0;i<=n;i++){
+			if(!mp[i])break;
+			ans=i+1;
+			mp[i+x]+=(mp[i]-1);
 		}
-		cout<<max(mx,(tot+x-1)/x)<<endl;
+		cout<<ans<<endl;
 	}
 	return 0;
 }

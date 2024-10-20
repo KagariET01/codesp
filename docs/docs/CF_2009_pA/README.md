@@ -1,3 +1,11 @@
+# [`CF 2009 pA`](https://codeforces.com/contest/2009/problem/A) Minimize!
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -183,19 +191,12 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT mx=0;
-		INT tot=0;
-		while(n--){
-			INT inin=read(INT);
-			maxs(mx,inin);
-			tot+=inin;
-		}
-		cout<<max(mx,(tot+x-1)/x)<<endl;
+		cout<<abs(read(INT)-read(INT))<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```

@@ -183,16 +183,7 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT mx=0;
-		INT tot=0;
-		while(n--){
-			INT inin=read(INT);
-			maxs(mx,inin);
-			tot+=inin;
-		}
-		cout<<max(mx,(tot+x-1)/x)<<endl;
+		cout<<abs(read(INT)-read(INT))<<endl;
 	}
 	return 0;
 }

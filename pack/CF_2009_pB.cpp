@@ -106,13 +106,13 @@ template<typename T>istream&operator>>(istream&in,vector<T>&vec){
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
-	ou<<"[";
+	ou<<"";
 	for(T(i):vec){
-		if(o)ou<<",";
+		if(o)ou<<" ";
 		ou<<i;
 		o=1;
 	}
-	return(ou<<"]");
+	return(ou<<"");
 }
 
 //array
@@ -183,16 +183,20 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT mx=0;
-		INT tot=0;
-		while(n--){
-			INT inin=read(INT);
-			maxs(mx,inin);
-			tot+=inin;
+		INT n;
+		cin>>n;
+		vector<INT>ans(n);
+		for(INT i=0;i<n;i++){
+			string s;
+			cin>>s;
+			for(INT j=0;j<4;j++){
+				if(s[j]=='#'){
+					ans[i]=j+1;
+				}
+			}
 		}
-		cout<<max(mx,(tot+x-1)/x)<<endl;
+		reverse(ans.begin(),ans.end());
+		cout<<ans<<endl;
 	}
 	return 0;
 }
