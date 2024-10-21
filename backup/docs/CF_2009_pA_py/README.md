@@ -1,4 +1,4 @@
-# [`CF 2009 pA`](https://codeforces.com/contest/2009/problem/A) Minimize!
+# [`CF 2009 pA`](https://codeforces.com/contest/2009/problem/A) [`PY  `]( ) Minimize!
 ## 標籤
 
 ## 題解

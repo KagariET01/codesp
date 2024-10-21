@@ -159,5 +159,6 @@
 [`CF 2022 pA` Bus to Pénjamo](/codesp/docs/CF_2022_pA)  
 [`CF 2022 pB` Kar Salesman](/codesp/docs/CF_2022_pB)  
 [`CF 2022 pC` Gerrymandering](/codesp/docs/CF_2022_pC)  
+[`CF 2030 pA` A Gift From Orangutan](/codesp/docs/CF_2030_pA)  
 [`CF 2030 pC` A TRUE Battle](/codesp/docs/CF_2030_pC)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  

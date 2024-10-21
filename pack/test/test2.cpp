@@ -87,20 +87,10 @@ namespace ET01{
 			matrix operator+(matrix b){
 				if(b.size()!=size())throw("ET01::matrix::operator+(): 不同大小的矩阵無法相加");
 				matrix c(n,m);
-				std::future<void> fs[n];
 				for(INT i=0;i<n;i++){
-					fs[i]=std::async(
-							std::launch::async,
-							[this,&b,&c,i](){
-								this->add_fast(*this,b,c[i],i);
-							}
-						);
+					this->add_fast(*this,b,c[i],i);
 					// std::cout<<"i:"<<i<<" c:"<<std::endl;
 					// std::cout<<c<<std::endl;
-				}
-				for(INT i=0;i<n;i++){
-					fs[i].wait();
-					// i.get();
 				}
 				// std::cout<<"return"<<std::endl;
 				return c;
@@ -130,6 +120,4 @@ int main(){
 	cout<<"=========================="<<endl;
 	cout<<(a+b);
 }
-
-
 

@@ -2938,6 +2938,76 @@
       "AC": true
     },
     {
+      "qname": "Minimize!",
+      "fname": "CF_2009_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2009 pA",
+          "link": "https://codeforces.com/contest/2009/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2009_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Minimize!",
+      "fname": "CF_2009_pA_py",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2009 pA",
+          "link": "https://codeforces.com/contest/2009/problem/A"
+        },
+        {
+          "OJ": "PY",
+          "PID": " ",
+          "link": " "
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2009_pA.py",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "osu!mania",
+      "fname": "CF_2009_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2009 pB",
+          "link": "https://codeforces.com/contest/2009/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2009_pB.cpp",
+      "ans_TXT": " ",
+      "AC": true
+    },
+    {
+      "qname": "osu!mania",
+      "fname": "CF_2009_pB_py",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2009 pB",
+          "link": "https://codeforces.com/contest/2009/problem/B"
+        },
+        {
+          "OJ": "PY",
+          "PID": " ",
+          "link": " "
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2009_pB.py",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Zhan's Blender",
       "fname": "CF_2013_pA",
       "qlink": [
@@ -3268,6 +3338,21 @@
       "AC": true
     },
     {
+      "qname": "Kar Salesman",
+      "fname": "CF_2022_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2022 pB",
+          "link": "https://codeforces.com/contest/2022/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2022_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Gerrymandering",
       "fname": "CF_2022_pC",
       "qlink": [
@@ -3279,6 +3364,21 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2022_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "A TRUE Battle",
+      "fname": "CF_2030_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2030 pC",
+          "link": "https://codeforces.com/contest/2030/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2030_pC.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -4662,77 +4762,17 @@
       "AC": false
     },
     {
-      "qname": "Kar Salesman",
-      "fname": "CF_2022_pB",
+      "qname": "A Gift From Orangutan",
+      "fname": "CF_2030_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2022 pB",
-          "link": "https://codeforces.com/contest/2022/problem/B"
+          "PID": "2030 pA",
+          "link": "https://codeforces.com/contest/2030/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2022_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Minimize!",
-      "fname": "CF_2009_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2009 pA",
-          "link": "https://codeforces.com/contest/2009/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2009_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "osu!mania",
-      "fname": "CF_2009_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2009 pB",
-          "link": "https://codeforces.com/contest/2009/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2009_pB.cpp",
-      "ans_TXT": " ",
-      "AC": true
-    },
-    {
-      "qname": "Minimize!",
-      "fname": "CF_2009_pA_py",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2009 pA",
-          "link": "https://codeforces.com/contest/2009/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2009_pA.py",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "osu!mania",
-      "fname": "CF_2009_pB_py",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2009 pB",
-          "link": "https://codeforces.com/contest/2009/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2009_pB.py",
+      "ans_code": "pack/CF_2030_pA.cpp",
       "ans_TXT": "",
       "AC": true
     }

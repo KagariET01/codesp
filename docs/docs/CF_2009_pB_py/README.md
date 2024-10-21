@@ -1,4 +1,4 @@
-# [`CF 2009 pB`](https://codeforces.com/contest/2009/problem/B) osu!mania
+# [`CF 2009 pB`](https://codeforces.com/contest/2009/problem/B) [`PY  `]( ) osu!mania
 ## 標籤
 
 ## 題解
