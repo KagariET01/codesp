@@ -1,3 +1,12 @@
+# [`CF 2030 pD`](https://codeforces.com/contest/2030/problem/D) QED's Favorite Permutation
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -18,8 +27,7 @@ using namespace std;
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
 #define dequeue deque
-
-template<typename T>T reader(){T re;cin>>re;return re;}
+template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 //PII
 template<typename T1,typename T2>pair<T1,T2>operator+(pair<T1,T2>a,pair<T1,T2>b){
@@ -180,8 +188,62 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,q;
+		cin>>n>>q;
+		vector<INT>a(n);
+		string s;
+		cin>>a>>s;
+		for(INT&i:a)i--;
+		vector<bool>block(n);
+		for(INT i=0;i<n-1;i++){
+			if(s[i]=='L'&&s[i+1]=='R')block[i]=1;
+		}
+		vector<INT>b(n);
+		vector<bool>c(n);
+		for(INT i=0;i<n;i++){
+			INT mn=min(i,a[i]);
+			INT mx=max(i,a[i]);
+			b[mn]++;
+			b[mx]--;
+		}
+		INT nw=0;
+		for(INT i=0;i<n;i++){
+			nw+=b[i];
+			if(nw)c[i]=1;
+		}
+		INT badcnt=0;
+		for(INT i=0;i<n;i++){
+			badcnt+=c[i]&block[i];
+		}
+		while(q--){
+			INT sw=read(INT);
+			sw--;
+			if(s[sw]=='R')s[sw]='L';
+			else s[sw]='R';
+			for(INT i=-1;i<=0;i++){
+				if(s[sw+i]=='L'&&s[sw+i+1]=='R'){
+					if(!block[sw+i]){
+						block[sw+i]=1;
+						badcnt+=c[sw+i];
+					}
+				}else{
+					if(block[sw+i]){
+						block[sw+i]=0;
+						badcnt-=c[sw+i];
+					}
+				}
+			}
+			if(!badcnt)cout<<"Yes"<<endl;
+			else cout<<"No"<<endl;
+		}
+	}
 	return 0;
 }
 
 
 
+
+```

@@ -3368,6 +3368,51 @@
       "AC": true
     },
     {
+      "qname": "Profitable Interest Rate",
+      "fname": "CF_2024_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2024 pA",
+          "link": "https://codeforces.com/contest/2024/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2024_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Buying Lemonade",
+      "fname": "CF_2024_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2024 pB",
+          "link": "https://codeforces.com/contest/2024/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2024_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Concatenation of Arrays",
+      "fname": "CF_2024_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2024 pC",
+          "link": "https://codeforces.com/contest/2024/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2024_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "A Gift From Orangutan",
       "fname": "CF_2030_pA",
       "qlink": [
@@ -3383,6 +3428,21 @@
       "AC": true
     },
     {
+      "qname": "Minimise Oneness",
+      "fname": "CF_2030_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2030 pB",
+          "link": "https://codeforces.com/contest/2030/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2030_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "A TRUE Battle",
       "fname": "CF_2030_pC",
       "qlink": [
@@ -3394,6 +3454,21 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2030_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "QED's Favorite Permutation",
+      "fname": "CF_2030_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2030 pD",
+          "link": "https://codeforces.com/contest/2030/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2030_pD.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -4775,36 +4850,6 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
-    },
-    {
-      "qname": "Minimise Oneness",
-      "fname": "CF_2030_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2030 pB",
-          "link": "https://codeforces.com/contest/2030/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2030_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "QED's Favorite Permutation",
-      "fname": "CF_2030_pD",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2030 pD",
-          "link": "https://codeforces.com/contest/2030/problem/D"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2030_pD.cpp",
-      "ans_TXT": "",
-      "AC": true
     }
   ],
   "tag": [
