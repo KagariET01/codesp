@@ -1,3 +1,12 @@
+# [`CF 2024 pA`](https://codeforces.com/contest/2024/problem/A) Profitable Interest Rate
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -18,7 +27,7 @@ using namespace std;
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
 #define dequeue deque
-template<typename T>T reader(){T re;cin>>re;return re;}
+template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
 
 //PII
 template<typename T1,typename T2>pair<T1,T2>operator+(pair<T1,T2>a,pair<T1,T2>b){
@@ -179,8 +188,20 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT a,b;
+		cin>>a>>b;
+		INT x=b-a;
+		if(x>=a){
+			cout<<0<<endl;
+		}else cout<<a-max(x,0ll)<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

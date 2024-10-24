@@ -1,3 +1,12 @@
+# [`CF 2025 pC`](https://codeforces.com/contest/2025/problem/C) New Game
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -179,8 +188,41 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		map<INT,INT>mp;
+		vector<INT>a(n);
+		cin>>a;
+		for(INT&i:a)mp[i]++;
+		queue<PII>que;
+		INT nw=0;
+		INT ans=0;
+		PII lst=PII(-1,0);
+		for(PII i:mp){
+			if(lst.F+1!=i.F){
+				while(!que.empty()){
+					que.pop();
+				}
+				nw=0;
+			}
+			que.push(i);
+			nw+=i.S;
+			lst=i;
+			while(que.size()>k){
+				nw-=que.front().S;
+				que.pop();
+			}
+			maxs(ans,nw);
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

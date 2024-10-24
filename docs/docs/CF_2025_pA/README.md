@@ -1,3 +1,12 @@
+# [`CF 2025 pA`](https://codeforces.com/contest/2025/problem/A) Two Screens
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -179,8 +188,27 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		string a,b;
+		cin>>a>>b;
+		INT ans=a.size()+b.size();
+		INT n=min(a.size(),b.size());
+		bool mn=0;
+		for(INT i=0;i<n;i++){
+			if(a[i]==b[i]){
+				ans--;
+				mn=1;
+			}else break;
+		}
+		ans+=mn;
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

@@ -4850,6 +4850,66 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Skipping",
+      "fname": "CF_2024_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2024 pD",
+          "link": "https://codeforces.com/contest/2024/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2024_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Two Screens",
+      "fname": "CF_2025_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2025 pA",
+          "link": "https://codeforces.com/contest/2025/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2025_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Binomial Coefficients, Kind Of",
+      "fname": "CF_2025_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2025 pB",
+          "link": "https://codeforces.com/contest/2025/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2025_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "New Game",
+      "fname": "CF_2025_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2025 pC",
+          "link": "https://codeforces.com/contest/2025/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2025_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [

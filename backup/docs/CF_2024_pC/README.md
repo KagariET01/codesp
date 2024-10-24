@@ -1,3 +1,12 @@
+# [`CF 2024 pC`](https://codeforces.com/contest/2024/problem/C) Concatenation of Arrays
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -177,10 +186,30 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
+#define PPIII pair<PII,INT>
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<PPIII>a;
+		for(INT i=0;i<n;i++){
+			a.push_back(PPIII(read(PII),i));
+		}
+		sort(a.begin(),a.end(),[](PPIII a,PPIII b){if(a.F.F+a.F.S!=b.F.F+b.F.S)return a.F.F+a.F.S<b.F.F+b.F.S;else return a.S<b.S;});
+		for(INT i=0;i<n;i++){
+			if(i)cout<<" ";
+			cout<<a[i].F.F<<" "<<a[i].F.S;
+		}
+		cout<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

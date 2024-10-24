@@ -1,3 +1,12 @@
+# [`CF 2025 pB`](https://codeforces.com/contest/2025/problem/B) Binomial Coefficients, Kind Of
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -177,10 +186,43 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
+namespace ET01{
+	template<typename T,typename I>T pow(T a,I cnt,T mod=0){
+		T re=a;
+		T x=a;
+		cnt=cnt-1;
+		while(cnt){
+			if(cnt%2){
+				re=re*x;
+				if(mod){
+					re=re%mod;
+				}
+			}
+			x=x*x;
+			if(mod){
+				x=x%mod;
+			}
+			cnt=cnt/2;
+		}
+		return re;
+	}
+};
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	vector<INT>a(t),b(t);
+	cin>>a>>b;
+	for(INT i=0;i<t;i++){
+		if(a[i]==b[i])cout<<1<<endl;
+		else if(b[i]==0)cout<<1<<endl;
+		else cout<<ET01::pow(2ll,b[i],(INT)(1e9+7))<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

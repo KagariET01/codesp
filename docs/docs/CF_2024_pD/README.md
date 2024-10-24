@@ -1,3 +1,12 @@
+# [`CF 2024 pD`](https://codeforces.com/contest/2024/problem/D) Skipping
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -179,8 +188,45 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n),b(n);
+		cin>>a>>b;
+		for(auto&i:b)i--;
+		INT dp[n+1]={};
+		for(INT i=1;i<n;i++)dp[i]=1e17+7;
+		priority_queue<PII,vector<PII>,greater<PII>>pq; // PII(value,index)
+		pq.push(PII(0,0));
+
+		while(!pq.empty()){
+			PII nw=pq.top();
+			pq.pop();
+			if(dp[nw.S]<nw.F)continue;
+			if(nw.S&&dp[nw.S-1]>dp[nw.S]){
+				dp[nw.S-1]=dp[nw.S];
+				pq.push(PII(dp[nw.S],nw.S-1));
+			}
+
+			if(dp[b[nw.S]]>dp[nw.S]+a[nw.S]){
+				dp[b[nw.S]]=dp[nw.S]+a[nw.S];
+				pq.push(PII(dp[nw.S]+a[nw.S],b[nw.S]));
+			}
+		}
+		INT ans=0;
+		INT pretot=0;
+		for(INT i=0;i<n;i++){
+			pretot+=a[i];
+			maxs(ans,pretot-dp[i]);
+		}
+		cout<<ans<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```
