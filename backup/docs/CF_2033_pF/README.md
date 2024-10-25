@@ -1,4 +1,4 @@
-# [`CF 2033 pb`](https://codeforces.com/contest/2033/problem/b) Sakurako and Water
+# [`CF 2033 pF`](https://codeforces.com/contest/2033/problem/F) Kosuke's Sloth
 ## 標籤
 
 ## 題解
@@ -186,26 +186,29 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
+const INT mod=1e9+7;
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n;
-		cin>>n;
-		vector<vector<INT>>a(n,vector<INT>(n,0));
-		cin>>a;
-		vector<INT> lst(n*2);
-		for(INT i=0;i<n;i++){
-			for(INT j=0;j<n;j++){
-				INT nw=-i+j+n-1;
-				maxs(lst[nw],-a[i][j]);
+		INT n,k;
+		cin>>n>>k;
+		INT a=0,b=1%k;
+		INT ans=1;
+		while(1){
+			if(b==0){
+				cout<<n%mod*ans%mod<<endl;
+				break;
 			}
+			INT nw=b+a;
+			nw%=k;
+			a=b;
+			b=nw;
+			ans++;
+			ans%=mod;
 		}
-		INT ans=0;
-		for(auto&i:lst)ans+=i;
-		cout<<ans<<endl;
-
 	}
 	return 0;
 }

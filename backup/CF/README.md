@@ -174,5 +174,5 @@
 [`CF 2033 pC` Sakurako's Field Trip](/codesp/docs/CF_2033_pC)  
 [`CF 2033 pD` Kousuke's Assignment](/codesp/docs/CF_2033_pD)  
 [`CF 2033 pE` Sakurako, Kosuke, and the Permutation](/codesp/docs/CF_2033_pE)  
-[`CF 2033 pb` Sakurako and Water](/codesp/docs/CF_2033_pb)  
+[`CF 2033 pF` Kosuke's Sloth](/codesp/docs/CF_2033_pF)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  

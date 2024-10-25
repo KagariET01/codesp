@@ -3593,21 +3593,6 @@
       "AC": true
     },
     {
-      "qname": "Sakurako and Water",
-      "fname": "CF_2033_pb",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2033 pb",
-          "link": "https://codeforces.com/contest/2033/problem/b"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2033_pb.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
       "qname": "Buy Low Sell High",
       "fname": "CF_865_pD",
       "qlink": [
@@ -4985,6 +4970,21 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Kosuke's Sloth",
+      "fname": "CF_2033_pF",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2033 pF",
+          "link": "https://codeforces.com/contest/2033/problem/F"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2033_pF.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [
