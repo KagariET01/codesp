@@ -180,7 +180,6 @@
 [`CF 2033 pC` Sakurako's Field Trip](/codesp/docs/CF_2033_pC)  
 [`CF 2033 pD` Kousuke's Assignment](/codesp/docs/CF_2033_pD)  
 [`CF 2033 pE` Sakurako, Kosuke, and the Permutation](/codesp/docs/CF_2033_pE)  
-[`CF 2033 pb` Sakurako and Water](/codesp/docs/CF_2033_pb)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  
 [`CSES 1753` String Matching](/codesp/docs/CSES_1753)  
 [`CSES 2413` Counting Towers](/codesp/docs/CSES_2413)  
@@ -247,3 +246,4 @@
 [`ZJ n262` 我討厭零錢](/codesp/docs/ZJ_n262)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
+[`CF 2033 pF` Kosuke's Sloth](/codesp/docs/CF_2033_pF)  

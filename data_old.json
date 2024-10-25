@@ -3413,6 +3413,66 @@
       "AC": true
     },
     {
+      "qname": "Skipping",
+      "fname": "CF_2024_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2024 pD",
+          "link": "https://codeforces.com/contest/2024/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2024_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Two Screens",
+      "fname": "CF_2025_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2025 pA",
+          "link": "https://codeforces.com/contest/2025/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2025_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Binomial Coefficients, Kind Of",
+      "fname": "CF_2025_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2025 pB",
+          "link": "https://codeforces.com/contest/2025/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2025_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "New Game",
+      "fname": "CF_2025_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2025 pC",
+          "link": "https://codeforces.com/contest/2025/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2025_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "A Gift From Orangutan",
       "fname": "CF_2030_pA",
       "qlink": [
@@ -3469,6 +3529,81 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2030_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sakurako and Kosuke",
+      "fname": "CF_2033_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2033 pA",
+          "link": "https://codeforces.com/contest/2033/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2033_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sakurako's Field Trip",
+      "fname": "CF_2033_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2033 pC",
+          "link": "https://codeforces.com/contest/2033/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2033_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Kousuke's Assignment",
+      "fname": "CF_2033_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2033 pD",
+          "link": "https://codeforces.com/contest/2033/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2033_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sakurako, Kosuke, and the Permutation",
+      "fname": "CF_2033_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2033 pE",
+          "link": "https://codeforces.com/contest/2033/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2033_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sakurako and Water",
+      "fname": "CF_2033_pb",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2033 pb",
+          "link": "https://codeforces.com/contest/2033/problem/b"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2033_pb.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -4850,66 +4985,6 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
-    },
-    {
-      "qname": "Skipping",
-      "fname": "CF_2024_pD",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2024 pD",
-          "link": "https://codeforces.com/contest/2024/problem/D"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2024_pD.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Two Screens",
-      "fname": "CF_2025_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2025 pA",
-          "link": "https://codeforces.com/contest/2025/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2025_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Binomial Coefficients, Kind Of",
-      "fname": "CF_2025_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2025 pB",
-          "link": "https://codeforces.com/contest/2025/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2025_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "New Game",
-      "fname": "CF_2025_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2025 pC",
-          "link": "https://codeforces.com/contest/2025/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2025_pC.cpp",
-      "ans_TXT": "",
-      "AC": true
     }
   ],
   "tag": [
