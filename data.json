@@ -3473,6 +3473,66 @@
       "AC": true
     },
     {
+      "qname": "Rectangle Arrangement",
+      "fname": "CF_2027_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2027 pA",
+          "link": "https://codeforces.com/contest/2027/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2027_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Stalin Sort",
+      "fname": "CF_2027_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2027 pB",
+          "link": "https://codeforces.com/contest/2027/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2027_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Add Zeros",
+      "fname": "CF_2027_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2027 pC",
+          "link": "https://codeforces.com/contest/2027/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2027_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "The Endspeaker (Easy Version)",
+      "fname": "CF_2027_pD1",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2027 pD1",
+          "link": "https://codeforces.com/contest/2027/problem/D1"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2027_pD1.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "A Gift From Orangutan",
       "fname": "CF_2030_pA",
       "qlink": [
@@ -5002,47 +5062,47 @@
       "AC": false
     },
     {
-      "qname": "Rectangle Arrangement",
-      "fname": "CF_2027_pA",
+      "qname": "The Endspeaker (Hard Version)",
+      "fname": "CF_2027_pD2",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2027 pA",
-          "link": "https://codeforces.com/contest/2027/problem/A"
+          "PID": "2027 pD2",
+          "link": "https://codeforces.com/contest/2027/problem/D2"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2027_pA.cpp",
+      "ans_code": "pack/CF_2027_pD2.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Sliding",
+      "fname": "CF_2035_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2035 pA",
+          "link": "https://codeforces.com/contest/2035/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2035_pA.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Stalin Sort",
-      "fname": "CF_2027_pB",
+      "qname": "Everyone Loves Tres",
+      "fname": "CF_2035_pB",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2027 pB",
-          "link": "https://codeforces.com/contest/2027/problem/B"
+          "PID": "2035 pB",
+          "link": "https://codeforces.com/contest/2035/problem/B"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2027_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Add Zeros",
-      "fname": "CF_2027_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2027 pC",
-          "link": "https://codeforces.com/contest/2027/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2027_pC.cpp",
+      "ans_code": "pack/CF_2035_pB.cpp",
       "ans_TXT": "",
       "AC": true
     }
