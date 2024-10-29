@@ -3533,6 +3533,21 @@
       "AC": true
     },
     {
+      "qname": "The Endspeaker (Hard Version)",
+      "fname": "CF_2027_pD2",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2027 pD2",
+          "link": "https://codeforces.com/contest/2027/problem/D2"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2027_pD2.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "A Gift From Orangutan",
       "fname": "CF_2030_pA",
       "qlink": [
@@ -3679,6 +3694,36 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2033_pG.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sliding",
+      "fname": "CF_2035_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2035 pA",
+          "link": "https://codeforces.com/contest/2035/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2035_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Everyone Loves Tres",
+      "fname": "CF_2035_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2035 pB",
+          "link": "https://codeforces.com/contest/2035/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2035_pB.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -5062,47 +5107,17 @@
       "AC": false
     },
     {
-      "qname": "The Endspeaker (Hard Version)",
-      "fname": "CF_2027_pD2",
+      "qname": "Alya and Permutation",
+      "fname": "CF_2035_pC",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2027 pD2",
-          "link": "https://codeforces.com/contest/2027/problem/D2"
+          "PID": "2035 pC",
+          "link": "https://codeforces.com/contest/2035/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2027_pD2.cpp",
-      "ans_TXT": "",
-      "AC": false
-    },
-    {
-      "qname": "Sliding",
-      "fname": "CF_2035_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2035 pA",
-          "link": "https://codeforces.com/contest/2035/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2035_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Everyone Loves Tres",
-      "fname": "CF_2035_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "2035 pB",
-          "link": "https://codeforces.com/contest/2035/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_2035_pB.cpp",
+      "ans_code": "pack/CF_2035_pC.cpp",
       "ans_TXT": "",
       "AC": true
     }
