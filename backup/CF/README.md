@@ -182,4 +182,5 @@
 [`CF 2033 pG` Sakurako and Chefir](/codesp/docs/CF_2033_pG)  
 [`CF 2035 pA` Sliding](/codesp/docs/CF_2035_pA)  
 [`CF 2035 pB` Everyone Loves Tres](/codesp/docs/CF_2035_pB)  
+[`CF 2035 pC` Alya and Permutation](/codesp/docs/CF_2035_pC)  
 [`CF 865 pD` Buy Low Sell High](/codesp/docs/CF_865_pD)  

@@ -3728,6 +3728,51 @@
       "AC": true
     },
     {
+      "qname": "Alya and Permutation",
+      "fname": "CF_2035_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2035 pC",
+          "link": "https://codeforces.com/contest/2035/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2035_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Yet Another Real Number Problem",
+      "fname": "CF_2035_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2035 pD",
+          "link": "https://codeforces.com/contest/2035/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2035_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Monster",
+      "fname": "CF_2035_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2035 pE",
+          "link": "https://codeforces.com/contest/2035/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2035_pE.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Buy Low Sell High",
       "fname": "CF_865_pD",
       "qlink": [
@@ -5107,17 +5152,32 @@
       "AC": false
     },
     {
-      "qname": "Alya and Permutation",
-      "fname": "CF_2035_pC",
+      "qname": "Perpendicular Segments",
+      "fname": "CF_2026_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2035 pC",
-          "link": "https://codeforces.com/contest/2035/problem/C"
+          "PID": "2026 pA",
+          "link": "https://codeforces.com/contest/2026/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2035_pC.cpp",
+      "ans_code": "pack/CF_2026_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Action Figures",
+      "fname": "CF_2026_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2026 pC",
+          "link": "https://codeforces.com/contest/2026/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2026_pC.cpp",
       "ans_TXT": "",
       "AC": true
     }
