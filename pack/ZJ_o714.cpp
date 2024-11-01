@@ -180,46 +180,48 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n;
-	cin>>n;
-	INT a[n+1]={};
-	INT b[n+1]={};
-	INT att[n+1]={};
-	INT btt[n+1]={};
-	for(INT i=1;i<=n;i++){
-		cin>>a[i];
-		att[i]=a[i]+att[i-1];
+	INT n,m,MOD;
+	cin>>n>>m>>MOD;
+	INT l[n],r[n];
+	for(INT i=0;i<n;i++)cin>>l[i];
+	for(INT i=0;i<n;i++)cin>>r[i];
+
+	vector<INT>vec;
+	for(auto&i:l)vec.push_back(i);
+	for(auto&i:r)vec.push_back(i);
+	map<INT,INT>mp;
+	sort(vec);
+	INT nw=1;
+	for(INT i=0;i<vec.size();i++){
+		if(i && vec[i]==vec[i-1])continue;
+		mp[vec[i]]=nw;
+		nw++;
 	}
-	for(INT i=1;i<=n;i++){
-		cin>>b[i];
-		btt[i]=b[i]+btt[i-1];
+	for(auto&i:l)i=mp[i];
+	for(auto&i:r)i=mp[i];
+
+	vector<INT> dp(nw);
+	vector<INT> pt(nw);
+	dp[1]=pt[1]=1;
+	cerr<<pit(dp)<<pit(nw)<<pit(mp)<<endl;
+	vector<PII> bus(n);
+	INT bi=0;
+	for(INT i=0;i<n;i++){
+		bus[i]=PII(l[i],r[i]);
 	}
-	INT ans=0;
-	PII addr=PII(-1,-1);
+	sort(bus.begin(),bus.end(),[](PII a,PII b){return a.S<b.S;});
+	cerr<<pit(bus)<<endl;
+	for(INT i=1;i<nw;i++){
+		while(bi<n && bus[bi].S==i){
 
-	for(INT l=1;l<=n;l++){
-		for(INT r=l;r<=n;r++){
-			INT nw=0;
-
-			nw=att[l-1];
-			nw+=btt[r]-btt[l-1];
-			nw+=att[n]-att[r];
-			if(nw>ans){
-				ans=nw;
-				addr=PII(l,r);
-			}
-
-			nw=0;
-			nw=btt[l-1];
-			nw+=att[r]-att[l-1];
-			nw+=btt[n]-btt[r];
-			if(nw>ans){
-				ans=nw;
-				addr=PII(l,r);
-			}
+			dp[i]+=pt[i-1]-pt[bus[bi].F-1];
+			bi++;
 		}
+		pt[i]=pt[i-1]+dp[i];
+		cerr<<pit(i)<<pit(bi)<<pit(dp)<<pit(pt)<<endl;
 	}
-	cout<<ans<<" "<<addr.F<<" "<<addr.S<<endl;
+	cout<<dp[mp[m]]%MOD<<endl;
+
 
 	return 0;
 }

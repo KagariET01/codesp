@@ -1,3 +1,11 @@
+# [`CF 2026 pA`](https://codeforces.com/contest/2026/problem/A) Perpendicular Segments
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -180,49 +188,18 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n;
-	cin>>n;
-	INT a[n+1]={};
-	INT b[n+1]={};
-	INT att[n+1]={};
-	INT btt[n+1]={};
-	for(INT i=1;i<=n;i++){
-		cin>>a[i];
-		att[i]=a[i]+att[i-1];
+	INT t;
+	cin>>t;
+	while(t--){
+		INT x,y,k;
+		cin>>x>>y>>k;
+		cout<<"0 0 "<<min(x,y)<<" "<<min(x,y)<<endl;
+		cout<<min(x,y)<<" 0 0 "<<min(x,y)<<endl;
 	}
-	for(INT i=1;i<=n;i++){
-		cin>>b[i];
-		btt[i]=b[i]+btt[i-1];
-	}
-	INT ans=0;
-	PII addr=PII(-1,-1);
-
-	for(INT l=1;l<=n;l++){
-		for(INT r=l;r<=n;r++){
-			INT nw=0;
-
-			nw=att[l-1];
-			nw+=btt[r]-btt[l-1];
-			nw+=att[n]-att[r];
-			if(nw>ans){
-				ans=nw;
-				addr=PII(l,r);
-			}
-
-			nw=0;
-			nw=btt[l-1];
-			nw+=att[r]-att[l-1];
-			nw+=btt[n]-btt[r];
-			if(nw>ans){
-				ans=nw;
-				addr=PII(l,r);
-			}
-		}
-	}
-	cout<<ans<<" "<<addr.F<<" "<<addr.S<<endl;
-
 	return 0;
 }
 
 
 
+
+```

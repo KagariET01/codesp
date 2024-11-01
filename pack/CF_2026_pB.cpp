@@ -180,47 +180,32 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n;
-	cin>>n;
-	INT a[n+1]={};
-	INT b[n+1]={};
-	INT att[n+1]={};
-	INT btt[n+1]={};
-	for(INT i=1;i<=n;i++){
-		cin>>a[i];
-		att[i]=a[i]+att[i-1];
-	}
-	for(INT i=1;i<=n;i++){
-		cin>>b[i];
-		btt[i]=b[i]+btt[i-1];
-	}
-	INT ans=0;
-	PII addr=PII(-1,-1);
-
-	for(INT l=1;l<=n;l++){
-		for(INT r=l;r<=n;r++){
-			INT nw=0;
-
-			nw=att[l-1];
-			nw+=btt[r]-btt[l-1];
-			nw+=att[n]-att[r];
-			if(nw>ans){
-				ans=nw;
-				addr=PII(l,r);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		INT ans=1;
+		if(n&1){
+			ans=1e18+7;
+			for(INT i=0;i<n;i+=2){ // ignore num
+				INT nw=1;
+				for(INT j=1;j<n;j+=2){
+					if(j-1==i)j++;
+					maxs(nw,a[j]-a[j-1]);
+				}
+				mins(ans,nw);
 			}
-
-			nw=0;
-			nw=btt[l-1];
-			nw+=att[r]-att[l-1];
-			nw+=btt[n]-btt[r];
-			if(nw>ans){
-				ans=nw;
-				addr=PII(l,r);
+			
+		}else{
+			for(INT i=1;i<n;i+=2){
+				maxs(ans,a[i]-a[i-1]);
 			}
 		}
+		cout<<ans<<endl;
 	}
-	cout<<ans<<" "<<addr.F<<" "<<addr.S<<endl;
-
 	return 0;
 }
 

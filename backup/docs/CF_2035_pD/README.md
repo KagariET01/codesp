@@ -1,3 +1,11 @@
+# [`CF 2035 pD`](https://codeforces.com/contest/2035/problem/D) Yet Another Real Number Problem
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,51 +186,92 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
+INT get2(INT a){
+	INT ans=0;
+	while(!(a&1))a>>=1,ans++;
+	return ans;
+}
+
+const INT MOD=1e9+7;
+
+namespace ET01{
+	INT pow(INT a,INT n,INT mod=0ll){
+		if(n==0ll)return 1ll;
+		INT re=a;
+		INT x=a;
+		n--;
+		while(n>0ll){
+			if(n&1)re*=x;
+			x*=x;
+			n>>=1ll;
+			if(mod)x%=mod,re%=mod;
+		}
+		return re;
+	}
+}
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n;
-	cin>>n;
-	INT a[n+1]={};
-	INT b[n+1]={};
-	INT att[n+1]={};
-	INT btt[n+1]={};
-	for(INT i=1;i<=n;i++){
-		cin>>a[i];
-		att[i]=a[i]+att[i-1];
-	}
-	for(INT i=1;i<=n;i++){
-		cin>>b[i];
-		btt[i]=b[i]+btt[i-1];
-	}
-	INT ans=0;
-	PII addr=PII(-1,-1);
-
-	for(INT l=1;l<=n;l++){
-		for(INT r=l;r<=n;r++){
-			INT nw=0;
-
-			nw=att[l-1];
-			nw+=btt[r]-btt[l-1];
-			nw+=att[n]-att[r];
-			if(nw>ans){
-				ans=nw;
-				addr=PII(l,r);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		stack<PII>st;
+		vector<INT> odd(n);
+		vector<INT> oddptt(n);
+		vector<INT> c2(n);
+		vector<INT> c2ptt(n);
+		for(INT i=0ll;i<n;i++){
+			odd[i]=a[i];
+			c2[i]=0ll;
+			while(!(odd[i]&1ll)){
+				odd[i]>>=1ll;
+				c2[i]++;
 			}
-
-			nw=0;
-			nw=btt[l-1];
-			nw+=att[r]-att[l-1];
-			nw+=btt[n]-btt[r];
-			if(nw>ans){
-				ans=nw;
-				addr=PII(l,r);
-			}
+			oddptt[i]=odd[i];
+			if(i)oddptt[i]+=oddptt[i-1ll];
+			c2ptt[i]=c2[i];
+			if(i)c2ptt[i]+=c2ptt[i-1ll];
 		}
-	}
-	cout<<ans<<" "<<addr.F<<" "<<addr.S<<endl;
 
+		INT nwans=0ll;
+
+		for(INT i=0ll;i<n;i++){
+			if(i)cout<<" ";
+			while(!st.empty()){
+				INT stt=st.top().F;
+				INT ttt=c2ptt[i];
+				if(stt)ttt-=c2ptt[stt-1ll];
+				INT r=odd[i];
+				r*=(1ll<<ttt);
+				if(a[stt]<=r){
+					nwans-=st.top().S;
+					nwans+=odd[stt];
+					st.pop();
+				}else break;
+			}
+			INT ttt=c2ptt[i];
+			if(!st.empty())ttt-=c2ptt[st.top().F];
+			INT nwv=odd[i]*ET01::pow(2ll,ttt,MOD);
+			nwv%=MOD;
+			nwans+=nwv;
+
+			nwans%=MOD;
+			nwans+=MOD;
+			nwans%=MOD;
+			
+			cout<<nwans;
+			if(ttt)st.push(PII(i,nwv));
+		}
+		cout<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```
