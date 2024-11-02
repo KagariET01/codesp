@@ -10,3 +10,4 @@
 [`APCS 2023 06 PD` 開啟寶盒](/codesp/docs/ZJ_k734)  
 [`APCS 2024 01 pC` 邏輯電路](/codesp/docs/ZJ_m933)  
 [`APCS 2024 01 pD` 合併成本](/codesp/docs/ZJ_m934)  
+[`APCS 2024 10 pA` 裝飲料](/codesp/docs/ZJ_o711)  

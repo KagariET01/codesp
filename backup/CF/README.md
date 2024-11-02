@@ -167,6 +167,7 @@
 [`CF 2025 pB` Binomial Coefficients, Kind Of](/codesp/docs/CF_2025_pB)  
 [`CF 2025 pC` New Game](/codesp/docs/CF_2025_pC)  
 [`CF 2026 pA` Perpendicular Segments](/codesp/docs/CF_2026_pA)  
+[`CF 2026 pB` Black Cells](/codesp/docs/CF_2026_pB)  
 [`CF 2026 pC` Action Figures](/codesp/docs/CF_2026_pC)  
 [`CF 2027 pA` Rectangle Arrangement](/codesp/docs/CF_2027_pA)  
 [`CF 2027 pB` Stalin Sort](/codesp/docs/CF_2027_pB)  
