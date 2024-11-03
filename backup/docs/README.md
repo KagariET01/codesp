@@ -260,3 +260,5 @@
 [`ZJ o711` `APCS 2024 10 pA` 裝飲料](/codesp/docs/ZJ_o711)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
+[`CF 1999 pA` A+B Again?](/codesp/docs/CF_1999_pA)  
+[`CF 1999 pB` Card Game](/codesp/docs/CF_1999_pB)  

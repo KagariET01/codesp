@@ -5235,6 +5235,36 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "A+B Again?",
+      "fname": "CF_1999_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1999 pA",
+          "link": "https://codeforces.com/contest/1999/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1999_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Card Game",
+      "fname": "CF_1999_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1999 pB",
+          "link": "https://codeforces.com/contest/1999/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1999_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [

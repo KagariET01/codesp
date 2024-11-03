@@ -110,6 +110,8 @@
 [`CF 1997 pB` Make Three Regions](/codesp/docs/CF_1997_pB)  
 [`CF 1997 pC` Even Positions](/codesp/docs/CF_1997_pC)  
 [`CF 1998 pA` Find K Distinct Points with Fixed Center](/codesp/docs/CF_1998_pA)  
+[`CF 1999 pA` A+B Again?](/codesp/docs/CF_1999_pA)  
+[`CF 1999 pB` Card Game](/codesp/docs/CF_1999_pB)  
 [`CF 2000 pA` Primary Task](/codesp/docs/CF_2000_pA)  
 [`CF 2000 pB` Seating in a Bus](/codesp/docs/CF_2000_pB)  
 [`CF 2000 pC` Numeric String Template](/codesp/docs/CF_2000_pC)  
