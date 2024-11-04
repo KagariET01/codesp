@@ -1,3 +1,19 @@
+n=1000000
+ans=0
+for i in range(1,n+1,1):
+	b=n//i
+	b=min(b,n-i)
+	ans+=b
+print(ans)
+
+
+
+
+
+
+
+
+"""
 import random
 import logging
 
@@ -26,4 +42,4 @@ for i in range(n):
 	print()
 	if(not(i%100)):
 		log("nw"+str(i))
-
+"""

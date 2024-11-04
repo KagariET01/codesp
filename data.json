@@ -2443,6 +2443,51 @@
       "AC": false
     },
     {
+      "qname": "Legs",
+      "fname": "CF_1996_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1996 pA",
+          "link": "https://codeforces.com/contest/1996/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1996_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Scale",
+      "fname": "CF_1996_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1996 pB",
+          "link": "https://codeforces.com/contest/1996/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1996_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sort",
+      "fname": "CF_1996_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1996 pC",
+          "link": "https://codeforces.com/contest/1996/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1996_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Strong Password",
       "fname": "CF_1997_pA",
       "qlink": [
@@ -5387,47 +5432,17 @@
       "AC": false
     },
     {
-      "qname": "Legs",
-      "fname": "CF_1996_pA",
+      "qname": "Fun",
+      "fname": "CF_1996_pD",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1996 pA",
-          "link": "https://codeforces.com/contest/1996/problem/A"
+          "PID": "1996 pD",
+          "link": "https://codeforces.com/contest/1996/problem/D"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1996_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Scale",
-      "fname": "CF_1996_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1996 pB",
-          "link": "https://codeforces.com/contest/1996/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1996_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Sort",
-      "fname": "CF_1996_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1996 pC",
-          "link": "https://codeforces.com/contest/1996/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1996_pC.cpp",
+      "ans_code": "pack/CF_1996_pD.cpp",
       "ans_TXT": "",
       "AC": true
     }

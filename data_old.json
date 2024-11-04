@@ -3728,6 +3728,21 @@
       "AC": true
     },
     {
+      "qname": "Trinity",
+      "fname": "CF_2032_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2032 pC",
+          "link": "https://codeforces.com/contest/2032/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2032_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Sakurako and Kosuke",
       "fname": "CF_2033_pA",
       "qlink": [
@@ -5372,17 +5387,47 @@
       "AC": false
     },
     {
-      "qname": "Trinity",
-      "fname": "CF_2032_pC",
+      "qname": "Legs",
+      "fname": "CF_1996_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2032 pC",
-          "link": "https://codeforces.com/contest/2032/problem/C"
+          "PID": "1996 pA",
+          "link": "https://codeforces.com/contest/1996/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2032_pC.cpp",
+      "ans_code": "pack/CF_1996_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Scale",
+      "fname": "CF_1996_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1996 pB",
+          "link": "https://codeforces.com/contest/1996/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1996_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sort",
+      "fname": "CF_1996_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1996 pC",
+          "link": "https://codeforces.com/contest/1996/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1996_pC.cpp",
       "ans_TXT": "",
       "AC": true
     }
