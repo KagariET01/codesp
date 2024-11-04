@@ -2548,6 +2548,51 @@
       "AC": false
     },
     {
+      "qname": "A+B Again?",
+      "fname": "CF_1999_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1999 pA",
+          "link": "https://codeforces.com/contest/1999/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1999_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Card Game",
+      "fname": "CF_1999_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1999 pB",
+          "link": "https://codeforces.com/contest/1999/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1999_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Showering",
+      "fname": "CF_1999_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1999 pC",
+          "link": "https://codeforces.com/contest/1999/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1999_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Primary Task",
       "fname": "CF_2000_pA",
       "qlink": [
@@ -3653,6 +3698,36 @@
       "AC": true
     },
     {
+      "qname": "Circuit",
+      "fname": "CF_2032_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2032 pA",
+          "link": "https://codeforces.com/contest/2032/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2032_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Medians",
+      "fname": "CF_2032_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2032 pB",
+          "link": "https://codeforces.com/contest/2032/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2032_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Sakurako and Kosuke",
       "fname": "CF_2033_pA",
       "qlink": [
@@ -3816,6 +3891,66 @@
       "ans_code": "pack/CF_2035_pE.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Quintomania",
+      "fname": "CF_2036_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2036 pA",
+          "link": "https://codeforces.com/contest/2036/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2036_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Startup",
+      "fname": "CF_2036_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2036 pB",
+          "link": "https://codeforces.com/contest/2036/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2036_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Anya and 1100",
+      "fname": "CF_2036_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2036 pC",
+          "link": "https://codeforces.com/contest/2036/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2036_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "I Love 1543",
+      "fname": "CF_2036_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2036 pD",
+          "link": "https://codeforces.com/contest/2036/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2036_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
     },
     {
       "qname": "Buy Low Sell High",
@@ -5237,32 +5372,17 @@
       "AC": false
     },
     {
-      "qname": "A+B Again?",
-      "fname": "CF_1999_pA",
+      "qname": "Trinity",
+      "fname": "CF_2032_pC",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1999 pA",
-          "link": "https://codeforces.com/contest/1999/problem/A"
+          "PID": "2032 pC",
+          "link": "https://codeforces.com/contest/2032/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1999_pA.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Card Game",
-      "fname": "CF_1999_pB",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1999 pB",
-          "link": "https://codeforces.com/contest/1999/problem/B"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1999_pB.cpp",
+      "ans_code": "pack/CF_2032_pC.cpp",
       "ans_TXT": "",
       "AC": true
     }
