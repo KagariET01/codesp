@@ -185,6 +185,7 @@ int main(){
 	while(t--){
 		INT n,x;
 		cin>>n>>x;
+		INT cnt=0;
 		if(n<3||x<3){
 			cout<<0<<endl;
 			continue;
@@ -192,6 +193,7 @@ int main(){
 		INT ans=0;
 		for(INT i=1;i<=min(n,x);i++){
 			for(INT j=1;i*j+i+j<=n&&i+j<=x;j++){
+				cnt++;
 				INT mxc=0;
 				INT nw=n;
 				nw-=i*j;
@@ -202,6 +204,7 @@ int main(){
 			}
 		}
 		cout<<ans<<endl;
+		cerr<<n<<" "<<x<<" "<<cnt<<endl;
 	}
 	return 0;
 }

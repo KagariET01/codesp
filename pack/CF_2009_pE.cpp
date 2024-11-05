@@ -1,11 +1,3 @@
-# [`CF 1996 pD`](https://codeforces.com/contest/1996/problem/D) Fun
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -186,38 +178,42 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
+INT looptt(INT l,INT r){
+	r--;
+	return ((l+r)*(r-l+1ll))/2ll;
+}
+
+INT gv(INT k,INT n,INT m){
+	INT a=looptt(k,m);
+	INT b=looptt(m,k+n);
+	return abs(a-b);
+}
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT cnt=0;
-		if(n<3||x<3){
-			cout<<0<<endl;
-			continue;
+		INT n,k;
+		cin>>n>>k;
+		INT l=k,r=k+n;
+		while(r-l>5){
+			INT mid1=(r-l)/3ll+l;
+			INT mid2=(r-l)*2ll/3ll+l;
+			INT a=gv(k,n,mid1);
+			INT b=gv(k,n,mid2);
+			if(a<b)r=mid2;
+			else l=mid1;
 		}
-		INT ans=0;
-		for(INT i=1;i<=min(n,x);i++){
-			for(INT j=1;i*j+i+j<=n&&i+j<=x;j++){
-				cnt++;
-				INT mxc=0;
-				INT nw=n;
-				nw-=i*j;
-				nw/=(i+j);
-				mxc=nw;
-				mins(mxc,x-i-j);
-				ans+=mxc;
-			}
+		INT ans=looptt(k,k+n);
+		for(INT i=l;i<=r;i++){
+			mins(ans,gv(k,n,i));
 		}
 		cout<<ans<<endl;
-		cerr<<n<<" "<<x<<" "<<cnt<<endl;
+		
 	}
 	return 0;
 }
 
 
 
-
-```

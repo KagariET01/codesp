@@ -1,11 +1,3 @@
-# [`CF 1996 pD`](https://codeforces.com/contest/1996/problem/D) Fun
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -191,33 +183,15 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT cnt=0;
-		if(n<3||x<3){
-			cout<<0<<endl;
-			continue;
-		}
-		INT ans=0;
-		for(INT i=1;i<=min(n,x);i++){
-			for(INT j=1;i*j+i+j<=n&&i+j<=x;j++){
-				cnt++;
-				INT mxc=0;
-				INT nw=n;
-				nw-=i*j;
-				nw/=(i+j);
-				mxc=nw;
-				mins(mxc,x-i-j);
-				ans+=mxc;
-			}
-		}
-		cout<<ans<<endl;
-		cerr<<n<<" "<<x<<" "<<cnt<<endl;
+		INT x,y,k;
+		cin>>x>>y>>k;
+		INT xm=(x+k-1)/k;
+		INT ym=(y+k-1)/k;
+		if(ym>=xm)cout<<ym*2<<endl;
+		else cout<<xm*2-1<<endl;
 	}
 	return 0;
 }
 
 
 
-
-```
