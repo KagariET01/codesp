@@ -1978,6 +1978,21 @@
       "AC": true
     },
     {
+      "qname": "Alice and Books",
+      "fname": "CF_1978_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1978 pA",
+          "link": "https://codeforces.com/contest/1978/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1978_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": " ",
       "fname": "CF_1983_pA",
       "qlink": [
@@ -2139,6 +2154,36 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_1988_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Make Majority",
+      "fname": "CF_1988_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1988 pB",
+          "link": "https://codeforces.com/contest/1988/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1988_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Increasing Sequence with Fixed OR",
+      "fname": "CF_1988_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1988 pC",
+          "link": "https://codeforces.com/contest/1988/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1988_pC.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -3054,6 +3099,21 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2007_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Sakurako's Exam",
+      "fname": "CF_2008_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2008 pA",
+          "link": "https://codeforces.com/contest/2008/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2008_pA.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -5522,47 +5582,17 @@
       "AC": false
     },
     {
-      "qname": "Make Majority",
-      "fname": "CF_1988_pB",
+      "qname": "Square or Not",
+      "fname": "CF_2008_pB",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "1988 pB",
-          "link": "https://codeforces.com/contest/1988/problem/B"
+          "PID": "2008 pB",
+          "link": "https://codeforces.com/contest/2008/problem/B"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_1988_pB.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Increasing Sequence with Fixed OR",
-      "fname": "CF_1988_pC",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1988 pC",
-          "link": "https://codeforces.com/contest/1988/problem/C"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1988_pC.cpp",
-      "ans_TXT": "",
-      "AC": true
-    },
-    {
-      "qname": "Alice and Books",
-      "fname": "CF_1978_pA",
-      "qlink": [
-        {
-          "OJ": "CF",
-          "PID": "1978 pA",
-          "link": "https://codeforces.com/contest/1978/problem/A"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/CF_1978_pA.cpp",
+      "ans_code": "pack/CF_2008_pB.cpp",
       "ans_TXT": "",
       "AC": true
     }
