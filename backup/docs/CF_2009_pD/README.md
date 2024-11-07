@@ -1,4 +1,4 @@
-# [`CF 1996 pD`](https://codeforces.com/contest/1996/problem/D) Fun
+# [`CF 2009 pD`](https://codeforces.com/contest/2009/problem/D) Satyam and Counting
 ## 標籤
 
 ## 題解
@@ -191,28 +191,27 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT cnt=0;
-		if(n<3||x<3){
-			cout<<0<<endl;
-			continue;
+		INT n;
+		cin>>n;
+		INT tt[2]={};
+		bool p[n+2][2]={};
+		for(INT i=0;i<n;i++){
+			INT x,y;
+			cin>>x>>y;
+			p[x][y]=1;
+			tt[y]++;
 		}
 		INT ans=0;
-		for(INT i=1;i<=min(n,x);i++){
-			for(INT j=1;i*j+i+j<=n&&i+j<=x;j++){
-				cnt++;
-				INT mxc=0;
-				INT nw=n;
-				nw-=i*j;
-				nw/=(i+j);
-				mxc=nw;
-				mins(mxc,x-i-j);
-				ans+=mxc;
+		for(INT i=0;i<=n;i++){
+			if(p[i][0]&&p[i][1]){
+				ans+=n-2;
+			}
+			if(1<=i&&i<=n-1){
+				if(p[i][0]&&p[i-1][1]&&p[i+1][1])ans++;
+				if(p[i][1]&&p[i-1][0]&&p[i+1][0])ans++;
 			}
 		}
 		cout<<ans<<endl;
-		cerr<<n<<" "<<x<<" "<<cnt<<endl;
 	}
 	return 0;
 }

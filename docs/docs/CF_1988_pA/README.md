@@ -1,4 +1,4 @@
-# [`CF 1996 pD`](https://codeforces.com/contest/1996/problem/D) Fun
+# [`CF 1988 pA`](https://codeforces.com/contest/1988/problem/A) Split the Multiset
 ## 標籤
 
 ## 題解
@@ -191,28 +191,11 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT cnt=0;
-		if(n<3||x<3){
-			cout<<0<<endl;
-			continue;
-		}
-		INT ans=0;
-		for(INT i=1;i<=min(n,x);i++){
-			for(INT j=1;i*j+i+j<=n&&i+j<=x;j++){
-				cnt++;
-				INT mxc=0;
-				INT nw=n;
-				nw-=i*j;
-				nw/=(i+j);
-				mxc=nw;
-				mins(mxc,x-i-j);
-				ans+=mxc;
-			}
-		}
+		INT n,k;
+		cin>>n>>k;
+		n--,k--;
+		INT ans=(n+k-1)/k;
 		cout<<ans<<endl;
-		cerr<<n<<" "<<x<<" "<<cnt<<endl;
 	}
 	return 0;
 }

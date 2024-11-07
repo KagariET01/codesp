@@ -1,4 +1,4 @@
-# [`CF 1996 pD`](https://codeforces.com/contest/1996/problem/D) Fun
+# [`CF 1988 pB`](https://codeforces.com/contest/1988/problem/B) Make Majority
 ## 標籤
 
 ## 題解
@@ -191,28 +191,23 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT cnt=0;
-		if(n<3||x<3){
-			cout<<0<<endl;
-			continue;
+		INT n;
+		cin>>n;
+		string str;
+		cin>>str;
+		bool ans=0;
+		if(str[0]=='1'&&str[n-1]=='1')ans=1;
+		bool hb=0;
+		if(str[0]=='1'||str[n-1]=='1')hb=1;
+		INT db=0;
+		for(INT i=0;i<n-1;i++){
+			if(str[i]=='1'&&str[i+1]=='1')db++;
+			if(i<n-2&&str[i]=='1'&&str[i+1]=='1'&&str[i+2]=='1')ans=1;
 		}
-		INT ans=0;
-		for(INT i=1;i<=min(n,x);i++){
-			for(INT j=1;i*j+i+j<=n&&i+j<=x;j++){
-				cnt++;
-				INT mxc=0;
-				INT nw=n;
-				nw-=i*j;
-				nw/=(i+j);
-				mxc=nw;
-				mins(mxc,x-i-j);
-				ans+=mxc;
-			}
-		}
-		cout<<ans<<endl;
-		cerr<<n<<" "<<x<<" "<<cnt<<endl;
+		if(db&&hb)ans=1;
+		if(db>=2)ans=1;
+		if(ans)cout<<"Yes"<<endl;
+		else cout<<"No"<<endl;
 	}
 	return 0;
 }

@@ -1,4 +1,4 @@
-# [`CF 1996 pD`](https://codeforces.com/contest/1996/problem/D) Fun
+# [`CF 2009 pF`](https://codeforces.com/contest/2009/problem/F) Firefly's Queries
 ## 標籤
 
 ## 題解
@@ -191,28 +191,39 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT cnt=0;
-		if(n<3||x<3){
-			cout<<0<<endl;
-			continue;
+		INT n,q;
+		cin>>n>>q;
+		INT a[n*2+1]={};
+		for(INT i=1;i<=n;i++){
+			cin>>a[i];
+			a[i+n]=a[i];
 		}
-		INT ans=0;
-		for(INT i=1;i<=min(n,x);i++){
-			for(INT j=1;i*j+i+j<=n&&i+j<=x;j++){
-				cnt++;
-				INT mxc=0;
-				INT nw=n;
-				nw-=i*j;
-				nw/=(i+j);
-				mxc=nw;
-				mins(mxc,x-i-j);
-				ans+=mxc;
+		INT at[n*2+1]={};
+		for(INT i=1;i<n*2+1;i++){
+			at[i]=at[i-1]+a[i];
+		}
+		while(q--){
+			INT l,r;
+			cin>>l>>r;
+			INT lc,rc;
+			lc=(l-1)/n+1;
+			rc=(r-1)/n+1;
+			INT lp,rp;
+			lp=l%n;
+			rp=r%n;
+			if(lp==0)lp=n;
+			if(rp==0)rp=n;
+			INT ans=0;
+			if(lc==rc){
+				ans=at[rp+rc-1ll]-at[lp+lc-2ll];
+			}else{
+				ans=at[n+lc-1]-at[lp+lc-2ll];
+				ans+=at[rp+rc-1ll]-at[rc-1ll];
+				ans+=(rc-lc-1ll)*at[n];
 			}
+			cout<<ans<<endl;
 		}
-		cout<<ans<<endl;
-		cerr<<n<<" "<<x<<" "<<cnt<<endl;
+
 	}
 	return 0;
 }

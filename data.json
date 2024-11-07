@@ -2128,6 +2128,21 @@
       "AC": false
     },
     {
+      "qname": "Split the Multiset",
+      "fname": "CF_1988_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1988 pA",
+          "link": "https://codeforces.com/contest/1988/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1988_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Catch the Coin",
       "fname": "CF_1989_pA",
       "qlink": [
@@ -3109,6 +3124,66 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2009_pB.py",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "The Legend of Freya the Frog",
+      "fname": "CF_2009_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2009 pC",
+          "link": "https://codeforces.com/contest/2009/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2009_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Satyam and Counting",
+      "fname": "CF_2009_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2009 pD",
+          "link": "https://codeforces.com/contest/2009/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2009_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Klee's SUPER DUPER LARGE Array!!!",
+      "fname": "CF_2009_pE",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2009 pE",
+          "link": "https://codeforces.com/contest/2009/problem/E"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2009_pE.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Firefly's Queries",
+      "fname": "CF_2009_pF",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2009 pF",
+          "link": "https://codeforces.com/contest/2009/problem/F"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2009_pF.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -5447,47 +5522,47 @@
       "AC": false
     },
     {
-      "qname": "The Legend of Freya the Frog",
-      "fname": "CF_2009_pC",
+      "qname": "Make Majority",
+      "fname": "CF_1988_pB",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2009 pC",
-          "link": "https://codeforces.com/contest/2009/problem/C"
+          "PID": "1988 pB",
+          "link": "https://codeforces.com/contest/1988/problem/B"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2009_pC.cpp",
+      "ans_code": "pack/CF_1988_pB.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Satyam and Counting",
-      "fname": "CF_2009_pD",
+      "qname": "Increasing Sequence with Fixed OR",
+      "fname": "CF_1988_pC",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2009 pD",
-          "link": "https://codeforces.com/contest/2009/problem/D"
+          "PID": "1988 pC",
+          "link": "https://codeforces.com/contest/1988/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2009_pD.cpp",
+      "ans_code": "pack/CF_1988_pC.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Klee's SUPER DUPER LARGE Array!!!",
-      "fname": "CF_2009_pE",
+      "qname": "Alice and Books",
+      "fname": "CF_1978_pA",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2009 pE",
-          "link": "https://codeforces.com/contest/2009/problem/E"
+          "PID": "1978 pA",
+          "link": "https://codeforces.com/contest/1978/problem/A"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2009_pE.cpp",
+      "ans_code": "pack/CF_1978_pA.cpp",
       "ans_TXT": "",
       "AC": true
     }

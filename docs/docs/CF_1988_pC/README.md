@@ -1,4 +1,4 @@
-# [`CF 1996 pD`](https://codeforces.com/contest/1996/problem/D) Fun
+# [`CF 1988 pC`](https://codeforces.com/contest/1988/problem/C) Increasing Sequence with Fixed OR
 ## 標籤
 
 ## 題解
@@ -114,13 +114,13 @@ template<typename T>istream&operator>>(istream&in,vector<T>&vec){
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
-	ou<<"[";
+	ou<<"";
 	for(T(i):vec){
-		if(o)ou<<",";
+		if(o)ou<<" ";
 		ou<<i;
 		o=1;
 	}
-	return(ou<<"]");
+	return(ou<<"");
 }
 
 //array
@@ -191,28 +191,18 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT n,x;
-		cin>>n>>x;
-		INT cnt=0;
-		if(n<3||x<3){
-			cout<<0<<endl;
-			continue;
+		INT n;
+		cin>>n;
+		vector<INT>ans;
+		ans.push_back(n);
+		INT nlg=__lg(n);
+		for(INT i=0;i<=nlg;i++){
+			if(n&(1ll<<i))ans.push_back(n^(1ll<<i));
+			if(ans.back()==0)ans.pop_back();
 		}
-		INT ans=0;
-		for(INT i=1;i<=min(n,x);i++){
-			for(INT j=1;i*j+i+j<=n&&i+j<=x;j++){
-				cnt++;
-				INT mxc=0;
-				INT nw=n;
-				nw-=i*j;
-				nw/=(i+j);
-				mxc=nw;
-				mins(mxc,x-i-j);
-				ans+=mxc;
-			}
-		}
+		reverse(ans.begin(),ans.end());
+		cout<<ans.size()<<endl;
 		cout<<ans<<endl;
-		cerr<<n<<" "<<x<<" "<<cnt<<endl;
 	}
 	return 0;
 }
