@@ -1,3 +1,4 @@
+//Example tase case passed
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,46 +179,108 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-INT M2D[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
+template<typename I>struct triple{ // a/b
+	I a=1;
+	I b=1;
+	void fix(){
+		INT gcd=__gcd(a,b);
+		a/=gcd;
+		b/=gcd;
+	}
+	bool operator<(triple c){
+		INT gcd=__gcd(b,c.b);
+		INT ax=c.b/gcd;
+		INT bx=b/gcd;
+		return a*ax<c.a*bx;
+	}
+	triple operator*(triple c){
+		triple re;
+		re.a=a*c.a;
+		re.b=b*c.b;
+		re.fix();
+		return re;
+	}
+};
 
-INT gt(INT M,INT D,INT h,INT m,INT s){
-	INT re=0;
-	re+=M2D[M];
-	re+=D;
-	re*=24;
-	re+=h;
-	re*=60;
-	re+=m;
-	re*=60;
-	re+=s;
-	return re;
-
+template<typename I>istream&operator>>(istream&in,triple<I>&a){
+	string str;
+	in>>str;
+	a.a=0;
+	a.b=1;
+	bool x=0;
+	for(auto&i:str){
+		if(i=='.')x=1;
+		else{
+			a.a*=10ll;
+			a.a+=i-'0';
+			if(x)a.b*=10ll;
+		}
+	}
+	a.fix();
+	return in;
 }
+template<typename I>ostream&operator<<(ostream&ou,triple<I> a){
+	double b;
+	b=a.a;
+	b=b/double(a.b);
+	return ou<<b;
+}
+
+const INT mxn=105;
+
+#define PIS pair<INT,triple<INT>>
+
+vector<PIS>tree[mxn];
+INT indo[mxn]={};
+triple<INT>ans[mxn];
+INT bk[mxn]={};
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT M,D,h,m,s;
-	cin>>M>>D>>h>>m>>s;
-	INT nw=gt(M,D,h,m,s);
-	INT event=gt(12,31,24,0,0);
-	INT tl=event-nw;
-	INT ad,ah,am,as;
-	as=tl%60;
-	tl/=60;
-	am=tl%60;
-	tl/=60;
-	ah=tl%24;
-	tl/=24;
-	ad=tl;
-	cout<<ad<<" "<<ah<<" "<<am<<" "<<as<<endl;
+	INT n,m;
+	cin>>n>>m;
+	for(INT i=0;i<m;i++){
+		INT s,e;
+		triple<INT>t;
+		cin>>s>>e>>t;
+		tree[s].push_back(PIS(e,t));
+		indo[e]++;
+	}
+	queue<INT>que;
+	que.push(1);
+	triple<INT>one;
+	one.a=1;
+	one.b=1;
+	for(INT i=0;i<=n;i++)ans[i]=one;
+	while(!que.empty()){
+		INT nw=que.front();
+		que.pop();
+		for(auto&i:tree[nw]){
+			triple nxv=ans[nw]*i.S;
+			if(nxv<ans[i.F]){
+				ans[i.F]=nxv;
+				bk[i.F]=nw;
+			}
+			indo[i.F]--;
+			if(!indo[i.F])que.push(i.F);
+		}
+	}
+	vector<INT>ans;
+	INT nw=n;
+	while(1){
+		ans.push_back(nw);
+		if(nw==1)break;
+		nw=bk[nw];
+	}
+	reverse(ans.begin(),ans.end());
+	for(INT i=0;i<ans.size();i++){
+		if(i)cout<<" ";
+		cout<<ans[i];
+	}
+	cout<<endl;
+
 	return 0;
 }
-
-
-
-
-
-
 
 
 

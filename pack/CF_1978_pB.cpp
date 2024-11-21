@@ -18,8 +18,8 @@ using namespace std;
 #define S second
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
-
-template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
+#define dequeue deque
+template<typename T>T reader(){T re;cin>>re;return re;}
 
 //PII
 template<typename T1,typename T2>pair<T1,T2>operator+(pair<T1,T2>a,pair<T1,T2>b){
@@ -178,46 +178,25 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-INT M2D[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
-
-INT gt(INT M,INT D,INT h,INT m,INT s){
-	INT re=0;
-	re+=M2D[M];
-	re+=D;
-	re*=24;
-	re+=h;
-	re*=60;
-	re+=m;
-	re*=60;
-	re+=s;
-	return re;
-
-}
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT M,D,h,m,s;
-	cin>>M>>D>>h>>m>>s;
-	INT nw=gt(M,D,h,m,s);
-	INT event=gt(12,31,24,0,0);
-	INT tl=event-nw;
-	INT ad,ah,am,as;
-	as=tl%60;
-	tl/=60;
-	am=tl%60;
-	tl/=60;
-	ah=tl%24;
-	tl/=24;
-	ad=tl;
-	cout<<ad<<" "<<ah<<" "<<am<<" "<<as<<endl;
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n,a,b;
+		cin>>n>>a>>b;
+		if(a>=b){
+			cout<<n*a<<endl;
+			continue;
+		}
+		INT l=min(n,b-a+1);
+		INT ans=(b+(b-l+1))*l/2;
+		INT r=n-l;
+		ans+=r*a;
+		cout<<ans<<endl;
+	}
 	return 0;
 }
-
-
-
-
-
-
 
 
 

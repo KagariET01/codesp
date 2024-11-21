@@ -1,3 +1,4 @@
+//Example tase case passed
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,46 +179,66 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-INT M2D[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
+void dop(INT&a,INT&b,INT&c,INT&d){ // <==
+	INT inin[]={a,b,c,d};
+	for(INT i=0;i<4-1;i++){
+		if(inin[i]==inin[i+1]){
+			inin[i]*=2;
+			inin[i+1]=0;
+		}
+	}
+	vector<INT>re;
+	for(auto&i:inin)if(i)re.push_back(i);
+	re.resize(4);
+	a=re[0];
+	b=re[1];
+	c=re[2];
+	d=re[3];
+}
 
-INT gt(INT M,INT D,INT h,INT m,INT s){
-	INT re=0;
-	re+=M2D[M];
-	re+=D;
-	re*=24;
-	re+=h;
-	re*=60;
-	re+=m;
-	re*=60;
-	re+=s;
-	return re;
-
+void rop(INT&a,INT&b,INT&c,INT&d){ // ==>
+	swap(a,d);
+	swap(b,c);
+	dop(a,b,c,d);
+	swap(a,d);
+	swap(b,c);
 }
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT M,D,h,m,s;
-	cin>>M>>D>>h>>m>>s;
-	INT nw=gt(M,D,h,m,s);
-	INT event=gt(12,31,24,0,0);
-	INT tl=event-nw;
-	INT ad,ah,am,as;
-	as=tl%60;
-	tl/=60;
-	am=tl%60;
-	tl/=60;
-	ah=tl%24;
-	tl/=24;
-	ad=tl;
-	cout<<ad<<" "<<ah<<" "<<am<<" "<<as<<endl;
+	INT mp[4][4];
+	for(auto&i:mp)for(auto&j:i)cin>>j;
+	INT op=0;
+	cin>>op;
+	if(op==1){
+		for(INT i=0;i<4;i++){
+			dop(mp[0][i],mp[1][i],mp[2][i],mp[3][i]);
+		}
+	}
+	if(op==4){
+		for(INT i=0;i<4;i++){
+			rop(mp[i][0],mp[i][1],mp[i][2],mp[i][3]);
+		}
+	}
+	if(op==2){
+		for(INT i=0;i<4;i++){
+			rop(mp[0][i],mp[1][i],mp[2][i],mp[3][i]);
+		}
+	}
+	if(op==3){
+		for(INT i=0;i<4;i++){
+			dop(mp[i][0],mp[i][1],mp[i][2],mp[i][3]);
+		}
+	}
+	for(INT i=0;i<4;i++){
+		for(INT j=0;j<4;j++){
+			if(j)cout<<" ";
+			cout<<mp[i][j];
+		}
+		cout<<endl;
+	}
 	return 0;
 }
-
-
-
-
-
-
 
 
 

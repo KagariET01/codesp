@@ -1,3 +1,4 @@
+//Example tase case passed
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,46 +179,68 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-INT M2D[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
+PII mv[6]={
+	PII(1,0),
+	PII(0,-1),
+	PII(-1,-1),
+	PII(-1,0),
+	PII(0,1),
+	PII(1,1)
+};
+PII gv[6]={
+	PII(1,1),
+	PII(1,0),
+	PII(0,-1),
+	PII(-1,-1),
+	PII(-1,0),
+	PII(0,1)
+};
+PII nxm=PII(1,1);
 
-INT gt(INT M,INT D,INT h,INT m,INT s){
-	INT re=0;
-	re+=M2D[M];
-	re+=D;
-	re*=24;
-	re+=h;
-	re*=60;
-	re+=m;
-	re*=60;
-	re+=s;
-	return re;
-
-}
+const INT mxnw=1e6;
 
 int main(){
-	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT M,D,h,m,s;
-	cin>>M>>D>>h>>m>>s;
-	INT nw=gt(M,D,h,m,s);
-	INT event=gt(12,31,24,0,0);
-	INT tl=event-nw;
-	INT ad,ah,am,as;
-	as=tl%60;
-	tl/=60;
-	am=tl%60;
-	tl/=60;
-	ah=tl%24;
-	tl/=24;
-	ad=tl;
-	cout<<ad<<" "<<ah<<" "<<am<<" "<<as<<endl;
+	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT n;
+	cin>>n;
+	PII p;
+	map<PII,INT>mp;
+
+	INT nw=1;
+	PII nwp=PII(0,0);
+	mp[nwp]=1;
+	nwp=PII(1,1);
+	nw=2;
+	INT cnt=2;
+	for(INT i=1;;i++){
+		// cerr<<pit(i)<<endl;
+		for(INT j=0;j<6;j++){
+			// cerr<<"  "<<pit(j)<<endl;
+			INT k=0;
+			if(j==0)k=1;
+			if(j==5)k=-1;
+			for(;k<i;k++){
+				// cerr<<"    "<<pit(k)<<endl;
+				mp[nwp]=nw;
+				if(nw==n)p=nwp;
+				// cerr<<"      "<<pit(nw)<<pit(nwp)<<endl;
+				nwp=nwp+mv[j];
+				nw++;
+			}
+		}
+		if(!cnt)break;
+		if(nw>=n)cnt--;;
+	}
+
+	for(INT i=0;i<6;i++){
+		if(i)cout<<" ";
+		cout<<mp[p+gv[i]];
+	}
+	cout<<endl;
+
+
 	return 0;
 }
-
-
-
-
-
-
 
 
 

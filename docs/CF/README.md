@@ -146,7 +146,6 @@
 [`CF 2007 pD` Iris and Game on the Tree](/codesp/docs/CF_2007_pD)  
 [`CF 2008 pA` Sakurako's Exam](/codesp/docs/CF_2008_pA)  
 [`CF 2008 pB` Square or Not](/codesp/docs/CF_2008_pB)  
-[`CF 2008 pC` Longest Good Array](/codesp/docs/CF_2008_pC)  
 [`CF 2009 pA` Minimize!](/codesp/docs/CF_2009_pA)  
 [`CF 2009 pA` Minimize!](/codesp/docs/CF_2009_pA_py)  
 [`CF 2009 pB` osu!mania](/codesp/docs/CF_2009_pB)  

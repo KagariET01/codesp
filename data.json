@@ -3133,6 +3133,21 @@
       "AC": true
     },
     {
+      "qname": "Longest Good Array",
+      "fname": "CF_2008_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2008 pC",
+          "link": "https://codeforces.com/contest/2008/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2008_pC.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Minimize!",
       "fname": "CF_2009_pA",
       "qlink": [
@@ -4903,6 +4918,21 @@
       "AC": true
     },
     {
+      "qname": "與自動輔助駕駛暢遊世界",
+      "fname": "TIOJ_2368",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2368",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2368"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2368.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "質數切割法",
       "fname": "ZJ_131",
       "qlink": [
@@ -5597,17 +5627,17 @@
       "AC": false
     },
     {
-      "qname": "Longest Good Array",
-      "fname": "CF_2008_pC",
+      "qname": "人工智慧模擬",
+      "fname": "TIOJ_2367",
       "qlink": [
         {
-          "OJ": "CF",
-          "PID": "2008 pC",
-          "link": "https://codeforces.com/contest/2008/problem/C"
+          "OJ": "TIOJ",
+          "PID": "2367",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2367"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2008_pC.cpp",
+      "ans_code": "pack/TIOJ_2367.cpp",
       "ans_TXT": "",
       "AC": true
     }

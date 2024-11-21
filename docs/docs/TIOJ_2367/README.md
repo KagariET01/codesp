@@ -1,3 +1,11 @@
+# [`TIOJ 2367`](https://tioj.ck.tp.edu.tw/problems/2367) 人工智慧模擬
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -12,14 +20,16 @@ using namespace std;
 #define PII pair<INT,INT>
 #define PPIIPII pair<PII,PII>
 #define pit(n) #n<<":"<<n<<" "
+#define pbit(n) #n<<":"<<bitset<16>(n)<<" "
+#define pb(n) bitset<16>(n)
 #define MP(n,m) make_pair(n,m)
 #define endl '\n'
 #define F first
 #define S second
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
-
-template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
+#define dequeue deque
+template<typename T>T reader(){T re;cin>>re;return re;}
 
 //PII
 template<typename T1,typename T2>pair<T1,T2>operator+(pair<T1,T2>a,pair<T1,T2>b){
@@ -178,46 +188,73 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-INT M2D[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
+const INT mx=1ll<<12ll;
+bool user[mx];
+vector<INT>a;
+INT n,k,t;
 
-INT gt(INT M,INT D,INT h,INT m,INT s){
-	INT re=0;
-	re+=M2D[M];
-	re+=D;
-	re*=24;
-	re+=h;
-	re*=60;
-	re+=m;
-	re*=60;
-	re+=s;
-	return re;
+INT nwnum=0;
+bool check(){
+	if(user[nwnum])return false;
+	for(INT i=0;i<(1ll<<k);i++){
+		INT cnt=0;
+		for(INT j=0;j<k;j++){
+			if(i&(1ll<<j))cnt++;
+		}
+		if(cnt==t){
+			bool c=0;
+			for(INT j:a){
+				if((i&j)==(i&nwnum)){
+					c=1;
+					break;
+				}
+			}
+			if(!c)return false;
+		}
+	}
+	return true;
 
 }
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT M,D,h,m,s;
-	cin>>M>>D>>h>>m>>s;
-	INT nw=gt(M,D,h,m,s);
-	INT event=gt(12,31,24,0,0);
-	INT tl=event-nw;
-	INT ad,ah,am,as;
-	as=tl%60;
-	tl/=60;
-	am=tl%60;
-	tl/=60;
-	ah=tl%24;
-	tl/=24;
-	ad=tl;
-	cout<<ad<<" "<<ah<<" "<<am<<" "<<as<<endl;
+	cin>>n>>k>>t;
+	for(INT i=0;i<n;i++){
+		string str;
+		cin>>str;
+		INT nw=0;
+		for(INT j=0;j<k;j++){
+			if(str[j]=='1')nw|=(1ll<<j);
+		}
+		user[nw]=1;
+		a.push_back(nw);
+	}
+
+	string ans="-1";
+	for(INT i=-3;i<k;i++){
+		if(i>=0)nwnum|=1ll<<i;
+		for(INT j=i+1;j<k;j++){
+			if(j>=0)nwnum|=1ll<<j;
+			for(INT kk=j+1;kk<k;kk++){
+				if(kk>=0)nwnum|=1ll<<kk;
+				if(check()){
+					for(INT l=0;l<k;l++){
+						cout<<(nwnum&(1ll<<l)?1:0);
+					}
+					cout<<endl;
+					return 0;
+				}
+				if(kk>=0)nwnum^=1ll<<kk;
+			}
+			if(j>=0)nwnum^=1ll<<j;
+		}
+		if(i>=0)nwnum^=1ll<<i;
+	}
+	cout<<"none"<<endl;
 	return 0;
 }
 
 
 
 
-
-
-
-
-
+```

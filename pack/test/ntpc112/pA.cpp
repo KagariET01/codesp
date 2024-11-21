@@ -1,3 +1,4 @@
+//Example tase case passed
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")

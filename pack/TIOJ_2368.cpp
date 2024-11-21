@@ -18,8 +18,8 @@ using namespace std;
 #define S second
 #define mins(a,b) a=min(a,b)
 #define maxs(a,b) a=max(a,b)
-
-template<typename T>auto(reader)=[](){T(re);return(cin>>re,re);};
+#define dequeue deque
+template<typename T>T reader(){T re;cin>>re;return re;}
 
 //PII
 template<typename T1,typename T2>pair<T1,T2>operator+(pair<T1,T2>a,pair<T1,T2>b){
@@ -178,46 +178,90 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-INT M2D[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
+const INT mxn=3005;
+INT n,m;
+vector<INT>tree[mxn];
+vector<INT>bktree[mxn];
+INT s,t;
+INT mx[mxn];
+INT mn[mxn];
+INT ans[mxn];
+bool flag[mxn]; // can go to goal
+bool endpnt[mxn]; // can not go to goal
+bool done[mxn]; // do dijkstra?
 
-INT gt(INT M,INT D,INT h,INT m,INT s){
-	INT re=0;
-	re+=M2D[M];
-	re+=D;
-	re*=24;
-	re+=h;
-	re*=60;
-	re+=m;
-	re*=60;
-	re+=s;
-	return re;
 
+void dfs(INT nw,bool*lst){
+	lst[nw]=1;
+	for(auto&i:bktree[nw]){
+		if(!lst[i])dfs(i,lst);
+	}
+}
+
+void bot(INT nw){ // check 哪些點可以用機器隨機選點
+	bool vis[n+1]={};
+	for(INT i=1;i<=n;i++){ // 已走過的"可走點"標記為1
+		if(flag[i] && done[i])vis[i]=1;
+	}
+	for(INT i=1;i<=n;i++){ // 為所有可能走到"死路"的點標記1，特別的是：DFS到"已走過的點"就會停下來
+		if(!flag[i] && !vis[i])dfs(i,vis);
+	}
+	for(INT i=1;i<=n;i++){
+		if(!vis[i] && !endpnt[i] && !done[i]){ // 找尋剩下"不會走到(死路)"的點，他們都多了一個選擇：讓電腦隨機選擇
+			mins(ans[i],nw);
+		}
+	}
 }
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT M,D,h,m,s;
-	cin>>M>>D>>h>>m>>s;
-	INT nw=gt(M,D,h,m,s);
-	INT event=gt(12,31,24,0,0);
-	INT tl=event-nw;
-	INT ad,ah,am,as;
-	as=tl%60;
-	tl/=60;
-	am=tl%60;
-	tl/=60;
-	ah=tl%24;
-	tl/=24;
-	ad=tl;
-	cout<<ad<<" "<<ah<<" "<<am<<" "<<as<<endl;
+	cin>>n>>m;
+
+	for(INT i=0;i<m;i++){
+		INT a,b;
+		cin>>a>>b;
+		tree[a].push_back(b);
+		bktree[b].push_back(a);
+	}
+	cin>>s>>t;
+
+	for(INT i=0;i<=n;i++){
+		ans[i]=n+10;
+	}
+
+	INT remain=n; // count 有多少可達終點的點
+
+	dfs(t,flag);
+	for(INT i=1;i<=n;i++){
+		if(!flag[i]){
+			remain--;
+			endpnt[i]=1;
+		}
+	}
+	mins(ans[t],0ll);
+	while(remain--){ // do dijkstra
+		INT best=-1,best_val=n+20;
+		for(INT i=1;i<=n;i++){ // find minium ans pnt
+			if(!endpnt[i] && !done[i]){
+				if(best_val>ans[i]){
+					best_val=ans[i];
+					best=i;
+				}
+			}
+		}
+		done[best]=1;
+		for(INT&i:bktree[best]){ // 鬆弛父節點（父節點多一個選擇：多付1$並走到目前這個節點
+			mins(ans[i],ans[best]+1);
+		}
+		bot(ans[best]);
+
+
+	}
+	if(ans[s]>=n+1)cout<<-1<<endl;
+	else cout<<ans[s]<<endl;
+
 	return 0;
 }
-
-
-
-
-
-
 
 
 

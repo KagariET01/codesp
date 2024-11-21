@@ -3118,6 +3118,21 @@
       "AC": true
     },
     {
+      "qname": "Square or Not",
+      "fname": "CF_2008_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2008 pB",
+          "link": "https://codeforces.com/contest/2008/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2008_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Minimize!",
       "fname": "CF_2009_pA",
       "qlink": [
@@ -5582,17 +5597,17 @@
       "AC": false
     },
     {
-      "qname": "Square or Not",
-      "fname": "CF_2008_pB",
+      "qname": "Longest Good Array",
+      "fname": "CF_2008_pC",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2008 pB",
-          "link": "https://codeforces.com/contest/2008/problem/B"
+          "PID": "2008 pC",
+          "link": "https://codeforces.com/contest/2008/problem/C"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2008_pB.cpp",
+      "ans_code": "pack/CF_2008_pC.cpp",
       "ans_TXT": "",
       "AC": true
     }

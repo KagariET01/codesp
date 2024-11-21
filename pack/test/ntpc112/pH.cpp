@@ -1,3 +1,4 @@
+//Example tase case passed
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,46 +179,25 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-INT M2D[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
-
-INT gt(INT M,INT D,INT h,INT m,INT s){
-	INT re=0;
-	re+=M2D[M];
-	re+=D;
-	re*=24;
-	re+=h;
-	re*=60;
-	re+=m;
-	re*=60;
-	re+=s;
-	return re;
-
-}
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT M,D,h,m,s;
-	cin>>M>>D>>h>>m>>s;
-	INT nw=gt(M,D,h,m,s);
-	INT event=gt(12,31,24,0,0);
-	INT tl=event-nw;
-	INT ad,ah,am,as;
-	as=tl%60;
-	tl/=60;
-	am=tl%60;
-	tl/=60;
-	ah=tl%24;
-	tl/=24;
-	ad=tl;
-	cout<<ad<<" "<<ah<<" "<<am<<" "<<as<<endl;
+	INT n;
+	cin>>n;
+	vector<INT>a(n);
+	cin>>a;
+	vector<PII>ans(4,PII(0,0));
+	for(INT i=0;i<n-1;i++){
+		ans[0]=PII(abs(a[i]-a[i+1]),i);
+		sort(ans.begin(),ans.end(),[](PII a,PII b){
+			if(a.F!=b.F)return a.F<b.F;
+			else return a.S>b.S;
+		});
+	}
+	for(INT i=3;i>=1;i--){
+		cout<<ans[i].F<<" "<<ans[i].S+1<<" "<<ans[i].S+2<<endl;
+	}
 	return 0;
 }
-
-
-
-
-
-
 
 
 

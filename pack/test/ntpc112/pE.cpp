@@ -178,46 +178,48 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-INT M2D[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
-
-INT gt(INT M,INT D,INT h,INT m,INT s){
-	INT re=0;
-	re+=M2D[M];
-	re+=D;
-	re*=24;
-	re+=h;
-	re*=60;
-	re+=m;
-	re*=60;
-	re+=s;
-	return re;
-
-}
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT M,D,h,m,s;
-	cin>>M>>D>>h>>m>>s;
-	INT nw=gt(M,D,h,m,s);
-	INT event=gt(12,31,24,0,0);
-	INT tl=event-nw;
-	INT ad,ah,am,as;
-	as=tl%60;
-	tl/=60;
-	am=tl%60;
-	tl/=60;
-	ah=tl%24;
-	tl/=24;
-	ad=tl;
-	cout<<ad<<" "<<ah<<" "<<am<<" "<<as<<endl;
+	INT n,m,k;
+	cin>>n>>m>>k;
+	vector<INT>a(n);
+	cin>>a;
+	queue<INT>que[m];
+	priority_queue<PII,vector<PII>,greater<PII>>pq;
+	INT ans;
+	vector<INT>als;
+	INT it=0;
+	for(INT i=0;i<k;i++){
+		for(INT j=0;j<m;j++){
+			if(it<n){
+				que[j].push(a[it]);
+				it++;
+			}
+			if(!i){
+				pq.push(PII(a[it-1],j));
+			}
+		}
+	}
+	while(!pq.empty()){
+		PII nw=pq.top();
+		pq.pop();
+		if(nw.F>ans)ans=nw.F,als.clear();
+		if(nw.F>=ans)als.push_back(nw.S);
+		que[nw.S].pop();
+		if(!que[nw.S].empty()){
+			pq.push(PII(nw.F+que[nw.S].front(),nw.S));
+		}
+		if(que[nw.S].size()<k&&it<n){
+			que[nw.S].push(a[it]);
+			it++;
+		}
+	}
+	cout<<ans;
+	for(auto&i:als)cout<<" "<<i+1;
+	cout<<endl;
+
 	return 0;
 }
-
-
-
-
-
-
 
 
 

@@ -1,3 +1,4 @@
+//Example tase case passed
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,46 +179,98 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-INT M2D[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
-
-INT gt(INT M,INT D,INT h,INT m,INT s){
-	INT re=0;
-	re+=M2D[M];
-	re+=D;
-	re*=24;
-	re+=h;
-	re*=60;
-	re+=m;
-	re*=60;
-	re+=s;
-	return re;
-
-}
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT M,D,h,m,s;
-	cin>>M>>D>>h>>m>>s;
-	INT nw=gt(M,D,h,m,s);
-	INT event=gt(12,31,24,0,0);
-	INT tl=event-nw;
-	INT ad,ah,am,as;
-	as=tl%60;
-	tl/=60;
-	am=tl%60;
-	tl/=60;
-	ah=tl%24;
-	tl/=24;
-	ad=tl;
-	cout<<ad<<" "<<ah<<" "<<am<<" "<<as<<endl;
+	INT n,m;
+	cin>>n>>m;
+	vector<vector<INT>>vec(n,vector<INT>(m));
+	cin>>vec;
+	vector<string>mp(n);
+	for(INT i=0;i<n;i++){
+		for(INT j=0;j<m;j++){
+			mp[i]+='0'+vec[i][j];
+		}
+	}
+	
+	INT rcnt[n]={};
+	INT ccnt[m]={};
+	for(INT i=0;i<n;i++){
+		for(INT j=0;j<m;j++){
+			rcnt[i]+=mp[i][j]-'0';
+			ccnt[j]+=mp[i][j]-'0';
+		}
+	}
+
+	INT ansc=0;
+	stringstream anss;
+	bool o=0;
+	if(n>m){
+		for(INT i=0;i<m;i++){
+			if(ccnt[i]>=(n+1)/2){
+				ansc++;
+				if(o)anss<<' ';
+				anss<<'C'<<i+1;
+				for(INT j=0;j<n;j++){
+					rcnt[j]-=(mp[j][i]-'0');
+					rcnt[j]+=1-(mp[j][i]-'0');
+				}
+				o=1;
+			}
+		}
+		anss<<endl;
+		string nws;
+		getline(anss,nws);
+		o=0;
+		for(INT i=0;i<n;i++){
+			if(rcnt[i]>=(m+1)/2){
+				ansc++;
+				if(o)anss<<' ';
+				anss<<'R'<<i+1;
+				o=1;
+			}
+		}
+		if(!nws.empty()){
+			anss<<' ';
+			anss<<nws;
+		}
+		anss<<endl;
+		getline(anss,nws);
+		cout<<ansc<<endl;
+		cout<<nws<<endl<<endl;;
+		return 0;
+	}else{
+		for(INT i=0;i<n;i++){
+			if(rcnt[i]>=(m+1)/2){
+				ansc++;
+				if(o)anss<<' ';
+				anss<<'R'<<i+1;
+				for(INT j=0;j<m;j++){
+					ccnt[j]-=(mp[i][j]-'0');
+					ccnt[j]+=1-(mp[i][j]-'0');
+				}
+				o=1;
+			}
+		}
+		for(INT i=0;i<m;i++){
+			if(ccnt[i]>=(n+1)/2){
+				ansc++;
+				if(o)anss<<' ';
+				anss<<'C'<<i+1;
+				o=1;
+			}
+		}
+		anss<<endl;
+		string nws;
+		getline(anss,nws);
+		cout<<ansc<<endl;
+		cout<<nws<<endl<<endl;;
+		return 0;
+	}
+
+
+
 	return 0;
 }
-
-
-
-
-
-
 
 
 
