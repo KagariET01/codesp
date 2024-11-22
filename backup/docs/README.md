@@ -251,6 +251,7 @@
 [`TIOJ 2256` 挑水果](/codesp/docs/TIOJ_2256)  
 [`TIOJ 2330` `TOI 2023 pA` 房屋推薦](/codesp/docs/TIOJ_2330)  
 [`TIOJ 2331` `TOI 2023 pB` 裁員風暴](/codesp/docs/TIOJ_2331)  
+[`TIOJ 2368` 與自動輔助駕駛暢遊世界](/codesp/docs/TIOJ_2368)  
 [`ZJ 131` 質數切割法](/codesp/docs/ZJ_131)  
 [`ZJ b417` 區間眾數](/codesp/docs/ZJ_b417)  
 [`ZJ c402` 我討厭你](/codesp/docs/ZJ_c402)  
@@ -284,4 +285,4 @@
 [`ZJ o711` `APCS 2024 10 pA` 裝飲料](/codesp/docs/ZJ_o711)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
-[`CF 2008 pC` Longest Good Array](/codesp/docs/CF_2008_pC)  
+[`TIOJ 2367` 人工智慧模擬](/codesp/docs/TIOJ_2367)  

@@ -18,3 +18,5 @@
 [`TIOJ 2256` 挑水果](/codesp/docs/TIOJ_2256)  
 [`TIOJ 2330` 房屋推薦](/codesp/docs/TIOJ_2330)  
 [`TIOJ 2331` 裁員風暴](/codesp/docs/TIOJ_2331)  
+[`TIOJ 2367` 人工智慧模擬](/codesp/docs/TIOJ_2367)  
+[`TIOJ 2368` 與自動輔助駕駛暢遊世界](/codesp/docs/TIOJ_2368)  

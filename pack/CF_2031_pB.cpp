@@ -1,11 +1,3 @@
-# [`CF 2008 pC`](https://codeforces.com/contest/2008/problem/C) Longest Good Array
-## 標籤
-
-## 題解
-NOT FOUND  
-
-## 程式碼
-```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -191,21 +183,26 @@ int main(){
 	INT t;
 	cin>>t;
 	while(t--){
-		INT il,ir;
-		cin>>il>>ir;
-		INT n=ir-il;
-		INT l=0,r=n;
-		while(l<r){
-			INT mid=(r-l)/2ll+l+1ll;
-			if((1ll+mid)*mid/2ll<=n)l=mid;
-			else r=mid-1;
+		INT n;
+		cin>>n;
+		INT lst[n+1];
+		for(INT i=1;i<=n;i++){
+			cin>>lst[i];
 		}
-		cout<<l+1<<endl;
+		for(INT i=1;i<n;i++){
+			if(lst[i]>lst[i+1] && abs(lst[i]-lst[i+1])==1){
+				swap(lst[i],lst[i+1]);
+			}
+		}
+		bool ans=1;
+		for(INT i=1;i<=n;i++){
+			ans&=lst[i]==i;
+		}
+		if(ans)cout<<"Yes"<<endl;
+		else cout<<"NO"<<endl;
 	}
 	return 0;
 }
 
 
 
-
-```
