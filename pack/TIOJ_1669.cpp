@@ -178,26 +178,49 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-vector<INT> get_prime(INT n){
-	vector<INT>re;
-	INT a[n+1]={};
-	for(INT i=2;i<=n;i++){
-		if(!a[i]){
-			re.push_back(i);
-			cout<<i<<endl;
-		}
-		for(INT&j:re){
-			if(j*i>n)break;
-			a[i*j]=j;
-			if(a[i]==j)break;
+int main(){
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT n,m,k;
+	cin>>n>>m>>k;
+	vector<vector<INT>>mp(n+2,vector<INT>(m+2,0));
+	vector<vector<INT>>mptt(n+2,vector<INT>(m+2,0));
+
+	for(INT i=1;i<=n;i++){
+		string str;
+		cin>>str;
+		for(INT j=1;j<=m;j++){
+			if(str[j-1]=='+')mp[i][j]=1;
+			else if(str[j-1]=='-')mp[i][j]=-1;
+			mptt[i][j]=mptt[i][j-1]+mp[i][j];
 		}
 	}
-	return re;
-}
+	
+	INT ans=1e9+7;
 
-int main(){
-	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	get_prime(1000000);
+	for(INT l=1;l<=m;l++){
+		for(INT r=l;r<=m;r++){
+			INT nw[n+2]={};
+			for(INT j=1;j<=n;j++){
+				nw[j]=mptt[j][r]-mptt[j][l-1];
+				nw[j]+=nw[j-1];
+			}
+			deque<PII>dq;
+			dq.push_back(PII(0,0));
+			for(INT j=1;j<=n;j++){
+				while(!dq.empty() && nw[j]-dq.front().F>=k){
+					mins(ans,(r-l+1)*(j-dq.front().S));
+					dq.pop_front();
+				}
+				while(!dq.empty()&&dq.back().F>=nw[j]){
+					dq.pop_back();
+				}
+				dq.push_back(PII(nw[j],j));
+			}
+		}
+	}
+	if(ans>=1e9)ans=-1;
+	cout<<ans<<endl;
+
 	return 0;
 }
 

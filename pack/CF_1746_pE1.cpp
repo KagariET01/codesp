@@ -178,26 +178,93 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-vector<INT> get_prime(INT n){
-	vector<INT>re;
-	INT a[n+1]={};
-	for(INT i=2;i<=n;i++){
-		if(!a[i]){
-			re.push_back(i);
-			cout<<i<<endl;
-		}
-		for(INT&j:re){
-			if(j*i>n)break;
-			a[i*j]=j;
-			if(a[i]==j)break;
-		}
+INT guess_count=0;
+
+bool query(vector<INT>&a){
+	cout<<"? "<<a.size();
+	for(auto&i:a){
+		cout<<" "<<i;
 	}
-	return re;
+	cout<<endl;
+	string str;
+	cin>>str;
+	if(str=="NO")return 0;
+	else return 1;
+}
+
+bool loop_query(INT l,INT r){
+	vector<INT>a;
+	for(INT i=l;i<r;i++){
+		a.push_back(i);
+	}
+	return query(a);
+}
+
+bool guess(INT x){
+	cout<<"! "<<x<<endl;
+	string str;
+	cin>>str;
+	if(str==":)")exit(0);
+	else return guess_count++,0;
 }
 
 int main(){
 	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	get_prime(1000000);
+	INT n;
+	cin>>n;
+	INT l1=1,r1=n/2,l2=n/2,r2=n;
+	while(r2-l2+r1-l1>2){
+		INT loop=r1-l1+r2-l2;
+		cerr<<pit(l1)<<pit(r1)<<pit(l2)<<pit(r2)<<pit(loop)<<endl;
+		for(INT i=1;i<=3;i++){
+			INT mid=l1+loop*i/4;
+			if(mid<=l1)mid=l1+1;
+			if(mid>=r2)mid=r2-1;
+			if(mid>=r1)mid=l2+mid-(r1-l1+1);
+			cerr<<mid<<" ";
+		}
+		cerr<<endl;
+
+		INT mid1=l1+loop/2;
+		if(mid1<=l1)mid1=l1+1;
+		if(mid1>=r1)mid1=l2+mid1-(r1-l1+1);
+		bool q1=loop_query(l1,mid1);
+		if(q1){ // left
+			INT mid2=l1+loop*3/4;
+			if(mid2>=r2)mid2=r2-1;
+			if(mid2>r1)mid2=l2+mid2-(r1-l1+1);
+			bool q2=loop_query(mid2,r2);
+			if(q2){ // right
+				// one is fake
+				r1=mid1;
+				l2=mid2;
+			}else{
+				if(l2<=mid2&&mid2<=r2){
+					r2=mid2;
+				}else{
+					r1=l2=r2=mid2;
+				}
+			}
+		}else{ //right
+			INT mid2=l1+loop/4;
+			if(mid2<=l1)mid2=l1+1;
+			if(mid2>=r1)mid2=l2+mid2-(r1-l1+1);
+			bool q2=loop_query(l1,mid2);
+			if(q2){
+				r1=mid2;
+				l2=mid1;
+			}else{
+				if(l1<=mid2&&mid2<=l1){
+					l1=mid2;
+				}else{
+					l1=r1=l2=mid2;
+				}
+			}
+		}
+	}
+	guess(l1);
+	guess(l2);
+
 	return 0;
 }
 

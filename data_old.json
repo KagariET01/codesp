@@ -3923,6 +3923,36 @@
       "AC": true
     },
     {
+      "qname": "Penchick and Modern Monument",
+      "fname": "CF_2031_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2031 pA",
+          "link": "https://codeforces.com/contest/2031/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2031_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Penchick and Satay Sticks",
+      "fname": "CF_2031_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2031 pB",
+          "link": "https://codeforces.com/contest/2031/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2031_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Circuit",
       "fname": "CF_2032_pA",
       "qlink": [
@@ -4918,6 +4948,21 @@
       "AC": true
     },
     {
+      "qname": "人工智慧模擬",
+      "fname": "TIOJ_2367",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "2367",
+          "link": "https://tioj.ck.tp.edu.tw/problems/2367"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_2367.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "與自動輔助駕駛暢遊世界",
       "fname": "TIOJ_2368",
       "qlink": [
@@ -5625,21 +5670,6 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
-    },
-    {
-      "qname": "人工智慧模擬",
-      "fname": "TIOJ_2367",
-      "qlink": [
-        {
-          "OJ": "TIOJ",
-          "PID": "2367",
-          "link": "https://tioj.ck.tp.edu.tw/problems/2367"
-        }
-      ],
-      "tag": [],
-      "ans_code": "pack/TIOJ_2367.cpp",
-      "ans_TXT": "",
-      "AC": true
     }
   ],
   "tag": [

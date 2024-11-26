@@ -1,3 +1,11 @@
+# [`CF 2031 pB`](https://codeforces.com/contest/2031/problem/B) Penchick and Satay Sticks
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -178,28 +186,33 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-vector<INT> get_prime(INT n){
-	vector<INT>re;
-	INT a[n+1]={};
-	for(INT i=2;i<=n;i++){
-		if(!a[i]){
-			re.push_back(i);
-			cout<<i<<endl;
-		}
-		for(INT&j:re){
-			if(j*i>n)break;
-			a[i*j]=j;
-			if(a[i]==j)break;
-		}
-	}
-	return re;
-}
-
 int main(){
-	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	get_prime(1000000);
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		INT lst[n+1];
+		for(INT i=1;i<=n;i++){
+			cin>>lst[i];
+		}
+		for(INT i=1;i<n;i++){
+			if(lst[i]>lst[i+1] && abs(lst[i]-lst[i+1])==1){
+				swap(lst[i],lst[i+1]);
+			}
+		}
+		bool ans=1;
+		for(INT i=1;i<=n;i++){
+			ans&=lst[i]==i;
+		}
+		if(ans)cout<<"Yes"<<endl;
+		else cout<<"NO"<<endl;
+	}
 	return 0;
 }
 
 
 
+
+```

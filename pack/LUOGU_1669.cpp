@@ -178,26 +178,13 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-vector<INT> get_prime(INT n){
-	vector<INT>re;
-	INT a[n+1]={};
-	for(INT i=2;i<=n;i++){
-		if(!a[i]){
-			re.push_back(i);
-			cout<<i<<endl;
-		}
-		for(INT&j:re){
-			if(j*i>n)break;
-			a[i*j]=j;
-			if(a[i]==j)break;
-		}
-	}
-	return re;
-}
+
 
 int main(){
-	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	get_prime(1000000);
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT n,m;
+	cin>>n>>m;
+
 	return 0;
 }
 

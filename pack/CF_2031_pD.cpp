@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
 //#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
@@ -190,6 +191,47 @@ using namespace ET01;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		INT a[n+2]={};
+		for(INT i=1;i<=n;i++){
+			cin>>a[i];
+		}
+		INT mx[n+2]={};
+		INT mn[n+2]={};
+		for(INT i=1;i<=n;i++){
+			mx[i]=max(mx[i-1],a[i]);
+		}
+		for(INT i=1;i<=n;i++){
+			mn[i]=a[n];
+		}
+		for(INT i=n-1;i>=1;i--){
+			mn[i]=min(mn[i+1],a[i]);
+		}
+		INT it=1;
+		INT ans[n+2]={};
+		ans[n]=mx[n];
+		for(INT i=1;i<n;i++){
+			if(mx[i]>mn[i+1])continue;
+			else{
+				for(;it<=i;){
+					ans[it]=mx[i];
+					it++;
+				}
+			}
+		}
+		for(;it<=n;){
+			ans[it]=mx[n];
+			it++;
+		}
+		for(INT i=1;i<=n;i++){
+			cout<<ans[i]<<" ";
+		}
+		cout<<endl;
+	}
 	return 0;
 }
 

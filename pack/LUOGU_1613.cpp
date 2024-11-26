@@ -178,26 +178,59 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-vector<INT> get_prime(INT n){
-	vector<INT>re;
-	INT a[n+1]={};
-	for(INT i=2;i<=n;i++){
-		if(!a[i]){
-			re.push_back(i);
-			cout<<i<<endl;
-		}
-		for(INT&j:re){
-			if(j*i>n)break;
-			a[i*j]=j;
-			if(a[i]==j)break;
-		}
-	}
-	return re;
-}
+INT n,m;
+const INT mxn=805;
+const INT bc=32;
+set<INT>tree[32][mxn];
+set<INT>tree2[mxn];
+
 
 int main(){
-	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	get_prime(1000000);
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	cin>>n>>m;
+	for(INT i=0;i<m;i++){
+		INT a,b;
+		cin>>a>>b;
+		tree[0][a].insert(b);
+	}
+
+	for(INT i=1;i<bc;i++){
+		for(INT st=1;st<=n;st++){
+			for(INT mid:tree[i-1][st]){
+				for(INT ed:tree[i-1][mid]){
+					tree[i][st].insert(ed);
+				}
+			}
+		}
+	}
+	for(INT i=1;i<=n;i++){
+		for(INT j=0;j<bc;j++){
+			for(INT k:tree[j][i]){
+				tree2[i].insert(k);
+			}
+		}
+	}
+
+	priority_queue<PII,vector<PII>,greater<PII>>pq;
+	pq.push(PII(0,1));
+	INT best[n+1]={};
+	for(auto&i:best)i=1e9+7;
+	best[1]=0;
+	while(!pq.empty()){
+		PII nw=pq.top();
+		pq.pop();
+		if(best[nw.F]<nw.F)continue;
+		if(nw.F==n)break;
+		for(auto&i:tree2[nw.S]){
+			if(best[i]>best[nw.S]+1){
+				best[i]=best[nw.S]+1;
+				pq.push(PII(best[i],i));
+			}
+		}
+
+	}
+	cout<<best[n]<<endl;
+
 	return 0;
 }
 

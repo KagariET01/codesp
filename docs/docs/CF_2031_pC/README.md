@@ -1,3 +1,11 @@
+# [`CF 2031 pC`](https://codeforces.com/contest/2031/problem/C) Penchick and BBQ Buns
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -106,13 +114,13 @@ template<typename T>istream&operator>>(istream&in,vector<T>&vec){
 }
 template<typename T>ostream&operator<<(ostream&ou,vector<T>vec){
 	bool o=0;
-	ou<<"[";
+	ou<<"";
 	for(T(i):vec){
-		if(o)ou<<",";
+		if(o)ou<<" ";
 		ou<<i;
 		o=1;
 	}
-	return(ou<<"]");
+	return(ou<<"");
 }
 
 //array
@@ -178,28 +186,41 @@ template<typename T1,typename T2>vector<pair<T1,T2>>zip(vector<T1>a,vector<T2>b)
   
 **  ****************************************************  */
 
-vector<INT> get_prime(INT n){
-	vector<INT>re;
-	INT a[n+1]={};
-	for(INT i=2;i<=n;i++){
-		if(!a[i]){
-			re.push_back(i);
-			cout<<i<<endl;
-		}
-		for(INT&j:re){
-			if(j*i>n)break;
-			a[i*j]=j;
-			if(a[i]==j)break;
-		}
-	}
-	return re;
-}
+INT odd[27]={1,2,2,3,3,4,4,5,5,1,6,6,7,7,8,8,9,9,10,10,11,11,12,13,13,1,12};
 
 int main(){
-	//cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	get_prime(1000000);
+	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		if(n&1&&n<27){
+			cout<<-1<<endl;
+			continue;
+		}else if(n&1){
+			vector<INT>ans(odd,odd+27);
+			n-=27;
+			INT nw=14;
+			bool o=0;
+			for(INT i=0;i<n;i++){
+				ans.push_back(nw);
+				if(o)nw++,o=0;
+				else o=1;
+			}
+			cout<<ans<<endl;
+		}else{
+			vector<INT>ans;
+			for(INT i=0;i<n;i++){
+				ans.push_back(i/2+1);
+			}
+			cout<<ans<<endl;
+		}
+	}
 	return 0;
 }
 
 
 
+
+```
