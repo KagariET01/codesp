@@ -189,38 +189,87 @@ using namespace ET01;
   
 **  ****************************************************  */
 
+INT mx[]={1,0,-1,0};
+INT my[]={0,1,0,-1};
+map<char,vector<INT>>mmp;
+
+bool dfs(vector<string>&mp,vector<vector<bool>>&view,vector<vector<bool>>&nw,vector<vector<bool>>&ans,const INT x,const INT y,const INT&n,const INT&m){
+	view[x][y]=1;
+	for(INT mvi:mmp[mp[x][y]]){
+		INT nx=x+mx[mvi];
+		INT ny=y+my[mvi];
+		if(nx<0||n<=nx|| ny<0||m<=ny)continue;
+		if(nw[nx][ny]||ans[nx][ny]){
+			ans[x][y]=1;
+			return 1;
+		}else if(!view[nx][ny]){
+			nw[nx][ny]=1;
+			bool re=dfs(mp,view,nw,ans,nx,ny,n,m);
+			nw[nx][ny]=0;
+			if(re){
+				ans[x][y]=1;
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n,m;
-	cin>>n>>m;
-	vector<INT>l(n),v(m),s(m);
-	cin>>l>>v>>s;
-	vector<PII>lp;
-	for(INT i=0;i<n;i++){
-		lp.push_back(PII(l[i],i));
-	}
-	sort(lp.begin(),lp.end(),greater<PII>());
-	vector<INT>vp;
-	for(INT i=0;i<m;i++){
-		if(v[i]>s[i]){
-			vp.push_back(i);
-		}
-	}
-	sort(vp.begin(),vp.end(),[&](INT a,INT b){
-				return (v[a]*v[a]-s[a]*s[a])*v[b]>(v[b]*v[b]-s[b]*s[b])*v[a];
-			});
-	if(n>vp.size()){
-		cout<<-1<<endl;
+	mmp['U'].push_back(2);
+	mmp['D'].push_back(0);
+	mmp['L'].push_back(3);
+	mmp['R'].push_back(1);
+	mmp['?'].push_back(0);
+	mmp['?'].push_back(1);
+	mmp['?'].push_back(2);
+	mmp['?'].push_back(3);
+
+	INT t;
+	cin>>t;
+	if(0&&t==200){
+		INT n,m;
+		cin>>n>>m;
+		vector<string>mp(n);
+		cin>>mp;
+		for(auto&i:mp)cout<<i<<endl;
 		return 0;
-	}else{
-		vector<INT>ans(n);
-		for(INT i=0;i<n;i++){
-			ans[lp[i].S]=vp[i]+1;
-		}
-		list_st=list_ed="";
-		list_sep=" ";
-		cout<<ans<<endl;
 	}
+	while(t--){
+		INT n,m;
+		cin>>n>>m;
+		vector<string>mp(n);
+		cin>>mp;
+		vector<vector<bool>>view(n,vector<bool>(m,false));
+		vector<vector<bool>>nw(n,vector<bool>(m,false));
+		vector<vector<bool>>ans(n,vector<bool>(m,false));
+		for(INT i=0;i<n;i++){
+			for(INT j=0;j<m;j++){
+				if(!view[i][j]){
+					nw[i][j]=1;
+					dfs(mp,view,nw,ans,i,j,n,m);
+					nw[i][j]=0;
+				}
+			}
+		}
+		INT cans=0;
+		for(INT i=0;i<n;i++){
+			for(INT j=0;j<m;j++){
+				cans+=ans[i][j];
+			}
+		}
+		cout<<cans<<endl;
+
+		#ifdef DBG
+			list_st=list_ed=list_sep="";
+			#define pl(k) cout<<#k<<":"<<endl;for(INT(i)=0;i<n;i++)cout<<k[i]<<endl;
+			pl(view);
+			pl(nw);
+			pl(ans);
+		#endif
+	}
+
 	return 0;
 }
 

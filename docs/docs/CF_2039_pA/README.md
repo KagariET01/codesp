@@ -1,3 +1,11 @@
+# [`CF 2039 pA`](https://codeforces.com/contest/2039/problem/A) Shohag Loves Mod
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -191,38 +199,21 @@ using namespace ET01;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n,m;
-	cin>>n>>m;
-	vector<INT>l(n),v(m),s(m);
-	cin>>l>>v>>s;
-	vector<PII>lp;
-	for(INT i=0;i<n;i++){
-		lp.push_back(PII(l[i],i));
-	}
-	sort(lp.begin(),lp.end(),greater<PII>());
-	vector<INT>vp;
-	for(INT i=0;i<m;i++){
-		if(v[i]>s[i]){
-			vp.push_back(i);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		for(INT i=1;i<=n;i++){
+			if(i>1)cout<<" ";
+			cout<<i*2-1;
 		}
-	}
-	sort(vp.begin(),vp.end(),[&](INT a,INT b){
-				return (v[a]*v[a]-s[a]*s[a])*v[b]>(v[b]*v[b]-s[b]*s[b])*v[a];
-			});
-	if(n>vp.size()){
-		cout<<-1<<endl;
-		return 0;
-	}else{
-		vector<INT>ans(n);
-		for(INT i=0;i<n;i++){
-			ans[lp[i].S]=vp[i]+1;
-		}
-		list_st=list_ed="";
-		list_sep=" ";
-		cout<<ans<<endl;
+		cout<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```

@@ -211,6 +211,21 @@
       "AC": true
     },
     {
+      "qname": "Joking (Easy Version)",
+      "fname": "CF_1746_pE1",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "1746 pE1",
+          "link": "https://codeforces.com/contest/1746/problem/E1"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_1746_pE1.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Tales of a Sort",
       "fname": "CF_1856_pA",
       "qlink": [
@@ -3953,6 +3968,21 @@
       "AC": true
     },
     {
+      "qname": "Penchick and BBQ Buns",
+      "fname": "CF_2031_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2031 pC",
+          "link": "https://codeforces.com/contest/2031/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2031_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Circuit",
       "fname": "CF_2032_pA",
       "qlink": [
@@ -4320,6 +4350,36 @@
       "AC": true
     },
     {
+      "qname": "跑路",
+      "fname": "LUOGU_1613",
+      "qlink": [
+        {
+          "OJ": "LUOGU",
+          "PID": "1613",
+          "link": "https://www.luogu.com.cn/problem/P1613"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/LUOGU_1613.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Bad Cowtractors S",
+      "fname": "LUOGU_1669",
+      "qlink": [
+        {
+          "OJ": "LUOGU",
+          "PID": "1669",
+          "link": "https://www.luogu.com.cn/problem/P1669"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/LUOGU_1669.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
       "qname": "Dynamic Rankings",
       "fname": "LUOGU_2617",
       "qlink": [
@@ -4592,6 +4652,21 @@
       ],
       "tag": [],
       "ans_code": "pack/NEOJ_876.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "征戰天龍國",
+      "fname": "TIOJ_1669",
+      "qlink": [
+        {
+          "OJ": "TIOJ",
+          "PID": "1669",
+          "link": "https://tioj.ck.tp.edu.tw/problems/1669"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/TIOJ_1669.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -5670,6 +5745,21 @@
       "ans_code": "pack/test/main.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Penchick and Desert Rabbit",
+      "fname": "CF_2031_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2031 pD",
+          "link": "https://codeforces.com/contest/2031/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2031_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
     }
   ],
   "tag": [

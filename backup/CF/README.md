@@ -196,6 +196,8 @@
 [`CF 2030 pD` QED's Favorite Permutation](/codesp/docs/CF_2030_pD)  
 [`CF 2031 pA` Penchick and Modern Monument](/codesp/docs/CF_2031_pA)  
 [`CF 2031 pB` Penchick and Satay Sticks](/codesp/docs/CF_2031_pB)  
+[`CF 2031 pC` Penchick and BBQ Buns](/codesp/docs/CF_2031_pC)  
+[`CF 2031 pD` Penchick and Desert Rabbit](/codesp/docs/CF_2031_pD)  
 [`CF 2032 pA` Circuit](/codesp/docs/CF_2032_pA)  
 [`CF 2032 pB` Medians](/codesp/docs/CF_2032_pB)  
 [`CF 2032 pC` Trinity](/codesp/docs/CF_2032_pC)  

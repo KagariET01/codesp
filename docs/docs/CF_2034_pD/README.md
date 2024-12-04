@@ -1,3 +1,11 @@
+# [`CF 2034 pD`](https://codeforces.com/contest/2034/problem/D) Darius' Wisdom
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -191,38 +199,68 @@ using namespace ET01;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n,m;
-	cin>>n>>m;
-	vector<INT>l(n),v(m),s(m);
-	cin>>l>>v>>s;
-	vector<PII>lp;
-	for(INT i=0;i<n;i++){
-		lp.push_back(PII(l[i],i));
-	}
-	sort(lp.begin(),lp.end(),greater<PII>());
-	vector<INT>vp;
-	for(INT i=0;i<m;i++){
-		if(v[i]>s[i]){
-			vp.push_back(i);
-		}
-	}
-	sort(vp.begin(),vp.end(),[&](INT a,INT b){
-				return (v[a]*v[a]-s[a]*s[a])*v[b]>(v[b]*v[b]-s[b]*s[b])*v[a];
-			});
-	if(n>vp.size()){
-		cout<<-1<<endl;
-		return 0;
-	}else{
-		vector<INT>ans(n);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		vector<INT>a(n);
+		cin>>a;
+		vector<INT>b=a;
+		sort(b);
+		vector<PII>ans;
+		auto sp=[&](INT i,INT j){
+			if(i==j)return;
+			ans.push_back(PII(i+1,j+1));
+			swap(a[i],a[j]);
+		};
+		// move 2
+		INT it=n-1;
+		while(it>=0&&a[it]==b[it])it--;
+
+		INT one=-1;
 		for(INT i=0;i<n;i++){
-			ans[lp[i].S]=vp[i]+1;
+			if(a[i]==1){
+				one=i;
+				break;
+			}
 		}
+		for(INT i=0;i<it;i++){
+			while(it>=0&&a[it]==b[it])it--;
+			if(b[it]!=2)break;
+			if(a[i]==b[i])continue;
+			if(a[i]==2){
+				if(a[it]==1){
+					sp(i,it);
+					it--;
+					one=i;
+					continue;
+				}
+				sp(one,it);
+				sp(i,it);
+				one=i;
+				it--;
+			}
+		}
+		// move 1
+		for(INT i=0;i<it;i++){
+			while(it>=0&&a[it]==b[it])it--;
+			if(a[i]==b[i])continue;
+			if(a[i]==1){
+				sp(i,it);
+				it--;
+			}
+		}
+		cout<<ans.size()<<endl;
 		list_st=list_ed="";
 		list_sep=" ";
-		cout<<ans<<endl;
+		for(auto&i:ans)cout<<i<<endl;
+
 	}
 	return 0;
 }
 
 
 
+
+```

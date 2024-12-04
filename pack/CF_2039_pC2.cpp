@@ -191,35 +191,27 @@ using namespace ET01;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n,m;
-	cin>>n>>m;
-	vector<INT>l(n),v(m),s(m);
-	cin>>l>>v>>s;
-	vector<PII>lp;
-	for(INT i=0;i<n;i++){
-		lp.push_back(PII(l[i],i));
-	}
-	sort(lp.begin(),lp.end(),greater<PII>());
-	vector<INT>vp;
-	for(INT i=0;i<m;i++){
-		if(v[i]>s[i]){
-			vp.push_back(i);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT x,m;
+		cin>>x>>m;
+		INT ans=0;
+		for(INT i=1;i<=min(x,m);i++){
+			if((x^i)%i==0||(x^i)%x==0)ans++;
 		}
-	}
-	sort(vp.begin(),vp.end(),[&](INT a,INT b){
-				return (v[a]*v[a]-s[a]*s[a])*v[b]>(v[b]*v[b]-s[b]*s[b])*v[a];
-			});
-	if(n>vp.size()){
-		cout<<-1<<endl;
-		return 0;
-	}else{
-		vector<INT>ans(n);
-		for(INT i=0;i<n;i++){
-			ans[lp[i].S]=vp[i]+1;
+		INT l=-1;
+		if(x<m){
+			for(INT i=x+1;i<=x*2;i++){
+				if((x^i)%x==0){
+					l=i;
+					break;
+				}
+			}
+			if(l>=0){
+				
+			}
 		}
-		list_st=list_ed="";
-		list_sep=" ";
-		cout<<ans<<endl;
 	}
 	return 0;
 }

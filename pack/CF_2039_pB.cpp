@@ -191,35 +191,28 @@ using namespace ET01;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n,m;
-	cin>>n>>m;
-	vector<INT>l(n),v(m),s(m);
-	cin>>l>>v>>s;
-	vector<PII>lp;
-	for(INT i=0;i<n;i++){
-		lp.push_back(PII(l[i],i));
-	}
-	sort(lp.begin(),lp.end(),greater<PII>());
-	vector<INT>vp;
-	for(INT i=0;i<m;i++){
-		if(v[i]>s[i]){
-			vp.push_back(i);
+	INT t;
+	cin>>t;
+	while(t--){
+		string str;
+		cin>>str;
+		INT n=str.size();
+		bool ans=0;
+		for(INT i=0;i<n-1;i++){
+			if(str[i]==str[i+1]){
+				ans=1;
+				cout<<str[i]<<str[i]<<endl;
+				break;
+			}
 		}
-	}
-	sort(vp.begin(),vp.end(),[&](INT a,INT b){
-				return (v[a]*v[a]-s[a]*s[a])*v[b]>(v[b]*v[b]-s[b]*s[b])*v[a];
-			});
-	if(n>vp.size()){
-		cout<<-1<<endl;
-		return 0;
-	}else{
-		vector<INT>ans(n);
-		for(INT i=0;i<n;i++){
-			ans[lp[i].S]=vp[i]+1;
+		if(!ans)for(INT i=0;i<n-2;i++){
+			if(str[i]!=str[i+2]){
+				ans=1;
+				cout<<str[i]<<str[i+1]<<str[i+2]<<endl;
+				break;
+			}
 		}
-		list_st=list_ed="";
-		list_sep=" ";
-		cout<<ans<<endl;
+		if(!ans)cout<<-1<<endl;
 	}
 	return 0;
 }

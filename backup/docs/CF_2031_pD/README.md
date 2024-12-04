@@ -1,3 +1,11 @@
+# [`CF 2031 pD`](https://codeforces.com/contest/2031/problem/D) Penchick and Desert Rabbit
+## 標籤
+
+## 題解
+NOT FOUND  
+
+## 程式碼
+```cpp
 
 #include<bits/stdc++.h>
 //#pragma GCC optimize("Ofast")
@@ -191,38 +199,51 @@ using namespace ET01;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);cerr.tie(0);
-	INT n,m;
-	cin>>n>>m;
-	vector<INT>l(n),v(m),s(m);
-	cin>>l>>v>>s;
-	vector<PII>lp;
-	for(INT i=0;i<n;i++){
-		lp.push_back(PII(l[i],i));
-	}
-	sort(lp.begin(),lp.end(),greater<PII>());
-	vector<INT>vp;
-	for(INT i=0;i<m;i++){
-		if(v[i]>s[i]){
-			vp.push_back(i);
+	INT t;
+	cin>>t;
+	while(t--){
+		INT n;
+		cin>>n;
+		INT a[n+2]={};
+		for(INT i=1;i<=n;i++){
+			cin>>a[i];
 		}
-	}
-	sort(vp.begin(),vp.end(),[&](INT a,INT b){
-				return (v[a]*v[a]-s[a]*s[a])*v[b]>(v[b]*v[b]-s[b]*s[b])*v[a];
-			});
-	if(n>vp.size()){
-		cout<<-1<<endl;
-		return 0;
-	}else{
-		vector<INT>ans(n);
-		for(INT i=0;i<n;i++){
-			ans[lp[i].S]=vp[i]+1;
+		INT mx[n+2]={};
+		INT mn[n+2]={};
+		for(INT i=1;i<=n;i++){
+			mx[i]=max(mx[i-1],a[i]);
 		}
-		list_st=list_ed="";
-		list_sep=" ";
-		cout<<ans<<endl;
+		for(INT i=1;i<=n;i++){
+			mn[i]=a[n];
+		}
+		for(INT i=n-1;i>=1;i--){
+			mn[i]=min(mn[i+1],a[i]);
+		}
+		INT it=1;
+		INT ans[n+2]={};
+		ans[n]=mx[n];
+		for(INT i=1;i<n;i++){
+			if(mx[i]>mn[i+1])continue;
+			else{
+				for(;it<=i;){
+					ans[it]=mx[i];
+					it++;
+				}
+			}
+		}
+		for(;it<=n;){
+			ans[it]=mx[n];
+			it++;
+		}
+		for(INT i=1;i<=n;i++){
+			cout<<ans[i]<<" ";
+		}
+		cout<<endl;
 	}
 	return 0;
 }
 
 
 
+
+```
