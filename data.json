@@ -4148,6 +4148,21 @@
       "AC": true
     },
     {
+      "qname": "Darius' Wisdom",
+      "fname": "CF_2034_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2034 pD",
+          "link": "https://codeforces.com/contest/2034/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2034_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Sliding",
       "fname": "CF_2035_pA",
       "qlink": [
@@ -4356,6 +4371,81 @@
       "ans_code": "pack/CF_2039_pD.cpp",
       "ans_TXT": "",
       "AC": false
+    },
+    {
+      "qname": "Ordered Permutations",
+      "fname": "CF_2040_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2040 pC",
+          "link": "https://codeforces.com/contest/2040/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2040_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Greedy Monocarp",
+      "fname": "CF_2042_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2042 pA",
+          "link": "https://codeforces.com/contest/2042/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2042_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Game with Colored Marbles",
+      "fname": "CF_2042_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2042 pB",
+          "link": "https://codeforces.com/contest/2042/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2042_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Alyona and a Square Jigsaw Puzzle",
+      "fname": "CF_2047_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2047 pA",
+          "link": "https://codeforces.com/contest/2047/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2047_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Replace Character",
+      "fname": "CF_2047_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2047 pB",
+          "link": "https://codeforces.com/contest/2047/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2047_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
     },
     {
       "qname": "Buy Low Sell High",
@@ -5852,32 +5942,32 @@
       "AC": false
     },
     {
-      "qname": "Darius' Wisdom",
-      "fname": "CF_2034_pD",
+      "qname": "Maximum Building I",
+      "fname": "CSES_1147",
       "qlink": [
         {
-          "OJ": "CF",
-          "PID": "2034 pD",
-          "link": "https://codeforces.com/contest/2034/problem/D"
+          "OJ": "CSES",
+          "PID": "1147",
+          "link": "https://cses.fi/problemset/task/1147"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2034_pD.cpp",
+      "ans_code": "pack/CSES_1147.cpp",
       "ans_TXT": "",
       "AC": true
     },
     {
-      "qname": "Greedy Monocarp",
-      "fname": "CF_2042_pA",
+      "qname": "最大矩形",
+      "fname": "TIOJ_1063",
       "qlink": [
         {
-          "OJ": "CF",
-          "PID": "2042 pA",
-          "link": "https://codeforces.com/contest/2042/problem/A"
+          "OJ": "TIOJ",
+          "PID": "1063",
+          "link": "https://tioj.ck.tp.edu.tw/problems/1063"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2042_pA.cpp",
+      "ans_code": "pack/TIOJ_1063.cpp",
       "ans_TXT": "",
       "AC": true
     }

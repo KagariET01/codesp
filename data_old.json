@@ -3983,6 +3983,21 @@
       "AC": true
     },
     {
+      "qname": "Penchick and Desert Rabbit",
+      "fname": "CF_2031_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2031 pD",
+          "link": "https://codeforces.com/contest/2031/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2031_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "Circuit",
       "fname": "CF_2032_pA",
       "qlink": [
@@ -4114,6 +4129,21 @@
       ],
       "tag": [],
       "ans_code": "pack/CF_2033_pG.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "King Keykhosrow's Mystery",
+      "fname": "CF_2034_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2034 pA",
+          "link": "https://codeforces.com/contest/2034/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2034_pA.cpp",
       "ans_TXT": "",
       "AC": true
     },
@@ -4251,6 +4281,81 @@
       "ans_code": "pack/CF_2036_pD.cpp",
       "ans_TXT": "",
       "AC": true
+    },
+    {
+      "qname": "Shohag Loves Mod",
+      "fname": "CF_2039_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2039 pA",
+          "link": "https://codeforces.com/contest/2039/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2039_pA.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Shohag Loves Strings",
+      "fname": "CF_2039_pB",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2039 pB",
+          "link": "https://codeforces.com/contest/2039/problem/B"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2039_pB.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Shohag Loves XOR (Easy Version)",
+      "fname": "CF_2039_pC1",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2039 pC1",
+          "link": "https://codeforces.com/contest/2039/problem/C1"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2039_pC1.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Shohag Loves XOR (Hard Version)",
+      "fname": "CF_2039_pC2",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2039 pC2",
+          "link": "https://codeforces.com/contest/2039/problem/C2"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2039_pC2.cpp",
+      "ans_TXT": "",
+      "AC": false
+    },
+    {
+      "qname": "Shohag Loves GCD",
+      "fname": "CF_2039_pD",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2039 pD",
+          "link": "https://codeforces.com/contest/2039/problem/D"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2039_pD.cpp",
+      "ans_TXT": "",
+      "AC": false
     },
     {
       "qname": "Buy Low Sell High",
@@ -5747,17 +5852,32 @@
       "AC": false
     },
     {
-      "qname": "Penchick and Desert Rabbit",
-      "fname": "CF_2031_pD",
+      "qname": "Darius' Wisdom",
+      "fname": "CF_2034_pD",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2031 pD",
-          "link": "https://codeforces.com/contest/2031/problem/D"
+          "PID": "2034 pD",
+          "link": "https://codeforces.com/contest/2034/problem/D"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2031_pD.cpp",
+      "ans_code": "pack/CF_2034_pD.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
+      "qname": "Greedy Monocarp",
+      "fname": "CF_2042_pA",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2042 pA",
+          "link": "https://codeforces.com/contest/2042/problem/A"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2042_pA.cpp",
       "ans_TXT": "",
       "AC": true
     }
