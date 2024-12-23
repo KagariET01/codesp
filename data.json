@@ -3878,6 +3878,21 @@
       "AC": false
     },
     {
+      "qname": "Alice's Adventures in Cutting Cake",
+      "fname": "CF_2028_pC",
+      "qlink": [
+        {
+          "OJ": "CF",
+          "PID": "2028 pC",
+          "link": "https://codeforces.com/contest/2028/problem/C"
+        }
+      ],
+      "tag": [],
+      "ans_code": "pack/CF_2028_pC.cpp",
+      "ans_TXT": "",
+      "AC": true
+    },
+    {
       "qname": "A Gift From Orangutan",
       "fname": "CF_2030_pA",
       "qlink": [
@@ -5972,17 +5987,17 @@
       "AC": false
     },
     {
-      "qname": "Alice's Adventures in Cutting Cake",
-      "fname": "CF_2028_pC",
+      "qname": "Alice's Adventures in Cards",
+      "fname": "CF_2028_pD",
       "qlink": [
         {
           "OJ": "CF",
-          "PID": "2028 pC",
-          "link": "https://codeforces.com/contest/2028/problem/C"
+          "PID": "2028 pD",
+          "link": "https://codeforces.com/contest/2028/problem/D"
         }
       ],
       "tag": [],
-      "ans_code": "pack/CF_2028_pC.cpp",
+      "ans_code": "pack/CF_2028_pD.cpp",
       "ans_TXT": "",
       "AC": true
     }

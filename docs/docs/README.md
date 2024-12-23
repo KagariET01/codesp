@@ -196,6 +196,7 @@
 [`CF 2027 pB` Stalin Sort](/codesp/docs/CF_2027_pB)  
 [`CF 2027 pC` Add Zeros](/codesp/docs/CF_2027_pC)  
 [`CF 2027 pD1` The Endspeaker (Easy Version)](/codesp/docs/CF_2027_pD1)  
+[`CF 2028 pC` Alice's Adventures in Cutting Cake](/codesp/docs/CF_2028_pC)  
 [`CF 2030 pA` A Gift From Orangutan](/codesp/docs/CF_2030_pA)  
 [`CF 2030 pB` Minimise Oneness](/codesp/docs/CF_2030_pB)  
 [`CF 2030 pC` A TRUE Battle](/codesp/docs/CF_2030_pC)  
@@ -303,4 +304,4 @@
 [`ZJ o711` `APCS 2024 10 pA` 裝飲料](/codesp/docs/ZJ_o711)  
 [`TEMP seg tree` 線段樹](/codesp/docs/seg_tree)  
 [`CSES 2077` 圖連通分量](/codesp/docs/tarjan)  
-[`CF 2028 pC` Alice's Adventures in Cutting Cake](/codesp/docs/CF_2028_pC)  
+[`CF 2028 pD` Alice's Adventures in Cards](/codesp/docs/CF_2028_pD)  
